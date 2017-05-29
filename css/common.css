@@ -641,6 +641,47 @@ label.check-radio .radiobox {margin-right:8px;}
 }
 .terms_box .inner {margin:20px;}
 
+.join-wrap {
+	width:820px;
+	margin:0 auto;
+}
+.join-wrap .complete-box {
+	height:408px;
+	padding:64px 0;
+	border:1px solid #ccc;
+	border-top:2px solid #e9002d;
+	box-sizing:border-box;
+	text-align:center;
+}
+.join-wrap .complete-box .text-box {
+	padding-bottom:153px;
+	background:url(../img/img/join_complete.jpg) no-repeat center bottom;
+}
+.join-wrap .complete-box .text01 {
+	font-size:30px;
+	color:#000;
+	line-height:40px;
+}
+.join-wrap .complete-box .text02 {
+	font-size:18px;
+	color:#333;
+	line-height:33px;
+}
+.join-wrap .complete-box .text02.type01 {
+	margin-top:20px;
+}
+.join-wrap .complete-box .text02.type01 .text-border {
+	position:relative;
+}
+.join-wrap .complete-box .text02.type01 .text-border:before {
+	content:'';
+	display:block;
+	position:absolute;
+	left:0; bottom:-4px;
+	width:100%;
+	height:1px;
+	border-bottom:1px solid #666;
+}
 /* =========================================================================================================
 	테이블
 ========================================================================================================= */
