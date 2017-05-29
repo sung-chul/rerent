@@ -151,6 +151,7 @@ button {outline:0;vertical-align:top;}
 .wrapper {
 	border-top:2px solid #ea002c;
 }
+/*header*/
 .header {
 	width:100%;
 	margin-top:41px;
@@ -271,11 +272,17 @@ button {outline:0;vertical-align:top;}
 	width:37px; height:37px;
 	background-position: 0 0;
 }
+
+/*container*/
 .container {
 	width:1000px;
 	margin:0 auto;
 }
-
+/*content*/
+.content {
+	padding-bottom:60px;
+}
+/*location*/
 .location {
 	overflow: hidden;
 	padding-top:18px;
@@ -304,6 +311,74 @@ button {outline:0;vertical-align:top;}
 	color:#e9002d;
 }
 
+/*footer*/
+.footer {
+	height:204px;
+	background-color:#fff;
+	border-top:1px solid #ddd;
+}
+.footer .inner {
+	width:1000px;
+	margin:0 auto;
+}
+
+.footer .inner .util {
+	padding:30px 0;
+	text-align: center;
+}
+.footer .inner .util a {
+	position:relative;
+	padding:0 50px;
+	color:#666;
+	font-size:15px;
+}
+.footer .inner .util a:before {
+	position:absolute;
+	left :0;
+	top:2px;
+	content:'';
+	width:1px;
+	height:16px;
+	background-color:#999;
+}
+.footer .inner .util a:first-child:before {content:none;}
+
+.footer .inner .address-area {
+	position:relative;
+	padding-left:170px;
+	background:url(../img/layout/foot_logo.png) 0 0 no-repeat;
+}
+
+.footer .inner .address-area p {
+	font-size:13px;
+	color:#999;
+	line-height: 18px;
+}
+.footer .inner .address-area .box {overflow: hidden;}
+.footer .inner .address-area .box:first-child p {color:#666}
+.footer .inner .address-area .box p {
+	float: left;
+	position:relative;
+	padding:0 5px;
+}
+.footer .inner .address-area .box p:first-child {padding-left:0;}
+.footer .inner .address-area .box p:before {
+	position:absolute;
+	left :0;
+	top:3px;
+	content:'';
+	width:1px;
+	height:13px;
+	background-color:#999;
+}
+.footer .inner .address-area .box p:first-child:before  {content: none;}
+
+.footer .inner .address-area .sns {
+	position:absolute;
+	right:30px;
+	top:0;
+}
+.footer .inner .address-area .sns a:first-child {margin-right:5px;}
 /* =========================================================================================================
 	sprite img
 ========================================================================================================= */
