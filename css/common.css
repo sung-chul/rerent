@@ -479,42 +479,43 @@ button {outline:0;vertical-align:top;}
 .select-box {
 	display:inline-block;
 	position:relative;
-	height:32px;
+	height:45px;
 	cursor:pointer;
 }
 .select-box.focus {z-index:9999;}
 .select-box .select-title {
 	position:relative;
-	height:32px;
-	padding-left:13px;
+	height:45px;
+	padding-left:10px;
 	box-sizing:border-box;
-	border:1px solid #bbb;
+	border:1px solid #ccc;
 	background-color:#fff;
-	color:#666;
+	color:#999
 	font-size:15px;
-	line-height:32px;
+	line-height:45px;
 }
 .select-box.disabled .select-title {
 	background-color:#e3e3e3;
 	color:#999;
 }/* disabled */
+
 .select-title:before {
 	content:'';
 	position:absolute;
 	right:13px;top:50%;
-	width:12px;
-	height:7px;
-	margin-top:-3px;
-	background:url(../img/sprite/form.png) no-repeat 0 0;
+	width:17px;
+	height:11px;
+	margin-top:-5px;
+	background:url(../img/icon/icon_select_arrow.png) no-repeat 0 0;
 }
-.select-box.focus .select-title {border-color:#91c90b !important;}/* focus */
+/*.select-box.focus .select-title {border-color:#91c90b !important;} focus */
 .select-box .select-list {
 	display:none;
 	position:absolute;
-	left:0;right:0;top:31px;
+	left:0;right:0;top:44px;
 	z-index:1;
 	padding:10px 0;
-	border:1px solid #91c90b;
+	border:1px solid #e3e3e3;
 	background-color:#fff;
 }
 .select-box .select-list .item {
@@ -525,14 +526,8 @@ button {outline:0;vertical-align:top;}
 	line-height:20px;
 }
 .select-box .select-list .item:hover,
-.select-box .select-list .item.on {background-color:#d1ef8a;}
+.select-box .select-list .item.on {background-color:#e3e3e3;}
 .select-box .select-list .item:first-child {margin-top:0;}
-.select-box .select-list .item .data {
-	margin-left:5px;
-	color:#666;
-	font-weight:normal;
-}
-
 .select-box select {
 	position:fixed;
 	left:-9999px;
@@ -568,7 +563,6 @@ label.check-radio .radiobox {margin-right:8px;}
 .checkbox.checked {
 	background: url(../img/icon/icon_checked.png) no-repeat 50% 50%;
 }
-
 .radiobox.checked:before {
 	content:'';
 	position:absolute;
@@ -578,7 +572,6 @@ label.check-radio .radiobox {margin-right:8px;}
 	margin:-5px -5px;
 	background-color:#333;
 	border-radius: 5px;
-
 }
 .checkbox input[type=checkbox].styled1,
 .radiobox input[type=radio].styled1 {
