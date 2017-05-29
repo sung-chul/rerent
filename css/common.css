@@ -79,7 +79,7 @@ input[type=password] {
 }
 input[type=text]:focus,
 input[type=number]:focus,
-input[type=password]:focus {border-color:#91c90b;}
+input[type=password]:focus {border-color:#e9002d;}
 input[type=text]:disabled,
 input[type=number]:disabled,
 input[type=password]:disabled {
@@ -515,15 +515,15 @@ button {outline:0;vertical-align:top;}
 	left:0;right:0;top:44px;
 	z-index:1;
 	padding:10px 0;
-	border:1px solid #e3e3e3;
+	border:1px solid #ccc;
 	background-color:#fff;
 }
 .select-box .select-list .item {
 	margin-top:1px;
 	padding:2px 0 2px 13px;
 	color:#666;
-	font-size:14px;
-	line-height:20px;
+	font-size:15px;
+	line-height:30px;
 }
 .select-box .select-list .item:hover,
 .select-box .select-list .item.on {background-color:#e3e3e3;}
@@ -540,12 +540,12 @@ button {outline:0;vertical-align:top;}
 /* =========================================================================================================
 	체크박스/라디오버튼
 ========================================================================================================= */
-/*label.check-radio {
-	display:inline-block;
-	color:#666;
-	font-size:15px;
-	line-height:18px;
-}*/
+.radio-check .check-radio {
+	margin-left:15px;
+}
+.radio-check .check-radio:first-child {
+	margin-left:0;
+}
 .checkbox,
 .radiobox{
 	display:inline-block;
@@ -558,8 +558,9 @@ button {outline:0;vertical-align:top;}
 	vertical-align:top;
 }
 .radiobox {border-radius:50%;}
+label.check-radio {cursor: pointer; color:#666;}
 label.check-radio .checkbox,
-label.check-radio .radiobox {margin-right:8px;}
+label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 .checkbox.checked {
 	background: url(../img/icon/icon_checked.png) no-repeat 50% 50%;
 }
@@ -580,6 +581,7 @@ label.check-radio .radiobox {margin-right:8px;}
 	width:18px;
 	height:18px;
 	opacity:0;
+ 	cursor: pointer;
 }
 .checkbox.disabled,
 .radiobox.disabled {background-color:#e3e3e3;}
