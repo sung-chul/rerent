@@ -379,6 +379,7 @@ button {outline:0;vertical-align:top;}
 	top:0;
 }
 .footer .inner .address-area .sns a:first-child {margin-right:5px;}
+
 /* =========================================================================================================
 	sprite img
 ========================================================================================================= */
@@ -391,6 +392,21 @@ button {outline:0;vertical-align:top;}
 	background-image:url(../img/sprite_btn.png);
 	background-repeat: no-repeat;
 }
+
+/* =========================================================================================================
+	공통
+========================================================================================================= */
+/* 폰트 컬러 */
+.fColor01 {color:#e9002d !important;} /* 빨강 */
+
+/* 정렬 */
+.text-left {text-align:left !important;}
+.text-right {text-align:right !important;}
+.text-center {text-align:center !important;}
+
+.floatL {float:left !important;}
+.floatR {float:right !important;}
+.floatN {float:none !important;}
 
 /* =========================================================================================================
 	타이틀
@@ -461,6 +477,14 @@ button {outline:0;vertical-align:top;}
 	회원가입 & 로그인
 ========================================================================================================= */
 .terms_box {
-	padding:20px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	height: 295px;
 	border:1px solid #ddd;
+	box-sizing: border-box;
 }
+.terms_box .inner {margin:20px;}
+
+/* =========================================================================================================
+	테이블
+========================================================================================================= */
