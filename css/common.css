@@ -64,15 +64,15 @@ input[type=text],
 input[type=number],
 input[type=password] {
 	width:100%;
-	height:32px;
+	height:45px;
 	padding:0 13px;
 	box-sizing:border-box;
 	border-radius:0;
-	border:1px solid #bbb;
+	border:1px solid #ccc;
 	background-color:#fff;
 	color:#666;
 	font-size:15px;
-	line-height:30px;
+	line-height:43px;
 	letter-spacing:-1px;
 	-webkit-appearance:none;-moz-appearance:none;appearance:none;
 	-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;
@@ -488,3 +488,31 @@ button {outline:0;vertical-align:top;}
 /* =========================================================================================================
 	테이블
 ========================================================================================================= */
+.board-write1 {border-top:2px solid #e9002d;}
+.board-write1 table {border-bottom:1px solid #999;}
+.board-write1 th,
+.board-write1 td {
+	height: 60px;
+	padding:0 20px;
+	border-top:1px solid #ddd;
+	text-align:left;
+}
+.board-write1 tr:first-child th,
+.board-write1 tr:first-child td {border-top:0;}
+.board-write1 .text {
+	padding:5px 0;
+	font-size:15px;
+	font-weight:normal;
+	line-height:22px;
+}
+.board-write1 th {
+	background-color:#f0f0f0;
+	color:#666;
+	font-weight: normal;
+}
+.board-write1 th .ico-star {
+	display:inline-block;
+	margin-right:6px;
+	color:#e9002d;
+	vertical-align:top;
+}
