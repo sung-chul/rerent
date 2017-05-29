@@ -31,21 +31,21 @@
   font-family: 'sk';
   font-style: normal;
   font-weight: normal;
-  src: url('/font/SKR.eot');
+  src: url('font/SKR.eot');
   src: local(※),
-  url('./font/SKR.eot?#iefix') format('embedded-opentype'),
-  url('/font/SKR.woff') format('woff'),
-  url('/font/SKR.ttf') format('truetype');
+  url('font/SKR.eot?#iefix') format('embedded-opentype'),
+  url('font/SKR.woff') format('woff'),
+  url('font/SKR.ttf') format('truetype');
 }
 @font-face {
   font-family: 'sk';
   font-style: normal;
   font-weight: bold;
-  src: url('/font/SKB.eot');
+  src: url('font/SKB.eot');
   src: local(※),
-  url('/font/SKB.eot?#iefix') format('embedded-opentype'),
-  url('/font/SKB.woff') format('woff'),
-  url('/font/SKB.ttf') format('truetype');
+  url('font/SKB.eot?#iefix') format('embedded-opentype'),
+  url('font/SKB.woff') format('woff'),
+  url('font/SKB.ttf') format('truetype');
 }
 
 /* =========================================================================================================
@@ -180,6 +180,30 @@ button {outline:0;vertical-align:top;}
 	top:-41px; right:0;
 	height:41px;
 }
+.inner_head .top-area:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.inner_head .top-area a {
+	position: relative;
+	float: left;
+	margin-left:19px;
+	padding-left:20px;
+	font-size:13px;
+	color:#666;
+	line-height: 41px;
+}
+.inner_head .top-area a:before{
+	content: '';
+	position: absolute;
+	top:14px; left:0;
+	width:1px; height:15px;
+	background-color:#ddd;
+}
+.inner_head .top-area a:first-child:before {
+	display: none;
+}
 .inner_head .navi {
 	margin-left:209px;
 }
@@ -203,6 +227,7 @@ button {outline:0;vertical-align:top;}
 	font-weight: bold;
 	font-family: 'sk';
 }
+.inner_head .navi .navi-list li:hover a:before,
 .inner_head .navi .navi-list li.on a:before {
 	content: '';
 	position: absolute;
@@ -212,6 +237,92 @@ button {outline:0;vertical-align:top;}
 }
 .inner_head .navi .service-more {
 	position: absolute;
-	top:0; right:0;
+	top:41px; right:0;
 }
-.container {}
+.inner_head .navi .service-more .btn-estimate {
+	display: inline-block;
+	width:150px;
+	height:37px;
+	padding-left: 36px;
+	background-color:#e9002d;
+	font-size:15px;
+	color:#fff;
+	line-height: 37px;
+	box-sizing: border-box;
+}
+.inner_head .navi .service-more .btn-estimate:before {
+	top:8px; left:11px;
+	width:16px; height:22px;
+	background-position: 0 -39px;
+}
+.inner_head .navi .service-more .all-category {
+	display: inline-block;
+	width:37px;
+	height:37px;
+	font-size:0;
+	line-height: 0;
+}
+.inner_head .navi .service-more .all-category:before {
+	top:0; left:0;
+	width:37px; height:37px;
+	background-position: 0 0;
+}
+.container {
+	width:1000px;
+	margin:0 auto;
+}
+
+.location {
+	overflow: hidden;
+	padding-top:18px;
+}
+.location a,
+.location span {
+	float: left;
+	font-size:13px;
+	line-height: 22px;
+	vertical-align: middle;
+}
+.location a {
+	position: relative;
+	margin-right:10px;
+	padding-right:17px;
+	color:#666;
+}
+.location a:after {
+	content: '';
+	position: absolute;
+	top:5px; right:0;
+	width:7px; height:13px;
+	background:url(../img/ico/ico_arrow_7x13.png) 0 0 no-repeat;
+}
+.location span {
+	color:#e9002d;
+}
+
+/* =========================================================================================================
+	sprite img
+========================================================================================================= */
+.btn-sprite {
+	position: relative;
+}
+.btn-sprite:before {
+	content: '';
+	position: absolute;
+	background-image:url(../img/sprite_btn.png);
+	background-repeat: no-repeat;
+}
+
+/* =========================================================================================================
+	타이틀
+========================================================================================================= */
+.page-title {
+	padding:17px 0 31px;
+}
+.page-title h2 {
+	color:#333;
+	font-size:30px;
+	font-family: 'sk';
+	font-weight: bold;
+	text-align: center;
+}
