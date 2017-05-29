@@ -27,6 +27,27 @@
 }
 
 
+@font-face {
+  font-family: 'sk';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/font/SKR.eot');
+  src: local(※),
+  url('./font/SKR.eot?#iefix') format('embedded-opentype'),
+  url('/font/SKR.woff') format('woff'),
+  url('/font/SKR.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'sk';
+  font-style: normal;
+  font-weight: bold;
+  src: url('/font/SKB.eot');
+  src: local(※),
+  url('/font/SKB.eot?#iefix') format('embedded-opentype'),
+  url('/font/SKB.woff') format('woff'),
+  url('/font/SKB.ttf') format('truetype');
+}
+
 /* =========================================================================================================
 	Reset
 ========================================================================================================= */
