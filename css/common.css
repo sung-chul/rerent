@@ -201,6 +201,10 @@ button {outline:0;vertical-align:top;}
 	width:1px; height:15px;
 	background-color:#ddd;
 }
+.inner_head .top-area a:first-child {
+	margin:0;
+	padding:0;
+}
 .inner_head .top-area a:first-child:before {
 	display: none;
 }
