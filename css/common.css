@@ -148,45 +148,70 @@ button {outline:0;vertical-align:top;}
 /* =========================================================================================================
 	레이아웃
 ========================================================================================================= */
-.header {
-	position: absolute;
-	left:50%;
-	top:0;
-	width:1000px;
-	height:100px;
-	margin-left:-500px;
-
-}
-.header .logo {
-	position: absolute;
-	bottom:5px;
-	left:0;
-	width:144px;
-	height:48px;
-	background:url(../img/layout/logo.png) 0 0 no-repeat;
-	font-size: 0;
-	line-height: 0;
-}
 .wrapper {
+	border-top:2px solid #ea002c;
+}
+.header {
+	width:100%;
+	margin-top:41px;
+	border-top:1px solid #d9d9d9;
+	border-bottom:1px solid #d9d9d9;
+}
+.header .inner_head {
+	position: relative;
+	width:1000px;
+	height:97px;
 	margin: 0 auto;
 }
-
-.container {
-	background:url(../img/bg/bg_hub2.png) #ddd center 0 no-repeat;
-	min-width: 1000px;
+.inner_head .logo {
+	position: absolute;
+	top:38px; left:0;
+	width:127px; height:42px;
+	background:url(../img/layout/h1_logo.png) 0 0 no-repeat;
 }
-
-
-/*hubpage*/
-.hub {
-	background-color: #fff;
-	/*width:1500px;
-	height:875px;*/
-
+.inner_head .logo a {
+	display: block;
+	width:127px; height:42px;
+	font-size:0;
+	line-height: 0;
 }
-.hub-area {width: 1000px; height:690px; margin:0 auto; }
-
-.footer {
-	height:180px;
-	background-color:#fff;
+.inner_head .top-area {
+	position: absolute;
+	top:-41px; right:0;
+	height:41px;
 }
+.inner_head .navi {
+	margin-left:209px;
+}
+.inner_head .navi .navi-list {
+	overflow: hidden;
+	float: left;
+}
+.inner_head .navi .navi-list li {
+	float: left;
+}
+.inner_head .navi .navi-list li.item02 {margin-left:28px;}
+.inner_head .navi .navi-list li.item03 {margin-left:23px;}
+.inner_head .navi .navi-list li.item04 {margin-left:30px;}
+.inner_head .navi .navi-list li.item05 {margin-left:28px;}
+.inner_head .navi .navi-list li a {
+	position: relative;
+	display: block;
+	padding:46px 10px 24px;
+	color:#333;
+	font-size:18px;
+	font-weight: bold;
+	font-family: 'sk';
+}
+.inner_head .navi .navi-list li.on a:before {
+	content: '';
+	position: absolute;
+	bottom:0; left:0; right:0;
+	height: 3px;
+	background-color:#ea002c;
+}
+.inner_head .navi .service-more {
+	position: absolute;
+	top:0; right:0;
+}
+.container {}
