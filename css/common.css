@@ -689,8 +689,8 @@ label.check-radio .radiobox {margin-right:8px;}
 .board-write1 table {border-bottom:1px solid #999;}
 .board-write1 th,
 .board-write1 td {
-	height: 60px;
-	padding:0 20px;
+	height: 45px;
+	padding:7px 20px;
 	border-top:1px solid #ddd;
 	text-align:left;
 }
@@ -712,4 +712,16 @@ label.check-radio .radiobox {margin-right:8px;}
 	margin-right:6px;
 	color:#e9002d;
 	vertical-align:top;
+}
+.board-write1 td .msg-text {
+	display: inline-block;
+	margin-left:5px;
+	color:#ff7a00;
+	font-size:14px;
+	line-height:45px;
+}
+.board-write1 td .notice-text {
+	margin-top:5px;
+	color:#999;
+	font-size:14px;
 }
