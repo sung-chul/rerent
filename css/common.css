@@ -26,26 +26,25 @@
 	url('font/MalgunGothicB.ttf') format('truetype');
 }
 
-
 @font-face {
-  font-family: 'sk';
-  font-style: normal;
-  font-weight: normal;
-  src: url('font/SKR.eot');
-  src: local(※),
-  url('font/SKR.eot?#iefix') format('embedded-opentype'),
-  url('font/SKR.woff') format('woff'),
-  url('font/SKR.ttf') format('truetype');
+	font-family: 'sk';
+	font-style: normal;
+	font-weight: normal;
+	src: url('font/SKR.eot');
+	src: local(※),
+	url('font/SKR.eot?#iefix') format('embedded-opentype'),
+	url('font/SKR.woff') format('woff'),
+	url('font/SKR.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'sk';
-  font-style: normal;
-  font-weight: bold;
-  src: url('font/SKB.eot');
-  src: local(※),
-  url('font/SKB.eot?#iefix') format('embedded-opentype'),
-  url('font/SKB.woff') format('woff'),
-  url('font/SKB.ttf') format('truetype');
+	font-family: 'sk';
+	font-style: normal;
+	font-weight: bold;
+	src: url('font/SKB.eot');
+	src: local(※),
+	url('font/SKB.eot?#iefix') format('embedded-opentype'),
+	url('font/SKB.woff') format('woff'),
+	url('font/SKB.ttf') format('truetype');
 }
 
 /* =========================================================================================================
@@ -64,15 +63,15 @@ input[type=text],
 input[type=number],
 input[type=password] {
 	width:100%;
-	height:32px;
+	height:45px;
 	padding:0 13px;
 	box-sizing:border-box;
 	border-radius:0;
-	border:1px solid #bbb;
+	border:1px solid #ccc;
 	background-color:#fff;
 	color:#666;
 	font-size:15px;
-	line-height:30px;
+	line-height:43px;
 	letter-spacing:-1px;
 	-webkit-appearance:none;-moz-appearance:none;appearance:none;
 	-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;
@@ -430,6 +429,170 @@ button {outline:0;vertical-align:top;}
 }
 
 /* =========================================================================================================
+	버튼
+========================================================================================================= */
+.btn-text { /*높이 59인 버튼*/
+	display:inline-block;
+	height:59px;
+	color:#fff;
+	font-size:18px;
+	text-align:center;
+	line-height:59px;
+	box-sizing:border-box;
+}
+.btn-text-small { /*높이 45인 버튼*/
+	display:inline-block;
+	height:45px;
+	color:#fff;
+	font-size:15px;
+	text-align:center;
+	line-height:45px;
+	box-sizing:border-box;
+}
+
+.btn-w98 {width:98px;}
+.btn-w135 {width:135px;}
+.btn-w148 {width:148px;}
+.btn-w228 {width:228px;}
+.btn-w240 {width:240px;}
+.btn-w460 {width:460px;}
+
+.btn-black {background-color:#3b3b3b}
+.btn-gray{background-color:#666;}
+.btn-orange {background-color:#f58025;}
+.btn-red {background-color:#ea002c;}
+.btn-red-border {
+	border:1px solid #ea002c;
+	color:#ea002c;
+}
+.btn-white {
+	background-color:#fff;
+	color:#333;
+	border:1px solid #666;
+}
+
+
+
+/* =========================================================================================================
+	셀렉트박스
+========================================================================================================= */
+.select-box {
+	display:inline-block;
+	position:relative;
+	height:32px;
+	cursor:pointer;
+}
+.select-box.focus {z-index:9999;}
+.select-box .select-title {
+	position:relative;
+	height:32px;
+	padding-left:13px;
+	box-sizing:border-box;
+	border:1px solid #bbb;
+	background-color:#fff;
+	color:#666;
+	font-size:15px;
+	line-height:32px;
+}
+.select-box.disabled .select-title {
+	background-color:#e3e3e3;
+	color:#999;
+}/* disabled */
+.select-title:before {
+	content:'';
+	position:absolute;
+	right:13px;top:50%;
+	width:12px;
+	height:7px;
+	margin-top:-3px;
+	background:url(../img/sprite/form.png) no-repeat 0 0;
+}
+.select-box.focus .select-title {border-color:#91c90b !important;}/* focus */
+.select-box .select-list {
+	display:none;
+	position:absolute;
+	left:0;right:0;top:31px;
+	z-index:1;
+	padding:10px 0;
+	border:1px solid #91c90b;
+	background-color:#fff;
+}
+.select-box .select-list .item {
+	margin-top:1px;
+	padding:2px 0 2px 13px;
+	color:#666;
+	font-size:14px;
+	line-height:20px;
+}
+.select-box .select-list .item:hover,
+.select-box .select-list .item.on {background-color:#d1ef8a;}
+.select-box .select-list .item:first-child {margin-top:0;}
+.select-box .select-list .item .data {
+	margin-left:5px;
+	color:#666;
+	font-weight:normal;
+}
+
+.select-box select {
+	position:fixed;
+	left:-9999px;
+	top:-9999px;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+	opacity:0;
+}
+/* =========================================================================================================
+	체크박스/라디오버튼
+========================================================================================================= */
+/*label.check-radio {
+	display:inline-block;
+	color:#666;
+	font-size:15px;
+	line-height:18px;
+}*/
+.checkbox,
+.radiobox{
+	display:inline-block;
+	position:relative;
+	width:24px;
+	height:24px;
+	box-sizing:border-box;
+	border:1px solid #ccc;
+	background-color:#fff;
+	vertical-align:top;
+}
+.radiobox {border-radius:50%;}
+label.check-radio .checkbox,
+label.check-radio .radiobox {margin-right:8px;}
+.checkbox.checked {
+	background: url(../img/icon/icon_checked.png) no-repeat 50% 50%;
+}
+
+.radiobox.checked:before {
+	content:'';
+	position:absolute;
+	left:50%;top:50%;
+	width:10px;
+	height:10px;
+	margin:-5px -5px;
+	background-color:#333;
+	border-radius: 5px;
+
+}
+.checkbox input[type=checkbox].styled1,
+.radiobox input[type=radio].styled1 {
+	position:absolute;
+	left:0;top:0;
+	width:18px;
+	height:18px;
+	opacity:0;
+}
+.checkbox.disabled,
+.radiobox.disabled {background-color:#e3e3e3;}
+
+
+/* =========================================================================================================
 	step
 ========================================================================================================= */
 .step-box {
@@ -470,8 +633,8 @@ button {outline:0;vertical-align:top;}
 }
 .step-box li .step .num {
 	font-size:18px;
-}
 
+}
 
 /* =========================================================================================================
 	회원가입 & 로그인
@@ -529,3 +692,31 @@ button {outline:0;vertical-align:top;}
 /* =========================================================================================================
 	테이블
 ========================================================================================================= */
+.board-write1 {border-top:2px solid #e9002d;}
+.board-write1 table {border-bottom:1px solid #999;}
+.board-write1 th,
+.board-write1 td {
+	height: 60px;
+	padding:0 20px;
+	border-top:1px solid #ddd;
+	text-align:left;
+}
+.board-write1 tr:first-child th,
+.board-write1 tr:first-child td {border-top:0;}
+.board-write1 .text {
+	padding:5px 0;
+	font-size:15px;
+	font-weight:normal;
+	line-height:22px;
+}
+.board-write1 th {
+	background-color:#f0f0f0;
+	color:#666;
+	font-weight: normal;
+}
+.board-write1 th .ico-star {
+	display:inline-block;
+	margin-right:6px;
+	color:#e9002d;
+	vertical-align:top;
+}
