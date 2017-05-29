@@ -31,21 +31,21 @@
   font-family: 'sk';
   font-style: normal;
   font-weight: normal;
-  src: url('/font/SKR.eot');
+  src: url('font/SKR.eot');
   src: local(※),
-  url('./font/SKR.eot?#iefix') format('embedded-opentype'),
-  url('/font/SKR.woff') format('woff'),
-  url('/font/SKR.ttf') format('truetype');
+  url('font/SKR.eot?#iefix') format('embedded-opentype'),
+  url('font/SKR.woff') format('woff'),
+  url('font/SKR.ttf') format('truetype');
 }
 @font-face {
   font-family: 'sk';
   font-style: normal;
   font-weight: bold;
-  src: url('/font/SKB.eot');
+  src: url('font/SKB.eot');
   src: local(※),
-  url('/font/SKB.eot?#iefix') format('embedded-opentype'),
-  url('/font/SKB.woff') format('woff'),
-  url('/font/SKB.ttf') format('truetype');
+  url('font/SKB.eot?#iefix') format('embedded-opentype'),
+  url('font/SKB.woff') format('woff'),
+  url('font/SKB.ttf') format('truetype');
 }
 
 /* =========================================================================================================
@@ -184,7 +184,51 @@ button {outline:0;vertical-align:top;}
 	height:875px;*/
 
 }
-.hub-area {width: 1000px; height:690px; margin:0 auto; }
+.hub-area {
+	width: 1000px;
+	height:690px;
+	margin:0 auto;
+	padding-top:100px;
+	box-sizing: border-box;
+}
+
+.hub-area ul {overflow: hidden;}
+.hub-area li {
+	position:relative;
+	width: 50%;
+	height:590px;
+	float: left;
+	box-sizing: border-box;
+}
+
+.hub-area li.short {
+	padding-top:255px;
+	background:url(../img/img/img_car1.png) center 40px no-repeat;
+}
+.hub-area li.long {
+	padding-bottom:70px;
+	background:url(../img/img/img_car2.png) center 320px no-repeat;
+}
+
+.hub-area li p {
+	font-size:18px;
+	color:#fff;
+}
+.hub-area li p span {display: block;}
+.hub-area li p .tit {
+	font-size: 46px;
+	font-family: 'sk';
+	font-weight: bold;
+}
+.hub-area li p .sub-tit {
+	font-size:26px;
+	color:#000;
+}
+
+
+
+
+
 
 .footer {
 	height:180px;
