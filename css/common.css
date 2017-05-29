@@ -26,26 +26,25 @@
 	url('font/MalgunGothicB.ttf') format('truetype');
 }
 
-
 @font-face {
-  font-family: 'sk';
-  font-style: normal;
-  font-weight: normal;
-  src: url('font/SKR.eot');
-  src: local(※),
-  url('font/SKR.eot?#iefix') format('embedded-opentype'),
-  url('font/SKR.woff') format('woff'),
-  url('font/SKR.ttf') format('truetype');
+	font-family: 'sk';
+	font-style: normal;
+	font-weight: normal;
+	src: url('font/SKR.eot');
+	src: local(※),
+	url('font/SKR.eot?#iefix') format('embedded-opentype'),
+	url('font/SKR.woff') format('woff'),
+	url('font/SKR.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'sk';
-  font-style: normal;
-  font-weight: bold;
-  src: url('font/SKB.eot');
-  src: local(※),
-  url('font/SKB.eot?#iefix') format('embedded-opentype'),
-  url('font/SKB.woff') format('woff'),
-  url('font/SKB.ttf') format('truetype');
+	font-family: 'sk';
+	font-style: normal;
+	font-weight: bold;
+	src: url('font/SKB.eot');
+	src: local(※),
+	url('font/SKB.eot?#iefix') format('embedded-opentype'),
+	url('font/SKB.woff') format('woff'),
+	url('font/SKB.ttf') format('truetype');
 }
 
 /* =========================================================================================================
@@ -430,6 +429,163 @@ button {outline:0;vertical-align:top;}
 }
 
 /* =========================================================================================================
+	버튼
+========================================================================================================= */
+.btn-text { /*높이 59인 버튼*/
+	display:inline-block;
+	height:59px;
+	color:#fff;
+	font-size:18px;
+	text-align:center;
+	line-height:59px;
+	box-sizing:border-box;
+}
+.btn-text-small { /*높이 45인 버튼*/
+	display:inline-block;
+	height:45px;
+	color:#fff;
+	font-size:15px;
+	text-align:center;
+	line-height:45px;
+	box-sizing:border-box;
+}
+
+.btn-w98 {width:98px;}
+.btn-w135 {width:135px;}
+.btn-w148 {width:148px;}
+.btn-w228 {width:228px;}
+.btn-w240 {width:240px;}
+.btn-w460 {width:460px;}
+
+.btn-black {background-color:#3b3b3b}
+.btn-gray{background-color:#666;}
+.btn-orange {background-color:#f58025;}
+.btn-red {background-color:#ea002c;}
+.btn-red-border {
+	border:1px solid #ea002c;
+	color:#ea002c;
+}
+.btn-white {
+	background-color:#fff;
+	color:#333;
+	border:1px solid #666;
+}
+
+
+
+/* =========================================================================================================
+	셀렉트박스
+========================================================================================================= */
+.select-box {
+	display:inline-block;
+	position:relative;
+	height:45px;
+	cursor:pointer;
+}
+.select-box.focus {z-index:9999;}
+.select-box .select-title {
+	position:relative;
+	height:45px;
+	padding-left:10px;
+	box-sizing:border-box;
+	border:1px solid #ccc;
+	background-color:#fff;
+	color:#999
+	font-size:15px;
+	line-height:45px;
+}
+.select-box.disabled .select-title {
+	background-color:#e3e3e3;
+	color:#999;
+}/* disabled */
+
+.select-title:before {
+	content:'';
+	position:absolute;
+	right:13px;top:50%;
+	width:17px;
+	height:11px;
+	margin-top:-5px;
+	background:url(../img/icon/icon_select_arrow.png) no-repeat 0 0;
+}
+/*.select-box.focus .select-title {border-color:#91c90b !important;} focus */
+.select-box .select-list {
+	display:none;
+	position:absolute;
+	left:0;right:0;top:44px;
+	z-index:1;
+	padding:10px 0;
+	border:1px solid #e3e3e3;
+	background-color:#fff;
+}
+.select-box .select-list .item {
+	margin-top:1px;
+	padding:2px 0 2px 13px;
+	color:#666;
+	font-size:14px;
+	line-height:20px;
+}
+.select-box .select-list .item:hover,
+.select-box .select-list .item.on {background-color:#e3e3e3;}
+.select-box .select-list .item:first-child {margin-top:0;}
+.select-box select {
+	position:fixed;
+	left:-9999px;
+	top:-9999px;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+	opacity:0;
+}
+/* =========================================================================================================
+	체크박스/라디오버튼
+========================================================================================================= */
+/*label.check-radio {
+	display:inline-block;
+	color:#666;
+	font-size:15px;
+	line-height:18px;
+}*/
+.checkbox,
+.radiobox{
+	display:inline-block;
+	position:relative;
+	width:24px;
+	height:24px;
+	box-sizing:border-box;
+	border:1px solid #ccc;
+	background-color:#fff;
+	vertical-align:top;
+}
+.radiobox {border-radius:50%;}
+label.check-radio .checkbox,
+label.check-radio .radiobox {margin-right:8px;}
+.checkbox.checked {
+	background: url(../img/icon/icon_checked.png) no-repeat 50% 50%;
+}
+.radiobox.checked:before {
+	content:'';
+	position:absolute;
+	left:50%;top:50%;
+	width:10px;
+	height:10px;
+	margin:-5px -5px;
+	background-color:#333;
+	border-radius: 5px;
+}
+.checkbox input[type=checkbox].styled1,
+.radiobox input[type=radio].styled1 {
+	position:absolute;
+	left:0;top:0;
+	width:18px;
+	height:18px;
+	opacity:0;
+}
+.checkbox.disabled,
+.radiobox.disabled {background-color:#e3e3e3;}
+
+
+/* =========================================================================================================
 	step
 ========================================================================================================= */
 .step-box {
@@ -470,8 +626,8 @@ button {outline:0;vertical-align:top;}
 }
 .step-box li .step .num {
 	font-size:18px;
-}
 
+}
 
 /* =========================================================================================================
 	회원가입 & 로그인
@@ -485,6 +641,47 @@ button {outline:0;vertical-align:top;}
 }
 .terms_box .inner {margin:20px;}
 
+.join-wrap {
+	width:820px;
+	margin:0 auto;
+}
+.join-wrap .complete-box {
+	height:408px;
+	padding:64px 0;
+	border:1px solid #ccc;
+	border-top:2px solid #e9002d;
+	box-sizing:border-box;
+	text-align:center;
+}
+.join-wrap .complete-box .text-box {
+	padding-bottom:153px;
+	background:url(../img/img/join_complete.jpg) no-repeat center bottom;
+}
+.join-wrap .complete-box .text01 {
+	font-size:30px;
+	color:#000;
+	line-height:40px;
+}
+.join-wrap .complete-box .text02 {
+	font-size:18px;
+	color:#333;
+	line-height:33px;
+}
+.join-wrap .complete-box .text02.type01 {
+	margin-top:20px;
+}
+.join-wrap .complete-box .text02.type01 .text-border {
+	position:relative;
+}
+.join-wrap .complete-box .text02.type01 .text-border:before {
+	content:'';
+	display:block;
+	position:absolute;
+	left:0; bottom:-4px;
+	width:100%;
+	height:1px;
+	border-bottom:1px solid #666;
+}
 /* =========================================================================================================
 	테이블
 ========================================================================================================= */
