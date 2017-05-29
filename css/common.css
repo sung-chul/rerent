@@ -395,6 +395,9 @@ button {outline:0;vertical-align:top;}
 /* =========================================================================================================
 	공통
 ========================================================================================================= */
+/* 마진/패딩 */
+.mgT20 {margin-top:20px !important;}
+
 /* 폰트 컬러 */
 .fColor01 {color:#e9002d !important;} /* 빨강 */
 
@@ -490,7 +493,7 @@ button {outline:0;vertical-align:top;}
 	box-sizing:border-box;
 	border:1px solid #ccc;
 	background-color:#fff;
-	color:#999
+	color:#999;
 	font-size:15px;
 	line-height:45px;
 }
@@ -648,7 +651,6 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	margin:0 auto;
 }
 .join-wrap .complete-box {
-	height:408px;
 	padding:64px 0;
 	border:1px solid #ccc;
 	border-top:2px solid #e9002d;
@@ -669,13 +671,10 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	color:#333;
 	line-height:33px;
 }
-.join-wrap .complete-box .text02.type01 {
-	margin-top:20px;
-}
-.join-wrap .complete-box .text02.type01 .text-border {
+.join-wrap .complete-box .text02 .text-border {
 	position:relative;
 }
-.join-wrap .complete-box .text02.type01 .text-border:before {
+.join-wrap .complete-box .text02 .text-border:before {
 	content:'';
 	display:block;
 	position:absolute;
