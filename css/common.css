@@ -330,3 +330,62 @@ button {outline:0;vertical-align:top;}
 	font-weight: bold;
 	text-align: center;
 }
+
+.cTitle01 {
+	margin-bottom:15px;
+	color:#000;
+	font-size:20px;
+	line-height: 30px;
+}
+
+/* =========================================================================================================
+	step
+========================================================================================================= */
+.step-box {
+	overflow: hidden;
+	margin-bottom:33px;
+	padding:1px 0;
+	background-color:#3b3b3b;
+}
+.step-box li {
+	position: relative;
+	float: left;
+	z-index: 0;
+	width:334px;
+	margin-left:-1px;
+	padding:4px 0 7px 20px ;
+	border-left:1px solid #666;
+	color:#fff;
+	font-size:18px;
+	line-height: 24px;
+	box-sizing: border-box;
+}
+.step-box li:first-child {
+	margin-left:0;
+	border-left:0;
+}
+.step-box li.on {
+	z-index: 1;
+	margin-top:-1px;
+	padding-top:7px;
+	background-color:#e9002d;
+	border-left:0;
+}
+.step-box li .step {
+	display: block;
+	margin-bottom:-2px;
+	font-size:14px;
+	line-height: 24px;
+}
+.step-box li .step .num {
+	font-size:18px;
+}
+
+
+/* =========================================================================================================
+	회원가입 & 로그인
+========================================================================================================= */
+.terms_box {
+	padding:20px;
+	border:1px solid #ddd;
+}
