@@ -832,7 +832,7 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	height:1px;
 	border-bottom:1px solid #666;
 }
-<<<<<<< HEAD
+
 .agree-chk {
 	margin-top:10px;
 	text-align:right;
@@ -885,8 +885,42 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 }
 .tab-list .item:first-child .text {
 	border-left:1px solid #d9d9d9;
-=======
+}
+.tab-cont {
+	display:none;
+}
+.tab-cont.on {
+	display:block;
+}
 
+/* 지점안내 */
+.point-area {margin-top:40px;}
+.point-list {}
+.point-list .item {}
+.point-list .item dl {
+	position:relative;
+	padding-left:295px;
+}
+.point-list .item dl dt {
+	font-size:24px;
+	color:#000;
+}
+.point-list .item dl dd .add-list .item {
+	margin-top:9px;
+	font-size:15px;
+	color:#333;
+	line-height:20px;
+}
+.point-list .item dl dd .add-list .item:first-child {margin-top:0;}
+.point-list .item dl dd .add-list .item span {
+	display:inline-block;
+	margin-right:30px;
+	color:#999;
+}
+.point-list .item dl dd.img-box {
+	position:absolute;
+	left:0; top:0;
+}
 /* =========================================================================================================
 	검색 박스
 ========================================================================================================= */
@@ -899,7 +933,6 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 }
 .search-box .search-inp {
 	width:450px;
->>>>>>> f6734b4295ba5b9352a0fa89d459403f3a975742
 }
 /* =========================================================================================================
 	테이블
