@@ -1,6 +1,6 @@
 /*
 	최초 작성일 : 2017-03-06
-	최초 작성자 : 최민호
+	최초 작성자 : (주)그레이블루/퍼블리싱팀
 	소속 : (주)그레이블루/퍼블리싱팀
 	# 최초 작성자 이외 수정시 주석 필수 #
 */
@@ -107,4 +107,31 @@ $(window).load(function(){
 		}
 	});
 
+	/* ===========================================================================================================
+		레이어 팝업
+	=========================================================================================================== */
+	$('.layer-popup').hide().css({'opacity':'1'});
+	$('.layer-popup').each(function(){
+		var winH = $(window).height();
+		var popH = $(this).outerHeight();
+
+		if(popH >= winH){
+			$(this).addClass('scroll');
+		}else{
+			$(this).removeClass('scroll');
+		}
+	});
+
+	$('.btn-popup').click(function(){
+		var zIdx = $('.layer-popup').css('z-index');
+		$('body').append('<div class="popup-close">');
+		$('.popup-close').css({'z-index':zIdx-1});
+		$('body').css({'overflow':'hidden'});
+	});
+	$(document).on('click', '.layer-popup .btn-close, .popup-close', function(){
+		$('.layer-popup').fadeOut(200);
+		$('.bg-layer').fadeOut(200);
+		$('.popup-close').remove();
+		$('body').css({'overflow-y':'inherit'});
+	});
 });
