@@ -967,7 +967,9 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	width: 34%;
 }
 
-.order-area {overflow: hidden;}
+.cs-cont-area {padding-top:50px;}
+
+.order-area:after {display: block; content:''; clear: both; }
 .order-area button {
 	float: left;
 	width:143px;
@@ -983,9 +985,88 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	width:145px;
 }
 .order-area button.on {
+	position: relative;
 	background-color:#f58025;
 	border:1px solid #f58025;
 	color:#fff;
+}
+.order-area button.on:before {
+	content:'';
+	position:absolute;
+	left:50%; bottom:-7px;
+	width:13px;
+	height:7px;
+	margin-left:-6px;
+	background:url(../img/icon/icon_bubble.png) no-repeat 0 0;
+}
+
+.accordion-list {
+	margin-top:40px;
+	border-top:1px solid #999;
+}
+.accordion-list .item {color:#666;}
+.accordion-list .item div {
+	position: relative;
+	width: 100%;
+	box-sizing: border-box;
+}
+.accordion-list .item .question {
+	display: table;
+	padding:15px 0;
+	border-bottom:1px solid #ddd;
+}
+.accordion-list .item .question span {
+	display: table-cell;
+	vertical-align: middle;
+}
+.accordion-list .item .question .category {
+	width: 127px;
+	text-align: center;
+}
+.accordion-list .item .question .title {
+	position: relative;
+	padding:0 50px 0 45px;
+	background:url(../img/bg/bg_plus.png) no-repeat right center;
+	cursor: pointer;
+}
+.accordion-list .item.on .question .title {
+	background:url(../img/bg/bg_minus.png) no-repeat right center;
+}
+.accordion-list .item .question .title:before {
+	content:'Q';
+	display: inline-block;
+	position: absolute;
+	left:0;
+	top:50%;
+	margin-top:-15px;
+	width:30px;
+	height:30px;
+	border-radius: 50%;
+	color:#fff;
+	background-color: #666;
+	text-align: center;
+	line-height: 29px;
+}
+
+.accordion-list .item .answer {
+	display: none;
+	position: relative;
+	padding:15px 100px 15px 172px;
+	border-bottom:1px solid #ddd;
+}
+.accordion-list .item .answer:before {
+	content:'A';
+	display: inline-block;
+	position: absolute;
+	left:128px;
+	top:15px;
+	width:30px;
+	height:30px;
+	border-radius: 50%;
+	color:#fff;
+	background-color: #f58025;
+	text-align: center;
+	line-height: 28px;
 }
 
 /* =========================================================================================================
