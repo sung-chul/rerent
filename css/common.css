@@ -440,9 +440,15 @@ button {outline:0;vertical-align:top;}
 .page-title h2 {
 	color:#333;
 	font-size:30px;
-	font-family: 'sk';
-	font-weight: bold;
-	text-align: center;
+	font-family:'sk';
+	font-weight:bold;
+	text-align:center;
+}
+.page-text {
+	font-size:18px;
+	color:#666;
+	line-height:40px;
+	text-align:center;
 }
 
 .cTitle01 {
@@ -834,6 +840,60 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	height:1px;
 	border-bottom:1px solid #666;
 }
+<<<<<<< HEAD
+.agree-chk {
+	margin-top:10px;
+	text-align:right;
+}
+.all-agree {
+	overflow:hidden;
+	margin-top:30px;
+	padding:15px 16px 15px 10px;
+	border-top:2px solid #e9002d;
+	border-bottom:1px solid #999;
+}
+.all-agree .txt {
+	font-size:15px;
+	color:#666;
+	line-height:22px;
+}
+/* =========================================================================================================
+	탭메뉴
+========================================================================================================= */
+.tab-wrap {}
+.tab-list {
+	overflow:hidden;
+}
+.tab-list .item {
+	float:left;
+	width:12.5%;
+	cursor:pointer;
+}
+.tab-list .item .text {
+	display:block;
+	height:60px;
+	border:1px solid #d9d9d9 ;
+	border-bottom:2px solid #ea002c;
+	border-left:0;
+	background-color:#f4f4f4;
+	box-sizing:border-box;
+	font-size:16px;
+	color:#666;
+	line-height:60px;
+	text-align:center;
+}
+.tab-list .item.on .text {
+	border:2px solid #ea002c;
+	border-bottom:1px solid #fff;
+	background-color:#fff;
+	color:#424242;
+}
+.tab-list .item:first-child.on .text {
+	border-left:2px solid #ea002c;
+}
+.tab-list .item:first-child .text {
+	border-left:1px solid #d9d9d9;
+=======
 
 /* =========================================================================================================
 	검색 박스
@@ -847,6 +907,7 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 }
 .search-box .search-inp {
 	width:450px;
+>>>>>>> f6734b4295ba5b9352a0fa89d459403f3a975742
 }
 /* =========================================================================================================
 	테이블
