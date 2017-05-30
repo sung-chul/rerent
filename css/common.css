@@ -304,7 +304,7 @@ button {outline:0;vertical-align:top;}
 	position: absolute;
 	top:5px; right:0;
 	width:7px; height:13px;
-	background:url(../img/ico/ico_arrow_7x13.png) 0 0 no-repeat;
+	background:url(../img/icon/ico_arrow_7x13.png) 0 0 no-repeat;
 }
 .location span {
 	color:#e9002d;
@@ -453,6 +453,15 @@ button {outline:0;vertical-align:top;}
 /* =========================================================================================================
 	버튼
 ========================================================================================================= */
+.btn-wrap {
+	margin-top:30px;
+	text-align: center;
+}
+.pop-btn-wrap {
+	margin-top:40px;
+	text-align: center;
+}
+
 .btn-text { /*높이 59인 버튼*/
 	display:inline-block;
 	height:59px;
@@ -518,6 +527,9 @@ button {outline:0;vertical-align:top;}
 	font-size:15px;
 	line-height:45px;
 }
+.select-box.focus .select-title {
+	border:1px solid #e9002d;
+}
 .select-box.disabled .select-title {
 	background-color:#e3e3e3;
 	color:#999;
@@ -539,7 +551,7 @@ button {outline:0;vertical-align:top;}
 	left:0;right:0;top:44px;
 	z-index:1;
 	padding:10px 0;
-	border:1px solid #ccc;
+	border:1px solid #e9002d;
 	background-color:#fff;
 }
 .select-box .select-list .item {
@@ -661,6 +673,119 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 /* =========================================================================================================
 	회원가입 & 로그인
 ========================================================================================================= */
+/*로그인*/
+.border-box1 {
+	width:820px;
+	margin:0 auto;
+	border:1px solid #ccc;
+	border-top:2px solid #e9002d;
+}
+
+.login-wrap {
+	width:460px;
+	margin:0 auto;
+	padding-top:120px;
+	background: url(../img/layout/login_logo.png) no-repeat center 40px;
+	text-align: center;
+}
+.login-wrap .txt {
+	font-size: 26px;
+	text-align: center;
+}
+.login-form {margin-top:20px;}
+.login-form input {margin-bottom:10px;}
+.login-util {margin:10px 0 20px;}
+.login-util li {
+	display: inline-block;
+	position: relative;
+	font-size:14px;
+	color:#666;
+}
+.login-util li a {color:#666;}
+.login-util li:first-child {padding-right:5px;}
+.login-util li:first-child:before {
+	content:'';
+	position:absolute;
+	right:0; top:50%;
+	width:1px;
+	height:14px;
+	margin-top:-7px;
+	background-color:#666;
+}
+
+.sns-login {
+	overflow: hidden;
+	width: 100%;
+	border:1px solid #ddd;
+}
+.sns-login a {
+	display: inline-block;
+	float: left;
+	position: relative;
+	width: 33%;
+	height:62px;
+	padding-right:10px;
+	box-sizing: border-box;
+	text-align: right;
+	line-height: 62px;
+}
+.sns-login a:before {
+	content:'';
+	position: absolute;
+	top:14px;
+	left:10px;
+	width:34px;
+	height:35px;
+	background: url(../img/sprite_sns.png) no-repeat;
+}
+.sns-login .facebook {
+	width:34%;
+	border-left:1px solid #ddd;
+	border-right:1px solid #ddd;
+	padding-right:5px;
+}
+
+.sns-login .naver:before {
+	background-position: 0 0;
+}
+.sns-login .facebook:before {
+	background-position: 0 -36px;
+	left:7px;
+}
+.sns-login .kakao:before {
+	background-position: 0 -72px;
+}
+.login-wrap .join {margin:30px 0 40px}
+.login-wrap .join span {padding-right:5px;}
+
+.banner-area {
+	overflow: hidden;
+	width: 820px;
+	height:180px;
+	margin:20px auto 0;
+	border:1px solid #ccc;
+	box-sizing: border-box;
+}
+.banner-area img { width: 100%;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*회원가입*/
 .terms_box {
 	overflow-x: hidden;
 	overflow-y: auto;
@@ -707,6 +832,7 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	height:1px;
 	border-bottom:1px solid #666;
 }
+<<<<<<< HEAD
 .agree-chk {
 	margin-top:10px;
 	text-align:right;
@@ -759,6 +885,21 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 }
 .tab-list .item:first-child .text {
 	border-left:1px solid #d9d9d9;
+=======
+
+/* =========================================================================================================
+	검색 박스
+========================================================================================================= */
+.search-box {
+	margin-bottom:40px;
+	padding:15px 0;
+	text-align: center;
+	background-color:#f0f0f0;
+	border:1px solid #ccc;
+}
+.search-box .search-inp {
+	width:450px;
+>>>>>>> f6734b4295ba5b9352a0fa89d459403f3a975742
 }
 /* =========================================================================================================
 	테이블
@@ -812,3 +953,101 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	vertical-align: top;
 	text-align: center;
 }
+.board-write1 td .email-agree {
+	margin-bottom:15px;
+}
+
+/* 게시판 형태 */
+.board-list {border-top:1px solid #999;}
+.board-list table {border-bottom:1px solid #999;}
+.board-list table thead th {
+	height:59px;
+	font-size:15px;
+	color:#ea002c;
+	border-bottom:1px solid #ddd;
+	font-weight: normal;
+}
+.board-list table tbody td {
+	height:59px;
+	color:#999;
+	font-size:15px;
+	text-align:center;
+	line-height:24px;
+	border-top:1px solid #ddd;
+}
+.board-list table tbody tr:first-child td {border-top:0;}
+.board-list table tbody td .ico-notice {
+	display: inline-block;
+	width:50px;
+	height:29px;
+	font-size:14px;
+	color:#fff;
+	line-height: 29px;
+	text-align: center;
+	background-color:#f58025;
+	border-radius: 5px;
+}
+.board-list table tbody td.notice-title,
+.board-list table tbody td.title {text-align:left;}
+.board-list table tbody td.notice-title a,
+.board-list table tbody td.title a {
+	display:block;
+	overflow:hidden;
+	width:100%;
+	color:#666;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.board-list table tbody td.notice-title a {color:#333;}
+.board-list table tbody td.notice-title a:hover,
+.board-list table tbody td.title a:hover {
+	color:#e9002d;
+}
+.board-list table tbody td.no-result {
+	padding:97px 0;
+	color:#999;
+	font-size:15px;
+}
+/* pagenation */
+.pagenation {
+	position:relative;
+	height:37px;
+	margin-top:30px;
+	text-align:center;
+}
+.pagenation .page-list {
+	overflow:hidden;
+	display:inline-block;
+}
+.pagenation .page-list .number,
+.pagenation .page-list .button {
+	float:left;
+	margin:0 2px;
+}
+.pagenation .page-list .number {
+	width:27px;height:37px;
+	color:#666;
+	font-size:15px;
+	line-height:37px;
+}
+.pagenation .page-list .number:hover,
+.pagenation .page-list .number.on {color:#e9002d;}
+
+.pagenation .page-list .button {
+	width:37px;height:37px;
+	background-image:url(../img/btn/btn_paging.jpg);
+	background-repeat:no-repeat;
+	font-size:0;
+	text-align:center;
+	line-height:0;
+}
+.pagenation .page-list .btn-first {background-position:0 0;}
+.pagenation .page-list .btn-prev {
+	background-position:-37px 0;
+	margin-right:20px;
+}
+.pagenation .page-list .btn-next {
+	background-position:0 -37px;
+	margin-left:20px;
+}
+.pagenation .page-list .btn-last {background-position:-37px -37px;}
