@@ -1,0 +1,790 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scale=no, target-densitydpi=medium-dpi">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>SK - Re:Rent 작업현황판</title>
+
+	<style type="text/css">
+		body,div,h1,h2,th,td {margin:0;padding:0;color:#333;font-size:12px;line-height:1.5;font-family:'돋움',dotum,sans-serif;}
+		a {color:#2277ee;text-decoration:none;}
+		a:hover,
+		a:focus {color:#e92e1a;text-decoration:underline;}
+		a:active {text-decoration:underline;}
+
+		.header h1 {margin:10px 10px 0;font-size:20px;color:#000;}
+
+		#total {margin:0 50px 10px 0;color:#999;font-size:15px;text-align:right;}
+		#total .comple {color:#000;}
+
+		body {padding-bottom:30px;}
+
+		.section {margin-top:-1px;}
+		.title {height:30px;padding:0 10px;border-top:1px solid #ccc;border-bottom:1px solid #ccc;background-color:#ddd;line-height:30px;cursor:pointer;}
+		.title span {font-weight:normal;}
+
+		table {width:100%;border-collapse:collapse;border-spacing:0;}
+		table tr:hover {background-color:#fafafa;}
+		table tr:hover a {color:#e92e1a;}
+		table th,
+		table td {padding:5px; border-bottom:1px solid #ddd;border-left:1px solid #ddd;}
+		table th {background-color:#eee;}
+		.date,
+		.center,
+		.pub,
+		.sb,
+		.stat {text-align:center;}
+		.right {text-align:right;}
+	</style>
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			/* 작업페이지/전체 페이지 */
+			var txtAll = $('.stat').text().length;
+			$('#total .total').text($('tbody tr').length);
+			$('#total .comple').text(txtAll);
+
+			/* 작업페이지/섹션별 페이지 */
+			$('.section').each(function(){
+				var txtIdx = $(this).find('.stat').text().length;
+				var txtLengs = $(this).find('tbody tr').length;
+				$(this).find('.title').append(' <span>(' + txtIdx + '/' + txtLengs + ')</span>');
+			});
+
+			/* Toggle */
+			$('.title').click(function(){
+				$(this).parent().find('.content').slideToggle(200);
+			});
+		});
+	</script>
+</head>
+
+<body>
+<div class="header">
+	<h1>SK - Re:Rent (2017-05-29) ｜ front_v1.00 [ 작업완료 : ☆ ] - [ 검수완료 : ★ ]</h1>
+</div>
+
+<div id="total">( Total : <span class="comple"></span> / <span class="total"></span> )</div>
+
+<div class="section">
+	<h2 class="title">Guide</h2>
+	<div class="content">
+		<table>
+			<colgroup>
+				<col style="width:200px;">
+				<col style="width:180px;">
+				<col style="width:180px;">
+				<col style="width:180px;">
+				<col style="width:50px;">
+				<col style="width:150px;">
+				<col style="width:100px;">
+				<col style="width:70px;">
+				<col style="width:70px;">
+				<col style="width:70px;">
+				<col style="width:70px;">
+				<col style="width:70px;">
+				<col style="width:70px;">
+				<col style="width:100px;">
+				<col style="*">
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col" rowspan="2">2depth</th>
+					<th scope="col" rowspan="2">3depth</th>
+					<th scope="col" rowspan="2">4depth</th>
+					<th scope="col" rowspan="2">5depth</th>
+					<th scope="col" rowspan="2">path</th>
+					<th scope="col" rowspan="2">file</th>
+					<th scope="col">기획</th>
+					<th scope="col" colspan="3">퍼블</th>
+					<th scope="col" colspan="2">검수</th>
+					<th scope="col" rowspan="2">stat</th>
+					<th scope="col" rowspan="2">date</th>
+					<th scope="col" rowspan="2">note</th>
+				</tr>
+				<tr>
+					<th scope="col">SB -> PSD</th>
+					<th scope="col">크롬</th>
+					<th scope="col">ie 11</th>
+					<th scope="col">담당자</th>
+					<th scope="col">크롬</th>
+					<th scope="col">ie 11</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>레이아웃</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>guide/</td>
+					<td class="right"><a target="_blank" href="html/guide/layout.html">layout.html</a></td>
+					<td class="sb">●</td>
+					<td class="pub">●</td>
+					<td class="pub">●</td>
+					<td class="pub"></td>
+					<td class="center">●</td>
+					<td class="center">●</td>
+					<td class="stat">☆</td>
+					<td class="date"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>버튼</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>guide/</td>
+					<td class="right"><a target="_blank" href="html/guide/button.html">button.html</a></td>
+					<td class="sb">●</td>
+					<td class="pub">●</td>
+					<td class="pub">●</td>
+					<td class="pub"></td>
+					<td class="center">●</td>
+					<td class="center">●</td>
+					<td class="stat">☆</td>
+					<td class="date"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>폼요소</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>guide/</td>
+					<td class="right"><a target="_blank" href="html/guide/form.html">form.html</a></td>
+					<td class="sb">●</td>
+					<td class="pub">●</td>
+					<td class="pub">●</td>
+					<td class="pub"></td>
+					<td class="center">●</td>
+					<td class="center">●</td>
+					<td class="stat">☆</td>
+					<td class="date"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>리스트</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>guide/</td>
+					<td class="right"><a target="_blank" href="html/guide/list.html">list.html</a></td>
+					<td class="sb">●</td>
+					<td class="pub">●</td>
+					<td class="pub">●</td>
+					<td class="pub"></td>
+					<td class="center">●</td>
+					<td class="center">●</td>
+					<td class="stat">☆</td>
+					<td class="date"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>테이블</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>guide/</td>
+					<td class="right"><a target="_blank" href="html/guide/table.html">table.html</a></td>
+					<td class="sb">●</td>
+					<td class="pub">●</td>
+					<td class="pub">●</td>
+					<td class="pub"></td>
+					<td class="center">●</td>
+					<td class="center">●</td>
+					<td class="stat">☆</td>
+					<td class="date"></td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div><!-- /.section -->
+
+<div class="section">
+	<h2 class="title">Main</h2>
+	<div class="content">
+		<table>
+			<colgroup>
+				<col style="width:200px;">
+				<col style="width:180px;">
+				<col style="width:180px;">
+				<col style="width:180px;">
+				<col style="width:50px;">
+				<col style="width:150px;">
+				<col style="width:100px;">
+				<col style="width:70px;">
+				<col style="width:70px;">
+				<col style="width:70px;">
+				<col style="width:70px;">
+				<col style="width:70px;">
+				<col style="width:70px;">
+				<col style="width:100px;">
+				<col style="*">
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col" rowspan="2">2depth</th>
+					<th scope="col" rowspan="2">3depth</th>
+					<th scope="col" rowspan="2">4depth</th>
+					<th scope="col" rowspan="2">5depth</th>
+					<th scope="col" rowspan="2">path</th>
+					<th scope="col" rowspan="2">file</th>
+					<th scope="col">기획</th>
+					<th scope="col" colspan="3">퍼블</th>
+					<th scope="col" colspan="2">검수</th>
+					<th scope="col" rowspan="2">stat</th>
+					<th scope="col" rowspan="2">date</th>
+					<th scope="col" rowspan="2">note</th>
+				</tr>
+				<tr>
+					<th scope="col">SB -> PSD</th>
+					<th scope="col">크롬</th>
+					<th scope="col">ie 11</th>
+					<th scope="col">담당자</th>
+					<th scope="col">크롬</th>
+					<th scope="col">ie 11</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>메인</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="right"><a target="_blank" href=""></a></td>
+					<td class="sb"></td>
+					<td class="pub"></td>
+					<td class="pub"></td>
+					<td class="pub"></td>
+					<td class="center"></td>
+					<td class="center"></td>
+					<td class="stat">☆</td>
+					<td class="date"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>퀵메뉴</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="right"><a target="_blank" href=""></a></td>
+					<td class="sb"></td>
+					<td class="pub"></td>
+					<td class="pub"></td>
+					<td class="pub"></td>
+					<td class="center"></td>
+					<td class="center"></td>
+					<td class="stat">☆</td>
+					<td class="date"></td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div><!-- /.section -->
+
+<!-- TOP UTILL -->
+<div class="section">
+	<h2 class="title">01_TOP UTILL</h2>
+	<div class="content">
+		<table>
+			<colgroup>
+				<col style="width:200px;">
+				<col style="width:180px;">
+				<col style="width:180px;">
+				<col style="width:180px;">
+				<col style="width:50px;">
+				<col style="width:150px;">
+				<col style="width:100px;">
+				<col style="width:70px;">
+				<col style="width:70px;">
+				<col style="width:70px;">
+				<col style="width:70px;">
+				<col style="width:70px;">
+				<col style="width:70px;">
+				<col style="width:100px;">
+				<col style="*">
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col" rowspan="2">2depth</th>
+					<th scope="col" rowspan="2">3depth</th>
+					<th scope="col" rowspan="2">4depth</th>
+					<th scope="col" rowspan="2">5depth</th>
+					<th scope="col" rowspan="2">path</th>
+					<th scope="col" rowspan="2">file</th>
+					<th scope="col">기획</th>
+					<th scope="col" colspan="3">퍼블</th>
+					<th scope="col" colspan="2">검수</th>
+					<th scope="col" rowspan="2">stat</th>
+					<th scope="col" rowspan="2">date</th>
+					<th scope="col" rowspan="2">note</th>
+				</tr>
+				<tr>
+					<th scope="col">SB -> PSD</th>
+					<th scope="col">크롬</th>
+					<th scope="col">ie 11</th>
+					<th scope="col">담당자</th>
+					<th scope="col">크롬</th>
+					<th scope="col">ie 11</th>
+				</tr>
+			</thead>
+			<tbody>
+				<!-- 통합검색 -->
+				<tr>
+					<td rowspan="3">회원가입</td>
+					<td>약관동의</td>
+					<td></td>
+					<td></td>
+					<td>jo/</td>
+					<td class="right"><a target="_blank" href="html/jo/JO01.html">JO01.html</a></td>
+					<td class="sb"></td>
+					<td class="pub">●</td>
+					<td class="pub">●</td>
+					<td class="pub"></td>
+					<td class="center"></td>
+					<td class="center"></td>
+					<td class="stat">☆</td>
+					<td class="date"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>회원정보입력</td>
+					<td></td>
+					<td></td>
+					<td>jo/</td>
+					<td class="right"><a target="_blank" href="html/jo/JO02.html">JO02.html</a></td>
+					<td class="sb"></td>
+					<td class="pub">●</td>
+					<td class="pub">●</td>
+					<td class="pub"></td>
+					<td class="center"></td>
+					<td class="center"></td>
+					<td class="stat">☆</td>
+					<td class="date"></td>
+					<td>휴대폰 인증 버튼 클릭 시 팝업 출력</td>
+				</tr>
+				<tr>
+					<td>가입완료</td>
+					<td></td>
+					<td></td>
+					<td>jo/</td>
+					<td class="right"><a target="_blank" href="html/jo/JO03.html">JO03.html</a></td>
+					<td class="sb"></td>
+					<td class="pub">●</td>
+					<td class="pub">●</td>
+					<td class="pub"></td>
+					<td class="center"></td>
+					<td class="center"></td>
+					<td class="stat">☆</td>
+					<td class="date"></td>
+					<td></td>
+				</tr>
+
+				<!-- 로그인 -->
+				<tr>
+					<td rowspan="2">로그인</td>
+					<td>로그인</td>
+					<td></td>
+					<td></td>
+					<td>lo/</td>
+					<td class="right"><a target="_blank" href="html/lo/PC-LO0101.html">PC-LO0101.html</a></td>
+					<td class="sb"></td>
+					<td class="pub">●</td>
+					<td class="pub">●</td>
+					<td class="pub"></td>
+					<td class="center"></td>
+					<td class="center"></td>
+					<td class="stat">☆</td>
+					<td class="date"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>아이디/비밀번호 찾기</td>
+					<td></td>
+					<td></td>
+					<td>lo/</td>
+					<td class="right"><a target="_blank" href="html/lo/PC-LO0201.html">PC-LO0201.html</a></td>
+					<td class="sb"></td>
+					<td class="pub">●</td>
+					<td class="pub">●</td>
+					<td class="pub"></td>
+					<td class="center"></td>
+					<td class="center"></td>
+					<td class="stat">☆</td>
+					<td class="date"></td>
+					<td>
+						아이디 찾기 버튼 클릭 시 팝업 출력
+						(확인 버튼 클릭 시 아이디 찾기 결과 팝업 출력)
+						<br></br>
+						비밀번호 찾기 클릭 시 팝업 출력
+						(확인 버튼 클릭 시 비밀번호 재설정 팝업 출력)
+					</td>
+				</tr>
+
+			</tbody>
+		</table>
+	</div>
+</div><!-- /.section -->
+
+<!-- Hub Page -->
+<div class="section">
+	<h2 class="title">02_Hub Page</h2>
+	<div class="content">
+		<table>
+			<colgroup>
+				<col style="width:200px;">
+				<col style="width:180px;">
+				<col style="width:180px;">
+				<col style="width:180px;">
+				<col style="width:50px;">
+				<col style="width:150px;">
+				<col style="width:100px;">
+				<col style="width:70px;">
+				<col style="width:70px;">
+				<col style="width:70px;">
+				<col style="width:70px;">
+				<col style="width:70px;">
+				<col style="width:70px;">
+				<col style="width:100px;">
+				<col style="*">
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col" rowspan="2">2depth</th>
+					<th scope="col" rowspan="2">3depth</th>
+					<th scope="col" rowspan="2">4depth</th>
+					<th scope="col" rowspan="2">5depth</th>
+					<th scope="col" rowspan="2">path</th>
+					<th scope="col" rowspan="2">file</th>
+					<th scope="col">기획</th>
+					<th scope="col" colspan="3">퍼블</th>
+					<th scope="col" colspan="2">검수</th>
+					<th scope="col" rowspan="2">stat</th>
+					<th scope="col" rowspan="2">date</th>
+					<th scope="col" rowspan="2">note</th>
+				</tr>
+				<tr>
+					<th scope="col">SB -> PSD</th>
+					<th scope="col">크롬</th>
+					<th scope="col">ie 11</th>
+					<th scope="col">담당자</th>
+					<th scope="col">크롬</th>
+					<th scope="col">ie 11</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Hub Page</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>html/</td>
+					<td class="right"><a target="_blank" href="html/hubpage.html">hubpage.html</a></td>
+					<td class="sb"></td>
+					<td class="pub"></td>
+					<td class="pub"></td>
+					<td class="pub"></td>
+					<td class="center"></td>
+					<td class="center"></td>
+					<td class="stat"></td>
+					<td class="date"></td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div><!-- /.section -->
+
+<!-- 지점안내 -->
+<div class="section">
+	<h2 class="title">06_지점안내</h2>
+	<div class="content">
+		<table>
+			<colgroup>
+				<col style="width:200px;">
+				<col style="width:180px;">
+				<col style="width:180px;">
+				<col style="width:180px;">
+				<col style="width:50px;">
+				<col style="width:150px;">
+				<col style="width:100px;">
+				<col style="width:70px;">
+				<col style="width:70px;">
+				<col style="width:70px;">
+				<col style="width:70px;">
+				<col style="width:70px;">
+				<col style="width:70px;">
+				<col style="width:100px;">
+				<col style="*">
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col" rowspan="2">2depth</th>
+					<th scope="col" rowspan="2">3depth</th>
+					<th scope="col" rowspan="2">4depth</th>
+					<th scope="col" rowspan="2">5depth</th>
+					<th scope="col" rowspan="2">path</th>
+					<th scope="col" rowspan="2">file</th>
+					<th scope="col">기획</th>
+					<th scope="col" colspan="3">퍼블</th>
+					<th scope="col" colspan="2">검수</th>
+					<th scope="col" rowspan="2">stat</th>
+					<th scope="col" rowspan="2">date</th>
+					<th scope="col" rowspan="2">note</th>
+				</tr>
+				<tr>
+					<th scope="col">SB -> PSD</th>
+					<th scope="col">크롬</th>
+					<th scope="col">ie 11</th>
+					<th scope="col">담당자</th>
+					<th scope="col">크롬</th>
+					<th scope="col">ie 11</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td rowspan="2">지점안내</td>
+					<td>목록</td>
+					<td></td>
+					<td></td>
+					<td>pl/</td>
+					<td class="right"><a target="_blank" href="html/pl/PL01.html">PL01.html</a></td>
+					<td class="sb"></td>
+					<td class="pub"></td>
+					<td class="pub"></td>
+					<td class="pub"></td>
+					<td class="center"></td>
+					<td class="center"></td>
+					<td class="stat"></td>
+					<td class="date"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>상세</td>
+					<td></td>
+					<td></td>
+					<td>pl/</td>
+					<td class="right"><a target="_blank" href="html/pl/PL02.html">PL02.html</a></td>
+					<td class="sb"></td>
+					<td class="pub"></td>
+					<td class="pub"></td>
+					<td class="pub"></td>
+					<td class="center"></td>
+					<td class="center"></td>
+					<td class="stat"></td>
+					<td class="date"></td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div><!-- /.section -->
+
+<!-- 고객센터 -->
+<div class="section">
+	<h2 class="title">08_고객센터</h2>
+	<div class="content">
+		<table>
+			<colgroup>
+				<col style="width:200px;">
+				<col style="width:180px;">
+				<col style="width:180px;">
+				<col style="width:180px;">
+				<col style="width:50px;">
+				<col style="width:150px;">
+				<col style="width:100px;">
+				<col style="width:70px;">
+				<col style="width:70px;">
+				<col style="width:70px;">
+				<col style="width:70px;">
+				<col style="width:70px;">
+				<col style="width:70px;">
+				<col style="width:100px;">
+				<col style="*">
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col" rowspan="2">2depth</th>
+					<th scope="col" rowspan="2">3depth</th>
+					<th scope="col" rowspan="2">4depth</th>
+					<th scope="col" rowspan="2">5depth</th>
+					<th scope="col" rowspan="2">path</th>
+					<th scope="col" rowspan="2">file</th>
+					<th scope="col">기획</th>
+					<th scope="col" colspan="3">퍼블</th>
+					<th scope="col" colspan="2">검수</th>
+					<th scope="col" rowspan="2">stat</th>
+					<th scope="col" rowspan="2">date</th>
+					<th scope="col" rowspan="2">note</th>
+				</tr>
+				<tr>
+					<th scope="col">SB -> PSD</th>
+					<th scope="col">크롬</th>
+					<th scope="col">ie 11</th>
+					<th scope="col">담당자</th>
+					<th scope="col">크롬</th>
+					<th scope="col">ie 11</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td rowspan="5">고객센터</td>
+					<td>FAQ</td>
+					<td></td>
+					<td></td>
+					<td>cs/</td>
+					<td class="right"><a target="_blank" href="html/cs/PC-CS0101.html">PC-CS0101.html</a></td>
+					<td class="sb"></td>
+					<td class="pub"></td>
+					<td class="pub"></td>
+					<td class="pub"></td>
+					<td class="center"></td>
+					<td class="center"></td>
+					<td class="stat"></td>
+					<td class="date"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>1:1문의</td>
+					<td></td>
+					<td></td>
+					<td>cs/</td>
+					<td class="right"><a target="_blank" href="html/cs/PC-CS0201.html">PC-CS0201.html</a></td>
+					<td class="sb"></td>
+					<td class="pub"></td>
+					<td class="pub"></td>
+					<td class="pub"></td>
+					<td class="center"></td>
+					<td class="center"></td>
+					<td class="stat"></td>
+					<td class="date"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td rowspan="3">공지사항</td>
+					<td>목록</td>
+					<td></td>
+					<td>cs/</td>
+					<td class="right"><a target="_blank" href="html/cs/PC-CS0301.html">PC-CS0301.html</a></td>
+					<td class="sb"></td>
+					<td class="pub"></td>
+					<td class="pub"></td>
+					<td class="pub"></td>
+					<td class="center"></td>
+					<td class="center"></td>
+					<td class="stat"></td>
+					<td class="date"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>결과가 없을 경우</td>
+					<td></td>
+					<td>cs/</td>
+					<td class="right"><a target="_blank" href="html/cs/PC-CS0301_no_result.html">PC-CS0301_no_result.html</a></td>
+					<td class="sb"></td>
+					<td class="pub"></td>
+					<td class="pub"></td>
+					<td class="pub"></td>
+					<td class="center"></td>
+					<td class="center"></td>
+					<td class="stat"></td>
+					<td class="date"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>상세</td>
+					<td></td>
+					<td>cs/</td>
+					<td class="right"><a target="_blank" href="html/cs/PC-CS0302.html">PC-CS0302.html</a></td>
+					<td class="sb"></td>
+					<td class="pub"></td>
+					<td class="pub"></td>
+					<td class="pub"></td>
+					<td class="center"></td>
+					<td class="center"></td>
+					<td class="stat"></td>
+					<td class="date"></td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div><!-- /.section -->
+
+<div class="section">
+	<h2 class="title">Sub</h2>
+	<div class="content">
+		<table>
+			<colgroup>
+				<col style="width:200px;">
+				<col style="width:180px;">
+				<col style="width:180px;">
+				<col style="width:180px;">
+				<col style="width:50px;">
+				<col style="width:150px;">
+				<col style="width:100px;">
+				<col style="width:70px;">
+				<col style="width:70px;">
+				<col style="width:70px;">
+				<col style="width:70px;">
+				<col style="width:70px;">
+				<col style="width:70px;">
+				<col style="width:100px;">
+				<col style="*">
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col" rowspan="2">2depth</th>
+					<th scope="col" rowspan="2">3depth</th>
+					<th scope="col" rowspan="2">4depth</th>
+					<th scope="col" rowspan="2">5depth</th>
+					<th scope="col" rowspan="2">path</th>
+					<th scope="col" rowspan="2">file</th>
+					<th scope="col">기획</th>
+					<th scope="col" colspan="3">퍼블</th>
+					<th scope="col" colspan="2">검수</th>
+					<th scope="col" rowspan="2">stat</th>
+					<th scope="col" rowspan="2">date</th>
+					<th scope="col" rowspan="2">note</th>
+				</tr>
+				<tr>
+					<th scope="col">SB -> PSD</th>
+					<th scope="col">크롬</th>
+					<th scope="col">ie 11</th>
+					<th scope="col">담당자</th>
+					<th scope="col">크롬</th>
+					<th scope="col">ie 11</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>서브</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="right"><a target="_blank" href="sub.html">sub.html</a></td>
+					<td class="sb"></td>
+					<td class="pub"></td>
+					<td class="pub"></td>
+					<td class="pub"></td>
+					<td class="center"></td>
+					<td class="center"></td>
+					<td class="stat"></td>
+					<td class="date"></td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div><!-- /.section -->
+</body>
+
+</html>
