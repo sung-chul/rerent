@@ -105,12 +105,11 @@ input[type=submit] {-webkit-border-radius:0;border:0;border-radius:0;-webkit-app
 textarea {
 	width:100%;
 	padding:8px 10px;
-	border:1px solid #888;
-	border-radius:4px;
+	border:1px solid #ccc;
 	background-color:#fff;
 	-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;
-	color:#444;
-	font-size:14px;
+	color:#666;
+	font-size:15px;
 	line-height:17px ;
 	-webkit-appearance:none;-moz-appearance:none;appearance:none;
 	word-break:keep-all;
@@ -1081,6 +1080,13 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	color:#999;
 	font-size:14px;
 }
+.board-write1 td .notice-text02 {
+	display: inline-block;
+	margin-left:5px;
+	color:#999;
+	font-size:14px;
+	line-height: 45px;
+}
 .board-write1 td .connect-txt {
 	display: inline-block;
 	width:24px;
@@ -1093,7 +1099,66 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 .board-write1 td .email-agree {
 	margin-bottom:15px;
 }
-
+.board-write1 td .tbl-textarea {
+	position: relative;
+	padding-bottom:25px;
+}
+.board-write1 td .tbl-textarea textarea {
+	height: 190px;
+}
+.board-write1 td .tbl-textarea .byte-len {
+	position: absolute;
+	bottom:0; right:0;
+	color:#999;
+	font-size:14px;
+}
+.board-write1 td .tbl-textarea .byte-len .count {
+	color:#e9002d;
+}
+.board-write1 td .add-file {
+	overflow: hidden;
+}
+.board-write1 td .add-file li {
+	position: relative;
+	float: left;
+	width:33.3%;
+	margin:5px 0;
+	padding-left:25px;
+	color:#333;
+	box-sizing: border-box;
+}
+.board-write1 td .add-file li:before {
+	content: '';
+	position: absolute;
+	top:50%; left:0;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	width:18px; height:15px;
+	background-image:url(../img/sprite_icon.png);
+	background-repeat: no-repeat;
+	background-position: 0 -49px;
+}
+.board-write1 td .add-file li .byte {
+	margin-left:5px;
+	color:#999;
+	font-size:13px;
+}
+.board-write1 td .add-file li .btn-delete {
+	width:16px;
+	height:16px;
+	margin-left:5px;
+	font-size:0;
+	line-height: 0;
+	vertical-align: middle;
+}
+.board-write1 td .add-file li .btn-delete:before {
+	content: '';
+	position: absolute;
+	top:0; left:0;
+	width:16px; height:16px;
+	background-position: 0 -125px;
+}
 /* 게시판 형태 */
 .board-list {border-top:1px solid #999;}
 .board-list table {border-bottom:1px solid #999;}
