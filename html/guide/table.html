@@ -100,7 +100,7 @@
 								<input type="number" style="width:110px;">
 								<span class="connect-txt">-</span>
 								<input type="number" style="width:110px;">
-								<a href="#" class="btn-text-small btn-w98 btn-gray btn-certify">휴대폰 인증</a>
+								<button type="button" class="btn-text-small btn-w98 btn-gray btn-certify">휴대폰 인증</button>
 							</td>
 						</tr>
 						<tr>
@@ -276,10 +276,9 @@
 <script type="text/javascript" src="../../js/common.js"></script>
 <script>
 $(window).load(function(){
-	/* 우편번호 찾기 팝업 호출 */
+	/* 휴대폰 인증 */
 	$('.btn-certify').click(function(){
-		$('.pop-post .post-result').hide();
-		$('.pop-post .post-text').show();
+		$('.bg-layer').fadeIn(200);
 		$('.pop-certify').fadeIn(200);
 	});
 });
