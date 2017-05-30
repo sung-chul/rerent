@@ -41,18 +41,28 @@
 
 		<div class="content">
 			<div class="page-title"><h2>아이디/비밀번호 찾기</h2></div>
-			<div class="border-box1">
-				<ul class="find-area">
-					<li class="find-id">
-						<p>이름, 휴대폰 번호 입력을 통해<br>아이디를 찾으실 수 있습니다.</p>
-						<a href="#" class="btn-text btn-w240 btn-black">아이디 찾기</a>
-					</li>
-					<li class="find-pw">
-						<p>이름, 휴대폰 번호 입력을 통해<br>아이디를 찾으실 수 있습니다.</p>
-						<a href="#" class="btn-text btn-w240 btn-red">비밀번호 찾기</a>
-					</li>
-				</ul>
-			</div>			
+			<div class="find-wrap">
+				<div class="border-box1">
+					<ul class="find-area">
+						<li class="find-id">
+							<p>이름, 휴대폰 번호 입력을 통해<br>아이디를 찾으실 수 있습니다.</p>
+							<a href="#" class="btn-text btn-w240 btn-black btn-find-id">아이디 찾기</a>
+						</li>
+						<li class="find-pw">
+							<p>아이디(이메일), 휴대전화 입력을<br>통해 비밀번호를 찾으실 수 있습니다.</p>
+							<a href="#" class="btn-text btn-w240 btn-red btn-find-pw">비밀번호 찾기</a>
+						</li>
+					</ul>
+				</div>
+				<div class="notice-box mgT15">
+					<h4 class="title icon-sprite">알아두세요!</h4>
+					<ul class="bullet-list">
+						<li>본인명의의 휴대폰으로 인증이 가능합니다.</li>
+						<li>본인 정보로 찾지 못하신 경우, 고객센터로 문의해 주시기 바랍니다. <a href="tel:1800-0606" class="btn-call icon-sprite mgL5">1800-0606</a></li>
+						<li>1:1문의 사항의 답변은 <a href="#none" class="link">MY페이지 > 나의 상담내역 조회</a> 에서 확인 가능합니다.</li>
+					</ul>
+				</div>
+			</div>
 		</div>
 	</div>
 
@@ -83,9 +93,149 @@
 	</div>
 </div>
 
+<!-- 레이어 팝업 영역 -->
+<div class="bg-layer"></div>
+<!-- 아이디찾기 -->
+<div class="layer-popup pop-find-id">
+	<div class="pop-head">
+		<h1 class="pop-title">아이디 찾기</h1>
+		<button type="button" class="btn-sprite btn-close">닫기</button>
+	</div>
+	<div class="pop-content">
+		<div class="before">
+			<p class="guide-txt">이름과 휴대폰 번호를 입력하세요</p>
+			<div class="board-pop-write1 mgT15">
+				<table>
+					<colgroup>
+						<col style="width:120px;">
+						<col sttyle="*">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row"><label for="name" class="text">이름</label></th>
+							<td>
+								<input type="text" id="name" style="width:340px;">
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="phone" class="text">휴대폰 번호</label></th>
+							<td>
+								<select class="styled1" id="phone" style="width:95px;">
+									<option>선택</option>
+									<option>010</option>
+									<option>011</option>
+									<option>017</option>
+								</select>
+								<span class="connect-txt">-</span>
+								<input type="number" style="width:95px;">
+								<span class="connect-txt">-</span>
+								<input type="number" style="width:95px;">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="pop-btn-wrap">
+				<a href="#" class="btn-text btn-w148 btn-red btn-confirm">확인</a>
+			</div>
+		</div>
+		<div class="after" style="display:none;">
+			<p class="guide-txt">고객님의 아이디입니다.</p>
+			<p class="guide-txt2 mgT50">아이디: <span class="fColor01">honggildong@naver.com</span></p>
+			<div class="pop-btn-wrap">
+				<a href="#" class="btn-text btn-w148 btn-black">비밀번호 찾기</a>
+				<a href="#" class="btn-text btn-w148 btn-red">로그인</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- 비밀번호 재설정  -->
+<div class="layer-popup pop-find-pw">
+	<div class="pop-head">
+		<h1 class="pop-title">비밀번호 재설정</h1>
+		<button type="button" class="btn-sprite btn-close">닫기</button>
+	</div>
+	<div class="pop-content">
+		<div class="before">
+			<p class="guide-txt">아이디(이메일)과 휴대폰 번호를 입력하세요.</p>
+			<div class="board-pop-write1 mgT15">
+				<table>
+					<colgroup>
+						<col style="width:120px;">
+						<col sttyle="*">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row"><label for="name2" class="text">아이디</label></th>
+							<td>
+								<input type="text" id="name2" style="width:340px;">
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="phone" class="text">휴대폰 번호</label></th>
+							<td>
+								<select class="styled1" id="phone" style="width:95px;">
+									<option>선택</option>
+									<option>010</option>
+									<option>011</option>
+									<option>017</option>
+								</select>
+								<span class="connect-txt">-</span>
+								<input type="number" style="width:95px;">
+								<span class="connect-txt">-</span>
+								<input type="number" style="width:95px;">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="pop-btn-wrap">
+				<a href="#" class="btn-text btn-w148 btn-red btn-confirm">확인</a>
+			</div>
+		</div>
+		<div class="after" style="display:none;">
+			<p class="guide-txt">비밀번호는 8~20자리의<br>영문과 숫자, 특수문자의 조합으로 변경해주세요.</p>
+			<div class="pw-reset">
+				<input type="number" class="" placeholder="변경 비밀번호 입력">
+				<input type="number" class="" placeholder="변경 비밀번호 재입력">
+			</div>
+			<div class="pop-btn-wrap">
+				<a href="#" class="btn-text btn-w148 btn-red">확인</a>
+			</div>
+		</div>
+	</div>
+</div>
 
 <script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../../js/common.js"></script>
+<script>
+$(window).load(function(){
+	/* 아이디찾기 */
+	$('.btn-find-id').click(function(){
+		$('.bg-layer').fadeIn(200);
+		$('.pop-find-id').fadeIn(200);
+		$('#name').focus();
+	});
+	/*아이디찾기에서 확인버튼 클릭시*/
+	$('.pop-find-id .before .btn-confirm').click(function(){
+		$(this).parents('.before').hide();
+		$(this).parents('.pop-find-id').find('.after').show();
+	});
+
+	/* 비밀번호찾기 */
+	$('.btn-find-pw').click(function(){
+		$('.bg-layer').fadeIn(200);
+		$('.pop-find-pw').fadeIn(200);
+		$('#name2').focus();
+	});
+	/* 비밀번호찾기에서 확인버튼 클릭시*/
+	$('.pop-find-pw .before .btn-confirm').click(function(){
+		$(this).parents('.before').hide();
+		$(this).parents('.pop-find-pw').find('.after').show();
+	});
+});
+</script>
 </body>
 
 </html>

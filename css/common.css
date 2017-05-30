@@ -408,6 +408,7 @@ button {outline:0;vertical-align:top;}
 .mgT20 {margin-top:20px !important;}
 .mgT25 {margin-top:25px !important;}
 .mgT30 {margin-top:30px !important;}
+.mgT50 {margin-top:50px !important;}
 
 .mgL5 {margin-left:5px !important;}
 .mgL10 {margin-left:10px !important;}
@@ -435,7 +436,12 @@ button {outline:0;vertical-align:top;}
 	text-align: center;
 	letter-spacing: -1px;
 }
-
+.guide-txt2 {
+	color:#333;
+	font-size:20px;
+	text-align: center;
+	letter-spacing: -1px;
+}
 /* =========================================================================================================
 	타이틀
 ========================================================================================================= */
@@ -461,6 +467,11 @@ button {outline:0;vertical-align:top;}
 	color:#000;
 	font-size:20px;
 	line-height: 30px;
+}
+.cTitle02 {
+	color:#000;
+	font-size:26px;
+	line-height: 26px;
 }
 
 /* =========================================================================================================
@@ -752,12 +763,10 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 ========================================================================================================= */
 /*로그인*/
 .border-box1 {
-	width:820px;
-	margin:0 auto;
+	width:100%;
 	border:1px solid #ccc;
 	border-top:2px solid #e9002d;
 }
-
 .login-wrap {
 	width:460px;
 	margin:0 auto;
@@ -849,6 +858,7 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 .banner-area img { width: 100%;}
 
 /*아이디/비밀번호 찾기*/
+.find-wrap {width:820px;margin:0 auto;}
 .find-area {overflow: hidden;}
 .find-area li {
 	position: relative;
@@ -943,6 +953,40 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	color:#666;
 	line-height:22px;
 }
+
+/* =========================================================================================================
+	고객센터
+========================================================================================================= */
+/*faq*/
+.cs-area .tab-list li {
+	width:33%;
+
+}
+.cs-area .tab-list li:first-child {
+	width: 34%;
+}
+
+.order-area {overflow: hidden;}
+.order-area button {
+	float: left;
+	width:143px;
+	height:60px;
+	line-height: 60px;
+	border:1px solid #d9d9d9;
+	margin-left:-1px;
+	box-sizing: border-box;
+}
+.order-area button:first-child {margin-left:0;}
+.order-area button:nth-child(4),
+.order-area button:nth-child(5) {
+	width:145px;
+}
+.order-area button.on {
+	background-color:#f58025;
+	border:1px solid #f58025;
+	color:#fff;
+}
+
 /* =========================================================================================================
 	탭메뉴
 ========================================================================================================= */
@@ -988,6 +1032,51 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 }
 
 /* 지점안내 */
+.guid-area {}
+.guid-area .guid-list {overflow:hidden;}
+.guid-area .guid-list .item-guid {
+	float:left;
+	width:50%;
+}
+.guid-area .guid-list .item-guid:last-child {border-right:0;}
+.guid-area .guid-list .item-guid dl {
+	border-bottom:1px solid #999;
+	border-left:1px solid #ccc;
+	border-top:1px solid #e9002d;
+}
+.guid-area .guid-list .item-guid:last-child dl {
+	border-right:1px solid #ccc;
+	border-left:1px dashed #ccc;
+}
+.guid-area .guid-list .item-guid dt {
+	padding-left:30px;
+	font-size:20px;
+	color:#000;
+	line-height:58px;
+	border-bottom:1px solid #ccc;
+	background-color:#f0f0f0;
+}
+.guid-area .guid-list .item-guid dt span {
+	font-size:16px;
+}
+.guid-area .guid-list .item-guid dd {
+	padding:27px 30px;
+	background-color:#fff;
+}
+.guid-area .guid-list .item-guid dd .info-list {}
+.guid-area .guid-list .item-guid dd .info-list .item {
+	margin-top:8px;
+	font-size:15px;
+	color:#333;
+	line-height:21px;
+}
+.guid-area .guid-list .item-guid dd .info-list .item:first-child {margin-top:0;}
+.guid-area .guid-list .item-guid dd .info-list .item span {
+	display:inline-block;
+	width:88px;
+	color:#999;
+}
+
 .point-area {margin-top:40px;}
 .point-list {}
 .point-list .item {
@@ -1024,6 +1113,73 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	left:0; top:0;
 }
 .point-list .item dl dd.img-box img {vertical-align:top;}
+
+/* 지점안내 상세 */
+.point-detail {}
+.other-point {
+	height:78px;
+	padding:15px;
+	border-top:2px solid #e9002d;
+	border-bottom:1px solid #999;
+	box-sizing:border-box;
+	text-align:center;
+}
+.other-point .select-box {text-align:left;}
+.other-point .other-text {
+	display:inline-block;
+	margin-right:10px;
+	font-size:15px;
+	color:#666;
+	line-height:45px;
+}
+.view-area {
+	margin-top:30px;
+}
+.infor-area {
+	position:relative;
+}
+.infor-area .detail-title {
+	display:inline-block;
+	margin-top:-3px;
+	font-size:24px;
+	color:#000;
+	line-height:38px;
+}
+.infor-area .infor-list {margin-top:23px;}
+.infor-area .infor-list .item {
+	margin-top:10px;
+	font-size:15px;
+	color:#333;
+	line-height:20px;
+}
+.infor-area .infor-list .item:first-child {margin-top:0;}
+.infor-area .infor-list .item span {
+	display:inline-block;
+	margin-right:30px;
+	color:#999;
+}
+.infor-area .btn-way {
+	display:inline-block;
+	padding:0 10px;
+	border:1px solid #999;
+	border-radius:2px;
+	box-sizing:border-box;
+	vertical-align:top;
+}
+.infor-area .btn-way .txt {
+	display:inline-block;
+	height:34px;
+	padding-left:40px;
+	background:url(../img/icon/icon_car.gif) no-repeat 0 center;
+	font-size:15px;
+	color:#333;
+	line-height:34px;
+}
+.view-area .map-area {
+	height:550px;
+	margin-top:27px;
+}
+.view-area .map-area img {vertical-align:top;}
 /* =========================================================================================================
 	검색 박스
 ========================================================================================================= */
@@ -1210,6 +1366,40 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	color:#999;
 	font-size:15px;
 }
+
+/*팝업테이블 스타일 (border없는형태)*/
+.board-pop-write1 {}
+.board-pop-write1 table {}
+.board-pop-write1 th,
+.board-pop-write1 td {
+	text-align:left;
+}
+.board-pop-write1 th {padding-left:35px;}
+.board-pop-write1 td {
+	padding:5px 0;
+}
+
+.board-pop-write1 .text {
+	padding:5px 0;
+	font-size:15px;
+	font-weight:normal;
+	line-height:22px;
+}
+.board-pop-write1 th {
+	color:#666;
+	font-weight: normal;
+}
+.board-pop-write1 td .connect-txt {
+	display: inline-block;
+	width:18px;
+	color:#666;
+	font-size:15px;
+	line-height: 45px;
+	vertical-align: top;
+	text-align: center;
+}
+
+
 /* pagenation */
 .pagenation {
 	position:relative;
@@ -1352,3 +1542,13 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 .pop-certify .certify-time dd button {
 	float: right;
 }
+
+/*아이디,비밀번호찾기*/
+.pop-find-id,
+.pop-find-pw {width: 620px}
+
+.pop-find-pw .pw-reset {
+	width:340px;
+	margin:10px auto 0;
+}
+.pop-find-pw .pw-reset input {margin-top:10px;}
