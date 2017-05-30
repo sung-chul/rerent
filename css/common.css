@@ -888,23 +888,31 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 /* 지점안내 */
 .point-area {margin-top:40px;}
 .point-list {}
-.point-list .item {}
+.point-list .item {
+	height:200px;
+	margin-top:60px;
+}
+.point-list .item:first-child {margin-top:0;}
 .point-list .item dl {
 	position:relative;
 	padding-left:295px;
 }
 .point-list .item dl dt {
+	display:inline-block;
+	margin:-5px 0 27px 0;
 	font-size:24px;
 	color:#000;
+	line-height:28px;
+	vertical-align:top;
 }
-.point-list .item dl dd .add-list .item {
-	margin-top:9px;
+.add-list .item-add {
+	margin-top:10px;
 	font-size:15px;
 	color:#333;
 	line-height:20px;
 }
-.point-list .item dl dd .add-list .item:first-child {margin-top:0;}
-.point-list .item dl dd .add-list .item span {
+.add-list .item-add:first-child {margin-top:0;}
+.add-list .item-add span {
 	display:inline-block;
 	margin-right:30px;
 	color:#999;
@@ -913,6 +921,7 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	position:absolute;
 	left:0; top:0;
 }
+.point-list .item dl dd.img-box img {vertical-align:top;}
 /* =========================================================================================================
 	검색 박스
 ========================================================================================================= */
