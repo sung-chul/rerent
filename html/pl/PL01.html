@@ -55,7 +55,7 @@
 					<li class="item"><span class="text">충남</span></li>
 					<li class="item"><span class="text">충북</span></li>
 				</ul>
-				<div class="tab-cont">
+				<div class="tab-cont on">
 					<div class="point-area">
 						<ul class="point-list">
 							<li class="item">
@@ -69,11 +69,14 @@
 										</ul>
 										<a href="#" class="btn-text-small btn-w135 btn-orange">자세히 보기</a>
 									</dd>
-									<dd class="img-box"><img src="../../img/img/" alt=""></dd>
+									<dd class="img-box"><img src="../../img/temp/point_img01.jpg" alt=""></dd>
 								</dl>
 							</li>
 						</ul>
 					</div>
+				</div>
+				<div class="tab-cont">
+					2222
 				</div>
 			</div>
 		</div>
@@ -116,7 +119,7 @@ $(window).load(function(){
 		$(this).click(function(){
 			var idx = $(this).index();
 			$('.tab-list .item').removeClass('on').eq(idx).addClass('on');
-			$('.tab-content').removeClass('on').eq(idx).addClass('on');
+			$('.tab-cont').removeClass('on').eq(idx).addClass('on');
 		});
 	});
 
