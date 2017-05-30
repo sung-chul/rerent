@@ -64,15 +64,15 @@ input[type=text],
 input[type=number],
 input[type=password] {
 	width:100%;
-	height:32px;
+	height:45px;
 	padding:0 13px;
 	box-sizing:border-box;
 	border-radius:0;
-	border:1px solid #bbb;
+	border:1px solid #ccc;
 	background-color:#fff;
 	color:#666;
 	font-size:15px;
-	line-height:30px;
+	line-height:43px;
 	letter-spacing:-1px;
 	-webkit-appearance:none;-moz-appearance:none;appearance:none;
 	-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;
@@ -144,7 +144,6 @@ caption {display:none;visibility:hidden;overflow:hidden;width:0;height:0;margin:
 table {table-layout:fixed;width:100%;margin:0;padding:0;border-spacing:0;border:0;border-collapse:collapse;}
 *+html table {border-collapse:collapse;}
 button {outline:0;vertical-align:top;}
-
 /* =========================================================================================================
 	레이아웃
 ========================================================================================================= */
@@ -171,7 +170,6 @@ button {outline:0;vertical-align:top;}
 	background:url(../img/bg/bg_hub2.png) #ddd center 0 no-repeat;
 	min-width: 1000px;
 }
-
 
 /*hubpage*/
 .hub {background-color: #fff;}
