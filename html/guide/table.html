@@ -100,7 +100,7 @@
 								<input type="number" style="width:110px;">
 								<span class="connect-txt">-</span>
 								<input type="number" style="width:110px;">
-								<a href="#" class="btn-text-small btn-w98 btn-gray">휴대폰 인증</a>
+								<a href="#" class="btn-text-small btn-w98 btn-gray btn-certify">휴대폰 인증</a>
 							</td>
 						</tr>
 						<tr>
@@ -246,9 +246,44 @@
 	</div>
 </div>
 
+<!-- 레이어 팝업 영역 -->
+<div class="bg-layer"></div>
+<!-- 휴대폰 인증 -->
+<div class="layer-popup pop-certify">
+	<div class="pop-head">
+		<h1 class="pop-title">휴대폰 인증</h1>
+		<button type="button" class="btn-sprite btn-close">닫기</button>
+	</div>
+	<div class="pop-content">
+		<p class="guide-txt">휴대폰으로 전송 받은 인증번호를 입력해주세요.</p>
+		<div class="certify-inp">
+			<input type="number" class="text-center" placeholder="인증번호 4자리 입력">
+		</div>
+		<dl class="certify-time">
+			<dt>인증번호 요청중</dt>
+			<dd>
+				<span class="time">02분59초</span>
+				<button type="button" class="btn-text-small btn-w98 btn-gray">휴대폰 인증</button>
+			</dd>
+		</dl>
+		<div class="pop-btn-wrap">
+			<a href="#" class="btn-text btn-w148 btn-red">확인</a>
+		</div>
+	</div>
+</div>
 
 <script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../../js/common.js"></script>
+<script>
+$(window).load(function(){
+	/* 우편번호 찾기 팝업 호출 */
+	$('.btn-certify').click(function(){
+		$('.pop-post .post-result').hide();
+		$('.pop-post .post-text').show();
+		$('.pop-certify').fadeIn(200);
+	});
+});
+</script>
 </body>
 
 </html>

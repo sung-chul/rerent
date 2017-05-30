@@ -420,8 +420,16 @@ button {outline:0;vertical-align:top;}
 .text-center {text-align:center !important;}
 
 .floatL {float:left !important;}
-.floatR {float:right !important;}
+.floatR {float:right !impo rtant;}
 .floatN {float:none !important;}
+
+/* 텍스트 */
+.guide-txt {
+	color:#333;
+	font-size:18px;
+	text-align: center;
+	letter-spacing: -1px;
+}
 
 /* =========================================================================================================
 	타이틀
@@ -990,3 +998,92 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	margin-left:20px;
 }
 .pagenation .page-list .btn-last {background-position:-37px -37px;}
+
+
+/* =========================================================================================================
+	layer-popup
+========================================================================================================= */
+.bg-layer {
+	display: none;
+	position:fixed;
+	top:0; left:0; right:0; bottom:0;
+	background-color:rgba(0, 0, 0, 0.7);
+}
+.layer-popup {
+	position:fixed;
+	left:50%;top:50%;
+	z-index:500;
+	padding:0 20px;
+	-webkit-transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+	transform:translate(-50%,-50%);
+	background-color:#fff;
+	box-sizing: border-box;
+	opacity:0;
+}
+.layer-popup .pop-head {
+	position:relative;
+	height:58px;
+	border-bottom:1px solid #e9002d;
+}
+.layer-popup .pop-head .pop-title {
+	color:#000;
+	font-size:20px;
+	line-height: 58px;
+}
+.layer-popup .pop-head .btn-close {
+	position: absolute;
+	top:-60px; right:-20px;
+	width:60px;
+	height:60px;
+	font-size:0;
+	line-height:0;
+}
+.layer-popup .pop-head .btn-close:before {
+	top:0; right:0;
+	width: 60px;
+	height:60px;
+	background-position: 0 -63px;
+}
+.layer-popup .pop-content {
+	padding:45px 0 60px;
+}
+
+
+/* 휴대폰인증 */
+.pop-certify {
+	width:620px;
+}
+.pop-certify .certify-inp {
+	margin-top:20px;
+	text-align: center;
+}
+.pop-certify .certify-inp input {width:340px;}
+.pop-certify .certify-time {
+	position: relative;
+	width:340px;
+	margin: 30px auto 0;
+	padding:5px 0;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+}
+.pop-certify .certify-time dt {
+	position: absolute;
+	top:0; left:0;
+	color:#666;
+	font-size:15px;
+	line-height: 55px;
+}
+.pop-certify .certify-time dd {
+	overflow: hidden;
+	padding-left:123px;
+}
+.pop-certify .certify-time dd .time {
+	display: inline-block;
+	color:#e9002d;
+	font-size:15px;
+	line-height: 45px;
+}
+.pop-certify .certify-time dd button {
+	float: right;
+}
