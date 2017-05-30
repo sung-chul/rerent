@@ -420,7 +420,7 @@ button {outline:0;vertical-align:top;}
 .text-center {text-align:center !important;}
 
 .floatL {float:left !important;}
-.floatR {float:right !impo rtant;}
+.floatR {float:right !important;}
 .floatN {float:none !important;}
 
 /* 텍스트 */
@@ -877,7 +877,6 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 .tab-list .item:first-child .text {
 	border-left:1px solid #d9d9d9;
 }
-
 .tab-cont {
 	display:none;
 }
