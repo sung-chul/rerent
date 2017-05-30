@@ -764,7 +764,10 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	background-position: 0 -72px;
 }
 .login-wrap .join {margin:30px 0 40px}
-.login-wrap .join span {padding-right:5px;}
+.login-wrap .join span {
+	padding-right:5px;
+	line-height: 45px;
+}
 
 .banner-area {
 	overflow: hidden;
