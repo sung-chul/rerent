@@ -445,6 +445,7 @@ button {outline:0;vertical-align:top;}
 .mgT40 {margin-top:40px !important;}
 .mgT50 {margin-top:50px !important;}
 .mgT55 {margin-top:55px !important;}
+.mgT60 {margin-top:60px !important;}
 
 .mgL5 {margin-left:5px !important;}
 .mgL10 {margin-left:10px !important;}
@@ -1301,14 +1302,11 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	검색 박스
 ========================================================================================================= */
 .search-box {
-	margin-bottom:40px;
-	padding:15px 0;
-	text-align: center;
-	background-color:#f0f0f0;
-	border:1px solid #ccc;
+	margin-bottom:20px;
+	text-align: right;
 }
 .search-box .search-inp {
-	width:450px;
+	width:300px;
 }
 /* =========================================================================================================
 	테이블
