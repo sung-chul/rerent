@@ -47,6 +47,37 @@
 	url('font/SKB.ttf') format('truetype');
 }
 
+@font-face {
+	font-family:'noto';
+	font-style:normal;
+	font-weight:400;
+	src:url('font/notokr-regular.eot');
+	src:local(※),
+	url('font/notokr-regular.eot?#iefix') format('embedded-opentype'),
+	url('font/notokr-regular.woff') format('woff'),
+	url('font/notokr-regular.ttf') format('truetype');
+}
+@font-face {
+	font-family:'noto';
+	font-style:normal;
+	font-weight:600;
+	src:url('font/notokr-medium.eot');
+	src:local(※),
+	url('font/notokr-medium.eot?#iefix') format('embedded-opentype'),
+	url('font/notokr-medium.woff') format('woff'),
+	url('font/notokr-medium.ttf') format('truetype');
+}
+@font-face {
+	font-family:'noto';
+	font-style:normal;
+	font-weight:900;
+	src:url('font/notokr-bold.eot');
+	src:local(※),
+	url('font/notokr-bold.eot?#iefix') format('embedded-opentype'),
+	url('font/notokr-bold.woff') format('woff'),
+	url('font/notokr-bold.ttf') format('truetype');
+}
+
 /* =========================================================================================================
 	Reset
 ========================================================================================================= */
@@ -115,6 +146,9 @@ textarea {
 	word-break:keep-all;
 	word-wrap:break-word;
 	resize:none;
+}
+textarea:focus {
+	border-color:#e9002d;
 }
 .placeholder {color:#999}
 :-ms-input-placeholder {color:#999;}
@@ -227,8 +261,8 @@ button {outline:0;vertical-align:top;}
 	padding:46px 10px 24px;
 	color:#333;
 	font-size:18px;
-	font-weight: bold;
-	font-family: 'sk';
+	font-family: 'noto';
+	font-weight: 600;
 }
 .inner_head .navi .navi-list li:hover a:before,
 .inner_head .navi .navi-list li.on a:before {
@@ -453,8 +487,8 @@ button {outline:0;vertical-align:top;}
 .page-title h2 {
 	color:#333;
 	font-size:30px;
-	font-family:'sk';
-	font-weight:bold;
+	font-family:'noto';
+	font-weight:600;
 	text-align:center;
 }
 .page-text {
@@ -1280,6 +1314,7 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	테이블
 ========================================================================================================= */
 .board-write1 {border-top:2px solid #e9002d;}
+.board-write1.type2 {border-top:1px solid #999;}
 .board-write1 table {border-bottom:1px solid #999;}
 .board-write1 th,
 .board-write1 td {
