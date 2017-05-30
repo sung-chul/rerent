@@ -777,6 +777,37 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 }
 .banner-area img { width: 100%;}
 
+/*아이디/비밀번호 찾기*/
+.find-area {overflow: hidden;}
+.find-area li {
+	position: relative;
+	float: left;
+	width:50%;
+	padding:125px 0 50px;
+	text-align: center;
+}
+.find-area li:first-child:before {
+	content: '';
+	position: absolute;
+	top:40px; right:-10px;
+	width:20px;
+	height:237px;
+	border:1px solid #ccc;
+	background-color: #eee;
+}
+.find-area .find-id {
+	background: url(../img/icon/icon_find_id.png) no-repeat 50% 50px;
+}
+.find-area .find-pw {
+	background: url(../img/icon/icon_find_pw.png) no-repeat 50% 50px;
+}
+.find-area li p {
+	font-size: 16px;
+	color:#333;
+	line-height: 26px;
+}
+.find-area li .btn-text {margin-top:40px;}
+
 /*회원가입*/
 .terms_box {
 	overflow-x: hidden;
