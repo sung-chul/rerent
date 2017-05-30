@@ -35,12 +35,12 @@
 
 	<div class="container">
 		<div class="location">
-			<a href="#none">홈</a>
-			<span>회원가입</span>
+			<a href="#none">Guide</a>
+			<span>Table</span>
 		</div>
 
 		<div class="content">
-			<div class="page-title"><h2>회원가입</h2></div>
+			<div class="page-title"><h2>테이블</h2></div>
 
 			<div class="board-write1">
 				<table>
@@ -50,7 +50,7 @@
 					</colgroup>
 					<tbody>
 						<tr>
-							<th><span class="ico-star">*</span><label for="" class="text">회원구분</label></th>
+							<th scope="row"><span class="ico-star">*</span><label for="" class="text">회원구분</label></th>
 							<td>
 								<div class="radio-check">
 									<label><input type="radio" name="group" class="styled1" checked>개인</label>
@@ -60,37 +60,37 @@
 							</td>
 						</tr>
 						<tr>
-							<th><span class="ico-star">*</span><label for="" class="text">이름</label></th>
+							<th scope="row"><span class="ico-star">*</span><label for="name" class="text">이름</label></th>
 							<td>
-								<input type="text" style="width:395px;">
+								<input type="text" id="name" style="width:395px;">
 							</td>
 						</tr>
 						<tr>
-							<th><span class="ico-star">*</span><label for="" class="text">아이디(이메일)</label></th>
+							<th scope="row"><span class="ico-star">*</span><label for="id" class="text">아이디(이메일)</label></th>
 							<td>
-								<input type="text" style="width:395px;">
+								<input type="text" id="id" style="width:395px;">
 								<span class="msg-text">사용 가능한 아이디입니다.</span>
 							</td>
 						</tr>
 						<tr>
-							<th><span class="ico-star">*</span><label for="" class="text">비밀번호</label></th>
+							<th scope="row"><span class="ico-star">*</span><label for="pw" class="text">비밀번호</label></th>
 							<td>
-								<input type="password" style="width:395px;">
+								<input type="password" id="pw" style="width:395px;">
 								<span class="msg-text">사용할 수 있는 비밀번호입니다.</span>
 								<p class="notice-text">영문과 숫자, 특수문자 3가지 이상 조합으로 8~20자 이내로 입력하세요.</p>
 							</td>
 						</tr>
 						<tr>
-							<th><span class="ico-star">*</span><label for="" class="text">비밀번호 확인</label></th>
+							<th scope="row"><span class="ico-star">*</span><label for="pw2" class="text">비밀번호 확인</label></th>
 							<td>
-								<input type="password" style="width:395px;">
+								<input type="password" id="pw2" style="width:395px;">
 								<span class="msg-text fColor01">비밀번호가 일치하지 않습니다.</span>
 							</td>
 						</tr>
 						<tr>
-							<th><span class="ico-star">*</span><label for="" class="text">휴대폰 번호</label></th>
+							<th scope="row"><span class="ico-star">*</span><label for="phone" class="text">휴대폰 번호</label></th>
 							<td>
-								<select class="styled1" style="width:110px;">
+								<select class="styled1" id="phone" style="width:110px;">
 									<option>선택</option>
 									<option>010</option>
 									<option>011</option>
@@ -104,7 +104,7 @@
 							</td>
 						</tr>
 						<tr>
-							<th><span class="ico-star">*</span><label for="" class="text">생년월일(성별)</label></th>
+							<th scope="row"><span class="ico-star">*</span><label for="" class="text">생년월일(성별)</label></th>
 							<td>
 								<select class="styled1" style="width:110px;">
 									<option>선택</option>
@@ -143,14 +143,81 @@
 							</td>
 						</tr>
 						<tr>
-							<th>이메일 수신동의</th>
+							<th scope="row">이메일 수신동의</th>
 							<td>
-								<p class="text">ReRent에서 발송하는 뉴스레터, 광고메일, 이벤트 소식을 받으시겠습니까?</p>
-								<p class="notice-text">영문과 숫자, 특수문자 3가지 이상 조합으로 8~20자 이내로 입력하세요.</p>
+								<div class="email-agree">
+									<p class="text">ReRent에서 발송하는 뉴스레터, 광고메일, 이벤트 소식을 받으시겠습니까?</p>
+									<p class="notice-text mgT0">(회사정책 관련 내용은 수신동의 여부와 관계없이 발송됩니다.)</p>
+									<div class="radio-check mgT15">
+										<label><input type="radio" name="agree" class="styled1" checked>동의</label>
+										<label><input type="radio" name="agree" class="styled1">비동의</label>
+									</div>
+								</div>
 							</td>
 						</tr>
 					</tbody>
 				</table>
+			</div>
+			<br><br>
+			<div class="search-box">
+				<input type="text" class="search-inp" placeholder="검색어를 입력하세요">
+				<button type="button" class="btn-text-small btn-w98 btn-gray">검색</button>
+			</div>
+			<div class="board-list">
+				<table>
+					<colgroup>
+						<col style="width:15%;">
+						<col style="*">
+						<col style="width:15%;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">번호</th>
+							<th scope="col">제목</th>
+							<th scope="col">등록일</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><span class="ico-notice">공지</span></td>
+							<td class="notice-title"><a href="#">ReRent 사이트 신규 오픈</a></a></td>
+							<td>2017.03.24</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td class="title"><a href="#">연휴 기간중 정상영업 안내 공지</a></td>
+							<td>2017.03.24</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td class="title"><a href="#">중고차 구매시 연말정산 소득공제 혜택 안내</a></td>
+							<td>2017.03.24</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td class="title"><a href="#">제 2회 사진공모전 수상작 전시 '내 차와 함께한 순간'</a></td>
+							<td>2017.03.24</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="pagenation">
+				<div class="page-list">
+					<a href="#none" class="button btn-first">맨앞</a>
+					<a href="#none" class="button btn-prev">이전</a>
+					<span class="number on">1</span>
+					<a href="#none" class="number">2</a>
+					<a href="#none" class="number">3</a>
+					<a href="#none" class="number">4</a>
+					<a href="#none" class="number">5</a>
+					<a href="#none" class="number">6</a>
+					<a href="#none" class="number">7</a>
+					<a href="#none" class="number">8</a>
+					<a href="#none" class="number">9</a>
+					<a href="#none" class="number">10</a>
+					<a href="#none" class="button btn-next">다음</a>
+					<a href="#none" class="button btn-last">맨뒤</a>
+				</div>
 			</div>
 
 		</div>
