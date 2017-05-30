@@ -1301,14 +1301,11 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	검색 박스
 ========================================================================================================= */
 .search-box {
-	margin-bottom:40px;
-	padding:15px 0;
-	text-align: center;
-	background-color:#f0f0f0;
-	border:1px solid #ccc;
+	margin-bottom:20px;
+	text-align: right;
 }
 .search-box .search-inp {
-	width:450px;
+	width:300px;
 }
 /* =========================================================================================================
 	테이블
