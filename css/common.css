@@ -447,6 +447,15 @@ button {outline:0;vertical-align:top;}
 /* =========================================================================================================
 	버튼
 ========================================================================================================= */
+.btn-wrap {
+	margin-top:30px;
+	text-align: center;
+}
+.pop-btn-wrap {
+	margin-top:40px;
+	text-align: center;
+}
+
 .btn-text { /*높이 59인 버튼*/
 	display:inline-block;
 	height:59px;
@@ -820,7 +829,11 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 .board-list table tbody td.title a:hover {
 	color:#e9002d;
 }
-
+.board-list table tbody td.no-result {
+	padding:97px 0;
+	color:#999;
+	font-size:15px;
+}
 /* pagenation */
 .pagenation {
 	position:relative;
