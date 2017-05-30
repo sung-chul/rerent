@@ -391,7 +391,13 @@ button {outline:0;vertical-align:top;}
 	background-image:url(../img/sprite_btn.png);
 	background-repeat: no-repeat;
 }
-
+.icon-sprite {
+	position: relative;
+}
+.icon-sprite:before {
+	background-image:url(../img/sprite_icon.png);
+	background-repeat: no-repeat;
+}
 /* =========================================================================================================
 	공통
 ========================================================================================================= */
@@ -510,6 +516,27 @@ button {outline:0;vertical-align:top;}
 	background-color:#fff;
 	color:#333;
 	border:1px solid #666;
+}
+
+.btn-call {
+	display: inline-block;
+	height: 26px;
+	padding:0 10px 0 35px;
+	color:#666;
+	font-size:15px;
+	line-height: 24px;
+	border:1px solid #999;
+	border-radius: 3px;
+}
+.btn-call:before {
+	content: '';
+	position: absolute;
+	top:50%; left:10px;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	width:19px; height:19px;
+	background-position: 0 -28px;
 }
 
 /* =========================================================================================================
@@ -676,6 +703,51 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 
 }
 
+/* =========================================================================================================
+	리스트 & 리스트 박스
+========================================================================================================= */
+.notice-box .title {
+	margin-bottom:10px;
+	padding-left:36px;
+	color:#666;
+	font-size:16px;
+	font-weight: bold;
+	line-height: 26px;
+}
+.notice-box .title:before {
+	content: '';
+	position: absolute;
+	top:0; left:0;
+	width:26px; height:26px;
+}
+.bullet-list li {
+	position: relative;
+	padding-left:12px;
+	color:#999;
+	font-size:15px;
+	line-height: 24px;
+}
+.bullet-list li:before {
+	content: '';
+	position: absolute;
+	top:50%; left:0;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	width:3px; height:3px;
+	background-color:#999;
+}
+.bullet-list li .link {
+	position: relative;
+	color:#333;
+}
+.bullet-list li .link:after {
+	content: '';
+	position: absolute;
+	left:0; right:0; bottom:-1px;
+	width:100%; height:1px;
+	background-color:#666;
+}
 /* =========================================================================================================
 	회원가입 & 로그인
 ========================================================================================================= */
