@@ -795,6 +795,40 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	width:100%; height:1px;
 	background-color:#666;
 }
+
+.bullet-list1 {}
+.bullet-list1 .item {
+	position:relative;
+	padding-left:12px;
+	font-size:15px;
+	color:#666;
+	line-height:24px;
+}
+.bullet-list1 .item:before {
+	content:'';
+	display:block;
+	position:absolute;
+	left:0; top:12px;
+	width:4px;
+	height:1px;
+	background-color:#666;
+}
+
+.bullet-list2 {}
+.bullet-list2 .item {
+	position:relative;
+	padding-left:15px;
+	font-size:15px;
+	color:#666;
+	line-height:24px;
+}
+.bullet-list2 .item:before {
+	content:'※';
+	display:block;
+	position:absolute;
+	left:0; top:0;
+	font-size:15px;
+}
 /* =========================================================================================================
 	회원가입 & 로그인
 ========================================================================================================= */
@@ -1035,7 +1069,8 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	margin-left:-6px;
 	background:url(../img/icon/icon_bubble.png) no-repeat 0 0;
 }
-
+.tab-cont02 {display:none;}
+.tab-cont02.on {display:block;}
 .accordion-list {
 	margin-top:40px;
 	border-top:1px solid #999;
@@ -1103,6 +1138,11 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	background-color: #f58025;
 	text-align: center;
 	line-height: 28px;
+}
+.accordion-list .item .answer .answer-text {
+	font-size:15px;
+	color:#666;
+	line-height:25px;
 }
 
 /* =========================================================================================================
@@ -1569,6 +1609,7 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	position:fixed;
 	top:0; left:0; right:0; bottom:0;
 	background-color:rgba(0, 0, 0, 0.7);
+	z-index:400;
 }
 .layer-popup {
 	position:fixed;
