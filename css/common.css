@@ -408,6 +408,7 @@ button {outline:0;vertical-align:top;}
 .mgT20 {margin-top:20px !important;}
 .mgT25 {margin-top:25px !important;}
 .mgT30 {margin-top:30px !important;}
+.mgT40 {margin-top:40px !important;}
 .mgT50 {margin-top:50px !important;}
 
 .mgL5 {margin-left:5px !important;}
@@ -1552,3 +1553,86 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	margin:10px auto 0;
 }
 .pop-find-pw .pw-reset input {margin-top:10px;}
+
+/* 공지사항 상세 */
+.view-style {}
+.view-style .notice-info {
+	overflow:hidden;
+	padding:20px;
+	border-top:1px solid #999;
+	border-bottom:1px solid #ddd;
+}
+.view-style .notice-info .txt {
+	float:left;
+	font-size:18px;
+	color:#333;
+	line-height:25px;
+}
+.view-style .notice-info .info-list02 {
+	overflow:hidden;
+	float:right;
+}
+.view-style .notice-info .info-list02 .item {
+	position:relative;
+	float:left;
+	margin-left:20px;
+	padding-left:20px;
+	font-size:15px;
+	color:#666;
+	line-height:25px;
+}
+.view-style .notice-info .info-list02 .item:first-child {
+	margin-left:0;
+	padding-left:0;
+}
+.view-style .notice-info .info-list02 .item:before {
+	content:'';
+	display:block;
+	position:absolute;
+	left:0; top:6px;
+	width:1px;
+	height:14px;
+	background-color:#ddd;
+}
+.view-style .notice-info .info-list02 .item:first-child:before {display:none;}
+.view-style .notice-info .info-list02 .item .tit {
+	display:inline-block;
+	margin-right:9px;
+	color:#999;
+}
+
+.view-style .view-cont {
+	padding:36px 20px;
+	border-bottom:1px solid #999;
+	font-size:15px;
+	color:#666;
+	line-height:24px;
+}
+.view-style .page-link {
+	margin-top:40px;
+	border-bottom:1px solid #ddd;
+}
+.view-style .page-link .prev-next {
+	overflow:hidden;
+	padding:20px 30px;
+	border-top:1px solid #ddd;
+	font-size:15px;
+	color:#666;
+	line-height:22px;
+}
+.view-style .page-link .prev-next strong {
+	margin-right:50px;
+	padding-right:21px;
+	color:#333;
+}
+.view-style .page-link .prev-page strong {
+	background:url(../img/icon/icon_prev.gif) no-repeat right center;
+}
+.view-style .page-link .next-page strong {
+	background:url(../img/icon/icon_next.gif) no-repeat right center;
+}
+.view-style .page-link .prev-next .date {
+	display:inline-block;
+	float:right;
+	color:#999;
+}
