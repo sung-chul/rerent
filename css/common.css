@@ -391,7 +391,13 @@ button {outline:0;vertical-align:top;}
 	background-image:url(../img/sprite_btn.png);
 	background-repeat: no-repeat;
 }
-
+.icon-sprite {
+	position: relative;
+}
+.icon-sprite:before {
+	background-image:url(../img/sprite_icon.png);
+	background-repeat: no-repeat;
+}
 /* =========================================================================================================
 	공통
 ========================================================================================================= */
@@ -403,6 +409,7 @@ button {outline:0;vertical-align:top;}
 .mgT20 {margin-top:20px !important;}
 .mgT25 {margin-top:25px !important;}
 .mgT30 {margin-top:30px !important;}
+.mgT50 {margin-top:50px !important;}
 
 .mgL5 {margin-left:5px !important;}
 .mgL10 {margin-left:10px !important;}
@@ -430,7 +437,12 @@ button {outline:0;vertical-align:top;}
 	text-align: center;
 	letter-spacing: -1px;
 }
-
+.guide-txt2 {
+	color:#333;
+	font-size:20px;
+	text-align: center;
+	letter-spacing: -1px;
+}
 /* =========================================================================================================
 	타이틀
 ========================================================================================================= */
@@ -510,6 +522,27 @@ button {outline:0;vertical-align:top;}
 	background-color:#fff;
 	color:#333;
 	border:1px solid #666;
+}
+
+.btn-call {
+	display: inline-block;
+	height: 26px;
+	padding:0 10px 0 35px;
+	color:#666;
+	font-size:15px;
+	line-height: 24px;
+	border:1px solid #999;
+	border-radius: 3px;
+}
+.btn-call:before {
+	content: '';
+	position: absolute;
+	top:50%; left:10px;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	width:19px; height:19px;
+	background-position: 0 -28px;
 }
 
 /* =========================================================================================================
@@ -676,6 +709,51 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 
 }
 
+/* =========================================================================================================
+	리스트 & 리스트 박스
+========================================================================================================= */
+.notice-box .title {
+	margin-bottom:10px;
+	padding-left:36px;
+	color:#666;
+	font-size:16px;
+	font-weight: bold;
+	line-height: 26px;
+}
+.notice-box .title:before {
+	content: '';
+	position: absolute;
+	top:0; left:0;
+	width:26px; height:26px;
+}
+.bullet-list li {
+	position: relative;
+	padding-left:12px;
+	color:#999;
+	font-size:15px;
+	line-height: 24px;
+}
+.bullet-list li:before {
+	content: '';
+	position: absolute;
+	top:50%; left:0;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	width:3px; height:3px;
+	background-color:#999;
+}
+.bullet-list li .link {
+	position: relative;
+	color:#333;
+}
+.bullet-list li .link:after {
+	content: '';
+	position: absolute;
+	left:0; right:0; bottom:-1px;
+	width:100%; height:1px;
+	background-color:#666;
+}
 /* =========================================================================================================
 	회원가입 & 로그인
 ========================================================================================================= */
@@ -1140,6 +1218,40 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	color:#999;
 	font-size:15px;
 }
+
+/*팝업테이블 스타일 (border없는형태)*/
+.board-pop-write1 {}
+.board-pop-write1 table {}
+.board-pop-write1 th,
+.board-pop-write1 td {
+	text-align:left;
+}
+.board-pop-write1 th {padding-left:35px;}
+.board-pop-write1 td {
+	padding:5px 0;
+}
+
+.board-pop-write1 .text {
+	padding:5px 0;
+	font-size:15px;
+	font-weight:normal;
+	line-height:22px;
+}
+.board-pop-write1 th {
+	color:#666;
+	font-weight: normal;
+}
+.board-pop-write1 td .connect-txt {
+	display: inline-block;
+	width:18px;
+	color:#666;
+	font-size:15px;
+	line-height: 45px;
+	vertical-align: top;
+	text-align: center;
+}
+
+
 /* pagenation */
 .pagenation {
 	position:relative;
@@ -1282,3 +1394,13 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 .pop-certify .certify-time dd button {
 	float: right;
 }
+
+/*아이디,비밀번호찾기*/
+.pop-find-id,
+.pop-find-pw {width: 620px}
+
+.pop-find-pw .pw-reset {
+	width:340px;
+	margin:10px auto 0;
+}
+.pop-find-pw .pw-reset input {margin-top:10px;}
