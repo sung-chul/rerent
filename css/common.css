@@ -953,6 +953,73 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	left:0; top:0;
 }
 .point-list .item dl dd.img-box img {vertical-align:top;}
+
+/* 지점안내 상세 */
+.point-detail {}
+.other-point {
+	height:78px;
+	padding:15px;
+	border-top:2px solid #e9002d;
+	border-bottom:1px solid #999;
+	box-sizing:border-box;
+	text-align:center;
+}
+.other-point .select-box {text-align:left;}
+.other-point .other-text {
+	display:inline-block;
+	margin-right:10px;
+	font-size:15px;
+	color:#666;
+	line-height:45px;
+}
+.view-area {
+	margin-top:30px;
+}
+.infor-area {
+	position:relative;
+}
+.infor-area .detail-title {
+	display:inline-block;
+	margin-top:-3px;
+	font-size:24px;
+	color:#000;
+	line-height:38px;
+}
+.infor-area .infor-list {margin-top:23px;}
+.infor-area .infor-list .item {
+	margin-top:10px;
+	font-size:15px;
+	color:#333;
+	line-height:20px;
+}
+.infor-area .infor-list .item:first-child {margin-top:0;}
+.infor-area .infor-list .item span {
+	display:inline-block;
+	margin-right:30px;
+	color:#999;
+}
+.infor-area .btn-way {
+	display:inline-block;
+	padding:0 10px;
+	border:1px solid #999;
+	border-radius:2px;
+	box-sizing:border-box;
+	vertical-align:top;
+}
+.infor-area .btn-way .txt {
+	display:inline-block;
+	height:34px;
+	padding-left:40px;
+	background:url(../img/icon/icon_car.gif) no-repeat 0 center;
+	font-size:15px;
+	color:#333;
+	line-height:34px;
+}
+.view-area .map-area {
+	height:550px;
+	margin-top:27px;
+}
+.view-area .map-area img {vertical-align:top;}
 /* =========================================================================================================
 	검색 박스
 ========================================================================================================= */
