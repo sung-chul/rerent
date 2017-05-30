@@ -396,7 +396,20 @@ button {outline:0;vertical-align:top;}
 	공통
 ========================================================================================================= */
 /* 마진/패딩 */
+.mgT0 {margin-top:0 !important;}
+.mgT5 {margin-top:5px !important;}
+.mgT10 {margin-top:10px !important;}
+.mgT15 {margin-top:15px !important;}
 .mgT20 {margin-top:20px !important;}
+.mgT25 {margin-top:25px !important;}
+.mgT30 {margin-top:30px !important;}
+
+.mgL5 {margin-left:5px !important;}
+.mgL10 {margin-left:10px !important;}
+.mgL15 {margin-left:15px !important;}
+.mgL20 {margin-left:20px !important;}
+.mgL25 {margin-left:25px !important;}
+.mgL30 {margin-left:30px !important;}
 
 /* 폰트 컬러 */
 .fColor01 {color:#e9002d !important;} /* 빨강 */
@@ -442,6 +455,7 @@ button {outline:0;vertical-align:top;}
 	text-align:center;
 	line-height:59px;
 	box-sizing:border-box;
+	vertical-align: top;
 }
 .btn-text-small { /*높이 45인 버튼*/
 	display:inline-block;
@@ -451,6 +465,7 @@ button {outline:0;vertical-align:top;}
 	text-align:center;
 	line-height:45px;
 	box-sizing:border-box;
+	vertical-align: top;
 }
 
 .btn-w98 {width:98px;}
@@ -543,6 +558,9 @@ button {outline:0;vertical-align:top;}
 /* =========================================================================================================
 	체크박스/라디오버튼
 ========================================================================================================= */
+.radio-check {
+	display: inline-block;
+}
 .radio-check .check-radio {
 	margin-left:15px;
 }
@@ -725,4 +743,13 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	margin-top:5px;
 	color:#999;
 	font-size:14px;
+}
+.board-write1 td .connect-txt {
+	display: inline-block;
+	width:24px;
+	color:#666;
+	font-size:15px;
+	line-height: 45px;
+	vertical-align: top;
+	text-align: center;
 }
