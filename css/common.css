@@ -1002,7 +1002,7 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	width: 34%;
 }
 
-.cs-cont-area {padding-top:50px;}
+.cs-cont-area {padding-top:60px;}
 
 .order-area:after {display: block; content:''; clear: both; }
 .order-area button {
