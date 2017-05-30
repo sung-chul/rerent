@@ -1310,6 +1310,7 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	테이블
 ========================================================================================================= */
 .board-write1 {border-top:2px solid #e9002d;}
+.board-write1.type2 {border-top:1px solid #999;}
 .board-write1 table {border-bottom:1px solid #999;}
 .board-write1 th,
 .board-write1 td {
