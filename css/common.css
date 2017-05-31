@@ -1842,11 +1842,11 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	color:#666;
 	line-height:24px;
 }
-.view-style .page-link {
+.view-cont + .page-link {
 	margin-top:40px;
 	border-bottom:1px solid #ddd;
 }
-.view-style .page-link .prev-next {
+.view-cont +  .page-link .prev-next {
 	overflow:hidden;
 	padding:20px 30px;
 	border-top:1px solid #ddd;
@@ -1854,24 +1854,32 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	color:#666;
 	line-height:22px;
 }
-.view-style .page-link .prev-next strong {
+.view-cont + .page-link .prev-next strong {
 	margin-right:50px;
 	padding-right:21px;
 	color:#333;
 }
-.view-style .page-link .prev-page strong {
+.view-cont +  .page-link .prev-page strong {
 	background:url(../img/icon/icon_prev.gif) no-repeat right center;
 }
-.view-style .page-link .next-page strong {
+.view-cont + .page-link .next-page strong {
 	background:url(../img/icon/icon_next.gif) no-repeat right center;
 }
-.view-style .page-link .prev-next .date {
+.view-cont +  .page-link .prev-next .date {
 	display:inline-block;
 	float:right;
 	color:#999;
 }
-/*상세 style2*/
+.view-cont + .page-link a {position: relative;}
+.view-cont + .page-link a:hover::before {
+	content:'';
+	position:absolute;
+	left:0;right:0; bottom:-3px;
+	display: inline-block;
+	border-bottom:1px solid #333;
+}
 
+/*상세 style2*/
 .view-style2 {}
 .view-style2 .notice-info {
 	padding:20px;
@@ -1977,3 +1985,5 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	color:#333;
 	margin-bottom:5px;
 }
+/*이벤트 상세*/
+.ev-cont-area .view-style2 .txt span {width:65px;}
