@@ -89,4 +89,10 @@ $(window).load(function(){
 			//$('.rent-area').removeClass('on').eq(idx).addClass('on');
 		});
 	});
+
+	$('.event-banner .event-bxslider').bxSlider({
+		controls: true,
+		infiniteLoop: true,
+		pager: false,
+	});
 });
