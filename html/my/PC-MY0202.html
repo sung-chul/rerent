@@ -94,7 +94,7 @@
 									<th scope="row"><span class="ico-star">*</span><label for="phone" class="text">휴대폰 번호</label></th>
 									<td>
 										<span class="cell-txt">010-1234-5678</span>
-										<button type="button" class="btn-text-small btn-w98 btn-gray btn-certify">휴대폰 인증</button>
+										<button type="button" class="btn-text-small btn-w98 btn-gray btn-certify">수정</button>
 									</td>
 								</tr>
 								<tr>
@@ -195,15 +195,6 @@
 <script type="text/javascript" src="../../js/common.js"></script>
 <script>
 $(window).load(function(){
-	/* 파일찾기 버튼 */
-	$('.file-box .btn-file').click(function(){
-		$(this).parents().find('input[type=file]').click();
-	});
-
-	/* 첨부파일 삭제 버튼 */
-	$('.add-file .btn-delete').click(function(){
-		$(this).parents('li').remove();
-	});
 
 	/* 문의 내용 byte */
 	$('.byte-len').each(function () {
