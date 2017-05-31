@@ -1257,11 +1257,25 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 .thumb-list .thumb-item {
 	float:left;
 	width:320px;
+	height:251px;
 	margin:0 20px 55px 0;
 }
 .thumb-list .thumb-item:nth-child(3n) {margin-right:0;}
-.thumb-list .thumb-item .img-box {height:171px;}
-.thumb-list .thumb-item .img-box img {height:auto; vertical-align:top;}
+.thumb-list .thumb-item .img-wrap {
+	position:relative;
+	width:320px;
+	height:171px;
+}
+.thumb-list .thumb-item .img-wrap img {
+	vertical-align:top;
+}
+.thumb-list .thumb-item:hover .img-wrap:before  {
+	content: '';
+	position:absolute;
+	top:0; left:0; right:0; bottom:0;
+	border:3px solid #ea002c;
+	box-sizing:border-box;
+}
 .thumb-list .thumb-item .ev-text {
 	display:inline-block;
 	overflow:hidden;
@@ -1271,9 +1285,11 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	color:#333;
 	line-height:25px;
 	vertical-align: middle;
-	color:#666;
 	white-space:nowrap;
 	text-overflow:ellipsis;
+}
+.thumb-list .thumb-item:hover .ev-text {
+	text-decoration:underline;
 }
 .thumb-list .thumb-item .ev-date {
 	display:block;
@@ -1643,7 +1659,6 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 .board-list table tbody td.title {text-align:left;}
 .board-list table tbody td.notice-title a,
 .board-list table tbody td.title a {
-	position:relative;
 	display:inline-block;
 	overflow:hidden;
 	vertical-align: middle;
@@ -1655,13 +1670,8 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 .board-list table tbody td.notice-title a {
 	color:#333;
 }
-.board-list table tbody td.notice-title a:hover:before,
-.board-list table tbody td.title a:hover:before{
-	content:'';
-	position:absolute;
-	left:0;right:0; bottom:0;
-	display: inline-block;
-	border-bottom:1px solid #333;
+.board-list table tbody td a:hover{
+	text-decoration: underline;
 }
 .board-list table tbody td.no-result {
 	padding:97px 0;
@@ -1937,13 +1947,9 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	float:right;
 	color:#999;
 }
-.view-cont + .page-link a {position: relative;}
-.view-cont + .page-link a:hover::before {
-	content:'';
-	position:absolute;
-	left:0;right:0; bottom:-3px;
-	display: inline-block;
-	border-bottom:1px solid #333;
+
+.view-cont + .page-link a:hover{
+	text-decoration: underline;
 }
 
 /*상세 style2*/
