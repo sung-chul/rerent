@@ -737,9 +737,19 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 .step-box li.on {
 	z-index: 1;
 	margin-top:-1px;
-	padding-top:7px;
+	/*padding-top:7px;*/
 	background-color:#e9002d;
 	border-left:0;
+}
+.step-box li.on:before {
+	content:'';
+	position: absolute;
+	right:20px;
+	top:50%;
+	margin-top:-20px;
+	width:46px;
+	height: 40px;
+	background: url(../img/sprite_icon.png) no-repeat 0 -66px;
 }
 .step-box li .step {
 	display: block;
