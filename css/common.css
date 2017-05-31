@@ -1576,7 +1576,6 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 .board-list table tbody td.title {text-align:left;}
 .board-list table tbody td.notice-title a,
 .board-list table tbody td.title a {
-	position:relative;
 	display:inline-block;
 	overflow:hidden;
 	vertical-align: middle;
@@ -1588,13 +1587,8 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 .board-list table tbody td.notice-title a {
 	color:#333;
 }
-.board-list table tbody td.notice-title a:hover:before,
-.board-list table tbody td.title a:hover:before{
-	content:'';
-	position:absolute;
-	left:0;right:0; bottom:0;
-	display: inline-block;
-	border-bottom:1px solid #333;
+.board-list table tbody td a:hover{
+	text-decoration: underline;
 }
 .board-list table tbody td.no-result {
 	padding:97px 0;
@@ -1870,13 +1864,9 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	float:right;
 	color:#999;
 }
-.view-cont + .page-link a {position: relative;}
-.view-cont + .page-link a:hover::before {
-	content:'';
-	position:absolute;
-	left:0;right:0; bottom:-3px;
-	display: inline-block;
-	border-bottom:1px solid #333;
+
+.view-cont + .page-link a:hover{
+	text-decoration: underline;
 }
 
 /*상세 style2*/
