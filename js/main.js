@@ -76,4 +76,17 @@ $(window).load(function(){
 			}, sSpeed);
 		}
 	});
+
+	$('.rent-cont .rent-bxslider').bxSlider({
+		controls: true,
+		infiniteLoop: false,
+	});
+
+	$('.rent-tab .item').each(function(){
+		$(this).click(function(){
+			var idx = $(this).index();
+			$('.rent-tab .item').removeClass('on').eq(idx).addClass('on');
+			//$('.rent-area').removeClass('on').eq(idx).addClass('on');
+		});
+	});
 });

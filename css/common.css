@@ -467,6 +467,18 @@ button {outline:0;vertical-align:top;}
 .floatN {float:none !important;}
 
 /* 텍스트 */
+/* 말줄임 */
+.ellipsis-line {
+	display:-webkit-box;
+	overflow:hidden;
+	width:100%;
+	text-overflow:ellipsis;
+	word-break:webkit-box;
+	-webkit-line-clamp:2;
+	-webkit-box-orient:vertical;
+	word-wrap:break-word;
+}
+
 .guide-txt {
 	color:#333;
 	font-size:18px;
@@ -549,6 +561,7 @@ button {outline:0;vertical-align:top;}
 .btn-w148 {width:148px;}
 .btn-w228 {width:228px;}
 .btn-w240 {width:240px;}
+.btn-w370 {width:370px;}
 .btn-w460 {width:460px;}
 
 .btn-black {background-color:#3b3b3b}
@@ -584,6 +597,26 @@ button {outline:0;vertical-align:top;}
 	transform: translateY(-50%);
 	width:19px; height:19px;
 	background-position: 0 -28px;
+}
+
+/* 아이콘 버튼 */
+.btn-more {
+	display:inline-block;
+	height: 29px;
+	padding:0 29px 0 10px;
+	color:#fff;
+	font-size:14px;
+	line-height: 29px;
+	background-color:#ff7a00;
+	vertical-align: top;
+}
+.btn-more:before {
+	top:50%; right:10px;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	width:9px; height:15px;
+	background-position: 0 -440px;
 }
 
 /* =========================================================================================================

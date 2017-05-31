@@ -3,8 +3,10 @@
 	overflow: hidden;
 	min-width: 1000px;
 }
-.main-container {}
+.main-container {margin-top:-1px;}
+.main-container .content {padding-bottom:0;}
 /* 비주얼 슬라이드 */
+.visual-banner {background-color:#d5d5d5;}
 .visual-banner .center-box {
 	position:relative;
 	width:100%;
@@ -129,3 +131,280 @@
 .visual-banner .btn-area .btn-next {background-position:0 -182px;}
 .visual-banner .btn-area .btn-stop {background-position:0 -221px;}
 .visual-banner .btn-area .btn-stop.play {background-position:0 -282px;}
+
+.section {
+	width:100%;
+	padding-bottom:60px;
+}
+.section.type02 {
+	position: relative;
+	padding-top:60px;
+	background:#efefef;
+}
+.section.type02:before {
+	content: '';
+	position: absolute;
+	top:0; left:50%;
+	width:1500px;
+	height:531px;
+	background:url(../img/bg/bg_main.jpg) 0 0 no-repeat;
+	-webkit-transform:translateX(-965px);
+	-ms-transform:translateX(-965px);
+	transform:translateX(-965px);
+}
+.section.type03 {
+	padding-top:60px;
+	background-color:#333;
+}
+.section .section-cont {
+	position: relative;
+	width:1000px;
+	margin:0 auto;
+}
+.section .section-footer {overflow: hidden;}
+.section .title {text-align: center;}
+.section .title h2 {
+	position: relative;
+	display: inline-block;
+	color:#000;
+	font-size:26px;
+	font-family:'noto';
+	font-weight:600;
+	text-align:center;
+	line-height: 116px;
+}
+.section .title h2 span {
+	color:#f10739;
+}
+.section .title h2:before {
+	content: '';
+	position: absolute;
+	bottom:34px; left:0; right:0;
+	width: 60px;;
+	height:2px;
+	margin: 0 auto;
+	background-color:#999;
+}
+.rent-wrap {
+	width:100%;
+	border:1px solid #d9d9d9;
+	border-top:0;
+	box-sizing: border-box;
+}
+.rent-tab {
+	overflow:hidden;
+	margin:0 -1px;
+}
+.rent-tab .item {
+	float:left;
+	width:25%;
+	cursor:pointer;
+}
+.rent-tab .item .text {
+	display:block;
+	height:60px;
+	border:1px solid #d9d9d9 ;
+	border-bottom:2px solid #ea002c;
+	border-left:0;
+	background-color:#f4f4f4;
+	box-sizing:border-box;
+	font-size:16px;
+	color:#666;
+	line-height:60px;
+	text-align:center;
+}
+.rent-tab .item.on .text {
+	border:2px solid #ea002c;
+	border-bottom:1px solid #fff;
+	background-color:#fff;
+	color:#000;
+}
+.rent-tab .item:first-child.on .text {
+	border-left:1px solid #d9d9d9;
+}
+.rent-tab .item:first-child .text {
+	border-left:1px solid #d9d9d9;
+}
+.rent-tab .item:last-child .text {
+	border-right:1px solid #d9d9d9;
+}
+.rent-cont {
+	position: relative;
+	width:900px;
+	margin:40px auto 20px;
+}
+.rent-list {
+	overflow: hidden;
+}
+.rent-list li {
+	float:left;
+	width:205px;
+	margin:0 10px 23px;
+}
+.rent-list li .img-wrap {
+	position: relative;
+	width:205px;
+	height:137px;
+}
+.rent-list li .img-wrap img {
+	vertical-align: top;
+}
+.rent-list li:hover .img-wrap:before  {
+	content: '';
+	position:absolute;
+	top:0; left:0; right:0; bottom:0;
+	border:3px solid #ea002c;
+	box-sizing: border-box;
+}
+.rent-list li .car {
+	height: 36px;
+	margin-top:5px;
+	color:#666;
+	font-size:14px;
+	line-height: 18px;
+}
+.rent-list li .price {
+	color:#ea002c;
+	font-size:20px;
+	line-height: 32px;
+}
+.rent-list li .price .month {
+	color:#333;
+	font-size:15px;
+}
+.rent-cont .bx-controls .bx-pager {
+	position: relative;
+	z-index: 1;
+	height: 12px;
+	margin-top:-10px;
+	text-align: center;
+	line-height: 0;
+}
+.rent-cont .bx-controls .bx-pager-item {
+	display: inline-block;
+	margin: 0 5px;
+	vertical-align:top;
+}
+.rent-cont .bx-controls .bx-pager-item .bx-pager-link {
+	display: block;
+	width:12px; height:12px;
+	background-color:#ddd;
+	border-radius:50%;
+	font-size:0;
+	line-height: 0;
+	text-indent: -99999px;
+}
+.rent-cont .bx-controls .bx-pager-item .bx-pager-link.active {
+	background-color:#ff7a00;
+}
+.rent-cont .bx-controls .bx-controls-direction a {
+	position:absolute;
+	top:50%;
+	width:31px; height:88px;
+	margin-top:-88px;
+	background-image:url(../img/sprite_btn.png);
+	background-repeat: no-repeat;
+	font-size:0;
+	line-height: 0;
+	text-indent: -99999px;
+}
+.rent-cont .bx-controls .bx-controls-direction a.bx-prev {
+	left:-50px;
+	background-position: 0 -260px;
+}
+.rent-cont .bx-controls .bx-controls-direction a.bx-next {
+	right:-50px;
+	background-position: 0 -350px;
+}
+
+/* 중고차 장기렌터카 검색 */
+.rent-search {
+	padding-bottom:39px;
+	background-color:#fff;
+	border:1px solid #d9d9d9;
+	box-sizing: border-box;
+}
+.rent-search .search-area {
+	margin:0 59px;
+}
+.rent-search .row {
+	position: relative;
+	margin-top:10px;
+}
+.rent-search .row:first-child {
+	margin-top:0;
+}
+.rent-search .row:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.rent-search .row .title {
+	float:left;
+	display: inline-block;
+	width: 76px;
+	color:#666;
+	font-size: 15px;
+	line-height: 45px;
+	text-align: left;
+}
+.rent-search .row .styled1 {
+	width:365px;
+}
+.rent-search .row .connect-txt {
+	display: inline-block;
+	margin:0 5px;
+	line-height: 45px;
+	vertical-align: top;
+	color:#666;
+}
+.rent-search .btn-wrap {
+	margin-top:40px;
+}
+
+/* 이벤트 배너 및 공지사항 */
+.event-banner {
+	float: left;
+	position: relative;
+	width:490px;
+	height:246px;
+}
+.event-banner .item img {vertical-align: top;}
+
+.notice-area {
+	float: right;
+	position: relative;
+	width:490px;
+	height:246px;
+	padding:23px 30px 30px;
+	background-color:#fff;
+	box-sizing: border-box;
+}
+.notice-area .title {
+	color:#000;
+	font-size:24px;
+	font-family:'noto';
+	font-weight:600;
+	text-align: left;
+}
+.notice-area .notice-list {
+	margin-top:16px;
+}
+.notice-area .notice-list li {
+	border-top:1px solid #ddd;
+}
+.notice-area .notice-list li:first-child {
+	border-top:0;
+}
+.notice-area .notice-list li a {
+	overflow: hidden;
+	display: block;
+	width:100%;
+	padding-right:10px;
+	color:#666;
+	font-size:15px;
+	line-height: 36px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	box-sizing: border-box;
+}
