@@ -1216,6 +1216,40 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	이벤트
 ========================================================================================================= */
 .ev-cont-area {padding-top:60px;}
+
+.thumb-list {
+	overflow:hidden;
+	border-bottom:1px solid #999;
+}
+.thumb-list .thumb-item {
+	float:left;
+	width:320px;
+	margin:0 20px 55px 0;
+}
+.thumb-list .thumb-item:nth-child(3n) {margin-right:0;}
+.thumb-list .thumb-item .img-box {height:171px;}
+.thumb-list .thumb-item .img-box img {height:auto; vertical-align:top;}
+.thumb-list .thumb-item .ev-text {
+	display:inline-block;
+	overflow:hidden;
+	max-width:100%;
+	margin-top:20px;
+	font-size:18px;
+	color:#333;
+	line-height:25px;
+	vertical-align: middle;
+	color:#666;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.thumb-list .thumb-item .ev-date {
+	display:block;
+	margin-top:10px;
+	font-size:15px;
+	color:#999;
+	line-height:25px;
+}
+
 /* =========================================================================================================
 	탭메뉴
 ========================================================================================================= */
