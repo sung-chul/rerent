@@ -1152,6 +1152,36 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 ========================================================================================================= */
 .my-cont-area {padding-top:60px;}
 
+/*나의상담내역*/
+.my-infor-mod {}
+.my-infor-mod .my-notice-text {
+	font-size:15px;
+	color:#666;
+	line-height:25px;
+}
+.my-infor-mod .inpu-box {
+	margin-top:15px;
+	padding:50px 0;
+	border:1px solid #ccc;
+	border-top:1px solid #e8012d;
+	box-sizing:border-box;
+	text-align:center;
+}
+.my-infor-mod .inpu-box .title {
+	display:inline-block;
+	height:45px;
+	margin-right:5px;
+	font-size:15px;
+	color:#666;
+	line-height:45px;
+}
+.board-write1 td .cell-txt {
+	display:inline-block;
+	height:45px;
+	margin-right:5px;
+	line-height:45px;
+}
+
 /*나의상담내역 list */
 .my-cont-area .my-counsel td:nth-child(2) {text-align: left; padding-left:35px; color:#333;}
 .my-cont-area .my-counsel td:nth-child(3) {padding-left:35px;}
@@ -1169,21 +1199,6 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 }
 .my-cont-area .my-counsel td .counsel {color:#323232;}
 .my-cont-area .my-counsel td .complete {color:#eb002d;}
-
-/*상담내역 view*/
-.notice-info .txt span {
-	display: inline-block;
-	width:78px;
-	height:29px;
-	line-height: 26px;
-	border:1px solid #ccc;
-	font-size: 13px;
-	text-align: center;
-	border-radius:5px;
-	box-sizing: border-box;
-}
-.notice-info .txt .counsel {color:#323232;}
-.notice-info .txt .complete {color:#eb002d;}
 
 /*회원탈퇴*/
 .board-write1 td .td-inner {padding:13px 0;}

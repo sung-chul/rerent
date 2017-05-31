@@ -37,7 +37,7 @@
 		<div class="location">
 			<a href="#none">홈</a>
 			<a href="#none">마이페이지</a>
-			<span>회원탈퇴</span>
+			<span>내 정보 수정</span>
 		</div>
 
 		<div class="content">
@@ -48,12 +48,13 @@
 			<div class="tab-wrap cs-area">
 				<ul class="tab-list">
 					<li class="item"><a href="PC-MY0101.html" class="text">나의 상담내역 조회</a></li>
-					<li class="item"><a href="PC-MY0201.html" class="text">내 정보 수정</a></li>
-					<li class="item on"><span class="text">회원탈퇴</span></li>
+					<li class="item on"><span class="text">내 정보 수정</span></li>
+					<li class="item"><a href="PC-MY0301.html" class="text">회원탈퇴</a></li>
 				</ul>
 
 				<div class="my-cont-area">
-					<div class="board-write1 type2">
+					<h2 class="cTitle01">기본정보</h2>
+					<div class="board-write1">
 						<table>
 							<colgroup>
 								<col style="width:200px;">
@@ -61,29 +62,50 @@
 							</colgroup>
 							<tbody>
 								<tr>
-									<th scope="row"><label for="case" class="text">아이디</label></th>
-									<td>abc@abc.com</td>
-								</tr>
-								<tr>
-									<th scope="row"><span class="ico-star">*</span><label for="title" class="text">비밀번호</label></th>
+									<th scope="row"><span class="ico-star">*</span><label for="" class="text">회원구분</label></th>
 									<td>
-										<input type="password" id="title" style="width:395px;">
+										<div class="radio-check">
+											<label><input type="radio" name="group" class="styled1" checked>개인</label>
+											<label><input type="radio" name="group" class="styled1">개인사업자</label>
+											<label><input type="radio" name="group" class="styled1">법인사업자</label>
+										</div>
 									</td>
 								</tr>
 								<tr>
-									<th scope="row"><span class="ico-star">*</span><label for="pw2" class="text">탈퇴 사유</label></th>
+									<th scope="row"><label for="name" class="text">이름</label></th>
+									<td>홍길동</td>
+								</tr>
+								<tr>
+									<th scope="row"><span class="ico-star">*</span><label for="pw" class="text">변경할 비밀번호</label></th>
 									<td>
-										<div class="td-inner">
-											<ul class="radio-check-list">
-												<li><label><input type="radio" name="reason" class="styled1" checked>자주 이용하지 않음</label></li>
-												<li><label><input type="radio" name="reason" class="styled1">새로운 계정으로 재가입</label></li>
-												<li><label><input type="radio" name="reason" class="styled1">필요한 정보가 없음</label></li>
-												<li><label><input type="radio" name="reason" class="styled1">랜터카 업체 및 차량에 대한 불만</label></li>
-												<li><label><input type="radio" name="reason" class="styled1">기타의견</label></li>
-											</ul>
-											<div class="tbl-textarea mgT10">
-												<textarea></textarea>
-												<span class="byte-len"><span class="count">0</span>/<span class="maxcount">2000</span>byte</span>
+										<input type="password" id="pw" style="width:395px;">
+										<span class="msg-text">사용할 수 있는 비밀번호입니다.</span>
+										<p class="notice-text">영문과 숫자, 특수문자 3가지 이상 조합으로 8~20자 이내로 입력하세요.</p>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row"><span class="ico-star">*</span><label for="pw2" class="text">변경할 비밀번호 확인</label></th>
+									<td>
+										<input type="password" id="pw2" style="width:395px;">
+										<span class="msg-text fColor01">비밀번호가 일치하지 않습니다.</span>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row"><span class="ico-star">*</span><label for="phone" class="text">휴대폰 번호</label></th>
+									<td>
+										<span class="cell-txt">010-1234-5678</span>
+										<button type="button" class="btn-text-small btn-w98 btn-gray btn-certify">휴대폰 인증</button>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">이메일 수신동의</th>
+									<td>
+										<div class="email-agree">
+											<p class="text">ReRent에서 발송하는 뉴스레터, 광고메일, 이벤트 소식을 받으시겠습니까?</p>
+											<p class="notice-text mgT0">(회사정책 관련 내용은 수신동의 여부와 관계없이 발송됩니다.)</p>
+											<div class="radio-check mgT15">
+												<label><input type="radio" name="agree" class="styled1" checked>동의</label>
+												<label><input type="radio" name="agree" class="styled1">비동의</label>
 											</div>
 										</div>
 									</td>
@@ -91,9 +113,50 @@
 							</tbody>
 						</table>
 					</div>
+					<h2 class="cTitle01 mgT55">부가정보</h2>
+					<div class="board-write1">
+						<table>
+							<colgroup>
+								<col style="width:200px;">
+								<col sttyle="*">
+								<col style="width:200px;">
+								<col sttyle="*">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row"><label for="name" class="text">회사명</label></th>
+									<td>
+										<input type="text" id="name" style="width:255px;">
+									</td>
+									<th scope="row"><label for="name" class="text">사업자번호</label></th>
+									<td>
+										<input type="text" id="name" placeholder="하이픈(-) 없이 입력" style="width:255px;">
+									</td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="name" class="text">담당자명</label></th>
+									<td>
+										<input type="text" id="name" style="width:255px;">
+									</td>
+									<th scope="row"><label for="name" class="text">회사전화번호</label></th>
+									<td>
+										<input type="text" id="name" placeholder="하이픈(-) 없이 입력" style="width:255px;">
+									</td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="name" class="text">팩스번호</label></th>
+									<td>
+										<input type="text" id="name" placeholder="하이픈(-) 없이 입력" style="width:255px;">
+									</td>
+									<th scope="row"><label for="name" class="text">&nbsp;</label></th>
+									<td>&nbsp;</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 					<div class="btn-wrap">
 						<a href="#" class="btn-text btn-w228 btn-black">취소</a>
-						<a href="#" class="btn-text btn-w228 btn-red">회원탈퇴</a>
+						<a href="#" class="btn-text btn-w228 btn-red">수정</a>
 					</div>
 				</div>
 			</div>
