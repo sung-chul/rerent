@@ -705,7 +705,9 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 .checkbox.disabled,
 .radiobox.disabled {background-color:#e3e3e3;}
 
-
+.radio-check-list {}
+.radio-check-list li {margin-top:12px;}
+.radio-check-list li:first-child {margin-top:0;}
 /* =========================================================================================================
 	step
 ========================================================================================================= */
@@ -1554,7 +1556,6 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	vertical-align: top;
 	text-align: center;
 }
-
 
 /* pagenation */
 .pagenation {
