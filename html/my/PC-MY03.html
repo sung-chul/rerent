@@ -52,7 +52,7 @@
 					<li class="item on"><a href="PC-CS0301.html" class="text">공지사항</a></li>
 				</ul>
 
-				<div class="cs-cont-area">
+				<div class="my-cont-area">
 					<div class="board-write1 type2">
 						<table>
 							<colgroup>
@@ -67,36 +67,33 @@
 								<tr>
 									<th scope="row"><span class="ico-star">*</span><label for="title" class="text">비밀번호</label></th>
 									<td>
-										<input type="text" id="title" style="width:395px;">
+										<input type="password" id="title" style="width:395px;">
 									</td>
 								</tr>
 								<tr>
 									<th scope="row"><span class="ico-star">*</span><label for="pw2" class="text">탈퇴 사유</label></th>
 									<td>
-										<div class="radio-check">
-											<label><input type="radio" name="reason" class="styled1" checked>자주 이용하지 않음</label>
-											<label><input type="radio" name="reason" class="styled1">새로운 계정으로 재가입</label>
-											<label><input type="radio" name="reason" class="styled1">필요한 정보가 없음</label>
-											<label><input type="radio" name="reason" class="styled1">랜터카 업체 및 차량에 대한 불만</label>
-											<label><input type="radio" name="reason" class="styled1">기타의견</label>
-										</div>
-										<div class="tbl-textarea">
-											<textarea></textarea>
-											<span class="byte-len"><span class="count">0</span>/<span class="maxcount">4000</span>byte</span>
+										<div class="td-inner">
+											<ul class="radio-check-list">
+												<li><label><input type="radio" name="reason" class="styled1" checked>자주 이용하지 않음</label></li>
+												<li><label><input type="radio" name="reason" class="styled1">새로운 계정으로 재가입</label></li>
+												<li><label><input type="radio" name="reason" class="styled1">필요한 정보가 없음</label></li>
+												<li><label><input type="radio" name="reason" class="styled1">랜터카 업체 및 차량에 대한 불만</label></li>
+												<li><label><input type="radio" name="reason" class="styled1">기타의견</label></li>
+											</ul>
+											<div class="tbl-textarea mgT10">
+												<textarea></textarea>
+												<span class="byte-len"><span class="count">0</span>/<span class="maxcount">2000</span>byte</span>
+											</div>
 										</div>
 									</td>
 								</tr>
 							</tbody>
 						</table>
 					</div>
-					<div class="notice-box mgT15">
-						<h4 class="title icon-sprite">알아두세요!</h4>
-						<ul class="bullet-list">
-							<li>1:1문의 사항의 답변은 <a href="#none" class="link">MY페이지 > 나의 상담내역 조회</a> 에서 확인 가능합니다.</li>
-						</ul>
-					</div>
-					<div class="btn-wrap mgT40">
-						<a href="#" class="btn-text btn-w228 btn-red">문의 등록</a>
+					<div class="btn-wrap">
+						<a href="#" class="btn-text btn-w228 btn-black">취소</a>
+						<a href="#" class="btn-text btn-w228 btn-red">회원탈퇴</a>
 					</div>
 				</div>
 			</div>
