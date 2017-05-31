@@ -1257,11 +1257,25 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 .thumb-list .thumb-item {
 	float:left;
 	width:320px;
+	height:251px;
 	margin:0 20px 55px 0;
 }
 .thumb-list .thumb-item:nth-child(3n) {margin-right:0;}
-.thumb-list .thumb-item .img-box {height:171px;}
-.thumb-list .thumb-item .img-box img {height:auto; vertical-align:top;}
+.thumb-list .thumb-item .img-wrap {
+	position:relative;
+	width:320px;
+	height:171px;
+}
+.thumb-list .thumb-item .img-wrap img {
+	vertical-align:top;
+}
+.thumb-list .thumb-item:hover .img-wrap:before  {
+	content: '';
+	position:absolute;
+	top:0; left:0; right:0; bottom:0;
+	border:3px solid #ea002c;
+	box-sizing:border-box;
+}
 .thumb-list .thumb-item .ev-text {
 	display:inline-block;
 	overflow:hidden;
@@ -1271,9 +1285,11 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	color:#333;
 	line-height:25px;
 	vertical-align: middle;
-	color:#666;
 	white-space:nowrap;
 	text-overflow:ellipsis;
+}
+.thumb-list .thumb-item:hover .ev-text {
+	text-decoration:underline;
 }
 .thumb-list .thumb-item .ev-date {
 	display:block;
