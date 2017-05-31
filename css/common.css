@@ -1153,7 +1153,34 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 .my-cont-area {padding-top:60px;}
 
 /*나의상담내역*/
-
+.my-infor-mod {}
+.my-infor-mod .my-notice-text {
+	font-size:15px;
+	color:#666;
+	line-height:25px;
+}
+.my-infor-mod .inpu-box {
+	margin-top:15px;
+	padding:50px 0;
+	border:1px solid #ccc;
+	border-top:1px solid #e8012d;
+	box-sizing:border-box;
+	text-align:center;
+}
+.my-infor-mod .inpu-box .title {
+	display:inline-block;
+	height:45px;
+	margin-right:5px;
+	font-size:15px;
+	color:#666;
+	line-height:45px;
+}
+.board-write1 td .cell-txt {
+	display:inline-block;
+	height:45px;
+	margin-right:5px;
+	line-height:45px;
+}
 /*회원탈퇴*/
 .board-write1 td .td-inner {padding:13px 0;}
 
