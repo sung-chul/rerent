@@ -1152,7 +1152,7 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 ========================================================================================================= */
 .my-cont-area {padding-top:60px;}
 
-/*나의상담내역*/
+/*나의상담내역 list */
 .my-cont-area .my-counsel td:nth-child(2) {text-align: left; padding-left:35px; color:#333;}
 .my-cont-area .my-counsel td:nth-child(3) {padding-left:35px;}
 .my-cont-area .my-counsel td.title a {color:#333}
@@ -1169,6 +1169,21 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 }
 .my-cont-area .my-counsel td .counsel {color:#323232;}
 .my-cont-area .my-counsel td .complete {color:#eb002d;}
+
+/*상담내역 view*/
+.notice-info .txt span {
+	display: inline-block;
+	width:78px;
+	height:29px;
+	line-height: 26px;
+	border:1px solid #ccc;
+	font-size: 13px;
+	text-align: center;
+	border-radius:5px;
+	box-sizing: border-box;
+}
+.notice-info .txt .counsel {color:#323232;}
+.notice-info .txt .complete {color:#eb002d;}
 
 /*회원탈퇴*/
 .board-write1 td .td-inner {padding:13px 0;}
@@ -1826,4 +1841,111 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	display:inline-block;
 	float:right;
 	color:#999;
+}
+/*상세 style2*/
+
+.view-style2 {}
+.view-style2 .notice-info {
+	padding:20px;
+	border-top:1px solid #999;
+	border-bottom:1px solid #ddd;
+}
+.view-style2 .notice-info .txt {
+	font-size:20px;
+	color:#333;
+}
+.view-style2 .notice-info .txt span {
+	display: inline-block;
+	width:78px;
+	height:29px;
+	margin-right:12px;
+	line-height: 26px;
+	border:1px solid #ccc;
+	font-size: 13px;
+	text-align: center;
+	border-radius:5px;
+	vertical-align: middle;
+	box-sizing: border-box;
+}
+.view-style2 .notice-info .txt .counsel {color:#323232;}
+.view-style2 .notice-info .txt .complete {color:#eb002d;}
+.view-style2 .notice-info .info-list02 {
+	overflow:hidden;
+	margin-top:5px;
+}
+.view-style2 .notice-info .info-list02 .item {
+	position:relative;
+	float:left;
+	margin-left:20px;
+	padding-left:20px;
+	font-size:15px;
+	color:#666;
+	line-height:25px;
+}
+.view-style2 .notice-info .info-list02 .item:first-child {
+	margin-left:0;
+	padding-left:0;
+}
+.view-style2 .notice-info .info-list02 .item:before {
+	content:'';
+	display:block;
+	position:absolute;
+	left:0; top:6px;
+	width:1px;
+	height:14px;
+	background-color:#ddd;
+}
+.view-style2 .notice-info .info-list02 .item:first-child:before {display:none;}
+.view-style2 .notice-info .info-list02 .item .tit {
+	display:inline-block;
+	margin-right:9px;
+	color:#999;
+}
+.view-style2 .view-cont {
+	padding:36px 20px;
+
+	border-bottom:1px solid #999;
+	font-size:15px;
+	color:#666;
+	line-height:24px;
+}
+
+.view-style2 .view-cont .reply-area {
+	position:relative;
+	margin:40px -20px -36px -20px;
+	padding:30px 20px 30px 60px;
+	background-color:#f0f0f0;
+	border-top:1px solid #ddd;
+}
+.view-style2 .view-cont .reply-area:before{
+	content:'';
+	position:absolute;
+	left:29px;top:-7px;
+	width:14px;
+	height:8px;
+	background:url(../img/icon/icon_bubble2.png) no-repeat 0 0;
+}
+.view-style2 .view-cont .reply-area p {
+	position:relative;
+	color:#666;
+	line-height: 25px;
+}
+.view-style2 .view-cont .reply-area p:before{
+	content:'A';
+	display: inline-block;
+	position: absolute;
+	left:-42px;
+	top:0;
+	width:30px;
+	height:30px;
+	border-radius: 50%;
+	color:#fff;
+	background-color: #f58025;
+	text-align: center;
+	line-height: 28px;
+}
+.view-style2 .view-cont .reply-area p .date {
+	display: block;
+	color:#333;
+	margin-bottom:5px;
 }
