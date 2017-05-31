@@ -1181,6 +1181,23 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	margin-right:5px;
 	line-height:45px;
 }
+.my-cont-area .my-counsel td:nth-child(2) {text-align: left; padding-left:35px; color:#333;}
+.my-cont-area .my-counsel td:nth-child(3) {padding-left:35px;}
+.my-cont-area .my-counsel td.title a {color:#333}
+.my-cont-area .my-counsel td span {
+	display: inline-block;
+	width:78px;
+	height:29px;
+	line-height: 26px;
+	border:1px solid #ccc;
+	font-size: 13px;
+	text-align: center;
+	border-radius:5px;
+	box-sizing: border-box;
+}
+.my-cont-area .my-counsel td .counsel {color:#323232;}
+.my-cont-area .my-counsel td .complete {color:#eb002d;}
+
 /*회원탈퇴*/
 .board-write1 td .td-inner {padding:13px 0;}
 
@@ -1544,17 +1561,25 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 .board-list table tbody td.title {text-align:left;}
 .board-list table tbody td.notice-title a,
 .board-list table tbody td.title a {
-	display:block;
+	position:relative;
+	display:inline-block;
 	overflow:hidden;
-	width:100%;
+	vertical-align: middle;
+	max-width:100%;
 	color:#666;
 	white-space:nowrap;
 	text-overflow:ellipsis;
 }
-.board-list table tbody td.notice-title a {color:#333;}
-.board-list table tbody td.notice-title a:hover,
-.board-list table tbody td.title a:hover {
-	color:#e9002d;
+.board-list table tbody td.notice-title a {
+	color:#333;
+}
+.board-list table tbody td.notice-title a:hover:before,
+.board-list table tbody td.title a:hover:before{
+	content:'';
+	position:absolute;
+	left:0;right:0; bottom:0;
+	display: inline-block;
+	border-bottom:1px solid #333;
 }
 .board-list table tbody td.no-result {
 	padding:97px 0;
