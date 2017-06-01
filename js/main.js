@@ -19,6 +19,8 @@ $(window).load(function(){
 		var idx = $(this).index();
 		$(this).parents('.visual-banner').find('.title-item').removeClass('on').eq(idx).addClass('on');
 		$(this).parents('.visual-banner').find('.img-item').removeClass('on').eq(idx).addClass('on');
+		var idx = $('.title-item.on').index();
+		$('.car-obj .car').attr('class', 'car on'+idx);
 	});
 
 	// 다음 버튼
@@ -46,6 +48,7 @@ $(window).load(function(){
 	var sSpeed = 3000;// 슬라이드 속도
 	visualTimer = setInterval(function(){
 		$('.btn-next').click();
+		$('.car-obj .car').removeClass('hover');
 	}, sSpeed);
 
 	// 재생/멈춤 버튼
@@ -64,6 +67,8 @@ $(window).load(function(){
 	// 마우스 오버시 자동 슬라이드 먼춤
 	$('.visual-banner').mouseenter(function(){
 		clearInterval(visualTimer);
+		var idx = $('.title-item.on').index();
+		$('.car-obj .car').addClass('hover');
 	});
 	// 마우스 아웃시 자동 슬라이드 시작
 	$('.visual-banner').mouseleave(function(){
@@ -75,6 +80,7 @@ $(window).load(function(){
 				$('.btn-next').click();
 			}, sSpeed);
 		}
+		$('.car-obj .car').removeClass('hover');
 	});
 
 	$('.rent-cont .rent-bxslider').bxSlider({
