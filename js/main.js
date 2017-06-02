@@ -97,16 +97,20 @@ $(window).load(function(){
 		}
 	});
 
-	$('.rent-cont .rent-bxslider').bxSlider({
+	var slider = $('.rent-cont .rent-bxslider').bxSlider({
 		controls: true,
 		infiniteLoop: false,
+		hideControlOnEnd: true
 	});
+
+	$('.rent-tab-list .rent-area').css({'display':'none', 'opacity':'1'});
+	$('.rent-tab-list .rent-area.on').css({'display':'block'});
 
 	$('.rent-tab .item').each(function(){
 		$(this).click(function(){
 			var idx = $(this).index();
 			$('.rent-tab .item').removeClass('on').eq(idx).addClass('on');
-			//$('.rent-area').removeClass('on').eq(idx).addClass('on');
+			$('.rent-area').hide().eq(idx).show();
 		});
 	});
 

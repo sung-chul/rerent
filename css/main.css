@@ -375,6 +375,12 @@
 .rent-tab .item:last-child .text {
 	border-right:1px solid #d9d9d9;
 }
+
+
+.rent-tab-list {}
+.rent-tab-list .rent-area {opacity:0;}
+.rent-tab-list .rent-area.on {opacity:1;}
+
 .rent-cont {
 	position: relative;
 	width:900px;
@@ -467,6 +473,7 @@
 	right:-50px;
 	background-position: 0 -389px;
 }
+.rent-cont .bx-controls .bx-controls-direction a.disabled {display:none;}
 
 /* 중고차 장기렌터카 검색 */
 .rent-search {
