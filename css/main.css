@@ -379,7 +379,6 @@
 
 .rent-tab-list {}
 .rent-tab-list .rent-area {opacity:0;}
-.rent-tab-list .rent-area.on {opacity:1;}
 
 .rent-cont {
 	position: relative;
