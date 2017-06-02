@@ -636,7 +636,7 @@ button {outline:0;vertical-align:top;}
 	box-sizing:border-box;
 	border:1px solid #ccc;
 	background-color:#fff;
-	color:#999;
+	color:#666;
 	font-size:15px;
 	line-height:45px;
 }
@@ -664,7 +664,7 @@ button {outline:0;vertical-align:top;}
 	left:0;right:0;top:44px;
 	z-index:1;
 	padding:10px 0;
-	border:1px solid #e9002d;
+	border:1px solid #ccc;
 	background-color:#fff;
 }
 .select-box .select-list .item {
@@ -685,6 +685,31 @@ button {outline:0;vertical-align:top;}
 	text-indent:-9999px;
 	line-height:0;
 	opacity:0;
+}
+
+.select-box.type2 {
+
+}
+
+.select-box.type2.focus .select-title:before {
+	content:'';
+	position:absolute;
+	right:13px;top:50%;
+	width:17px;
+	height:11px;
+	margin-top:-5px;
+	background:url(../img/icon/icon_select_arrow_on.png) no-repeat 0 0;
+}
+.select-box.type2.focus .select-title {
+	border-color:#ccc;
+}
+.select-box.type2.focus .select-list {
+	border-color:#ccc;
+}
+.select-box .select-list .item:hover,
+.select-box .select-list .item.on {
+	background-color:#ff7e00;
+	color: #fff;
 }
 /* =========================================================================================================
 	체크박스/라디오버튼
@@ -1591,6 +1616,17 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 .search-box .search-inp {
 	width:300px;
 }
+
+.search-box2 {
+	padding:15px 0;
+	background-color: #f0f0f0;
+	border:1px solid #ccc;
+	text-align: center;
+}
+.search-box2 label {
+	line-height: 45px;
+	padding-right: 10px;
+}
 /* =========================================================================================================
 	테이블
 ========================================================================================================= */
@@ -2306,3 +2342,35 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 }
 .rent-search .btn-wrap .btn-rent {background-color:#ea002c;}
 .rent-search .btn-wrap .btn-rent:hover {background-color:#f58025;}
+
+/*견적 시뮬레이션*/
+.pop-wrap {
+	padding:0 20px 60px 20px
+}
+
+.pop-wrap .pop-header {}
+.pop-wrap .pop-header .title {
+	padding: 50px 0 40px;
+}
+
+.pop-wrap .pop-header .title h2 {
+	color: #333;
+	font-size: 30px;
+	font-family: 'noto';
+	font-weight: 600;
+	text-align: center;
+}
+.pop-wrap .pop-content .section.first {
+	margin-top:40px;
+}
+.pop-wrap .pop-content .section {
+	margin-top:55px;
+}
+
+.pop-wrap .pop-content .step-box li {
+	width:33.3%;
+	margin-left:0;
+}
+.pop-wrap .pop-content .step-box li:first-child {
+	width:33.4%;
+}
