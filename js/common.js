@@ -17,10 +17,14 @@ $(window).load(function(){
 		셀렉트 디자인
 		++ 셀렉트 선택값(value)은 변수 oVal로 처리 ++
 	*/
-	$('select.styled1').each(function(){
+	$('select').each(function(){
 		var title = $(this).find('option:first-child').html();
 		var wid = $(this).outerWidth();
-		$(this).wrap('<div class="select-box">');
+		if($(this).hasClass('.styled1')){
+			$(this).wrap('<div class="select-box">');
+		}else{
+			$(this).wrap('<div class="select-box type2">');
+		}
 		$(this).parents('.select-box').css({'width':wid}).append('<div class="select-title">');
 		$(this).parents('.select-box').find('.select-title').html(title);
 
