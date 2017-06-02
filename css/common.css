@@ -874,6 +874,47 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	left:0; top:0;
 	font-size:15px;
 }
+
+.option-wrap {
+	position: relative;
+	border-top:1px solid #ddd;
+}
+.option-wrap .option-list {
+	display: none;
+	overflow: hidden;
+	border-bottom:1px solid #999;
+}
+.option-list .coulmn {
+	float:left;
+	width:247px;
+	margin-left:4px;
+}
+.option-list .coulmn:first-child {
+	margin-left:0;
+}
+.option-list .coulmn dt {
+	height: 60px;
+	background-color:#f0f0f0;
+	line-height: 60px;
+	text-align: center;
+}
+.option-list .coulmn dd {
+	padding:20px 0;
+}
+.option-list .coulmn dd ul li {
+	margin-bottom:12px;
+}
+.option-wrap .btn-aco {
+	display: block;
+	width:370px; height:44px;
+	margin: 0 auto;
+	background-color:#666;
+	color:#fff;
+}
+
+.push-goods {
+
+}
 /* =========================================================================================================
 	회원가입 & 로그인
 ========================================================================================================= */
@@ -1299,6 +1340,54 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	line-height:25px;
 }
 
+
+.thumb-list02 {
+	overflow: hidden;
+}
+.thumb-list02 li {
+	float:left;
+	width:184px;
+	margin-left:20px;
+}
+.thumb-list02 li:first-child {
+	margin-left:0;
+}
+.thumb-list02 li .img-wrap {
+	position: relative;
+	overflow: hidden;
+	width:184px;
+	height:122px;
+}
+.thumb-list02 li .img-wrap img {
+	vertical-align: top;
+}
+.thumb-list02 li:hover .img-wrap:before  {
+	content: '';
+	position:absolute;
+	top:0; left:0; right:0; bottom:0;
+	border:3px solid #ea002c;
+	box-sizing: border-box;
+}
+.thumb-list02 li .car {
+	height: 36px;
+	margin-top:5px;
+	color:#666;
+	font-size:14px;
+	line-height: 18px;
+}
+.thumb-list02 li:hover .car {
+	color:#333;
+	text-decoration: underline;
+}
+.thumb-list02 li .price {
+	color:#ea002c;
+	font-size:20px;
+	line-height: 32px;
+}
+.thumb-list02 li .price .month {
+	color:#333;
+	font-size:15px;
+}
 /* =========================================================================================================
 	탭메뉴
 ========================================================================================================= */
@@ -1505,6 +1594,25 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 /* =========================================================================================================
 	테이블
 ========================================================================================================= */
+.board-top {
+	position: relative;
+}
+.board-top:before {
+	content: '';
+	display: block;
+	clear: both;
+}
+.board-top .result {
+	display: inline-block;
+	color:#666;
+	font-size:15px;
+	line-height: 45px;
+	vertical-align: top;
+}
+.board-top .result .total {
+	color:#e9002d;
+}
+
 .board-write1 {border-top:2px solid #e9002d;}
 .board-write1.type2 {border-top:1px solid #999;}
 .board-write1 table {border-bottom:1px solid #999;}
@@ -1710,6 +1818,89 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	vertical-align: top;
 	text-align: center;
 }
+
+/* 썸네일 게시판 */
+.thumb-board {border-top:1px solid #999;}
+.thumb-board table {border-bottom:1px solid #999;}
+.thumb-board table thead th {
+	height:59px;
+	font-size:15px;
+	color:#333;
+	border-bottom:1px solid #ddd;
+	font-weight: normal;
+}
+.thumb-board table tbody td {
+	height:59px;
+	color:#666;
+	font-size:15px;
+	text-align:center;
+	line-height:24px;
+	border-top:1px solid #ddd;
+}
+.thumb-board table tbody tr:first-child td {border-top:0;}
+.thumb-board table tbody td .price {
+	color:#ea002c;
+	font-size:26px;
+}
+.thumb-board table tbody td .goods-column {
+	position:relative;
+	min-height: 132px;
+	padding:25px 0 25px 220px;
+	text-align:left;
+}
+.goods-column .img-wrap {
+	position: absolute;
+	top:25px; left:0;
+	width:200px; height:132px;
+}
+.goods-column .title {
+	margin:-8px 0 13px;
+	color:#333;
+	font-size:18px;
+	line-height: 28px;
+}
+.goods-column .info-area {
+	overflow: hidden;
+	display: block;
+}
+.goods-column .info-area span {
+	float:left;
+	color:#999;
+	font-size:15px;
+}
+.goods-column .status {
+	position: absolute;
+	left:220px; bottom:25px;
+}
+.goods-column .status span {
+	display: inline-block;
+	height:29px;
+	padding:0 10px;
+	font-size:14px;
+	line-height: 27px;
+	border-radius: 5px;
+}
+.goods-column .status .status01 {
+	background-color:#f58025;
+	color:#fff;
+}
+.goods-column .status .status02 {
+	background-color:#666;
+	color:#fff;
+}
+.goods-column .status .status03 {
+	background-color:#fff;
+	color:#333;
+	border:1px solid #666;
+}
+.goods-column a:hover .img-wrap:before {
+	content: '';
+	position:absolute;
+	top:0; left:0; right:0; bottom:0;
+	border:3px solid #ea002c;
+	box-sizing: border-box;
+}
+.goods-column a:hover .title {text-decoration: underline;}
 
 /* pagenation */
 .pagenation {
@@ -2060,3 +2251,58 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 }
 /*이벤트 상세*/
 .ev-cont-area .view-style2 .txt span {width:65px;}
+
+/* 차량 검색 */
+.rent-search {
+	padding-bottom:39px;
+	background-color:#fff;
+	border:1px solid #d9d9d9;
+	border-top:1px solid #e9002d;
+	box-sizing: border-box;
+}
+.rent-search .title-wrap {text-align:center;}
+.rent-search .title-wrap .title {
+	color:#333;
+	font-size:26px;
+	font-family:'noto';
+	line-height: 104px;
+}
+.rent-search .search-area {
+	margin:0 59px;
+}
+.rent-search .row {
+	position: relative;
+	margin-top:10px;
+}
+.rent-search .row:first-child {
+	margin-top:0;
+}
+.rent-search .row:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.rent-search .row .title {
+	float:left;
+	display: inline-block;
+	width: 76px;
+	color:#666;
+	font-size: 15px;
+	line-height: 45px;
+	text-align: left;
+}
+.rent-search .row .styled1 {
+	width:365px;
+}
+.rent-search .row .connect-txt {
+	display: inline-block;
+	margin:0 5px;
+	line-height: 45px;
+	vertical-align: top;
+	color:#666;
+}
+.rent-search .btn-wrap {
+	margin-top:40px;
+}
+.rent-search .btn-wrap .btn-rent {background-color:#ea002c;}
+.rent-search .btn-wrap .btn-rent:hover {background-color:#f58025;}
