@@ -1502,6 +1502,17 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 .search-box .search-inp {
 	width:300px;
 }
+
+.search-box2 {
+	padding:15px 0;
+	background-color: #f0f0f0;
+	border:1px solid #ccc;
+	text-align: center;
+}
+.search-box2 label {
+	line-height: 45px;
+	padding-right: 10px;
+}
 /* =========================================================================================================
 	테이블
 ========================================================================================================= */
@@ -2060,3 +2071,35 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 }
 /*이벤트 상세*/
 .ev-cont-area .view-style2 .txt span {width:65px;}
+
+/*견적 시뮬레이션*/
+.pop-wrap {
+	padding:0 20px 60px 20px
+}
+
+.pop-wrap .pop-header {}
+.pop-wrap .pop-header .title {
+	padding: 50px 0 40px;
+}
+
+.pop-wrap .pop-header .title h2 {
+	color: #333;
+	font-size: 30px;
+	font-family: 'noto';
+	font-weight: 600;
+	text-align: center;
+}
+.pop-wrap .pop-content .section.first {
+	margin-top:40px;
+}
+.pop-wrap .pop-content .section {
+	margin-top:55px;
+}
+
+.pop-wrap .pop-content .step-box li {
+	width:33.3%;
+	margin-left:0;
+}
+.pop-wrap .pop-content .step-box li:first-child {
+	width:33.4%;
+}
