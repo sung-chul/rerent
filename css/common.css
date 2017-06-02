@@ -1865,6 +1865,19 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	border-bottom:1px solid #ddd;
 	font-weight: normal;
 }
+.thumb-board table thead th .btn-sorting {
+	position: relative;
+}
+.thumb-board table thead th .btn-sorting:before {
+	content: '';
+	position: absolute;
+	top:8px; right:-22px;
+	width:12px; height:6px;
+	background:url(../img/btn/btn_sorting.png) 0 0 no-repeat;
+}
+.thumb-board table thead th .btn-sorting.on:before {
+	background-position: 0 -7px;
+}
 .thumb-board table tbody td {
 	height:59px;
 	color:#666;

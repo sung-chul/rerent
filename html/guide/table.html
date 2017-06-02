@@ -304,8 +304,8 @@
 					<thead>
 						<tr>
 							<th scope="col">차량정보</th>
-							<th scope="col">월 렌트료</th>
-							<th scope="col">렌트 기간</th>
+							<th scope="col"><button class="btn-sorting on">월 렌트료</button></th>
+							<th scope="col"><button class="btn-sorting on">렌트 기간</button></th>
 						</tr>
 					</thead>
 					<tbody>
@@ -493,6 +493,11 @@ $(window).load(function(){
 			setTimeout(update, 0)
 		});
 		update();
+	});
+
+	/* 테이블 th sorting 버튼 */
+	$('.btn-sorting').click(function(){
+		$(this).toggleClass('on');
 	});
 });
 </script>
