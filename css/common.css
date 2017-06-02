@@ -636,7 +636,7 @@ button {outline:0;vertical-align:top;}
 	box-sizing:border-box;
 	border:1px solid #ccc;
 	background-color:#fff;
-	color:#999;
+	color:#666;
 	font-size:15px;
 	line-height:45px;
 }
@@ -664,7 +664,7 @@ button {outline:0;vertical-align:top;}
 	left:0;right:0;top:44px;
 	z-index:1;
 	padding:10px 0;
-	border:1px solid #e9002d;
+	border:1px solid #ccc;
 	background-color:#fff;
 }
 .select-box .select-list .item {
@@ -685,6 +685,31 @@ button {outline:0;vertical-align:top;}
 	text-indent:-9999px;
 	line-height:0;
 	opacity:0;
+}
+
+.select-box.type2 {
+
+}
+
+.select-box.type2.focus .select-title:before {
+	content:'';
+	position:absolute;
+	right:13px;top:50%;
+	width:17px;
+	height:11px;
+	margin-top:-5px;
+	background:url(../img/icon/icon_select_arrow_on.png) no-repeat 0 0;
+}
+.select-box.type2.focus .select-title {
+	border-color:#ccc;
+}
+.select-box.type2.focus .select-list {
+	border-color:#ccc;
+}
+.select-box .select-list .item:hover,
+.select-box .select-list .item.on {
+	background-color:#ff7e00;
+	color: #fff;
 }
 /* =========================================================================================================
 	체크박스/라디오버튼
