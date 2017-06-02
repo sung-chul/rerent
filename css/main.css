@@ -35,7 +35,6 @@
 	margin-left:0;
 	border-left:0;
 }
-.visual-banner .title-item:hover,
 .visual-banner .title-item.on {
 	-webkit-transition:all 1s;
 	-ms-transition:all 1s;
@@ -53,7 +52,6 @@
 	cursor:pointer;
 	z-index: 0;
 }
-.visual-banner .title-item:hover .text,
 .visual-banner .title-item.on .text {
 	-webkit-transition:all 1s;
 	-ms-transition:all 1s;
@@ -145,66 +143,9 @@
 	position:absolute;
 	left:0; bottom:0;
 }
-.car-obj .car.on0 {
-	-webkit-animation: move0 3s infinite 0.2s ease;
-	-ms-animation: move0 3s infinite 0.2s ease;
-	-moz-animation: move0 3s infinite 0.2s ease;
-	-o-animation: move0 3s infinite 0.2s ease;
-	animation: move0 3s infinite 0.2s ease;
-}
-@-webkit-keyframes move0 {
-	from {-webkit-transform: translateX(0);}
-	to {-webkit-transform: translateX(277px);}
-}
-.car-obj .car.on0.hover {
-	animation-name:stop0;
-	animation-play-state: paused;
-	transform: translateX(0);
-}
-@-webkit-keyframes stop0 {
-	0 {-webkit-transform: translateX(0);}
-}
-.car-obj .car.on1 {
-	-webkit-animation: move1 3s infinite ease;
-	-ms-animation: move1 3s infinite ease;
-	-moz-animation: move1 3s infinite ease;
-	-o-animation: move1 3s infinite ease;
-	animation: move1 3s infinite ease;
-}
-@-webkit-keyframes move1 {
-	from {-webkit-transform: translateX(277px);}
-	to {-webkit-transform: translateX(611px);}
-}
-.car-obj .car.on1.hover {
-	animation-name:stop1;
-	animation-play-state: paused;
-	transform: translateX(277px);
-}
-@-webkit-keyframes stop1 {
-	0 {-webkit-transform: translateX(277px);}
-}
-.car-obj .car.on2 {
-	-webkit-animation: move2 3s infinite ease;
-	-ms-animation: move2 3s infinite ease;
-	-moz-animation: move2 3s infinite ease;
-	-o-animation: move2 3s infinite ease;
-	animation: move2 3s infinite ease;
-}
-@-webkit-keyframes move2 {
-	from {-webkit-transform: translateX(611px);}
-	to {-webkit-transform: translateX(885px);}
-}
-.car-obj .car.on2.hover {
-	animation-name:stop2;
-	animation-play-state: paused;
-	transform: translateX(611px);
-}
-@-webkit-keyframes stop2 {
-	0 {-webkit-transform: translateX(611px);}
-}
 
 .car-obj .car img {vertical-align: top;}
-.car-obj .car .wheel  {
+.car-obj .car .wheel {
 	position: absolute;
 	bottom:5px;
 	width:18px; height:18px;

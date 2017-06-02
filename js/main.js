@@ -8,19 +8,37 @@ $(window).load(function(){
 	/* =================================================================
 		상단 비주얼 슬라이드
 	================================================================= */
-	// 마우스 오버시 탭 변환
-	$('.title-item .text').click(function(){
-		var idx = $(this).parents('.title-item').index();
-		$(this).parents('.visual-banner').find('.title-item').removeClass('on').eq(idx).addClass('on');
-		$(this).parents('.visual-banner').find('.img-item').removeClass('on').eq(idx).addClass('on');
-	});
+	var sSpeed = 3000;// 슬라이드 속도
+
+	var itemWid = $('.title-item').outerWidth();
+	var carItem = $('.title-item').length;
+	var carWid = $('.car-obj .car').outerWidth();
+	$('.car-obj .car').stop().animate({left:itemWid - (carWid/2)}, sSpeed);
+
 	// 마우스 클릭시 탭 변환 (자동 슬라이드 전용 클릭)
 	$('.title-item').click(function(){
 		var idx = $(this).index();
 		$(this).parents('.visual-banner').find('.title-item').removeClass('on').eq(idx).addClass('on');
 		$(this).parents('.visual-banner').find('.img-item').removeClass('on').eq(idx).addClass('on');
-		var idx = $('.title-item.on').index();
-		$('.car-obj .car').attr('class', 'car on'+idx);
+
+		var itemLen = $('.title-item').length;
+
+		var itemWid = $('.title-item').outerWidth();
+		var carItem = $('.title-item').length;
+		var carWid = $('.car-obj .car').outerWidth();
+		var move = carWid/2;
+
+		if(idx == 0){
+			$('.car-obj .car').css({'left':'0'});
+		}else{
+			$('.car-obj .car').css({'left':(itemWid * idx) - move});
+		}
+
+		if(idx + 1 >= itemLen){
+			$('.car-obj .car').stop().animate({left:itemWid * (idx+1)- carWid}, sSpeed);
+		}else{
+			$('.car-obj .car').stop().animate({left:itemWid * (idx+1) - move}, sSpeed);
+		}
 	});
 
 	// 다음 버튼
@@ -45,10 +63,8 @@ $(window).load(function(){
 	});
 
 	// 자동 슬라이드
-	var sSpeed = 3000;// 슬라이드 속도
 	visualTimer = setInterval(function(){
 		$('.btn-next').click();
-		$('.car-obj .car').removeClass('hover');
 	}, sSpeed);
 
 	// 재생/멈춤 버튼
@@ -68,7 +84,6 @@ $(window).load(function(){
 	$('.visual-banner').mouseenter(function(){
 		clearInterval(visualTimer);
 		var idx = $('.title-item.on').index();
-		$('.car-obj .car').addClass('hover');
 	});
 	// 마우스 아웃시 자동 슬라이드 시작
 	$('.visual-banner').mouseleave(function(){
@@ -80,7 +95,6 @@ $(window).load(function(){
 				$('.btn-next').click();
 			}, sSpeed);
 		}
-		$('.car-obj .car').removeClass('hover');
 	});
 
 	$('.rent-cont .rent-bxslider').bxSlider({
