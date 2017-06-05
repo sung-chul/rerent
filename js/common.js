@@ -20,7 +20,7 @@ $(window).load(function(){
 	$('select').each(function(){
 		var title = $(this).find('option:first-child').html();
 		var wid = $(this).outerWidth();
-		if($(this).hasClass('.styled1')){
+		if($(this).hasClass('styled1')){
 			$(this).wrap('<div class="select-box">');
 		}else{
 			$(this).wrap('<div class="select-box type2">');
@@ -38,6 +38,7 @@ $(window).load(function(){
 
 		$(this).change(function(){
 			var transVal = $(this).val();
+			//var order = $(this).index();
 			$('.select-title').html(transVal);
 		});
 
@@ -63,6 +64,11 @@ $(window).load(function(){
 		$(this).addClass('on');
 		$(this).parents('.select-box').find('select').val(oVal);
 		$(this).parents('.select-box').find('.select-title').html(txt);
+		if(idx != 0){
+			$(this).parents('.select-box').addClass('on');
+		}else {
+			$(this).parents('.select-box').removeClass('on');
+		}
 		$(this).parents('.select-box').removeClass('focus').attr('value', oVal);
 		$(this).parents('.select-list').hide();
 		$('.select-close').hide();
