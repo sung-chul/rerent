@@ -2136,6 +2136,7 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 .pop-car-search .thumb-board .goods-column  .info-area span:first-child {
 	margin-left:0;
 	padding-left:0;
+	color:#666;
 }
 .pop-car-search .thumb-board td.no-data {
 	padding:340px 0;
@@ -2607,7 +2608,7 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	width:960px;
 }
 
-.car-search-wrap {padding:160px 0;}
+.car-search-wrap {padding:160px 0 100px;}
 .car-search-wrap .complete-box {border:0}
 .car-search-wrap .text-box {
 	padding-bottom:153px;
