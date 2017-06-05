@@ -459,6 +459,7 @@
 	width:31px; height:88px;
 	margin-top:-88px;
 	background-image:url(../img/sprite_btn.png);
+	background-color:#ddd;
 	background-repeat: no-repeat;
 	font-size:0;
 	line-height: 0;
