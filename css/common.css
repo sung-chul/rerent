@@ -447,6 +447,8 @@ button {outline:0;vertical-align:top;}
 .mgT55 {margin-top:55px !important;}
 .mgT60 {margin-top:60px !important;}
 
+.mgB10 {margin-bottom:10px !important;}
+
 .mgL5 {margin-left:5px !important;}
 .mgL10 {margin-left:10px !important;}
 .mgL15 {margin-left:15px !important;}
@@ -521,6 +523,10 @@ button {outline:0;vertical-align:top;}
 	color:#000;
 	font-size:26px;
 	line-height: 26px;
+}
+.cTitle03 {
+	color:#f58025;
+	font-size:17px;
 }
 
 /* =========================================================================================================
@@ -2360,7 +2366,6 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 .pop-wrap {
 	padding:0 20px 60px 20px
 }
-
 .pop-wrap .pop-header {}
 .pop-wrap .pop-header .title {
 	padding: 50px 0 40px;
@@ -2387,3 +2392,31 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 .pop-wrap .pop-content .step-box li:first-child {
 	width:33.4%;
 }
+
+.pop-wrap .pop-content .terms_box {height:inherit;}
+.pop-wrap .pop-content .terms_box  .bullet-list1 .item {
+	font-size: 14px;
+	color:#666;
+}
+.pop-wrap .pop-content .terms_box + .radio-check {display: inherit;}
+
+.total-area {
+	margin-top:-1px;
+	padding:20px 0;
+	border-top:1px solid #ff7e00;
+	border-bottom:1px solid #ff7e00;
+	box-sizing: border-box;
+}
+.total-area dl {overflow: hidden}
+.total-area dt {
+	float:left;
+	color: #333;
+	font-size: 17px;
+	line-height: 42px;
+}
+.total-area dd {
+	float:right;
+	font-size: 17px;
+}
+.total-area dd span {font-weight: bold;}
+.total-area dd span em {color:#e9002d; font-size: 28px;}

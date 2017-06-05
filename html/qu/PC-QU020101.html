@@ -11,7 +11,7 @@
 
 <div class="pop-wrap">
 	<div class="pop-header">
-		<div class="title"><h2>회원가입</h2></div>
+		<div class="title"><h2>견적 시뮬레이션 및 상담요청</h2></div>
 	</div>
 	<div class="pop-content">
 		<ol class="step-box">
@@ -24,7 +24,7 @@
 			<div class="search-box2">
 				<label for="car_search">차량 검색</label>
 				<input type="text" id="car_search" class="search-inp" style="width:379px;" placeholder="검색어를 입력하세요">
-				<button type="button" class="btn-text-small btn-w98 btn-gray">검색</button>
+				<button type="button" class="btn-text-small btn-w98 btn-gray btn-car-search">검색</button>
 			</div>
 		</div>
 		<div class="section">
@@ -189,8 +189,85 @@
 	</div>
 </div>
 
+<!-- 레이어 팝업 영역 -->
+<div class="bg-layer"></div>
+<!-- 장기렌터카 차량 검색  -->
+<div class="layer-popup pop-car-search">
+	<div class="pop-head">
+		<h1 class="pop-title">장기렌터카 차량 검색</h1>
+		<!-- <button type="button" class="btn-sprite btn-close">닫기</button> -->
+	</div>
+	<div class="pop-content">
+		<div class="rent-search">
+			<div class="search-area">
+				<div class="row">
+					<span class="title">월 렌트료</span>
+					<select class="styled1">
+						<option>전체</option>
+						<option>500,000</option>
+						<option>800,000</option>
+						<option>1,000,000</option>
+					</select>
+					<span class="connect-txt">~</span>
+					<select class="styled1">
+						<option>전체</option>
+						<option>500,000</option>
+						<option>800,000</option>
+						<option>1,000,000</option>
+					</select>
+					<span>만원</span>
+				</div>
+				<div class="row">
+					<span class="title">차종선택</span>
+					<select class="styled1">
+						<option>제조사</option>
+						<option>현대</option>
+						<option>기아</option>
+						<option>쉐보레</option>
+					</select>
+					<span class="connect-txt">~</span>
+					<select class="styled1">
+						<option>모델</option>
+						<option>아반떼</option>
+						<option>소나타</option>
+						<option>그랜져</option>
+					</select>
+				</div>
+				<div class="row">
+					<span class="title">연식/연료</span>
+					<select class="styled1">
+						<option>연식</option>
+						<option>2017년</option>
+						<option>2016년</option>
+						<option>2015년</option>
+					</select>
+					<span class="connect-txt">~</span>
+					<select class="styled1">
+						<option>연료</option>
+						<option>가솔린</option>
+						<option>경유</option>
+						<option>LPG</option>
+					</select>
+				</div>
+			</div>
+			<div class="btn-wrap">
+				<button type="button" class="btn-text btn-w370 btn-red">차량 검색</button>
+			</div>
+		</div>
+	</div>
+</div>
+
 <script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../../js/common.js"></script>
+<script>
+$(window).load(function(){
+	/* 휴대폰 인증 */
+	$('.btn-car-search').click(function(){
+		$('.bg-layer').fadeIn(200);
+		$('.pop-car-search').fadeIn(200);
+	});
+});
+</script>
 
 </body>
 
