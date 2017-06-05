@@ -2454,7 +2454,16 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 .rent-search .btn-wrap .btn-rent:hover {background-color:#f58025;}
 
 /* 상세페이지 차량 슬라이드 이미지 */
+.product-area {
+	position:relative;
+}
+.product-area:after {
+	content:'';
+	display:block;
+	clear:both;
+}
 .view-list {
+	float:left;
 	position: relative;
 	width:650px;
 	padding-bottom:151px;
@@ -2661,6 +2670,7 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 }
 
 .product-info {
+	float:right;
 	width:330px;
 	padding:40px 30px;
 	border:1px solid #ccc;
@@ -2683,7 +2693,6 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	margin-top:15px;
 	padding-left:80px;
 	font-size:15px;
-	line-height:32px;
 	color:#666;
 }
 .product-info .info-box .info-list03 .item:first-child {margin-top:0;}
@@ -2694,36 +2703,31 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 }
 .product-info .info-box .info-list03 .item .info-txt {
 	text-align:right;
-	vertical-align: bottom;
-}
-.product-info .info-box .info-list03 .item .info-txt {
-	display: table-cell;
-	text-align: right;
-	vertical-align: bottom;
+	vertical-align:bottom;
 }
 .product-info .info-box .info-list03 .item .info-txt .number01 {
 	font-size:30px;
-	line-height:40px;
+	line-height:1;
 	vertical-align:bottom;
 }
 .product-info .info-box .info-list03 .item .info-txt .number02 {
 	font-size:26px;
-	line-height:36px;
+	line-height:1;
 	vertical-align:bottom;
 }
 
 .product-info .info-box .sum-box {
-	padding:0 13px;
 	text-align:center;
 }
 .product-info .info-box .sum-box .sum-txt {
 	display:inline-block;
 	position:relative;
-	margin-left:19px;
-	padding-left:19px;
+	margin-left:10px;
+	padding-left:14px;
 	font-size:15px;
 	color:#999;
 	line-height:25px;
+	letter-spacing:-1px;
 }
 .product-info .info-box .sum-box .sum-txt:before {
 	content:'';
@@ -2734,16 +2738,48 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	height:14px;
 	background-color:#ddd;
 }
-.product-info .info-box .sum-box .sum-txt:nth-child(1),
-.product-info .info-box .sum-box .sum-txt:nth-child(3) {
+.product-info .info-box .sum-box .sum-txt:first-child {
 	margin-left:0;
 	padding-left:0;
 }
-.product-info .info-box .sum-box .sum-txt:nth-child(1):before,
-.product-info .info-box .sum-box .sum-txt:nth-child(3):before {display:none;}
+.product-info .info-box .sum-box .sum-txt:first-child:before {display:none;}
 
-.record-list {
-
+.product-info .info-box .record-list {
+ 	overflow:hidden;
+	margin-top:24px;
 }
-.record-list .item {}
-.record-list .item a {display:block;}
+.product-info .info-box .record-list .item {
+	float:left;
+	width:50%;
+	text-align:center;
+}
+.product-info .info-box .record-list .item a {
+	display:block;
+	padding-top:84px;
+}
+.product-info .info-box .record-list .item.record01 a {
+	background:url(../img/icon/icon_record01.gif) no-repeat center 0;
+}
+.product-info .info-box .record-list .item.record02 a {
+	background:url(../img/icon/icon_record02.gif) no-repeat center 0;
+}
+.product-info .info-box .call-box {
+	text-align:center;
+}
+.product-info .info-box .call-box span {display:block;}
+.product-info .info-box .call-box .call-tit {
+	font-size:18px;
+	color:#666;
+	line-height:25px;
+}
+.product-info .info-box .call-box .call-number {
+	margin-top:7px;
+}
+.product-info .info-box .call-box .call-number .number {
+	display:inline-block;
+	padding-left:40px;
+	font-size:24px;
+	color:#333;
+	line-height:30px;
+	background:url(../img/icon/icon_cell01.gif) no-repeat 0 center;
+}
