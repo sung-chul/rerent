@@ -9,6 +9,124 @@
 </head>
 
 <body>
+<div class="quick-menu">
+	<div class="quick-title">최근 본 차량(<span class="len">3</span>)</div>
+	<div class="quick-slide">
+		<ul class="bxslider">
+			<li class="slide-item">
+				<div class="img-area"><img src="../img/temp/@temp_car04.jpg" alt="차량 이미지"></div>
+				<div class="over-layer">
+					<button type="button" class="btn-delete">삭제</button>
+					<a href="#" class="link-area">
+						<div class="img"></div>
+						<div class="text-area">
+							<p class="title">1현대 그랜저 HG HG220</p>
+							<p class="text">디젤 프리미엄</p>
+							<p class="price"><span class="red">월 54만원</span>(24개월)</p>
+						</div>
+					</a>
+				</div>
+			</li>
+			<li class="slide-item">
+				<div class="img-area"><img src="../img/temp/@temp_car04.jpg" alt="차량 이미지"></div>
+				<div class="over-layer">
+					<button type="button" class="btn-delete">삭제</button>
+					<a href="#" class="link-area">
+						<div class="img"></div>
+						<div class="text-area">
+							<p class="title">2현대 그랜저 HG HG220</p>
+							<p class="text">디젤 프리미엄</p>
+							<p class="price"><span class="red">월 54만원</span>(24개월)</p>
+						</div>
+					</a>
+				</div>
+			</li>
+			<li class="slide-item">
+				<div class="img-area"><img src="../img/temp/@temp_car04.jpg" alt="차량 이미지"></div>
+				<div class="over-layer">
+					<button type="button" class="btn-delete">삭제</button>
+					<a href="#" class="link-area">
+						<div class="img"></div>
+						<div class="text-area">
+							<p class="title">3현대 그랜저 HG HG220</p>
+							<p class="text">디젤 프리미엄</p>
+							<p class="price"><span class="red">월 54만원</span>(24개월)</p>
+						</div>
+					</a>
+				</div>
+			</li>
+			<li class="slide-item">
+				<div class="img-area"><img src="../img/temp/@temp_car04.jpg" alt="차량 이미지"></div>
+				<div class="over-layer">
+					<button type="button" class="btn-delete">삭제</button>
+					<a href="#" class="link-area">
+						<div class="img"></div>
+						<div class="text-area">
+							<p class="title">4현대 그랜저 HG HG220</p>
+							<p class="text">디젤 프리미엄</p>
+							<p class="price"><span class="red">월 54만원</span>(24개월)</p>
+						</div>
+					</a>
+				</div>
+			</li>
+			<li class="slide-item">
+				<div class="img-area"><img src="../img/temp/@temp_car04.jpg" alt="차량 이미지"></div>
+				<div class="over-layer">
+					<button type="button" class="btn-delete">삭제</button>
+					<a href="#" class="link-area">
+						<div class="img"></div>
+						<div class="text-area">
+							<p class="title">5현대 그랜저 HG HG220</p>
+							<p class="text">디젤 프리미엄</p>
+							<p class="price"><span class="red">월 54만원</span>(24개월)</p>
+						</div>
+					</a>
+				</div>
+			</li>
+			<li class="slide-item">
+				<div class="img-area"><img src="../img/temp/@temp_car04.jpg" alt="차량 이미지"></div>
+				<div class="over-layer">
+					<button type="button" class="btn-delete">삭제</button>
+					<a href="#" class="link-area">
+						<div class="img"></div>
+						<div class="text-area">
+							<p class="title">6현대 그랜저 HG HG220</p>
+							<p class="text">디젤 프리미엄</p>
+							<p class="price"><span class="red">월 54만원</span>(24개월)</p>
+						</div>
+					</a>
+				</div>
+			</li>
+			<li class="slide-item">
+				<div class="img-area"><img src="../img/temp/@temp_car04.jpg" alt="차량 이미지"></div>
+				<div class="over-layer">
+					<button type="button" class="btn-delete">삭제</button>
+					<a href="#" class="link-area">
+						<div class="img"></div>
+						<div class="text-area">
+							<p class="title">7현대 그랜저 HG HG220</p>
+							<p class="text">디젤 프리미엄</p>
+							<p class="price"><span class="red">월 54만원</span>(24개월)</p>
+						</div>
+					</a>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+	<a href="#" class="btn-estimate">견적 시뮬레이션</a>
+	<div class="user-info">
+		<p class="title">영등포 직영점</p>
+		<div class="photo"><img src="../img/temp/photo_user_76x76.jpg" alt="담당자 사진"></div>
+		<ul class="list">
+			<li class="item">담당 : 홍길동</li>
+			<li class="item">010-1234-4567</li>
+			<li class="item">02-1234-4567</li>
+		</ul>
+	</div>
+	<button type="button" class="btn-scroll-top">TOP</button>
+</div><!-- /.퀵메뉴 -->
+
 <div class="wrapper">
 	<div class="header">
 		<div class="inner_head">
@@ -916,6 +1034,49 @@
 <script type="text/javascript" src="../js/jquery.bxslider.min.js"></script>
 <script type="text/javascript" src="../js/common.js"></script>
 <script type="text/javascript" src="../js/main.js"></script>
+
+<script>
+$(window).load(function(){
+	/* 퀵메뉴 슬라이드 */
+	$('.quick-slide .bxslider').bxSlider({
+		mode: 'vertical',
+		infiniteLoop: false,
+		pager: false,
+		hideControlOnEnd: true,
+		maxSlides: 3,
+		minSlides: 3
+	});
+
+	$('.quick-slide').append('<div class="over-list">');
+	$('.quick-slide .slide-item').each(function(){
+		var img = $(this).find('.img-area').html();
+		$(this).find('.over-layer .img').html(img);
+
+		var data = $(this).find('.over-layer').html();
+		$(this).parents('.quick-slide').find('.over-list').append('<div class="over-item">' + data);
+	});
+
+	$('.quick-slide .slide-item').mouseenter(function(){
+		var quickTop = $(this).parents('.bx-wrapper').offset().top;
+		var top = $(this).offset().top;
+		var idx = $(this).index();
+		$('.over-item').css({'top':top-quickTop+20});
+		$('.over-item').eq(idx).show().animate({right:0}, 100);
+	});
+
+	$('.quick-slide .over-item').mouseleave(function(){
+		$('.over-item').hide().css({'right':'-170px'});
+	});
+	/*
+	$(window).scroll(function(){
+		$('.quick-slide .over-layer').each(function(){
+			var quickTop = $(this).parents('.bx-wrapper').offset().top;
+			var top = $(this).parents('.slide-item').offset().top;
+		});
+	});
+	*/
+});
+</script>
 </body>
 
 </html>
