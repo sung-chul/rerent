@@ -11,7 +11,7 @@
 <div class="wrapper">
 	<div class="header">
 		<div class="inner_head">
-			<h1 class="logo"><a href="#">>Re:Rent 렌터카의 답을 달다</a></h1>
+			<h1 class="logo"><a href="#">Re:Rent 렌터카의 답을 달다</a></h1>
 			<div class="top-area">
 				<a href="#">로그아웃</a>
 				<a href="#">마이페이지</a>
@@ -149,6 +149,57 @@
 					<button type="button" class="btn-text btn-w370 btn-rent">검색하기</button>
 				</div>
 			</div>
+			<br><br>
+			<div class="view-list">
+				<ul class="car-bxslider">
+					<li><img src="../../img/temp/temp_view01.jpg" alt="view-img01"></li>
+					<li><img src="../../img/temp/temp_view02.jpg" alt="view-img02"></li>
+					<li><img src="../../img/temp/temp_view01.jpg" alt="view-img01"></li>
+					<li><img src="../../img/temp/temp_view02.jpg" alt="view-img02"></li>
+					<li><img src="../../img/temp/temp_view01.jpg" alt="view-img01"></li>
+					<li><img src="../../img/temp/temp_view02.jpg" alt="view-img02"></li>
+					<li><img src="../../img/temp/temp_view01.jpg" alt="view-img01"></li>
+					<li><img src="../../img/temp/temp_view02.jpg" alt="view-img02"></li>
+					<li><img src="../../img/temp/temp_view01.jpg" alt="view-img01"></li>
+					<li><img src="../../img/temp/temp_view02.jpg" alt="view-img02"></li>
+					<li><img src="../../img/temp/temp_view01.jpg" alt="view-img01"></li>
+					<li><img src="../../img/temp/temp_view02.jpg" alt="view-img02"></li>
+					<li><img src="../../img/temp/temp_view01.jpg" alt="view-img01"></li>
+					<li><img src="../../img/temp/temp_view02.jpg" alt="view-img02"></li>
+					<li><img src="../../img/temp/temp_view01.jpg" alt="view-img01"></li>
+					<li><img src="../../img/temp/temp_view02.jpg" alt="view-img02"></li>
+					<li><img src="../../img/temp/temp_view01.jpg" alt="view-img01"></li>
+				</ul>
+				<div class="view-pager">
+					<div class="pager">
+						<a data-slide-index="0" href=""><img src="../../img/temp/@temp_pager01.jpg"></a>
+						<a data-slide-index="1" href=""><img src="../../img/temp/@temp_pager01.jpg"></a>
+						<a data-slide-index="2" href=""><img src="../../img/temp/@temp_pager02.jpg"></a>
+						<a data-slide-index="3" href=""><img src="../../img/temp/@temp_pager03.jpg"></a>
+						<a data-slide-index="4" href=""><img src="../../img/temp/@temp_pager04.jpg"></a>
+						<a data-slide-index="5" href=""><img src="../../img/temp/@temp_pager01.jpg"></a>
+						<a data-slide-index="6" href=""><img src="../../img/temp/@temp_pager02.jpg"></a>
+						<a data-slide-index="7" href=""><img src="../../img/temp/@temp_pager03.jpg"></a>
+						<a data-slide-index="8" href=""><img src="../../img/temp/@temp_pager04.jpg"></a>
+						<a data-slide-index="9" href=""><img src="../../img/temp/@temp_pager01.jpg"></a>
+						<a data-slide-index="10" href=""><img src="../../img/temp/@temp_pager02.jpg"></a>
+						<a data-slide-index="11" href=""><img src="../../img/temp/@temp_pager03.jpg"></a>
+						<a data-slide-index="12" href=""><img src="../../img/temp/@temp_pager04.jpg"></a>
+						<a data-slide-index="13" href=""><img src="../../img/temp/@temp_pager01.jpg"></a>
+						<a data-slide-index="14" href=""><img src="../../img/temp/@temp_pager02.jpg"></a>
+						<a data-slide-index="15" href=""><img src="../../img/temp/@temp_pager03.jpg"></a>
+						<a data-slide-index="16" href=""><img src="../../img/temp/@temp_pager04.jpg"></a>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<button type="button" class="btn-view-more">전체보기</button>
+				</div>
+			</div>
+			<br><br>
+			<div class="btn-wrap">
+				<a href="#none" onclick="javascript:open_pop(); return false;" class="btn-text btn-w370 btn-red">팝업</a>
+			</div>
 		</div>
 	</div>
 
@@ -181,7 +232,58 @@
 
 
 <script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.bxslider.min.js"></script>
 <script type="text/javascript" src="../../js/common.js"></script>
+<script>
+$(window).load(function(){
+	$('.view-list .car-bxslider').bxSlider({
+		mode: 'fade',
+		speed: 500,
+		pagerCustom: '.view-pager .pager',
+		infiniteLoop:false,
+	});
+
+	$('.view-list .bx-controls .bx-prev').click(function(){
+		$('.view-pager .bx-controls .bx-prev').click();
+	});
+	$('.view-list .bx-controls .bx-next').click(function(){
+		$('.view-pager .bx-controls .bx-next').click();
+	});
+
+	slider = $('.view-pager .pager').bxSlider({
+		slideWidth: 126,
+		minSlides: 1,
+		maxSlides: 5,
+		infiniteLoop:false,
+		pager:false,
+		moveSlides: 1,
+	});
+
+	$('.btn-view-more').click(function(){
+		if($(this).hasClass('on')){
+			$(this).removeClass('on').html('전체보기');
+			$('.view-pager, .view-pager .pager').animate({'height': '84px'}, function(){
+				var obj = $('.view-pager, .view-pager .pager').find('.active').index();
+				slider.reloadSlider();
+				slider.goToSlide(obj);
+			});
+		}else{
+			$(this).addClass('on').html('전체보기 닫기');
+			$('.view-pager, .view-pager .pager').animate({'height': '376px'});
+			slider.destroySlider();
+		}
+	});
+});
+function open_pop(){
+	var screenW = screen.availWidth;  // 스크린 가로사이즈
+	var screenH = screen.availHeight; // 스크린 세로사이즈
+	var popW = 800;
+	var popH = 600;
+	var posL=( screenW-popW ) / 2;   // 띄울창의 가로 포지션
+	var posT=( screenH-popH ) / 2;   // 띄울창의 세로 포지션
+	window.open('popup.html','test','width='+ popW +',height='+ popH +',top='+ posT +',left='+ posL +',resizable=no,scrollbars=no');
+}
+</script>
 </body>
 
 </html>
