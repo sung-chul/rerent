@@ -2686,6 +2686,31 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	background:url(../img/icon/icon_option08.gif) no-repeat center 0;
 }
 
+.option-list02 .item-option.option01.on {
+	background:url(../img/icon/icon_option01_on.gif) no-repeat center 0;
+}
+.option-list02 .item-option.option02.on {
+	background:url(../img/icon/icon_option02_on.gif) no-repeat center 0;
+}
+.option-list02 .item-option.option03.on  {
+	background:url(../img/icon/icon_option03_on.gif) no-repeat center 0;
+}
+.option-list02 .item-option.option04.on  {
+	background:url(../img/icon/icon_option04_on.gif) no-repeat center 0;
+}
+.option-list02 .item-option.option05.on  {
+	background:url(../img/icon/icon_option05_on.gif) no-repeat center 0;
+}
+.option-list02 .item-option.option06.on  {
+	background:url(../img/icon/icon_option06_on.gif) no-repeat center 0;
+}
+.option-list02 .item-option.option07.on  {
+	background:url(../img/icon/icon_option07_on.gif) no-repeat center 0;
+}
+.option-list02 .item-option.option08.on  {
+	background:url(../img/icon/icon_option08_on.gif) no-repeat center 0;
+}
+
 .product-info {
 	float:right;
 	width:330px;
