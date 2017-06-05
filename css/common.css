@@ -2064,8 +2064,94 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	height:60px;
 	background-position: 0 -63px;
 }
+
 .layer-popup .pop-content {
 	padding:45px 0 60px;
+}
+
+/*장기렌터카 팝업*/
+.layer-popup.pop-car-search.scroll .pop-content {
+	top:110px;
+}
+.layer-popup .pop-head2 {
+	position:relative;
+	padding-top:55px;
+}
+.layer-popup .pop-head2 .pop-title {
+	font-size: 30px;
+	color:#333;
+	text-align: center;
+	font-weight:bold;
+}
+.pop-car-search .rent-search {
+	border: 0;
+	padding-bottom:0;
+	margin-top:55px;
+}
+
+.pop-car-search .rent-search  .row .styled1 {width:325px;}
+.pop-car-search .pop-content {padding:0 20px 60px 20px;}
+.pop-car-search .rent-search .search-area {margin:0 56px;}
+
+.pop-car-search .thumb-board .goods-column {
+	min-height: 158px;
+	padding:25px 25px 25px 0;
+	box-sizing: border-box;
+}
+.pop-car-search .goods-column .title {margin-bottom:10px;}
+.pop-car-search .thumb-board .goods-column .status {
+	position: inherit;
+}
+.pop-car-search .thumb-board .goods-column  .info-area  {
+	margin-bottom:25px;
+}
+.pop-car-search .thumb-board .goods-column  .info-area span {
+	position:relative;
+	padding-left:10px;
+	margin-left:10px;
+
+}
+.pop-car-search .thumb-board .goods-column  .info-area span:before {
+	content:'';
+	display: block;
+	position:absolute;
+	left:0;top:50%;
+	width:1px;
+	height:14px;
+	margin-top:-6px;
+	background-color:#ddd;
+}
+.pop-car-search .thumb-board .goods-column  .info-area span:first-child:before {content: none;}
+.pop-car-search .thumb-board .goods-column  .info-area span:first-child {
+	margin-left:0;
+	padding-left:0;
+}
+.pop-car-search .thumb-board td.no-data {
+	padding:340px 0;
+	font-size: 20px;
+	color:#999;
+	text-align: center;
+}
+.thumb-board table thead th .btn-sorting2 {
+	position: relative;
+	border:1px solid #ccc;
+	background-color: #fff;
+	width:29px;
+	height:29px;
+	border-radius: 5px;
+	font-size: 0;
+	line-height: 0;
+}
+.thumb-board table thead th .btn-sorting2:before {
+	content: '';
+	position: absolute;
+	top:50%; left:50%;
+	width:13px; height:9px;
+	margin:-5px -7px;
+	background:url(../img/btn/btn_sorting2.png) 0 0 no-repeat;
+}
+.thumb-board table thead th .btn-sorting2.on:before {
+	transform: rotate(180deg);
 }
 
 /* 휴대폰인증 */
@@ -2367,6 +2453,87 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 .rent-search .btn-wrap .btn-rent {background-color:#ea002c;}
 .rent-search .btn-wrap .btn-rent:hover {background-color:#f58025;}
 
+/* 상세페이지 차량 슬라이드 이미지 */
+.view-list {
+	position: relative;
+	width:650px;
+	padding-bottom:151px;
+}
+.view-list ul li img {vertical-align:top;}
+.view-list .bx-wrapper {
+	position: relative;
+	min-width:650px;
+}
+.view-list .bx-wrapper .bx-viewport {
+	z-index: 0;
+}
+.view-list .bx-controls-direction a {
+	position: absolute;
+	top:50%;
+	z-index: 1;
+	width:31px; height:88px;
+	margin-top:-44px;
+	background-image:url(../img/sprite_btn.png);
+	background-color:rgba(0, 0, 0, 0.7);
+	background-repeat: no-repeat;
+	font-size:0;
+	line-height: 0;
+	text-indent: -99999px;
+}
+.view-list .bx-controls-direction a.bx-prev {
+	left:0;
+	background-position: 0 -299px;
+}
+.view-list .bx-controls-direction a.bx-next {
+	right:0;
+	background-position: 0 -389px;
+}
+.view-list .view-pager {
+	position:absolute;
+	top:453px;
+	z-index: 1;
+	width:100%;
+	height:84px;
+	padding-bottom:47px;
+	background-color:#fff;
+}
+.view-list .view-pager .bx-controls {
+	display: none;
+}
+.view-list .view-pager .pager span,
+.view-list .view-pager .pager a {
+	overflow: hidden;
+	display: inline-block;
+	float: none !important;
+	width:126px; height:84px;
+	margin-bottom:5px;
+	background:url(../img/bg/bg_view_pager.jpg) 0 0 no-repeat;
+}
+.view-list .view-pager .pager a.active {
+	position: relative;
+}
+.view-list .view-pager .pager a.active:before {
+	content: '';
+	position: absolute;
+	top:0;left:0;right:0;bottom:0;
+	border:3px solid #e9002d;
+}
+.view-list .view-pager .pager a img {
+	vertical-align: top;
+}
+.view-list .view-pager .btn-view-more {
+	position: absolute;
+	bottom:0; left:0;
+	width:100%;
+	height:42px;
+	margin-top:5px;
+	padding:0;
+	background-color:#666;
+	color:#fff;
+	font-size:15px;
+	line-height: 42px;
+}
+
 /*견적 시뮬레이션*/
 .pop-wrap {
 	padding:0 20px 60px 20px
@@ -2404,6 +2571,8 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 }
 .pop-wrap .pop-content .terms_box + .radio-check {display: inherit;}
 
+
+
 .total-area {
 	margin-top:-1px;
 	padding:20px 0;
@@ -2424,6 +2593,10 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 }
 .total-area dd span {font-weight: bold;}
 .total-area dd span em {color:#e9002d; font-size: 28px;}
+
+.pop-car-search {
+	width:960px;
+}
 
 /* 장기렌터카 */
 .border-area {
@@ -2521,6 +2694,12 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 }
 .product-info .info-box .info-list03 .item .info-txt {
 	text-align:right;
+	vertical-align: bottom;
+}
+.product-info .info-box .info-list03 .item .info-txt {
+	display: table-cell;
+	text-align: right;
+	vertical-align: bottom;
 }
 .product-info .info-box .info-list03 .item .info-txt .number01 {
 	font-size:30px;
