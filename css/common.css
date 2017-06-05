@@ -443,9 +443,12 @@ button {outline:0;vertical-align:top;}
 .mgT25 {margin-top:25px !important;}
 .mgT30 {margin-top:30px !important;}
 .mgT40 {margin-top:40px !important;}
+.mgT45 {margin-top:45px !important;}
 .mgT50 {margin-top:50px !important;}
 .mgT55 {margin-top:55px !important;}
 .mgT60 {margin-top:60px !important;}
+
+.mgB10 {margin-bottom:10px !important;}
 
 .mgL5 {margin-left:5px !important;}
 .mgL10 {margin-left:10px !important;}
@@ -456,6 +459,7 @@ button {outline:0;vertical-align:top;}
 
 /* 폰트 컬러 */
 .fColor01 {color:#e9002d !important;} /* 빨강 */
+.fColor02 {color:#f58025 !important;} /* 오렌지 */
 
 /* 정렬 */
 .text-left {text-align:left !important;}
@@ -521,6 +525,10 @@ button {outline:0;vertical-align:top;}
 	color:#000;
 	font-size:26px;
 	line-height: 26px;
+}
+.cTitle03 {
+	color:#f58025;
+	font-size:17px;
 }
 
 /* =========================================================================================================
@@ -869,7 +877,7 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 .bullet-list1 {}
 .bullet-list1 .item {
 	position:relative;
-	padding-left:12px;
+	padding-left:10px;
 	font-size:15px;
 	color:#666;
 	line-height:24px;
@@ -879,7 +887,7 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	display:block;
 	position:absolute;
 	left:0; top:12px;
-	width:4px;
+	width:5px;
 	height:1px;
 	background-color:#666;
 }
@@ -902,7 +910,7 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 
 .option-wrap {
 	position: relative;
-	border-top:1px solid #ddd;
+	border-top:1px solid #999;
 }
 .option-wrap .option-list {
 	display: none;
@@ -1897,6 +1905,9 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	padding:25px 0 25px 220px;
 	text-align:left;
 }
+.thumb-board table tbody td.no-result {
+	padding:115px 0;
+}
 .goods-column .img-wrap {
 	position: absolute;
 	top:25px; left:0;
@@ -2053,8 +2064,94 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	height:60px;
 	background-position: 0 -63px;
 }
+
 .layer-popup .pop-content {
 	padding:45px 0 60px;
+}
+
+/*장기렌터카 팝업*/
+.layer-popup.pop-car-search.scroll .pop-content {
+	top:110px;
+}
+.layer-popup .pop-head2 {
+	position:relative;
+	padding-top:55px;
+}
+.layer-popup .pop-head2 .pop-title {
+	font-size: 30px;
+	color:#333;
+	text-align: center;
+	font-weight:bold;
+}
+.pop-car-search .rent-search {
+	border: 0;
+	padding-bottom:0;
+	margin-top:55px;
+}
+
+.pop-car-search .rent-search  .row .styled1 {width:325px;}
+.pop-car-search .pop-content {padding:0 20px 60px 20px;}
+.pop-car-search .rent-search .search-area {margin:0 56px;}
+
+.pop-car-search .thumb-board .goods-column {
+	min-height: 158px;
+	padding:25px 25px 25px 0;
+	box-sizing: border-box;
+}
+.pop-car-search .goods-column .title {margin-bottom:10px;}
+.pop-car-search .thumb-board .goods-column .status {
+	position: inherit;
+}
+.pop-car-search .thumb-board .goods-column  .info-area  {
+	margin-bottom:25px;
+}
+.pop-car-search .thumb-board .goods-column  .info-area span {
+	position:relative;
+	padding-left:10px;
+	margin-left:10px;
+
+}
+.pop-car-search .thumb-board .goods-column  .info-area span:before {
+	content:'';
+	display: block;
+	position:absolute;
+	left:0;top:50%;
+	width:1px;
+	height:14px;
+	margin-top:-6px;
+	background-color:#ddd;
+}
+.pop-car-search .thumb-board .goods-column  .info-area span:first-child:before {content: none;}
+.pop-car-search .thumb-board .goods-column  .info-area span:first-child {
+	margin-left:0;
+	padding-left:0;
+}
+.pop-car-search .thumb-board td.no-data {
+	padding:340px 0;
+	font-size: 20px;
+	color:#999;
+	text-align: center;
+}
+.thumb-board table thead th .btn-sorting2 {
+	position: relative;
+	border:1px solid #ccc;
+	background-color: #fff;
+	width:29px;
+	height:29px;
+	border-radius: 5px;
+	font-size: 0;
+	line-height: 0;
+}
+.thumb-board table thead th .btn-sorting2:before {
+	content: '';
+	position: absolute;
+	top:50%; left:50%;
+	width:13px; height:9px;
+	margin:-5px -7px;
+	background:url(../img/btn/btn_sorting2.png) 0 0 no-repeat;
+}
+.thumb-board table thead th .btn-sorting2.on:before {
+	transform: rotate(180deg);
 }
 
 /* 휴대폰인증 */
@@ -2441,7 +2538,6 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 .pop-wrap {
 	padding:0 20px 60px 20px
 }
-
 .pop-wrap .pop-header {}
 .pop-wrap .pop-header .title {
 	padding: 50px 0 40px;
@@ -2467,4 +2563,141 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 }
 .pop-wrap .pop-content .step-box li:first-child {
 	width:33.4%;
+}
+.pop-wrap .pop-content .terms_box {height:inherit;}
+.pop-wrap .pop-content .terms_box  .bullet-list1 .item {
+	font-size: 14px;
+	color:#666;
+}
+.pop-wrap .pop-content .terms_box + .radio-check {display: inherit;}
+
+
+
+.total-area {
+	margin-top:-1px;
+	padding:20px 0;
+	border-top:1px solid #ff7e00;
+	border-bottom:1px solid #ff7e00;
+	box-sizing: border-box;
+}
+.total-area dl {overflow: hidden}
+.total-area dt {
+	float:left;
+	color: #333;
+	font-size: 17px;
+	line-height: 42px;
+}
+.total-area dd {
+	float:right;
+	font-size: 17px;
+}
+.total-area dd span {font-weight: bold;}
+.total-area dd span em {color:#e9002d; font-size: 28px;}
+
+.pop-car-search {
+	width:960px;
+}
+
+/* 장기렌터카 */
+.border-area {
+	padding:24px 0;
+	border-top:2px solid #e9002d;
+	border-bottom:1px solid #999;
+	box-sizing:border-box;
+}
+.vehicle-explana .vehicle-txt {
+	font-size:15px;
+	color:#666;
+	line-height:25px;
+}
+.vehicle-list {}
+.vehicle-list .item-vehicle {
+	margin-top:25px;
+}
+.vehicle-list .item-vehicle .vehicle-tit {
+	display:block;
+	font-size:15px;
+	color:#666;
+	line-height:25px;
+}
+.option-box {
+	padding:30px 0;
+	border-top:2px solid #e9002d;
+	box-sizing:border-box;
+}
+.option-list02 {overflow:hidden;}
+.option-list02 .item-option {
+	float:left;
+	width:95px;
+	padding:100px 15px 0 15px;
+	font-size:15px;
+	color:#666;
+	line-height:25px;
+	text-align:center;
+}
+.option-list02 .item-option.option01 {
+	background:url(../img/icon/icon_option01.gif) no-repeat center 0;
+}
+.option-list02 .item-option.option02 {
+	background:url(../img/icon/icon_option02.gif) no-repeat center 0;
+}
+.option-list02 .item-option.option03 {
+	background:url(../img/icon/icon_option03.gif) no-repeat center 0;
+}
+.option-list02 .item-option.option04 {
+	background:url(../img/icon/icon_option04.gif) no-repeat center 0;
+}
+.option-list02 .item-option.option05 {
+	background:url(../img/icon/icon_option05.gif) no-repeat center 0;
+}
+.option-list02 .item-option.option06 {
+	background:url(../img/icon/icon_option06.gif) no-repeat center 0;
+}
+.option-list02 .item-option.option07 {
+	background:url(../img/icon/icon_option07.gif) no-repeat center 0;
+}
+.option-list02 .item-option.option08 {
+	background:url(../img/icon/icon_option08.gif) no-repeat center 0;
+}
+
+.product-info {
+	padding:40px 30px;
+	border:1px solid #ccc;
+	border-top:2px solid #e9002d;
+}
+.product-info .info-box {
+	padding:25px 0;
+	border-top:1px solid #ccc;
+}
+.product-info .info-box:first-child {
+	padding-top:0;
+	border-top:0;
+}
+.product-info .info-box:last-child {padding-bottom:0;}
+.product-info .info-box .info-list03 {}
+.product-info .info-box .info-list03 .item {
+	display: table;
+	width: 100%;
+	margin-top:15px;
+	font-size:15px;
+	line-height:25px;
+	color:#666;
+}
+.product-info .info-box .info-list03 .item:first-child {margin-top:0;}
+.product-info .info-box .info-list03 .item span {display:inline-block;}
+.product-info .info-box .info-list03 .item .info-tit {
+	display: table-cell;
+	text-align: left;
+	vertical-align: bottom;
+}
+.product-info .info-box .info-list03 .item .info-txt {
+	display: table-cell;
+	text-align: right;
+	vertical-align: bottom;
+}
+.product-info .info-box .info-list03 .item .info-txt .number01 {
+	font-size:30px;
+}
+.product-info .info-box .info-list03 .item .info-txt .number02 {
+	font-size:26px;
 }
