@@ -180,6 +180,9 @@ button {outline:0;vertical-align:top;}
 /* =========================================================================================================
 	레이아웃
 ========================================================================================================= */
+html.on {
+	overflow: hidden;
+}
 .wrapper {
 	border-top:2px solid #ea002c;
 }
@@ -792,6 +795,7 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	opacity:0;
  	cursor: pointer;
 }
+.checkbox.readonly {background-color:#fff;}
 .checkbox.disabled,
 .radiobox.disabled {background-color:#e3e3e3;}
 
@@ -968,9 +972,18 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	background-color:#666;
 	color:#fff;
 }
-
-.push-goods {
-
+.option-wrap .btn-aco span {
+	display: inline-block;
+	padding-left:22px;
+	background:url(../img/icon/icon_open.png) 0 18px no-repeat;
+	vertical-align:top;
+	line-height: 44px;
+}
+.option-wrap .btn-aco.on span {
+	background:url(../img/icon/icon_close.png) 0 23px no-repeat;
+}
+.option-list .checkbox.disabled {
+	background-color:#fff;
 }
 /* =========================================================================================================
 	회원가입 & 로그인
@@ -2567,6 +2580,16 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	font-size:15px;
 	line-height: 42px;
 }
+.view-list .view-pager .btn-view-more span {
+	display: inline-block;
+	padding-left:22px;
+	background:url(../img/icon/icon_open.png) 0 16px no-repeat;
+	vertical-align:top;
+	line-height: 42px;
+}
+.view-list .view-pager .btn-view-more.on span {
+	background:url(../img/icon/icon_close.png) 0 21px no-repeat;
+}
 
 /*견적 시뮬레이션*/
 .pop-wrap {
@@ -2699,28 +2722,28 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	background:url(../img/icon/icon_option08.gif) no-repeat center 0;
 }
 
-.option-list02 .item-option.option01.on {
+.option-list02.on .item-option.option01 {
 	background:url(../img/icon/icon_option01_on.gif) no-repeat center 0;
 }
-.option-list02 .item-option.option02.on {
+.option-list02.on .item-option.option02 {
 	background:url(../img/icon/icon_option02_on.gif) no-repeat center 0;
 }
-.option-list02 .item-option.option03.on  {
+.option-list02.on .item-option.option03 {
 	background:url(../img/icon/icon_option03_on.gif) no-repeat center 0;
 }
-.option-list02 .item-option.option04.on  {
+.option-list02.on .item-option.option04 {
 	background:url(../img/icon/icon_option04_on.gif) no-repeat center 0;
 }
-.option-list02 .item-option.option05.on  {
+.option-list02.on .item-option.option05 {
 	background:url(../img/icon/icon_option05_on.gif) no-repeat center 0;
 }
-.option-list02 .item-option.option06.on  {
+.option-list02.on .item-option.option06 {
 	background:url(../img/icon/icon_option06_on.gif) no-repeat center 0;
 }
-.option-list02 .item-option.option07.on  {
+.option-list02.on .item-option.option07 {
 	background:url(../img/icon/icon_option07_on.gif) no-repeat center 0;
 }
-.option-list02 .item-option.option08.on  {
+.option-list02.on .item-option.option08 {
 	background:url(../img/icon/icon_option08_on.gif) no-repeat center 0;
 }
 

@@ -26,7 +26,7 @@
 					<li class="item05"><a href="#">고객센터</a></li>
 				</ul>
 				<div class="service-more">
-					<a href="#" class="btn-sprite btn-estimate">견적 시뮬레이션</a>
+					<a href="#" onclick="javascript:open_pop(); return false;" class="btn-sprite btn-estimate">견적 시뮬레이션</a>
 					<button type="button" class="btn-sprite all-category">전체 카테고리</button>
 				</div>
 			</div>
@@ -89,7 +89,7 @@
 							<span></span>
 							<span></span>
 						</div>
-						<button type="button" class="btn-view-more">전체보기</button>
+						<button type="button" class="btn-view-more"><span>전체보기</span></button>
 					</div>
 				</div>
 				<div class="product-info">
@@ -127,7 +127,7 @@
 						</div>
 						<ul class="record-list">
 							<li class="item record01"><a href="#">성능·상태점검기록부</a></li>
-							<li class="item record02"><a href="#">견적 시뮬레이션</a></li>
+							<li class="item record02"><a href="#" onclick="javascript:open_pop(); return false;">견적 시뮬레이션</a></li>
 						</ul>
 					</div>
 					<div class="info-box">
@@ -204,11 +204,11 @@
 							<dt>외관</dt>
 							<dd>
 								<ul>
-									<li><label><input type="checkbox" class="styled1">HID : 제논헤드램프</label></li>
-									<li><label><input type="checkbox" class="styled1">전동접이사이드미러</label></li>
-									<li><label><input type="checkbox" class="styled1">선루프</label></li>
-									<li><label><input type="checkbox" class="styled1">루프랙</label></li>
-									<li><label><input type="checkbox" class="styled1">알루미늄휠</label></li>
+									<li><label><input type="checkbox" class="styled1" disabled>HID : 제논헤드램프</label></li>
+									<li><label><input type="checkbox" class="styled1" disabled>전동접이사이드미러</label></li>
+									<li><label><input type="checkbox" class="styled1" disabled>선루프</label></li>
+									<li><label><input type="checkbox" class="styled1" disabled>루프랙</label></li>
+									<li><label><input type="checkbox" class="styled1" disabled>알루미늄휠</label></li>
 								</ul>
 							</dd>
 						</dl>
@@ -217,19 +217,19 @@
 							<dt>내장</dt>
 							<dd>
 								<ul>
-									<li><label><input type="checkbox" class="styled1" checked>스티어링리모컨</label></li>
-									<li><label><input type="checkbox" class="styled1" checked>파워스티어링</label></li>
-									<li><label><input type="checkbox" class="styled1" checked>ECM</label></li>
-									<li><label><input type="checkbox" class="styled1" checked>하이패스내장룸미러</label></li>
-									<li><label><input type="checkbox" class="styled1" checked>가죽시트</label></li>
-									<li><label><input type="checkbox" class="styled1" checked>전동시트 : 운전석</label></li>
-									<li><label><input type="checkbox" class="styled1" checked>전동시트 : 조수석</label></li>
-									<li><label><input type="checkbox" class="styled1" checked>전동시트 : 뒷좌석</label></li>
-									<li><label><input type="checkbox" class="styled1" checked>열선시트 : 운전석</label></li>
-									<li><label><input type="checkbox" class="styled1" checked>열선시트 : 조수석</label></li>
-									<li><label><input type="checkbox" class="styled1" checked>열선시트 : 뒷좌석</label></li>
-									<li><label><input type="checkbox" class="styled1" checked>메모리시트</label></li>
-									<li><label><input type="checkbox" class="styled1" checked>통풍시트</label></li>
+									<li><label><input type="checkbox" class="styled1" checked disabled>스티어링리모컨</label></li>
+									<li><label><input type="checkbox" class="styled1" checked disabled>파워스티어링</label></li>
+									<li><label><input type="checkbox" class="styled1" checked disabled>ECM</label></li>
+									<li><label><input type="checkbox" class="styled1" checked disabled>하이패스내장룸미러</label></li>
+									<li><label><input type="checkbox" class="styled1" checked disabled>가죽시트</label></li>
+									<li><label><input type="checkbox" class="styled1" checked disabled>전동시트 : 운전석</label></li>
+									<li><label><input type="checkbox" class="styled1" checked disabled>전동시트 : 조수석</label></li>
+									<li><label><input type="checkbox" class="styled1" checked disabled>전동시트 : 뒷좌석</label></li>
+									<li><label><input type="checkbox" class="styled1" checked disabled>열선시트 : 운전석</label></li>
+									<li><label><input type="checkbox" class="styled1" checked disabled>열선시트 : 조수석</label></li>
+									<li><label><input type="checkbox" class="styled1" checked disabled>열선시트 : 뒷좌석</label></li>
+									<li><label><input type="checkbox" class="styled1" checked disabled>메모리시트</label></li>
+									<li><label><input type="checkbox" class="styled1" checked disabled>통풍시트</label></li>
 								</ul>
 							</dd>
 						</dl>
@@ -238,23 +238,23 @@
 							<dt>안전</dt>
 							<dd>
 								<ul>
-									<li><label><input type="checkbox" class="styled1" checked>에어백 : 운전석</label></li>
-									<li><label><input type="checkbox" class="styled1" checked>에어백 : 조수석</label></li>
-									<li><label><input type="checkbox" class="styled1" checked>에어백 : 사이드</label></li>
-									<li><label><input type="checkbox" class="styled1" checked>에어백 : 커튼</label></li>
-									<li><label><input type="checkbox" class="styled1" checked>에어백 : 무릎</label></li>
-									<li><label><input type="checkbox" class="styled1" checked>감지센서 : 전방</label></li>
-									<li><label><input type="checkbox" class="styled1" checked>감지센서 : 후방</label></li>
-									<li><label><input type="checkbox" class="styled1" checked>카메라 : 전방</label></li>
-									<li><label><input type="checkbox" class="styled1" checked>카메라 : 후방</label></li>
-									<li><label><input type="checkbox" class="styled1" checked>카메라 : 어라운드</label></li>
-									<li><label><input type="checkbox" class="styled1" checked>ARS</label></li>
-									<li><label><input type="checkbox" class="styled1" checked>TCS : 미끄럼방지</label></li>
-									<li><label><input type="checkbox" class="styled1" checked>VDC : 차체자세제어</label></li>
-									<li><label><input type="checkbox" class="styled1" checked>ECS : 전자제어 서스펜션</label></li>
-									<li><label><input type="checkbox" class="styled1" checked>TPMS : 타이어공기압감지</label></li>
-									<li><label><input type="checkbox" class="styled1" checked>EPB : 전자식파킹브레이크</label></li>
-									<li><label><input type="checkbox" class="styled1" checked>파워도어록</label></li>
+									<li><label><input type="checkbox" class="styled1" checked disabled>에어백 : 운전석</label></li>
+									<li><label><input type="checkbox" class="styled1" checked disabled>에어백 : 조수석</label></li>
+									<li><label><input type="checkbox" class="styled1" checked disabled>에어백 : 사이드</label></li>
+									<li><label><input type="checkbox" class="styled1" checked disabled>에어백 : 커튼</label></li>
+									<li><label><input type="checkbox" class="styled1" checked disabled>에어백 : 무릎</label></li>
+									<li><label><input type="checkbox" class="styled1" checked disabled>감지센서 : 전방</label></li>
+									<li><label><input type="checkbox" class="styled1" checked disabled>감지센서 : 후방</label></li>
+									<li><label><input type="checkbox" class="styled1" checked disabled>카메라 : 전방</label></li>
+									<li><label><input type="checkbox" class="styled1" checked disabled>카메라 : 후방</label></li>
+									<li><label><input type="checkbox" class="styled1" checked disabled>카메라 : 어라운드</label></li>
+									<li><label><input type="checkbox" class="styled1" checked disabled>ARS</label></li>
+									<li><label><input type="checkbox" class="styled1" checked disabled>TCS : 미끄럼방지</label></li>
+									<li><label><input type="checkbox" class="styled1" checked disabled>VDC : 차체자세제어</label></li>
+									<li><label><input type="checkbox" class="styled1" checked disabled>ECS : 전자제어 서스펜션</label></li>
+									<li><label><input type="checkbox" class="styled1" checked disabled>TPMS : 타이어공기압감지</label></li>
+									<li><label><input type="checkbox" class="styled1" checked disabled>EPB : 전자식파킹브레이크</label></li>
+									<li><label><input type="checkbox" class="styled1" checked disabled>파워도어록</label></li>
 								</ul>
 							</dd>
 						</dl>
@@ -263,34 +263,34 @@
 							<dt>편의</dt>
 							<dd>
 								<ul>
-									<li><label><input type="checkbox" class="styled1" checked>오토에어컨</label></li>
-									<li><label><input type="checkbox" class="styled1" checked>수동에어컨</label></li>
-									<li><label><input type="checkbox" class="styled1" checked>무선도어잠금장치</label></li>
-									<li><label><input type="checkbox" class="styled1" checked>히터</label></li>
-									<li><label><input type="checkbox" class="styled1" checked>스마트키</label></li>
-									<li><label><input type="checkbox" class="styled1" checked>파워트렁크</label></li>
-									<li><label><input type="checkbox" class="styled1" checked>파워윈도우</label></li>
-									<li><label><input type="checkbox" class="styled1" checked>크루즈컨트롤</label></li>
-									<li><label><input type="checkbox" class="styled1" checked>CD플레이어</label></li>
-									<li><label><input type="checkbox" class="styled1" checked>CD체인저</label></li>
-									<li><label><input type="checkbox" class="styled1" checked>네비게이션</label></li>
-									<li><label><input type="checkbox" class="styled1" checked>AV시스템</label></li>
-									<li><label><input type="checkbox" class="styled1" checked>뒷좌석TV</label></li>
-									<li><label><input type="checkbox" class="styled1" checked>AUX단자</label></li>
-									<li><label><input type="checkbox" class="styled1" checked>USB단자</label></li>
-									<li><label><input type="checkbox" class="styled1" checked>iPOD단자</label></li>
-									<li><label><input type="checkbox" class="styled1" checked>Bluetooth</label></li>
-									<li><label><input type="checkbox" class="styled1" checked>핸즈프리</label></li>
-									<li><label><input type="checkbox" class="styled1" checked>핸들열선</label></li>
-									<li><label><input type="checkbox" class="styled1" checked>안마시트</label></li>
-									<li><label><input type="checkbox" class="styled1" checked>오토라이트</label></li>
-									<li><label><input type="checkbox" class="styled1" checked>레인센서</label></li>
-									<li><label><input type="checkbox" class="styled1" checked>차량메뉴얼</label></li>
+									<li><label><input type="checkbox" class="styled1" checked disabled>오토에어컨</label></li>
+									<li><label><input type="checkbox" class="styled1" checked disabled>수동에어컨</label></li>
+									<li><label><input type="checkbox" class="styled1" checked disabled>무선도어잠금장치</label></li>
+									<li><label><input type="checkbox" class="styled1" checked disabled>히터</label></li>
+									<li><label><input type="checkbox" class="styled1" checked disabled>스마트키</label></li>
+									<li><label><input type="checkbox" class="styled1" checked disabled>파워트렁크</label></li>
+									<li><label><input type="checkbox" class="styled1" checked disabled>파워윈도우</label></li>
+									<li><label><input type="checkbox" class="styled1" checked disabled>크루즈컨트롤</label></li>
+									<li><label><input type="checkbox" class="styled1" checked disabled>CD플레이어</label></li>
+									<li><label><input type="checkbox" class="styled1" checked disabled>CD체인저</label></li>
+									<li><label><input type="checkbox" class="styled1" checked disabled>네비게이션</label></li>
+									<li><label><input type="checkbox" class="styled1" checked disabled>AV시스템</label></li>
+									<li><label><input type="checkbox" class="styled1" checked disabled>뒷좌석TV</label></li>
+									<li><label><input type="checkbox" class="styled1" checked disabled>AUX단자</label></li>
+									<li><label><input type="checkbox" class="styled1" checked disabled>USB단자</label></li>
+									<li><label><input type="checkbox" class="styled1" checked disabled>iPOD단자</label></li>
+									<li><label><input type="checkbox" class="styled1" checked disabled>Bluetooth</label></li>
+									<li><label><input type="checkbox" class="styled1" checked disabled>핸즈프리</label></li>
+									<li><label><input type="checkbox" class="styled1" checked disabled>핸들열선</label></li>
+									<li><label><input type="checkbox" class="styled1" checked disabled>안마시트</label></li>
+									<li><label><input type="checkbox" class="styled1" checked disabled>오토라이트</label></li>
+									<li><label><input type="checkbox" class="styled1" checked disabled>레인센서</label></li>
+									<li><label><input type="checkbox" class="styled1" checked disabled>차량메뉴얼</label></li>
 								</ul>
 							</dd>
 						</dl>
 					</div>
-					<button type="button" class="btn-aco">옵션 더보기</button>
+					<button type="button" class="btn-aco"><span>옵션 더보기</span></button>
 				</div>
 			</div>
 			<div class="section">
@@ -403,10 +403,12 @@
 $(window).load(function(){
 	$('.option-wrap .btn-aco').click(function(){
 		if ($(this).hasClass('on')) {
-			$(this).removeClass('on').html('옵션 더보기 ');
+			$('.option-list02').removeClass('on');
+			$(this).removeClass('on').find('span').html('옵션 더보기 ');
 			$(this).parents().children('.option-list').slideUp();
 		}else{
-			$(this).addClass('on').html('옵션 더보기 닫기');
+			$('.option-list02').addClass('on');
+			$(this).addClass('on').find('span').html('옵션 더보기 닫기');
 			$(this).parents().children('.option-list').slideDown();
 		}
 	});
@@ -436,19 +438,29 @@ $(window).load(function(){
 
 	$('.btn-view-more').click(function(){
 		if($(this).hasClass('on')){
-			$(this).removeClass('on').html('전체보기');
+			$(this).removeClass('on').find('span').html('전체보기');
 			$('.view-pager, .view-pager .pager').animate({'height': '84px'}, function(){
 				var obj = $('.view-pager, .view-pager .pager').find('.active').index();
 				slider.reloadSlider();
 				slider.goToSlide(obj);
 			});
 		}else{
-			$(this).addClass('on').html('전체보기 닫기');
+			$(this).addClass('on').find('span').html('전체보기 닫기');
 			$('.view-pager, .view-pager .pager').animate({'height': '376px'});
 			slider.destroySlider();
 		}
 	});
 });
+
+function open_pop(){
+	var screenW = screen.availWidth;  // 스크린 가로사이즈
+	var screenH = screen.availHeight; // 스크린 세로사이즈
+	var popW = 970;
+	var popH = screen.availHeight - 80;
+	var posL=( screenW-popW ) / 2;   // 띄울창의 가로 포지션
+	var posT=( screenH-popH ) / 2;   // 띄울창의 세로 포지션
+	window.open('../qu/PC-QU020101.html','견적 시뮬레이션 및 상담요청','width='+ popW +',height='+ popH +',top='+ posT +',left='+ posL +',resizable=no,scrollbars=no');
+}
 </script>
 </body>
 
