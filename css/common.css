@@ -241,6 +241,19 @@ button {outline:0;vertical-align:top;}
 .inner_head .top-area a:first-child:before {
 	display: none;
 }
+.inner_head .top-area span {
+	display: inline-block;
+	width:80px;
+	height: 26px;
+	margin:8px 0 0 20px;
+	color:#e9002d;
+	font-size:13px;
+	line-height: 24px;
+	text-align: center;
+	border:1px solid #e9002d;
+	border-radius:3px;
+	box-sizing: border-box;
+}
 .inner_head .navi {
 	margin-left:209px;
 }
