@@ -459,6 +459,7 @@ button {outline:0;vertical-align:top;}
 
 /* 폰트 컬러 */
 .fColor01 {color:#e9002d !important;} /* 빨강 */
+.fColor02 {color:#f58025 !important;} /* 오렌지 */
 
 /* 정렬 */
 .text-left {text-align:left !important;}
@@ -2484,4 +2485,41 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 }
 .option-list02 .item-option.option08 {
 	background:url(../img/icon/icon_option08.gif) no-repeat center 0;
+}
+
+.product-info {
+	padding:40px 30px;
+	border:1px solid #ccc;
+	border-top:2px solid #e9002d;
+}
+.product-info .info-box {
+	padding:25px 0;
+	border-top:1px solid #ccc;
+}
+.product-info .info-box:first-child {
+	padding-top:0;
+	border-top:0;
+}
+.product-info .info-box:last-child {padding-bottom:0;}
+.product-info .info-box .info-list03 {}
+.product-info .info-box .info-list03 .item {
+	overflow:hidden;
+	margin-top:15px;
+	font-size:15px;
+	line-height:25px;
+	color:#666;
+}
+.product-info .info-box .info-list03 .item:first-child {margin-top:0;}
+.product-info .info-box .info-list03 .item span {display:inline-block;}
+.product-info .info-box .info-list03 .item .info-tit {
+	width:50%;
+}
+.product-info .info-box .info-list03 .item .info-txt {
+	width:50%;
+}
+.product-info .info-box .info-list03 .item .info-txt .number01 {
+	font-size:30px;
+}
+.product-info .info-box .info-list03 .item .info-txt .number02 {
+	font-size:26px;
 }
