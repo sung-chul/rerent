@@ -443,6 +443,7 @@ button {outline:0;vertical-align:top;}
 .mgT25 {margin-top:25px !important;}
 .mgT30 {margin-top:30px !important;}
 .mgT40 {margin-top:40px !important;}
+.mgT45 {margin-top:45px !important;}
 .mgT50 {margin-top:50px !important;}
 .mgT55 {margin-top:55px !important;}
 .mgT60 {margin-top:60px !important;}
@@ -869,7 +870,7 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 .bullet-list1 {}
 .bullet-list1 .item {
 	position:relative;
-	padding-left:12px;
+	padding-left:10px;
 	font-size:15px;
 	color:#666;
 	line-height:24px;
@@ -879,7 +880,7 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	display:block;
 	position:absolute;
 	left:0; top:12px;
-	width:4px;
+	width:5px;
 	height:1px;
 	background-color:#666;
 }
@@ -1897,6 +1898,9 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	padding:25px 0 25px 220px;
 	text-align:left;
 }
+.thumb-board table tbody td.no-result {
+	padding:115px 0;
+}
 .goods-column .img-wrap {
 	position: absolute;
 	top:25px; left:0;
@@ -2386,4 +2390,24 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 }
 .pop-wrap .pop-content .step-box li:first-child {
 	width:33.4%;
+}
+
+/* 장기렌터카 */
+.border-area {
+	padding:24px 0;
+	border-top:2px solid #e9002d;
+	border-bottom:1px solid #999;
+	box-sizing:border-box;
+}
+.vehicle-explana .vehicle-txt {
+	font-size:15px;
+	color:#666;
+	line-height:25px;
+}
+.vehicle-list {}
+.vehicle-list .item-vehicle {}
+.vehicle-list .item-vehicle .vehicle-tit {
+	font-size:px;
+	color:#;
+	line-height:px;
 }
