@@ -180,6 +180,9 @@ button {outline:0;vertical-align:top;}
 /* =========================================================================================================
 	레이아웃
 ========================================================================================================= */
+html.on {
+	overflow: hidden;
+}
 .wrapper {
 	border-top:2px solid #ea002c;
 }
@@ -428,7 +431,7 @@ button {outline:0;vertical-align:top;}
 /* 퀵메뉴 */
 .quick-menu {
 	position:fixed;
-	right:0;top:615px;
+	right:0;top:180px;
 	z-index:500;
 	width:124px;
 	padding-left:1px;
@@ -810,6 +813,13 @@ button {outline:0;vertical-align:top;}
 	width:19px; height:19px;
 	background-position: 0 -28px;
 }
+.btn-call.type2 {
+	background-color:#ff7a00;
+	border-color: #ff7a00;
+	color:#fff;
+}
+.btn-call.type2:before {background-position: -20px -28px;}
+
 
 /* 아이콘 버튼 */
 .btn-more {
@@ -983,6 +993,7 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	opacity:0;
  	cursor: pointer;
 }
+.checkbox.readonly {background-color:#fff;}
 .checkbox.disabled,
 .radiobox.disabled {background-color:#e3e3e3;}
 
@@ -1159,9 +1170,18 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	background-color:#666;
 	color:#fff;
 }
-
-.push-goods {
-
+.option-wrap .btn-aco span {
+	display: inline-block;
+	padding-left:22px;
+	background:url(../img/icon/icon_open.png) 0 18px no-repeat;
+	vertical-align:top;
+	line-height: 44px;
+}
+.option-wrap .btn-aco.on span {
+	background:url(../img/icon/icon_close.png) 0 23px no-repeat;
+}
+.option-list .checkbox.disabled {
+	background-color:#fff;
 }
 /* =========================================================================================================
 	회원가입 & 로그인
@@ -1992,6 +2012,34 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	width:16px; height:16px;
 	background-position: 0 -125px;
 }
+
+/*board-write2*/
+.board-write2 {border-top:1px solid #999;}
+.board-write2 table {border-bottom:1px solid #999;}
+.board-write2 th,
+.board-write2 td {
+	height: 60px;
+	padding:7px 20px;
+	border-top:1px solid #ddd;
+	text-align:left;
+	box-sizing: border-box;
+}
+.board-write2 th {border-left:1px solid #ddd;}
+.board-write2 td {border-right:1px solid #ddd;}
+.board-write2 tr:first-child th,
+.board-write2 tr:first-child td {border-top:0;}
+.board-write2 .text {
+	padding:5px 0;
+	font-size:15px;
+	font-weight:normal;
+	line-height:22px;
+}
+.board-write2 th {
+	background-color:#f0f0f0;
+	color:#666;
+	font-weight: normal;
+}
+
 /* 게시판 형태 */
 .board-list {border-top:1px solid #999;}
 .board-list table {border-bottom:1px solid #999;}
@@ -2758,6 +2806,16 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	font-size:15px;
 	line-height: 42px;
 }
+.view-list .view-pager .btn-view-more span {
+	display: inline-block;
+	padding-left:22px;
+	background:url(../img/icon/icon_open.png) 0 16px no-repeat;
+	vertical-align:top;
+	line-height: 42px;
+}
+.view-list .view-pager .btn-view-more.on span {
+	background:url(../img/icon/icon_close.png) 0 21px no-repeat;
+}
 
 /*견적 시뮬레이션*/
 .pop-wrap {
@@ -2890,28 +2948,28 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	background:url(../img/icon/icon_option08.gif) no-repeat center 0;
 }
 
-.option-list02 .item-option.option01.on {
+.option-list02.on .item-option.option01 {
 	background:url(../img/icon/icon_option01_on.gif) no-repeat center 0;
 }
-.option-list02 .item-option.option02.on {
+.option-list02.on .item-option.option02 {
 	background:url(../img/icon/icon_option02_on.gif) no-repeat center 0;
 }
-.option-list02 .item-option.option03.on  {
+.option-list02.on .item-option.option03 {
 	background:url(../img/icon/icon_option03_on.gif) no-repeat center 0;
 }
-.option-list02 .item-option.option04.on  {
+.option-list02.on .item-option.option04 {
 	background:url(../img/icon/icon_option04_on.gif) no-repeat center 0;
 }
-.option-list02 .item-option.option05.on  {
+.option-list02.on .item-option.option05 {
 	background:url(../img/icon/icon_option05_on.gif) no-repeat center 0;
 }
-.option-list02 .item-option.option06.on  {
+.option-list02.on .item-option.option06 {
 	background:url(../img/icon/icon_option06_on.gif) no-repeat center 0;
 }
-.option-list02 .item-option.option07.on  {
+.option-list02.on .item-option.option07 {
 	background:url(../img/icon/icon_option07_on.gif) no-repeat center 0;
 }
-.option-list02 .item-option.option08.on  {
+.option-list02.on .item-option.option08 {
 	background:url(../img/icon/icon_option08_on.gif) no-repeat center 0;
 }
 
@@ -3030,6 +3088,58 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	background:url(../img/icon/icon_cell01.gif) no-repeat 0 center;
 }
 
+/*렌트가이드*/
+.content {counter-reset: num 0;}
+.guide-wrap .accordion-list {
+	border-color:#e51737;
+}
+
+.guide-wrap .accordion-list .category {
+	position: relative;
+	width:90px !important;
+	padding-right:15px;
+	color:#999;
+	font-size: 18px;
+	box-sizing: border-box;
+}
+.guide-wrap .accordion-list .item.on .category {color:#ff7a00;}
+.guide-wrap .accordion-list .category:before {
+	position: absolute;
+	top:50%; right:0;
+	counter-increment: num;
+	content: counter(num);
+	width:30px;
+	height:30px;
+	margin-top:-15px;
+	background-color:#999;
+	color:#fff;
+	font-size: 15px;
+	text-align: center;
+	line-height: 30px;
+	border-radius: 50%;
+}
+.guide-wrap .accordion-list .item.on .category:before {
+	background-color:#ff7a00;
+}
+.guide-wrap .accordion-list .item .question .title {
+	font-size:17px;
+	color:#333;
+	padding-left:20px;
+}
+.guide-wrap .accordion-list  .item .answer {
+	padding-left:60px;
+	border-bottom:1px solid #e51737;
+}
+.guide-wrap .accordion-list .item .answer .answer-text {
+	color:#333;
+	line-height: 25px;
+}
+.guide-wrap .accordion-list .item .question .title:before {
+	content: none;
+}
+.guide-wrap .accordion-list .item .answer:before {
+	content: none;
+}
 /* =========================================================================================================
 	이용약관, 개인정보처리방침
 ========================================================================================================= */
@@ -3041,6 +3151,7 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	font-size:15px;
 	color:#666;
 	line-height:25px;
+
 }
 .terms-area .apply-text {
 	margin-bottom:7px;

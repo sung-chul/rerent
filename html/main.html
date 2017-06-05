@@ -1037,36 +1037,6 @@
 
 <script>
 $(window).load(function(){
-	/* 퀵메뉴 슬라이드 */
-	$('.quick-slide .bxslider').bxSlider({
-		mode: 'vertical',
-		infiniteLoop: false,
-		pager: false,
-		hideControlOnEnd: true,
-		maxSlides: 3,
-		minSlides: 3
-	});
-
-	$('.quick-slide').append('<div class="over-list">');
-	$('.quick-slide .slide-item').each(function(){
-		var img = $(this).find('.img-area').html();
-		$(this).find('.over-layer .img').html(img);
-
-		var data = $(this).find('.over-layer').html();
-		$(this).parents('.quick-slide').find('.over-list').append('<div class="over-item">' + data);
-	});
-
-	$('.quick-slide .slide-item').mouseenter(function(){
-		var quickTop = $(this).parents('.bx-wrapper').offset().top;
-		var top = $(this).offset().top;
-		var idx = $(this).index();
-		$('.over-item').css({'top':top-quickTop+20});
-		$('.over-item').eq(idx).show().animate({right:0}, 100);
-	});
-
-	$('.quick-slide .over-item').mouseleave(function(){
-		$('.over-item').hide().css({'right':'-170px'});
-	});
 	/*
 	$(window).scroll(function(){
 		$('.quick-slide .over-layer').each(function(){
