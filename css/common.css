@@ -428,7 +428,7 @@ button {outline:0;vertical-align:top;}
 /* 퀵메뉴 */
 .quick-menu {
 	position:fixed;
-	right:0;top:615px;
+	right:0;top:180px;
 	z-index:500;
 	width:124px;
 	padding-left:1px;
