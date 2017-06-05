@@ -648,9 +648,7 @@ button {outline:0;vertical-align:top;}
 	font-size:15px;
 	line-height:45px;
 }
-.select-box.focus .select-title {
-	border:1px solid #e9002d;
-}
+
 .select-box.disabled .select-title {
 	background-color:#e3e3e3;
 	color:#999;
@@ -664,6 +662,15 @@ button {outline:0;vertical-align:top;}
 	height:11px;
 	margin-top:-5px;
 	background:url(../img/icon/icon_select_arrow.png) no-repeat 0 0;
+}
+.select-box.focus .select-title:before {
+	content:'';
+	position:absolute;
+	right:13px;top:50%;
+	width:17px;
+	height:11px;
+	margin-top:-5px;
+	background:url(../img/icon/icon_select_arrow_on.png) no-repeat 0 0;
 }
 
 .select-box .select-list {
@@ -683,7 +690,7 @@ button {outline:0;vertical-align:top;}
 	line-height:30px;
 }
 .select-box .select-list .item:hover,
-.select-box .select-list .item.on {background-color:#e3e3e3;}
+.select-box .select-list .item.on {background-color:#ff7e00; color:#fff;}
 .select-box .select-list .item:first-child {margin-top:0;}
 .select-box select {
 	position:fixed;
@@ -695,30 +702,34 @@ button {outline:0;vertical-align:top;}
 	opacity:0;
 }
 
-.select-box.type2 {
-
-}
-
-.select-box.type2.focus .select-title:before {
+/*select2 (선택됐을때 빨강)*/
+.select-box.type2 {}
+.select-box.type2.focus .select-title,
+.select-box.type2.on .select-title {border:1px solid #e9002d; color:#e9002d;}
+.select-box.type2.focus .select-title:before,
+.select-box.type2.on .select-title:before  {
 	content:'';
 	position:absolute;
 	right:13px;top:50%;
 	width:17px;
 	height:11px;
 	margin-top:-5px;
-	background:url(../img/icon/icon_select_arrow_on.png) no-repeat 0 0;
+	background:url(../img/icon/icon_select_arrow_on2.png) no-repeat 0 0;
 }
-.select-box.type2.focus .select-title {
-	border-color:#ccc;
+.select-box.type2.focus .select-title,
+.select-box.type2.on .select-title  {
+	border-color:#ea002c;
 }
-.select-box.type2.focus .select-list {
-	border-color:#ccc;
+.select-box.type2.focus .select-list,
+.select-box.type2.on .select-list {
+	border-color:#ea002c;
 }
-.select-box .select-list .item:hover,
-.select-box .select-list .item.on {
-	background-color:#ff7e00;
-	color: #fff;
+.select-box.type2 .select-list .item:hover,
+.select-box.type2 .select-list .item.on {
+	background-color:#fff;
+	color: #ea002c;
 }
+
 /* =========================================================================================================
 	체크박스/라디오버튼
 ========================================================================================================= */
