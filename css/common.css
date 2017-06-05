@@ -2661,9 +2661,11 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 }
 
 .product-info {
+	width:330px;
 	padding:40px 30px;
 	border:1px solid #ccc;
 	border-top:2px solid #e9002d;
+	box-sizing:border-box;
 }
 .product-info .info-box {
 	padding:25px 0;
@@ -2674,20 +2676,24 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	border-top:0;
 }
 .product-info .info-box:last-child {padding-bottom:0;}
+
 .product-info .info-box .info-list03 {}
 .product-info .info-box .info-list03 .item {
-	display: table;
-	width: 100%;
+	position:relative;
 	margin-top:15px;
+	padding-left:80px;
 	font-size:15px;
-	line-height:25px;
+	line-height:32px;
 	color:#666;
 }
 .product-info .info-box .info-list03 .item:first-child {margin-top:0;}
-.product-info .info-box .info-list03 .item span {display:inline-block;}
+.product-info .info-box .info-list03 .item span {display:block;}
 .product-info .info-box .info-list03 .item .info-tit {
-	display: table-cell;
-	text-align: left;
+	position:absolute;
+	left:0; bottom:0;
+}
+.product-info .info-box .info-list03 .item .info-txt {
+	text-align:right;
 	vertical-align: bottom;
 }
 .product-info .info-box .info-list03 .item .info-txt {
@@ -2697,7 +2703,47 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 }
 .product-info .info-box .info-list03 .item .info-txt .number01 {
 	font-size:30px;
+	line-height:40px;
+	vertical-align:bottom;
 }
 .product-info .info-box .info-list03 .item .info-txt .number02 {
 	font-size:26px;
+	line-height:36px;
+	vertical-align:bottom;
 }
+
+.product-info .info-box .sum-box {
+	padding:0 13px;
+	text-align:center;
+}
+.product-info .info-box .sum-box .sum-txt {
+	display:inline-block;
+	position:relative;
+	margin-left:19px;
+	padding-left:19px;
+	font-size:15px;
+	color:#999;
+	line-height:25px;
+}
+.product-info .info-box .sum-box .sum-txt:before {
+	content:'';
+	display:block;
+	position:absolute;
+	left:0; top:6px;
+	width:1px;
+	height:14px;
+	background-color:#ddd;
+}
+.product-info .info-box .sum-box .sum-txt:nth-child(1),
+.product-info .info-box .sum-box .sum-txt:nth-child(3) {
+	margin-left:0;
+	padding-left:0;
+}
+.product-info .info-box .sum-box .sum-txt:nth-child(1):before,
+.product-info .info-box .sum-box .sum-txt:nth-child(3):before {display:none;}
+
+.record-list {
+
+}
+.record-list .item {}
+.record-list .item a {display:block;}
