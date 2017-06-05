@@ -3029,3 +3029,16 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	line-height:30px;
 	background:url(../img/icon/icon_cell01.gif) no-repeat 0 center;
 }
+
+/* =========================================================================================================
+	이용약관, 개인정보처리방침
+========================================================================================================= */
+.terms-area {
+	padding-top:35px;
+	border-top:1px solid #999;
+}
+.terms-area .terms-text {
+	font-size:15px;
+	color:#666;
+	line-height:25px;
+}
