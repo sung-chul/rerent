@@ -196,6 +196,10 @@
 					<button type="button" class="btn-view-more">전체보기</button>
 				</div>
 			</div>
+			<br><br>
+			<div class="btn-wrap">
+				<a href="#none" onclick="javascript:open_pop(); return false;" class="btn-text btn-w370 btn-red">팝업</a>
+			</div>
 		</div>
 	</div>
 
@@ -270,6 +274,15 @@ $(window).load(function(){
 		}
 	});
 });
+function open_pop(){
+	var screenW = screen.availWidth;  // 스크린 가로사이즈
+	var screenH = screen.availHeight; // 스크린 세로사이즈
+	var popW = 800;
+	var popH = 600;
+	var posL=( screenW-popW ) / 2;   // 띄울창의 가로 포지션
+	var posT=( screenH-popH ) / 2;   // 띄울창의 세로 포지션
+	window.open('popup.html','test','width='+ popW +',height='+ popH +',top='+ posT +',left='+ posL +',resizable=no,scrollbars=no');
+}
 </script>
 </body>
 
