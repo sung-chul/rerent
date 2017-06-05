@@ -1104,7 +1104,7 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	width:820px;
 	margin:0 auto;
 }
-.join-wrap .complete-box {
+.complete-box {
 	padding:64px 0;
 	border:1px solid #ccc;
 	border-top:2px solid #e9002d;
@@ -1115,20 +1115,20 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	padding-bottom:153px;
 	background:url(../img/img/join_complete.jpg) no-repeat center bottom;
 }
-.join-wrap .complete-box .text01 {
+.complete-box .text01 {
 	font-size:30px;
 	color:#000;
 	line-height:40px;
 }
-.join-wrap .complete-box .text02 {
+.complete-box .text02 {
 	font-size:18px;
 	color:#333;
 	line-height:33px;
 }
-.join-wrap .complete-box .text02 .text-border {
+ .complete-box .text02 .text-border {
 	position:relative;
 }
-.join-wrap .complete-box .text02 .text-border:before {
+.complete-box .text02 .text-border:before {
 	content:'';
 	display:block;
 	position:absolute;
@@ -2582,8 +2582,6 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 }
 .pop-wrap .pop-content .terms_box + .radio-check {display: inherit;}
 
-
-
 .total-area {
 	margin-top:-1px;
 	padding:20px 0;
@@ -2607,6 +2605,13 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 
 .pop-car-search {
 	width:960px;
+}
+
+.car-search-wrap {padding:160px 0;}
+.car-search-wrap .complete-box {border:0}
+.car-search-wrap .text-box {
+	padding-bottom:153px;
+	background:url(../img/img/car_search-complete.png) no-repeat center bottom;
 }
 
 /* 장기렌터카 */
