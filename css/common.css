@@ -2595,7 +2595,8 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 .product-info .info-box:last-child {padding-bottom:0;}
 .product-info .info-box .info-list03 {}
 .product-info .info-box .info-list03 .item {
-	overflow:hidden;
+	display: table;
+	width: 100%;
 	margin-top:15px;
 	font-size:15px;
 	line-height:25px;
@@ -2604,10 +2605,14 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 .product-info .info-box .info-list03 .item:first-child {margin-top:0;}
 .product-info .info-box .info-list03 .item span {display:inline-block;}
 .product-info .info-box .info-list03 .item .info-tit {
-	width:50%;
+	display: table-cell;
+	text-align: left;
+	vertical-align: bottom;
 }
 .product-info .info-box .info-list03 .item .info-txt {
-	width:50%;
+	display: table-cell;
+	text-align: right;
+	vertical-align: bottom;
 }
 .product-info .info-box .info-list03 .item .info-txt .number01 {
 	font-size:30px;
