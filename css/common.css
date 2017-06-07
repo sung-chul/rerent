@@ -1410,6 +1410,27 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 }
 .terms_box .inner .terms-area .cTitle01 {
 	margin:20px 0 4px;
+	font-size:15px;
+	line-height: 25px;
+}
+.terms_box .inner .terms-area .terms-tit {
+	font-size:15px;
+	line-height: 25px;
+}
+.terms_box .inner .terms-area .terms-text {
+	font-size:14px;
+	line-height: 24px;
+}
+.terms_box .inner .terms-area .terms-list01 .item,
+.terms_box .inner .terms-area .bullet-list1 .item,
+.terms_box .inner .terms-area .indivi-list02 .item-indivi {
+	font-size:14px;
+}
+.terms_box .inner .terms-area .terms-list01 .item .number {
+	top:4px;
+}
+.terms_box .inner .terms-area .board-list02 table tbody td {
+	font-size: 14px;
 }
 
 .join-wrap {
