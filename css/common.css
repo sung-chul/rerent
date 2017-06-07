@@ -2423,7 +2423,7 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	opacity:0;
 }
 .layer-popup.scroll {
-	top:40px;bottom:40px;
+	top:60px;bottom:40px;
 	-webkit-transform:translate(-50%,0);
 	-ms-transform:translate(-50%,0);
 	transform:translate(-50%,0);
@@ -2443,7 +2443,8 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	font-size:20px;
 	line-height: 58px;
 }
-.layer-popup .pop-head .btn-close {
+.layer-popup .pop-head .btn-close,
+.layer-popup .pop-head2 .btn-close {
 	position: absolute;
 	top:-60px; right:-20px;
 	width:60px;
@@ -2451,7 +2452,8 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	font-size:0;
 	line-height:0;
 }
-.layer-popup .pop-head .btn-close:before {
+.layer-popup .pop-head .btn-close:before,
+.layer-popup .pop-head2 .btn-close:before  {
 	top:0; right:0;
 	width: 60px;
 	height:60px;
