@@ -14,13 +14,15 @@ $(window).load(function(){
 		퀵메뉴
 	----------------------------------------------------------------------------------------------------------- */
 	/* 슬라이드 */
-	$('.quick-slide .bxslider').bxSlider({
-		mode: 'vertical',
-		infiniteLoop: false,
-		pager: false,
-		hideControlOnEnd: true,
-		maxSlides: 3,
-		minSlides: 3
+	$('.quick-slide .bxslider').each(function(){
+		$(this).bxSlider({
+			mode: 'vertical',
+			infiniteLoop: false,
+			pager: false,
+			hideControlOnEnd: true,
+			maxSlides: 3,
+			minSlides: 3
+		});
 	});
 
 	$('.quick-slide').append('<div class="over-list">');
