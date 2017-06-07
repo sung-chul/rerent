@@ -110,7 +110,7 @@ $(window).load(function(){
 		$(this).click(function(){
 			var idx = $(this).index();
 			$('.rent-tab .item').removeClass('on').eq(idx).addClass('on');
-			$('.rent-area').hide().eq(idx).show();
+			$('.rent-area').hide().eq(idx).fadeIn();
 		});
 	});
 
