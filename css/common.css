@@ -733,6 +733,8 @@ html.on {
 	타이틀
 ========================================================================================================= */
 .page-title {
+	width:1000px;
+	margin:0 auto;
 	padding:17px 0 31px;
 }
 .page-title h2 {
@@ -765,6 +767,37 @@ html.on {
 	font-size:17px;
 }
 
+.product-title {
+	height:82px;
+	margin-bottom:40px;
+	background-color:#666;
+}
+.product-title .inner {
+	overflow: hidden;
+	width:1000px;
+	margin: 0 auto;
+}
+.product-title .inner .title {
+	display: inline-block;
+	font-size:24px;
+	color:#fff;
+	line-height: 82px;
+}
+.product-title .inner .price {
+	float: right;
+	font-size: 18px;
+	color:#fff;
+	line-height: 82px;
+	vertical-align: top;
+}
+.product-title .inner .price span {
+	display: inline-block;
+	margin-left:5px;
+	color:#f58025;
+	font-size:30px;
+	line-height:82px;
+	vertical-align: top;
+}
 /* =========================================================================================================
 	버튼
 ========================================================================================================= */
