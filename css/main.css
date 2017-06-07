@@ -413,11 +413,11 @@
 	box-sizing: border-box;
 }
 .rent-list li .car {
-	height: 36px;
+	height: 38px;
 	margin-top:5px;
 	color:#666;
 	font-size:14px;
-	line-height: 18px;
+	line-height: 19px;
 }
 .rent-list li:hover .car {
 	color:#333;
@@ -426,7 +426,7 @@
 .rent-list li .price {
 	color:#ea002c;
 	font-size:20px;
-	line-height: 32px;
+	line-height: 30px;
 }
 .rent-list li .price .month {
 	color:#333;

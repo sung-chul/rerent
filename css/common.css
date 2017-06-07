@@ -1295,16 +1295,25 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 }
 .login-util li a {color:#666;}
 .login-util li:first-child {padding-right:5px;}
-.login-util li:first-child:before {
+.login-util li:first-child:after {
 	content:'';
 	position:absolute;
 	right:0; top:50%;
 	width:1px;
 	height:14px;
-	margin-top:-7px;
+	margin-top:-6px;
 	background-color:#666;
 }
-
+.login-util li label.check-radio {
+	display: inline-block;
+	line-height: 24px;
+	vertical-align: top;
+}
+.login-util li a {
+	display: inline-block;
+	line-height: 24px;
+	vertical-align: top;
+}
 .sns-login {
 	overflow: hidden;
 	width: 100%;
