@@ -1029,11 +1029,70 @@
 	</div>
 </div>
 
+<!-- 레이어 팝업 영역 -->
+<div class="bg-layer"></div>
+<!-- 전체메뉴 -->
+<div class="layer-menu">
+	<div class="pop-head">
+		<h1 class="pop-title">전체메뉴</h1>
+		<button type="button" class="btn-sprite btn-close">닫기</button>
+	</div>
+	<div class="pop-content">
+		<div class="menu-box">
+			<ul class="depth">
+				<li class="item"><a href="#" class="title">장기렌터카</a>
+					<ul class="two-depth">
+						<li><a href="#">차량검색</a></li>
+						<li><a href="#">장기렌트 문의하기</a></li>
+					</ul>
+				</li>
+				<li class="item"><a href="#" class="title">렌트가이드</a></li>
+				<li class="item"><a href="#" class="title">지점안내</a></li>
+				<li class="item"><a href="#" class="title">이벤트</a>
+					<ul class="two-depth">
+						<li><a href="#">진행중인 이벤트</a></li>
+						<li><a href="#">지난 이벤트</a></li>
+						<li><a href="#">당첨자 발표</a></li>
+					</ul>
+				</li>
+				<li class="item"><a href="#" class="title">고객센터</a>
+					<ul class="two-depth">
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">1:1문의</a></li>
+						<li><a href="#">공지사항</a></li>
+					</ul>
+				</li>
+				<li class="item"><a href="#" class="title">소개</a>
+					<ul class="two-depth">
+						<li><a href="#">회사소개</a></li>
+						<li><a href="#">이용약관</a></li>
+						<li><a href="#">보도자료</a></li>
+						<li><a href="#">개인정보처리방침</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="call-area">
+				<span class="call">장기렌트문의 <span class="num">1670-2548</span></span>
+				<span class="call">단기렌트문의 <span class="num">1544-0445</span></span>
+				<span class="call">사이트 이용문의 <span class="num">1800-0606</span></span>
+			</div>
+		</div>
+	</div>
+</div>
 
 <script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../js/jquery.bxslider.min.js"></script>
 <script type="text/javascript" src="../js/common.js"></script>
 <script type="text/javascript" src="../js/main.js"></script>
+<script>
+$(window).load(function(){
+	/* 전체메뉴 */
+	$('.all-category').click(function(){
+		$('.bg-layer').fadeIn(200);
+		$('.layer-menu').fadeIn(200);
+	});
+});
+</script>
 </body>
 
 </html>

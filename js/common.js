@@ -184,8 +184,8 @@ $(window).load(function(){
 	/* ===========================================================================================================
 		레이어 팝업
 	=========================================================================================================== */
-	$('.layer-popup').hide().css({'opacity':'1'});
-	$('.layer-popup').each(function(){
+	$('.layer-popup, .layer-menu').hide().css({'opacity':'1'});
+	$('.layer-popup, .layer-menu').each(function(){
 		var winH = $(window).height();
 		var popH = $(this).outerHeight();
 
@@ -202,8 +202,8 @@ $(window).load(function(){
 		$('.popup-close').css({'z-index':zIdx-1});
 		$('body').css({'overflow':'hidden'});
 	});
-	$(document).on('click', '.layer-popup .btn-close, .popup-close', function(){
-		$('.layer-popup').fadeOut(200);
+	$(document).on('click', '.layer-popup .btn-close, .popup-close, .layer-menu .btn-close', function(){
+		$('.layer-popup, .layer-menu').fadeOut(200);
 		$('.bg-layer').fadeOut(200);
 		$('.popup-close').remove();
 		$('body').css({'overflow-y':'inherit'});
