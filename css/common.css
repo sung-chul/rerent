@@ -330,16 +330,20 @@ html.on {
 
 /*container*/
 .container {
-	width:1000px;
-	margin:0 auto;
+	position: relative;
+	width:100%;
 }
 /*content*/
 .content {
+	width:1000px;
+	margin:0 auto;
 	padding-bottom:60px;
 }
 /*location*/
 .location {
 	overflow: hidden;
+	width:1000px;
+	margin:0 auto;
 	padding-top:18px;
 }
 .location a,
