@@ -1267,6 +1267,7 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	width:100%;
 	border:1px solid #ccc;
 	border-top:2px solid #e9002d;
+	box-sizing:border-box;
 }
 .login-wrap {
 	width:460px;
