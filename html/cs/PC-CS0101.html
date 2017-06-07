@@ -53,13 +53,13 @@
 
 				<div class="cs-cont-area">
 					<div class="order-area">
-						<button type="button" class="on">장기렌트</button>
-						<button type="button">LPG 차량</button>
-						<button type="button">심사</button>
-						<button type="button">초기 납입금</button>
-						<button type="button">대차 서비스</button>
-						<button type="button">보험</button>
-						<button type="button">중도해지</button>
+						<span class="on">장기렌트</span>
+						<span>LPG 차량</span>
+						<span>심사</span>
+						<span>초기 납입금</span>
+						<span>대차 서비스</span>
+						<span>보험</span>
+						<span>중도해지</span>
 					</div>
 					<div class="tab-cont02 on">
 						<ul class="accordion-list">
@@ -336,10 +336,10 @@
 $(window).load(function(){
 
 	/*고객안내 탭*/
-	$('.order-area button').each(function(){
+	$('.order-area span').each(function(){
 		$(this).click(function(){
 			var idx = $(this).index();
-			$('.order-area button').removeClass('on').eq(idx).addClass('on');
+			$('.order-area span').removeClass('on').eq(idx).addClass('on');
 			$('.tab-cont02').removeClass('on').eq(idx).addClass('on');
 		});
 	});

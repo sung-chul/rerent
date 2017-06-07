@@ -1503,27 +1503,29 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 .cs-cont-area {padding-top:60px;}
 
 .order-area:after {display: block; content:''; clear: both; }
-.order-area button {
+.order-area span {
 	float: left;
 	width:143px;
 	height:60px;
 	line-height: 60px;
 	border:1px solid #d9d9d9;
 	margin-left:-1px;
+	text-align: center;
 	box-sizing: border-box;
+	cursor: pointer;
 }
-.order-area button:first-child {margin-left:0;}
-.order-area button:nth-child(4),
-.order-area button:nth-child(5) {
+.order-area span:first-child {margin-left:0;}
+.order-area span:nth-child(4),
+.order-area span:nth-child(5) {
 	width:145px;
 }
-.order-area button.on {
+.order-area span.on {
 	position: relative;
 	background-color:#f58025;
 	border:1px solid #f58025;
 	color:#fff;
 }
-.order-area button.on:before {
+.order-area span.on:before {
 	content:'';
 	position:absolute;
 	left:50%; bottom:-7px;
