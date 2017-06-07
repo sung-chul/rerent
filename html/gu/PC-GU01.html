@@ -242,18 +242,14 @@ $(window).load(function(){
 	/*아코디언*/
 
 		$('.accordion-list .question').click(function(){
-
+			$('.accordion-list > .item').css('border-top','1px solid #ddd');
 			if($(this).parents('li').hasClass('on')){
 				$(this).parents('li').removeClass('on').find('.answer').slideUp(100);
-				//$(this).parents('li').next('li').find().css('border-top','1px solid #ddd')
 			}else{
 				$('.accordion-list .question').parents('li').removeClass('on').find('.answer').slideUp(100);
 				$(this).parents('li').addClass('on').find('.answer').slideDown(200);
-				//$(this).parents('li').next('li').css('border-color','#ddd')
 				$(this).parents('li').next('li').css('border-top','0');
-
 			}
-				$(this).parents('li').css('border-top','1px solid #ddd')
 		});
 
 
