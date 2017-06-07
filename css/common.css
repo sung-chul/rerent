@@ -3150,6 +3150,7 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 /* =========================================================================================================
 	이용약관, 개인정보처리방침
 ========================================================================================================= */
+/* 이용약관 */
 .terms-area {
 	padding-top:35px;
 	border-top:1px solid #999;
@@ -3202,4 +3203,16 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 .terms-area .terms-list02 .item .number02 {
 	position:absolute;
 	left:0; top:0;
+}
+
+/* 개인정보처리방침 */
+.indivi-info {
+	padding:24px 30px;
+	border:1px solid #ccc;
+	box-sizing:border-box;
+}
+.indivi-info a {
+	font-size:15px;
+	color:#333;
+	line-height:26px;
 }
