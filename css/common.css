@@ -735,6 +735,8 @@ html.on {
 	타이틀
 ========================================================================================================= */
 .page-title {
+	width:1000px;
+	margin:0 auto;
 	padding:17px 0 31px;
 }
 .page-title h2 {
@@ -767,6 +769,37 @@ html.on {
 	font-size:17px;
 }
 
+.product-title {
+	height:82px;
+	margin-bottom:40px;
+	background-color:#666;
+}
+.product-title .inner {
+	overflow: hidden;
+	width:1000px;
+	margin: 0 auto;
+}
+.product-title .inner .title {
+	display: inline-block;
+	font-size:24px;
+	color:#fff;
+	line-height: 82px;
+}
+.product-title .inner .price {
+	float: right;
+	font-size: 18px;
+	color:#fff;
+	line-height: 82px;
+	vertical-align: top;
+}
+.product-title .inner .price span {
+	display: inline-block;
+	margin-left:5px;
+	color:#f58025;
+	font-size:30px;
+	line-height:82px;
+	vertical-align: top;
+}
 /* =========================================================================================================
 	버튼
 ========================================================================================================= */
@@ -1146,6 +1179,19 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	width:5px;
 	height:1px;
 	background-color:#666;
+}
+.bullet-list1 .item02 {
+	position:relative;
+	padding-left:10px;
+	font-size:15px;
+	color:#666;
+	line-height:24px;
+}
+.bullet-list1 .item02:before {
+	content:'*';
+	display:block;
+	position:absolute;
+	left:0; top:0;
 }
 
 .bullet-list2 {}
@@ -2119,6 +2165,60 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	text-decoration: underline;
 }
 .board-list table tbody td.no-result {
+	padding:97px 0;
+	color:#999;
+	font-size:15px;
+}
+
+.board-list02 {border-top:1px solid #999;}
+.board-list02 table {border-bottom:1px solid #999;}
+.board-list02 table thead th {
+	height:59px;
+	font-size:15px;
+	color:#333;
+	border-bottom:1px solid #ddd;
+	background-color:#f0f0f0;
+	font-weight:normal;
+}
+.board-list02 table tbody td {
+	height:59px;
+	color:#999;
+	font-size:15px;
+	text-align:center;
+	line-height:24px;
+	border-top:1px solid #ddd;
+}
+.board-list02 table tbody tr:first-child td {border-top:0;}
+.board-list02 table tbody td .ico-notice {
+	display: inline-block;
+	width:50px;
+	height:29px;
+	font-size:14px;
+	color:#fff;
+	line-height: 29px;
+	text-align: center;
+	background-color:#f58025;
+	border-radius: 5px;
+}
+.board-list02 table tbody td.notice-title,
+.board-list02 table tbody td.title {text-align:left;}
+.board-list02 table tbody td.notice-title a,
+.board-list02 table tbody td.title a {
+	display:inline-block;
+	overflow:hidden;
+	vertical-align: middle;
+	max-width:100%;
+	color:#666;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.board-list02 table tbody td.notice-title a {
+	color:#333;
+}
+.board-list02 table tbody td a:hover{
+	text-decoration: underline;
+}
+.board-list02 table tbody td.no-result {
 	padding:97px 0;
 	color:#999;
 	font-size:15px;
@@ -3224,11 +3324,15 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	padding-top:35px;
 	border-top:1px solid #999;
 }
+.terms-area .terms-tit {
+	font-size:16px;
+	color:#333;
+	line-height:25px;
+}
 .terms-area .terms-text {
 	font-size:15px;
 	color:#666;
 	line-height:25px;
-
 }
 .terms-area .apply-text {
 	margin-bottom:7px;
@@ -3276,17 +3380,38 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 
 /* 개인정보처리방침 */
 .indivi-info {
+	overflow:hidden;
+	width:100%;
+	margin-top:35px;
 	padding:24px 30px;
 	border:1px solid #ccc;
 	box-sizing:border-box;
 }
-.indivi-info a {
+.indivi-info .indivi-list01 {
+	float:left;
+	width:50%;
+}
+.indivi-info .indivi-list01 .item-info {
+	margin-top:10px;
+}
+.indivi-info .indivi-list01 .item-info:first-child {margin-top:0;}
+.indivi-info .indivi-list01 .item-info a {
+	display:block;
 	font-size:15px;
 	color:#333;
 	line-height:26px;
 }
+.infor-box {padding-left:10px;}
+.indivi-tit {
+	display:block;
+	margin:10px 0;
+}
+.indivi-list02 .item-indivi {
+	font-size:15px;
+	color:#666;
+	line-height:25px;
 
-
+}
 /*에러페이지*/
 .error-area {
 	margin-top:150px;
@@ -3305,7 +3430,6 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	color:#666;
 	line-height: 26px;
 }
-
 .error-area.type2 {
 	background:url(../img/img/error_500.png) 50% 0 no-repeat;
 }
