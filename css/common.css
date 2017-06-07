@@ -1447,14 +1447,11 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	margin:0 auto;
 }
 .complete-box {
-	padding:64px 0;
-	border:1px solid #ccc;
-	border-top:2px solid #e9002d;
-	box-sizing:border-box;
+	margin-top:72px;
 	text-align:center;
 }
 .join-wrap .complete-box .text-box {
-	padding-bottom:153px;
+	padding-bottom:152px;
 	background:url(../img/img/join_complete.jpg) no-repeat center bottom;
 }
 .complete-box .text01 {
@@ -3291,7 +3288,7 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 .product-info {
 	float:right;
 	width:330px;
-	padding:40px 30px;
+	padding:34px 30px 40px;
 	border:1px solid #ccc;
 	border-top:2px solid #e9002d;
 	box-sizing:border-box;
@@ -3365,22 +3362,28 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 
 .product-info .info-box .record-list {
  	overflow:hidden;
-	margin-top:24px;
+	margin-top:20px;
 }
 .product-info .info-box .record-list .item {
 	float:left;
-	width:50%;
+	width:33.33%;
 	text-align:center;
 }
 .product-info .info-box .record-list .item a {
 	display:block;
-	padding-top:84px;
+	padding-top:80px;
+	font-size:14px;
+	color:#666;
+	line-height:18px;
 }
 .product-info .info-box .record-list .item.record01 a {
 	background:url(../img/icon/icon_record01.gif) no-repeat center 0;
 }
 .product-info .info-box .record-list .item.record02 a {
 	background:url(../img/icon/icon_record02.gif) no-repeat center 0;
+}
+.product-info .info-box .record-list .item.record03 a {
+	background:url(../img/icon/icon_record03.gif) no-repeat center 0;
 }
 .product-info .info-box .call-box {
 	text-align:center;
