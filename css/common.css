@@ -2536,6 +2536,7 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	margin-right:50px;
 	padding-right:21px;
 	color:#333;
+	vertical-align: middle;
 }
 .view-cont +  .page-link .prev-page strong {
 	background:url(../img/icon/icon_prev.gif) no-repeat right center;
@@ -2547,8 +2548,17 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	display:inline-block;
 	float:right;
 	color:#999;
+	vertical-align: middle;
 }
 
+.view-cont + .page-link a {
+	overflow: hidden;
+	display: inline-block;
+	width:700px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	vertical-align: middle;
+}
 .view-cont + .page-link a:hover{
 	text-decoration: underline;
 }
