@@ -1267,6 +1267,7 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	width:100%;
 	border:1px solid #ccc;
 	border-top:2px solid #e9002d;
+	box-sizing:border-box;
 }
 .login-wrap {
 	width:460px;
@@ -1399,6 +1400,13 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	box-sizing: border-box;
 }
 .terms_box .inner {margin:20px;}
+.terms_box .inner .terms-area {
+	padding-top:0;
+	border-top:0;
+}
+.terms_box .inner .terms-area .cTitle01 {
+	margin:20px 0 4px;
+}
 
 .join-wrap {
 	width:820px;
