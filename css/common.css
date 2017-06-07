@@ -942,6 +942,7 @@ html.on {
 .select-box.type2.on .select-title  {
 	border-color:#ea002c;
 }
+.select-box.type2.focus .select-title:before {background:url(../img/icon/icon_select_arrow_on.png) no-repeat 0 0;;}
 .select-box.type2.focus .select-list,
 .select-box.type2.on .select-list {
 	border-color:#ea002c;
@@ -2360,7 +2361,7 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	margin-top:55px;
 }
 
-.pop-car-search .rent-search  .row .styled1 {width:325px;}
+.pop-car-search .rent-search  .row select {width:325px;}
 .pop-car-search .pop-content {padding:0 20px 60px 20px;}
 .pop-car-search .rent-search .search-area {margin:0 56px;}
 
@@ -2709,9 +2710,7 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	line-height: 45px;
 	text-align: left;
 }
-.rent-search .row .styled1 {
-	width:365px;
-}
+.rent-search .row select {width:365px;}
 .rent-search .row .connect-txt {
 	display: inline-block;
 	margin:0 5px;
