@@ -20,7 +20,7 @@ $(window).load(function(){
 		pager: false,
 		hideControlOnEnd: true,
 		maxSlides: 3,
-		minSlides: 3
+		minSlides: 3,
 	});
 
 	$('.quick-slide').append('<div class="over-list">');
