@@ -883,6 +883,10 @@ html.on {
 .btn-call.type2:before {background-position: -20px -28px;}
 
 
+.btn-wrap.hColor01 .btn-black:hover {background-color:#242424;} /* 진그레이 -> 블랙 */
+.btn-wrap.hColor01 .btn-red:hover {background-color:#f58025;} /* 레드 -> 오렌지 */
+
+.btn-wrap.hColor02 .btn-black:hover {background-color:#f58025;}/* 블랙 -> 오렌지 */
 /* 아이콘 버튼 */
 .btn-more {
 	display:inline-block;
@@ -1267,6 +1271,7 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	width:100%;
 	border:1px solid #ccc;
 	border-top:2px solid #e9002d;
+	box-sizing: border-box;
 }
 .login-wrap {
 	width:460px;
@@ -2167,7 +2172,7 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 .board-list table tbody td.no-result {
 	padding:97px 0;
 	color:#999;
-	font-size:15px;
+	font-size:18px;
 }
 
 .board-list02 {border-top:1px solid #999;}
