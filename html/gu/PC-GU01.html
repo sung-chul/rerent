@@ -239,24 +239,24 @@
 <script>
 $(window).load(function(){
 
-	/*고객안내 탭*/
-	$('.order-area button').each(function(){
-		$(this).click(function(){
-			var idx = $(this).index();
-			$('.order-area button').removeClass('on').eq(idx).addClass('on');
-			$('.tab-cont02').removeClass('on').eq(idx).addClass('on');
-		});
-	});
-
 	/*아코디언*/
-	$('.accordion-list .question').click(function(){
-		if($(this).parents('li').hasClass('on')){
-			$(this).parents('li').removeClass('on').find('.answer').slideUp(100);
-		}else{
-			$('.accordion-list .question').parents('li').removeClass('on').find('.answer').slideUp(100);
-			$(this).parents('li').addClass('on').find('.answer').slideDown(200);
-		}
-	});
+
+		$('.accordion-list .question').click(function(){
+
+			if($(this).parents('li').hasClass('on')){
+				$(this).parents('li').removeClass('on').find('.answer').slideUp(100);
+				//$(this).parents('li').next('li').find().css('border-top','1px solid #ddd')
+			}else{
+				$('.accordion-list .question').parents('li').removeClass('on').find('.answer').slideUp(100);
+				$(this).parents('li').addClass('on').find('.answer').slideDown(200);
+				//$(this).parents('li').next('li').css('border-color','#ddd')
+				$(this).parents('li').next('li').css('border-top','0');
+
+			}
+				$(this).parents('li').css('border-top','1px solid #ddd')
+		});
+
+
 });
 </script>
 </body>
