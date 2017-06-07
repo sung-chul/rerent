@@ -2476,6 +2476,104 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	background-color:rgba(0, 0, 0, 0.7);
 	z-index:400;
 }
+.layer-menu {
+	position:absolute;
+	left:50%;top:122px;
+	z-index:500;
+	width:1000px;
+	-webkit-transform:translateX(-50%);
+	-ms-transform:translateX(-50%);
+	transform:translate(-50%);
+	background-color:#000;
+	box-sizing: border-box;
+	opacity:0;
+}
+.layer-menu .pop-head {
+	position:relative;
+	height:108px;
+}
+.layer-menu .pop-head .pop-title {
+	color:#fff;
+	font-size:30px;
+	font-weight: 600;
+	line-height:108px;
+	font-family:'noto';
+	text-align: center;
+}
+.layer-menu .pop-head .btn-close {
+	position: absolute;
+	top:-60px; right:0;
+	width:60px;
+	height:60px;
+	font-size:0;
+	line-height:0;
+}
+.layer-menu .pop-head .btn-close:before {
+	top:0; right:0;
+	width: 60px;
+	height:60px;
+	background-position: 0 -63px;
+}
+.layer-menu .pop-content {}
+.menu-box {text-align:center;}
+.menu-box .depth {
+	overflow: hidden;
+	margin:10px 4px 0;
+}
+.menu-box .depth li.item {
+	float: left;
+	width:330px;
+	height:161px;
+	border-right:1px dashed #343434;
+}
+.menu-box .depth li.item:nth-child(3n) {
+	border-right:0;
+}
+.menu-box .depth li .title {
+	display: inline-block;
+	color:#e9002d;
+	font-size:20px;
+	font-family:'noto';
+	font-weight: 600;
+	line-height: 1;
+}
+.menu-box .depth .two-depth {
+	margin-top:10px;
+}
+.menu-box .depth .two-depth li a {
+	color:#fff;
+	font-size:15px;
+	line-height: 30px;
+}
+.menu-box .call-area {
+	height: 62px;
+	margin-top:47px;
+	background-color:#fff;
+}
+.menu-box .call-area .call {
+	position: relative;
+	display: inline-block;
+	margin-left:7px;
+	padding-left:11px;
+	line-height: 62px;
+	color:#666;
+	font-size:14px;
+}
+.menu-box .call-area .call:before {
+	content: '';
+	position: absolute;
+	top:50%; left:0;
+	width:1px; height:14px;
+	margin-top:-6px;
+	background-color:#999;
+}
+.menu-box .call-area .call:first-child:before {
+	display: none;
+}
+.menu-box .call-area .num {
+	color:#333;
+}
+
 .layer-popup {
 	position:fixed;
 	left:50%;top:50%;
