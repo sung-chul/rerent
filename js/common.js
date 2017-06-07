@@ -25,6 +25,8 @@ $(window).load(function(){
 		});
 	});
 
+	$('.quick-menu').css({'opacity':'1'});
+
 	$('.quick-slide').append('<div class="over-list">');
 	$('.quick-slide .slide-item').each(function(){
 		var img = $(this).find('.img-area').html();
@@ -43,6 +45,32 @@ $(window).load(function(){
 	/* 최근본 차량 아웃 */
 	$('.quick-slide .over-item').mouseleave(function(){
 		$('.over-item').hide().css({'right':'-170px'});
+	});
+	/* 스크롤 탑 버튼 */
+	$('.btn-scroll-top').click(function(){
+		$('html, body').animate({scrollTop:0}, 300);
+	});
+	/* 스크롤 */
+	$(window).scroll(function(){
+		var winTop = $(window).scrollTop();
+		// 서브 페이지
+		$('.container').each(function(){
+			var conTop = $('.container').offset().top;
+			if(winTop >= conTop){
+				$('.quick-menu').css({'top':'40px'});
+			}else{
+				$('.quick-menu').css({'top':(conTop+40)-winTop});
+			}
+		});
+		// 메인페이지
+		$('.visual-banner').each(function(){
+			var conTop = $('.visual-banner').next('.section').offset().top;
+			if(winTop >= conTop){
+				$('.quick-menu').css({'top':'40px'});
+			}else{
+				$('.quick-menu').css({'top':(conTop+40)-winTop});
+			}
+		});
 	});
 
 	/* -----------------------------------------------------------------------------------------------------------

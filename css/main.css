@@ -508,7 +508,7 @@
 	line-height: 45px;
 	text-align: left;
 }
-.rent-search .row .styled1 {
+.rent-search .row select {
 	width:365px;
 }
 .rent-search .row .connect-txt {
