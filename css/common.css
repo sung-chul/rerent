@@ -470,6 +470,8 @@ html.on {
 .quick-menu .quick-slide {
 	position:relative;
 	padding:20px 0 25px;
+	min-height:288px;
+	box-sizing:border-box;
 }
 .quick-menu .quick-slide .bx-prev,
 .quick-menu .quick-slide .bx-next {
@@ -625,6 +627,18 @@ html.on {
 	font-size:16px;
 	text-align:center;
 	line-height:36px;
+}
+
+.quick-slide .no-text {
+	position:absolute;
+	left:0;top:50%;
+	width:100%;
+	height:36px;
+	margin-top:-18px;
+	color:#666;
+	font-size:14px;
+	text-align:center;
+	line-height:18px;
 }
 
 /* =========================================================================================================
