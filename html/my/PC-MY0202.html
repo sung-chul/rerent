@@ -189,64 +189,40 @@
 		</div>
 	</div>
 </div>
-
+<!-- 레이어 팝업 영역 -->
+<div class="bg-layer"></div>
+<!-- 휴대폰 인증 -->
+<div class="layer-popup pop-certify">
+	<div class="pop-head">
+		<h1 class="pop-title">휴대폰 인증</h1>
+		<button type="button" class="btn-sprite btn-close">닫기</button>
+	</div>
+	<div class="pop-content">
+		<p class="guide-txt">휴대폰으로 전송 받은 인증번호를 입력해주세요.</p>
+		<div class="certify-inp">
+			<input type="number" class="text-center" placeholder="인증번호 4자리 입력">
+		</div>
+		<dl class="certify-time">
+			<dt>인증번호 요청중</dt>
+			<dd>
+				<span class="time">02분59초</span>
+				<button type="button" class="btn-text-small btn-w98 btn-gray">재요청</button>
+			</dd>
+		</dl>
+		<div class="pop-btn-wrap">
+			<a href="#" class="btn-text btn-w148 btn-red">확인</a>
+		</div>
+	</div>
+</div>
 
 <script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="../../js/common.js"></script>
 <script>
 $(window).load(function(){
-
-	/* 문의 내용 byte */
-	$('.byte-len').each(function () {
-		// count 정보 및 count 정보와 관련된 textarea/input 요소를 찾아내서 변수에 저장한다.
-		var $maxcount = $('.maxcount', this);
-		var $count = $('.count', this);
-		var $input = $('.tbl-textarea textarea');
-
-		// .text()가 문자열을 반환하기에 이 문자를 숫자로 만들기 위해 1을 곱한다.
-		var maximumByte = $maxcount.text() * 1;
-		var newmaximumByte = 4000;
-		// update 함수는 keyup, paste, input 이벤트에서 호출한다.
-		var update = function () {
-			var before = $count.text() * 1;
-			var str_len = $input.val().length;
-			var cbyte = 0;
-			var li_len = 0;
-			for (i = 0; i < str_len; i++) {
-				var ls_one_char = $input.val().charAt(i);
-				if (escape(ls_one_char).length > 4) {
-					cbyte += 2; //한글이면 2를 더한다
-				}else{
-					cbyte++; //한글아니면 1을 다한다
-				}
-				if (cbyte <= maximumByte) {
-					li_len = i + 1;
-				}
-			}
-			// 사용자가 입력한 값이 제한 값을 초과하는지를 검사한다.
-			if (parseInt(cbyte) > parseInt(maximumByte))
-			{
-				alert('4000byte 이내로 입력해 주세요.');
-				var str = $input.val();
-				var str2 = $input.val().substr(0, li_len);
-				$input.val(str2);
-				var cbyte = 0;
-				for (i = 0; i < $input.val().length; i++) {
-					var ls_one_char = $input.val().charAt(i);
-					if (escape(ls_one_char).length > 4) {
-						cbyte += 2; //한글이면 2를 더한다
-					} else {
-						cbyte++; //한글아니면 1을 다한다
-					}
-				}
-			}
-			$count.text(cbyte);
-		};
-		// input, keyup, paste 이벤트와 update 함수를 바인드한다
-		$input.bind('input keyup keydown paste change', function () {
-			setTimeout(update, 0)
-		});
-		update();
+	/* 휴대폰 인증 */
+	$('.btn-certify').click(function(){
+		$('.bg-layer').fadeIn(200);
+		$('.pop-certify').fadeIn(200);
 	});
 });
 </script>
