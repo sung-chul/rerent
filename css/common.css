@@ -2435,7 +2435,7 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	opacity:0;
 }
 .layer-popup.scroll {
-	top:60px;bottom:40px;
+	top:100px;bottom:40px;
 	-webkit-transform:translate(-50%,0);
 	-ms-transform:translate(-50%,0);
 	transform:translate(-50%,0);
