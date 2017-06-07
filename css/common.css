@@ -2764,6 +2764,7 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	width:650px;
 	padding-bottom:151px;
 }
+.view-list .inner {position: relative;}
 .view-list ul li img {vertical-align:top;}
 .view-list .bx-wrapper {
 	position: relative;
@@ -2792,6 +2793,16 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 .view-list .bx-controls-direction a.bx-next {
 	right:0;
 	background-position: 0 -389px;
+}
+.view-list .inner .count {
+	position: absolute;
+	left:0; right:0; bottom:0;
+	height:46px;
+	background-color:rgba(0, 0, 0, 0.7);
+	color:#fff;
+	font-size:20px;
+	line-height: 46px;
+	text-align: center;
 }
 .view-list .view-pager {
 	position:absolute;
