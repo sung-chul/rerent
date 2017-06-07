@@ -655,6 +655,7 @@ html.on {
 .mgT55 {margin-top:55px !important;}
 .mgT60 {margin-top:60px !important;}
 
+.mgB0 {margin-bottom:0 !important;}
 .mgB10 {margin-bottom:10px !important;}
 
 .mgL5 {margin-left:5px !important;}
@@ -3127,18 +3128,39 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	padding-left:20px;
 }
 .guide-wrap .accordion-list  .item .answer {
-	padding-left:60px;
+	padding:15px 60px;
 	border-bottom:1px solid #e51737;
 }
 .guide-wrap .accordion-list .item .answer .answer-text {
 	color:#333;
 	line-height: 25px;
+	margin-bottom:10px;
+}
+.guide-wrap .accordion-list .item .answer .bullet-list li {font-size: 14px;}
+.guide-wrap .accordion-list .item .answer .board-write2 {
+	margin:5px 0 5px -10px;
+}
+.guide-wrap .accordion-list .board-write2 th,
+.guide-wrap .accordion-list .board-write2 td {
+	height: inherit;
+	padding:20px;
 }
 .guide-wrap .accordion-list .item .question .title:before {
 	content: none;
 }
 .guide-wrap .accordion-list .item .answer:before {
 	content: none;
+}
+
+.pdf-link {
+	display: inline-block;
+	width:27px;
+	height:29px;
+	margin-left:5px;
+	background:url(../img/btn/btn_pdf.png) 0 0 no-repeat;
+	font-size: 0;
+	line-height: 0;
+	vertical-align: middle;
 }
 /* =========================================================================================================
 	이용약관, 개인정보처리방침
