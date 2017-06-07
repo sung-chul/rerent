@@ -508,7 +508,7 @@
 	line-height: 45px;
 	text-align: left;
 }
-.rent-search .row .styled1 {
+.rent-search .row select {
 	width:365px;
 }
 .rent-search .row .connect-txt {
@@ -521,6 +521,8 @@
 .rent-search .btn-wrap {
 	margin-top:40px;
 }
+.rent-search .btn-wrap .btn-rent {background-color:#ea002c;}
+.rent-search .btn-wrap .btn-rent:hover {background-color:#f58025;}
 
 /* 이벤트 배너 및 공지사항 */
 .event-banner {

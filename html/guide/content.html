@@ -150,26 +150,30 @@
 				</div>
 			</div>
 			<br><br>
-			<div class="view-list">
-				<ul class="car-bxslider">
-					<li><img src="../../img/temp/temp_view01.jpg" alt="view-img01"></li>
-					<li><img src="../../img/temp/temp_view02.jpg" alt="view-img02"></li>
-					<li><img src="../../img/temp/temp_view01.jpg" alt="view-img01"></li>
-					<li><img src="../../img/temp/temp_view02.jpg" alt="view-img02"></li>
-					<li><img src="../../img/temp/temp_view01.jpg" alt="view-img01"></li>
-					<li><img src="../../img/temp/temp_view02.jpg" alt="view-img02"></li>
-					<li><img src="../../img/temp/temp_view01.jpg" alt="view-img01"></li>
-					<li><img src="../../img/temp/temp_view02.jpg" alt="view-img02"></li>
-					<li><img src="../../img/temp/temp_view01.jpg" alt="view-img01"></li>
-					<li><img src="../../img/temp/temp_view02.jpg" alt="view-img02"></li>
-					<li><img src="../../img/temp/temp_view01.jpg" alt="view-img01"></li>
-					<li><img src="../../img/temp/temp_view02.jpg" alt="view-img02"></li>
-					<li><img src="../../img/temp/temp_view01.jpg" alt="view-img01"></li>
-					<li><img src="../../img/temp/temp_view02.jpg" alt="view-img02"></li>
-					<li><img src="../../img/temp/temp_view01.jpg" alt="view-img01"></li>
-					<li><img src="../../img/temp/temp_view02.jpg" alt="view-img02"></li>
-					<li><img src="../../img/temp/temp_view01.jpg" alt="view-img01"></li>
-				</ul>
+			<div class="product-area">
+				<div class="view-list">
+				<div class="inner">
+					<ul class="car-bxslider">
+						<li><img src="../../img/temp/temp_view01.jpg" alt="view-img01"></li>
+						<li><img src="../../img/temp/temp_view01.jpg" alt="view-img01"></li>
+						<li><img src="../../img/temp/temp_view01.jpg" alt="view-img01"></li>
+						<li><img src="../../img/temp/temp_view01.jpg" alt="view-img01"></li>
+						<li><img src="../../img/temp/temp_view01.jpg" alt="view-img01"></li>
+						<li><img src="../../img/temp/temp_view01.jpg" alt="view-img01"></li>
+						<li><img src="../../img/temp/temp_view01.jpg" alt="view-img01"></li>
+						<li><img src="../../img/temp/temp_view01.jpg" alt="view-img01"></li>
+						<li><img src="../../img/temp/temp_view01.jpg" alt="view-img01"></li>
+						<li><img src="../../img/temp/temp_view01.jpg" alt="view-img01"></li>
+						<li><img src="../../img/temp/temp_view01.jpg" alt="view-img01"></li>
+						<li><img src="../../img/temp/temp_view01.jpg" alt="view-img01"></li>
+						<li><img src="../../img/temp/temp_view01.jpg" alt="view-img01"></li>
+						<li><img src="../../img/temp/temp_view01.jpg" alt="view-img01"></li>
+						<li><img src="../../img/temp/temp_view01.jpg" alt="view-img01"></li>
+						<li><img src="../../img/temp/temp_view01.jpg" alt="view-img01"></li>
+						<li><img src="../../img/temp/temp_view01.jpg" alt="view-img01"></li>
+					</ul>
+					<span class="count"><span class="now">1</span>/20</span>
+				</div>
 				<div class="view-pager">
 					<div class="pager">
 						<a data-slide-index="0" href=""><img src="../../img/temp/@temp_pager01.jpg"></a>
@@ -195,6 +199,7 @@
 					</div>
 					<button type="button" class="btn-view-more">전체보기</button>
 				</div>
+			</div>
 			</div>
 			<br><br>
 			<div class="btn-wrap">
@@ -257,6 +262,15 @@ $(window).load(function(){
 		infiniteLoop:false,
 		pager:false,
 		moveSlides: 1,
+	});
+
+	$('.view-pager .pager a').click(function(){
+		var selNum = $(this).index()+1;
+		$('.count .now').html(selNum);
+	});
+	$('.view-list .bx-controls-direction a').click(function(){
+		var selNum = $('.view-pager .pager a.active').index()+1;
+		$('.count .now').html(selNum);
 	});
 
 	$('.btn-view-more').click(function(){

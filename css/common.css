@@ -330,16 +330,20 @@ html.on {
 
 /*container*/
 .container {
-	width:1000px;
-	margin:0 auto;
+	position: relative;
+	width:100%;
 }
 /*content*/
 .content {
+	width:1000px;
+	margin:0 auto;
 	padding-bottom:60px;
 }
 /*location*/
 .location {
 	overflow: hidden;
+	width:1000px;
+	margin:0 auto;
 	padding-top:18px;
 }
 .location a,
@@ -470,6 +474,8 @@ html.on {
 .quick-menu .quick-slide {
 	position:relative;
 	padding:20px 0 25px;
+	min-height:288px;
+	box-sizing:border-box;
 }
 .quick-menu .quick-slide .bx-prev,
 .quick-menu .quick-slide .bx-next {
@@ -627,6 +633,18 @@ html.on {
 	line-height:36px;
 }
 
+.quick-slide .no-text {
+	position:absolute;
+	left:0;top:50%;
+	width:100%;
+	height:36px;
+	margin-top:-18px;
+	color:#666;
+	font-size:14px;
+	text-align:center;
+	line-height:18px;
+}
+
 /* =========================================================================================================
 	sprite img
 ========================================================================================================= */
@@ -663,6 +681,7 @@ html.on {
 .mgT55 {margin-top:55px !important;}
 .mgT60 {margin-top:60px !important;}
 
+.mgB0 {margin-bottom:0 !important;}
 .mgB10 {margin-bottom:10px !important;}
 
 .mgL5 {margin-left:5px !important;}
@@ -714,6 +733,8 @@ html.on {
 	타이틀
 ========================================================================================================= */
 .page-title {
+	width:1000px;
+	margin:0 auto;
 	padding:17px 0 31px;
 }
 .page-title h2 {
@@ -746,6 +767,37 @@ html.on {
 	font-size:17px;
 }
 
+.product-title {
+	height:82px;
+	margin-bottom:40px;
+	background-color:#666;
+}
+.product-title .inner {
+	overflow: hidden;
+	width:1000px;
+	margin: 0 auto;
+}
+.product-title .inner .title {
+	display: inline-block;
+	font-size:24px;
+	color:#fff;
+	line-height: 82px;
+}
+.product-title .inner .price {
+	float: right;
+	font-size: 18px;
+	color:#fff;
+	line-height: 82px;
+	vertical-align: top;
+}
+.product-title .inner .price span {
+	display: inline-block;
+	margin-left:5px;
+	color:#f58025;
+	font-size:30px;
+	line-height:82px;
+	vertical-align: top;
+}
 /* =========================================================================================================
 	버튼
 ========================================================================================================= */
@@ -942,6 +994,7 @@ html.on {
 .select-box.type2.on .select-title  {
 	border-color:#ea002c;
 }
+.select-box.type2.focus .select-title:before {background:url(../img/icon/icon_select_arrow_on.png) no-repeat 0 0;;}
 .select-box.type2.focus .select-list,
 .select-box.type2.on .select-list {
 	border-color:#ea002c;
@@ -2427,7 +2480,7 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	margin-top:55px;
 }
 
-.pop-car-search .rent-search  .row .styled1 {width:325px;}
+.pop-car-search .rent-search  .row select {width:325px;}
 .pop-car-search .pop-content {padding:0 20px 60px 20px;}
 .pop-car-search .rent-search .search-area {margin:0 56px;}
 
@@ -2611,6 +2664,7 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	margin-right:50px;
 	padding-right:21px;
 	color:#333;
+	vertical-align: middle;
 }
 .view-cont +  .page-link .prev-page strong {
 	background:url(../img/icon/icon_prev.gif) no-repeat right center;
@@ -2622,8 +2676,17 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	display:inline-block;
 	float:right;
 	color:#999;
+	vertical-align: middle;
 }
 
+.view-cont + .page-link a {
+	overflow: hidden;
+	display: inline-block;
+	width:700px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	vertical-align: middle;
+}
 .view-cont + .page-link a:hover{
 	text-decoration: underline;
 }
@@ -2776,9 +2839,7 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	line-height: 45px;
 	text-align: left;
 }
-.rent-search .row .styled1 {
-	width:365px;
-}
+.rent-search .row select {width:365px;}
 .rent-search .row .connect-txt {
 	display: inline-block;
 	margin:0 5px;
@@ -2807,6 +2868,7 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	width:650px;
 	padding-bottom:151px;
 }
+.view-list .inner {position: relative;}
 .view-list ul li img {vertical-align:top;}
 .view-list .bx-wrapper {
 	position: relative;
@@ -2835,6 +2897,16 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 .view-list .bx-controls-direction a.bx-next {
 	right:0;
 	background-position: 0 -389px;
+}
+.view-list .inner .count {
+	position: absolute;
+	left:0; right:0; bottom:0;
+	height:46px;
+	background-color:rgba(0, 0, 0, 0.7);
+	color:#fff;
+	font-size:20px;
+	line-height: 46px;
+	text-align: center;
 }
 .view-list .view-pager {
 	position:absolute;
@@ -3164,10 +3236,14 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 }
 
 /*렌트가이드*/
-.content {counter-reset: num 0;}
+.guide-wrap {counter-reset: num 0;}
 .guide-wrap .accordion-list {
-	border-color:#e51737;
+	border-top:0;
 }
+.guide-wrap .accordion-list > .item {border-top:1px solid #ddd;}
+.guide-wrap .accordion-list > .item.on {border-top:1px solid #e51737 !important; border-bottom:1px solid #e51737;}
+.guide-wrap .accordion-list > .item:last-child {border-bottom:1px solid #ddd;}
+.guide-wrap .accordion-list > .item.on:last-child {border-color:#e51737;}
 
 .guide-wrap .accordion-list .category {
 	position: relative;
@@ -3196,24 +3272,47 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 .guide-wrap .accordion-list .item.on .category:before {
 	background-color:#ff7a00;
 }
+.guide-wrap .accordion-list .item .question {border-bottom:0;}
 .guide-wrap .accordion-list .item .question .title {
 	font-size:17px;
 	color:#333;
 	padding-left:20px;
 }
 .guide-wrap .accordion-list  .item .answer {
-	padding-left:60px;
-	border-bottom:1px solid #e51737;
+	padding:15px 60px;
+	border-top:1px solid #ddd;
+	border-bottom:0;
 }
 .guide-wrap .accordion-list .item .answer .answer-text {
 	color:#333;
 	line-height: 25px;
+	margin-bottom:10px;
+}
+.guide-wrap .accordion-list .item .answer .bullet-list li {font-size: 14px;}
+.guide-wrap .accordion-list .item .answer .board-write2 {
+	margin:5px 0 5px -10px;
+}
+.guide-wrap .accordion-list .board-write2 th,
+.guide-wrap .accordion-list .board-write2 td {
+	height: inherit;
+	padding:20px;
 }
 .guide-wrap .accordion-list .item .question .title:before {
 	content: none;
 }
 .guide-wrap .accordion-list .item .answer:before {
 	content: none;
+}
+
+.pdf-link {
+	display: inline-block;
+	width:27px;
+	height:29px;
+	margin-left:5px;
+	background:url(../img/btn/btn_pdf.png) 0 0 no-repeat;
+	font-size: 0;
+	line-height: 0;
+	vertical-align: middle;
 }
 /* =========================================================================================================
 	이용약관, 개인정보처리방침
