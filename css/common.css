@@ -3153,3 +3153,46 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	line-height:25px;
 
 }
+.terms-area .apply-text {
+	margin-bottom:7px;
+	font-size:16px;
+	color:#333;
+	line-height:25px;
+}
+.terms-area .cTitle01 {
+	margin:45px 0 8px;
+}
+.terms-area .terms-list01 {}
+.terms-area .terms-list01 .item {
+	position:relative;
+	margin-top:4px;
+	padding-left:20px;
+}
+.terms-area .terms-list01 .item:first-child {margin-top:0;}
+.terms-area .terms-list01 .item .number {
+	display:block;
+	position:absolute;
+	left:0; top:5px;
+	width:14px;
+	height:14px;
+	border:1px solid #666;
+	border-radius:50%;
+	box-sizing:border-box;
+	font-size:11px;
+	line-height:12px;
+	text-align:center;
+}
+
+.terms-area .terms-list02 {
+	margin:10px 0;}
+.terms-area .terms-list02 .item {
+	position:relative;
+	padding-left:14px;
+	font-size:14px;
+	color:#666;
+	line-height:24px;
+}
+.terms-area .terms-list02 .item .number02 {
+	position:absolute;
+	left:0; top:0;
+}
