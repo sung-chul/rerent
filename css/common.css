@@ -188,10 +188,17 @@ html.on {
 }
 /*header*/
 .header {
+	position:relative;
 	width:100%;
-	margin-top:41px;
-	border-top:1px solid #d9d9d9;
+	padding-top:42px;
 	border-bottom:1px solid #d9d9d9;
+}
+.header:before {
+	content:'';
+	position:absolute;
+	left:0;right:0;top:41px;
+	height:1px;
+	background-color:#d9d9d9;
 }
 .header .inner_head {
 	position: relative;
@@ -439,6 +446,7 @@ html.on {
 	border-left:3px solid rgba(0,0,0,.1);
 	border-bottom:3px solid rgba(0,0,0,.1);
 	background-color:#fff;
+	opacity:0;
 }
 .quick-menu:before {
 	content:'';
