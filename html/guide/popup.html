@@ -76,6 +76,17 @@
 					</tbody>
 				</table>
 			</div>
+
+			<br><br>
+			<div class="product-area">
+				<div class="product-info">
+					<div class="info-box">
+						<ul class="record-list">
+							<li class="item record02"><a href="#" onclick="javascript:open_pop(); return false;">견적 시뮬레이션</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
@@ -184,6 +195,15 @@ $(window).load(function(){
 		$(this).toggleClass('on');
 	});
 });
+function open_pop(){
+	var screenW = screen.availWidth;  // 스크린 가로사이즈
+	var screenH = screen.availHeight; // 스크린 세로사이즈
+	var popW = 970;
+	var popH = screen.availHeight - 80;
+	var posL=( screenW-popW ) / 2;   // 띄울창의 가로 포지션
+	var posT=( screenH-popH ) / 2;   // 띄울창의 세로 포지션
+	window.open('../qu/PC-QU020101.html','견적 시뮬레이션 및 상담요청','width='+ popW +',height='+ popH +',top='+ posT +',left='+ posL +',resizable=no,scrollbars=no');
+}
 </script>
 </body>
 
