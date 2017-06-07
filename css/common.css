@@ -186,6 +186,7 @@ html.on {
 .wrapper {
 	border-top:2px solid #ea002c;
 }
+.wrapper.error {border-top:0}
 /*header*/
 .header {
 	position:relative;
@@ -694,6 +695,7 @@ html.on {
 /* 폰트 컬러 */
 .fColor01 {color:#e9002d !important;} /* 빨강 */
 .fColor02 {color:#f58025 !important;} /* 오렌지 */
+.fColor03 {color:#333 !important;} /* 검정 */
 
 /* 정렬 */
 .text-left {text-align:left !important;}
@@ -3408,4 +3410,26 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	font-size:15px;
 	color:#666;
 	line-height:25px;
+
+}
+/*에러페이지*/
+.error-area {
+	margin-top:150px;
+	padding-top:230px;
+	text-align: center;
+	background:url(../img/img/error_404.png) 50% 0 no-repeat;
+}
+.error-area .txt01 {
+	font-size: 20px;
+	color: #333;
+	line-height: 30px;
+}
+.error-area .txt02 {
+	margin-top:20px;
+	font-size: 16px;
+	color:#666;
+	line-height: 26px;
+}
+.error-area.type2 {
+	background:url(../img/img/error_500.png) 50% 0 no-repeat;
 }
