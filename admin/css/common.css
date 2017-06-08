@@ -159,7 +159,7 @@ h6{margin-top:30px;padding-bottom:12px}
 
 /* board list */
 .bd-list {table-layout:fixed;border-top:2px solid #000;border-bottom:1px solid #979797;}
-.bd-list th{height:25px;font-family:"notokr-bold";padding:7px 0;color:#000;border-bottom:1px solid #979797;border-right:1px solid #e5e5e5;text-align:center;font-size:14px;}
+.bd-list th{height:25px;font-family:"notokr-medium";padding:7px 0;color:#000;border-bottom:1px solid #979797;border-right:1px solid #e5e5e5;text-align:center;font-size:14px;}
 .bd-list td {height:25px;border-top:1px solid #e5e5e5;border-right:1px solid #e5e5e5;text-align:center;padding:7px 5px; color:#444;font-size:13px;}
 .bd-list td a {color:#444; text-decoration:underline;}
 .bd-list td.txtEll{margin:0 auto; text-overflow:ellipsis;overflow:hidden;white-space:nowrap;}
@@ -171,7 +171,7 @@ h6{margin-top:30px;padding-bottom:12px}
 .bd-form {border-top:2px solid #000;border-bottom:1px solid #979797;}
 .bd-form .topLine{border-top: 2px solid #979797;}
 .bd-form thead th {font-size:18px; text-align: center; font-family:"notokr-medium";}
-.bd-form th {height:40px; color:#000;padding-left:25px;text-align:left;vertical-align:middle;font-family:"notokr-bold";}
+.bd-form th {height:40px; color:#000;padding-left:25px;text-align:left;vertical-align:middle;font-family:"notokr-medium";}
 .bd-form td {vertical-align:middle;}
 .bd-form th em{color:#ff000e;padding-left:5px}
 .bd-form th, .bd-form td {border-top:1px solid #e4e4e4; padding:5px 0;}
@@ -191,6 +191,13 @@ h6{margin-top:30px;padding-bottom:12px}
 .file-input-hidden {width: 95px; text-indent: -9999px; height: 28px;position:absolute;right:0;top:0;cursor:pointer;}
 .file-input-button{position:absolute;top:0;border:none;display:inline-block;background:url("../images/btn_totalList.png") no-repeat 0 -241px; width:95px; height:28px;color:#ed6712; font-size:13px;line-height:28px;cursor: pointer; }
 .file-input-hidden:hover,.file-input-hidden:active{border:none;background:url("../images/btn_totalList.png") no-repeat -196px -241px;color:#fff;text-indent: -9999px;}
+
+/* option form */
+.option-form {border-top:2px solid #000;border-bottom:1px solid #979797;}
+.option-form thead th {height:50px; border-bottom:1px solid #ddd; border-left:1px solid #ddd; font-size:14px; color:#222; font-family:"notokr-medium"; text-align:center;}
+.option-form thead th:first-child {border-left:0;}
+.option-form thead th.tbl-title {font-size:18px;}
+.option-form tbody td {}
 
 /* search module */
 .page-module {position:relative;height:34px;margin:15px 0;text-align:center;clear: both;}

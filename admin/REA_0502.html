@@ -89,15 +89,15 @@
 	<div class="title"><h3>차량관리</h3></div>
 	<article>
 		<div class="Cont_place">
-			<table class="bd-form" summary="수정하는 영역 입니다.">
-				<caption>제목, 콘텐츠 연동, 상태구분, 예약설정, 알림영역</caption>
+			<table class="bd-form">
+				<caption>차량정보</caption>
 				<colgroup>
-					<col width="15%" />
-					<col width="18%" />
-					<col width="15%" />
-					<col width="18%" />
-					<col width="15%" />
-					<col width="19%" />
+					<col width="110px" />
+					<col width="*" />
+					<col width="110px" />
+					<col width="*" />
+					<col width="110px" />
+					<col width="*" />
 				</colgroup>
 				<thead>
 					<tr>
@@ -107,33 +107,128 @@
 				<tbody>
 					<tr>
 						<th scope="row">차량정보<em>*</em></th>
-						<td></td>
-						<th scope="row">미션<em>*</em></th>
-						<td></td>
-						<th scope="row">연료<em>*</em></th>
-						<td></td>
+						<td><input type="text" class="inp-field wid200" /></td>
+						<th scope="row" class="linelY pdlM">미션<em>*</em></th>
+						<td>
+							<div class="select-inner">
+								<select class="styled02 wid200">
+									<option selected="selected">선택</option>
+									<option>노란색</option>
+								</select>
+							</div>
+						</td>
+						<th scope="row" class="linelY pdlM">연료<em>*</em></th>
+						<td>
+							<div class="select-inner">
+								<select class="styled02 wid200">
+									<option selected="selected">선택</option>
+									<option>노란색</option>
+								</select>
+							</div>
+						</td>
 					</tr>
 					<tr>
 						<th scope="row">차량소재지<em>*</em></th>
-						<td></td>
-						<th scope="row">차량정보<em>*</em></th>
-						<td colspan="3"></td>
+						<td>
+							<div class="select-inner">
+								<select class="styled02 wid200">
+									<option selected="selected">선택</option>
+									<option>노란색</option>
+								</select>
+							</div>
+						</td>
+						<th scope="row" class="linelY pdlM">차량정보<em>*</em></th>
+						<td colspan="3">
+							<div class="select-inner">
+								<select class="styled02 floatL wid138">
+									<option selected="selected">제조사</option>
+									<option>제조사</option>
+								</select>
+							</div>
+							<div class="select-inner">
+								<select class="styled02 floatL wid138">
+									<option selected="selected">모델</option>
+									<option>모델</option>
+								</select>
+							</div>
+							<div class="select-inner">
+								<select class="styled02 floatL wid138">
+									<option selected="selected">등급</option>
+									<option>등급</option>
+								</select>
+							</div>
+							<div class="select-inner">
+								<select class="styled02 floatL wid138">
+									<option selected="selected">세부등급</option>
+									<option>세부등급</option>
+								</select>
+							</div>
+						</td>
 					</tr>
 					<tr>
 						<th scope="row">색상<em>*</em></th>
-						<td></td>
-						<th scope="row">연월식<em>*</em></th>
-						<td></td>
-						<th scope="row">배기량(cc)<em>*</em></th>
-						<td></td>
+						<td>
+							<div class="select-inner">
+								<select class="styled02 floatL wid200">
+									<option selected="selected">선택</option>
+									<option>노란색</option>
+								</select>
+							</div>
+						</td>
+						<th scope="row" class="linelY pdlM">연월식<em>*</em></th>
+						<td>
+							<div class="select-inner">
+								<select class="styled02 floatL wid138">
+									<option selected="selected">년도선택</option>
+									<option>2017년</option>
+									<option>2016년</option>
+									<option>2015년</option>
+									<option>2014년</option>
+									<option>2013년</option>
+								</select>
+							</div>
+							<div class="select-inner">
+								<select class="styled02 floatL wid138">
+									<option selected="selected">월 선택</option>
+									<option>12월</option>
+									<option>11월</option>
+									<option>10월</option>
+									<option>09월</option>
+									<option>08월</option>
+								</select>
+							</div>
+						</td>
+						<th scope="row" class="linelY pdlM">배기량(cc)<em>*</em></th>
+						<td><input type="text" class="inp-field wid200" /></td>
 					</tr>
 					<tr>
 						<th scope="row">주행거리<em>*</em></th>
-						<td></td>
-						<th scope="row">상태/대기자<em>*</em></th>
-						<td></td>
-						<th scope="row">상담문의 번호<em>*</em></th>
-						<td></td>
+						<td><input type="text" class="inp-field wid200" /></td>
+						<th scope="row" class="linelY pdlM">상태/대기자<em>*</em></th>
+						<td>
+							<div class="select-inner">
+								<select class="styled02 floatL wid138">
+									<option selected="selected">년도선택</option>
+									<option>2017년</option>
+									<option>2016년</option>
+									<option>2015년</option>
+									<option>2014년</option>
+									<option>2013년</option>
+								</select>
+							</div>
+							<div class="select-inner">
+								<select class="styled02 floatL wid138">
+									<option selected="selected">월 선택</option>
+									<option>12월</option>
+									<option>11월</option>
+									<option>10월</option>
+									<option>09월</option>
+									<option>08월</option>
+								</select>
+							</div>
+						</td>
+						<th scope="row" class="linelY pdlM">상담문의 번호<em>*</em></th>
+						<td><input type="text" class="inp-field wid200" /></td>
 					</tr>
 					<tr>
 						<th scope="row">차량설명<em>*</em></th>
@@ -143,13 +238,106 @@
 					</tr>
 					<tr>
 						<th scope="row">성능점검기록부<em>*</em></th>
-						<td colspan="2"></td>
-						<th scope="row">성능점검기록부<em>*</em></th>
-						<td colspan="2"></td>
+						<td colspan="2">
+							<div class="btn-module filebox">
+								<input class="upload-name widM" disabled="disabled">
+								<label for="ex_filename">파일 첨부</label>
+								<input type="file" id="ex_filename5" class="upload-hidden">
+							</div>
+						</td>
+						<th scope="row"class="linelY pdlM">성능점검기록부<em>*</em></th>
+						<td colspan="2">
+							<div class="btn-module filebox">
+								<input class="upload-name widM" disabled="disabled">
+								<label for="ex_filename">파일 첨부</label>
+								<input type="file" id="ex_filename5" class="upload-hidden">
+							</div>
+						</td>
 					</tr>
 				</tbody>
 			</table>
-
+			<table class="bd-form">
+				<caption>렌트정보</caption>
+				<colgroup>
+					<col width="125px" />
+					<col width="*" />
+					<col width="125px" />
+					<col width="*" />
+					<col width="125px" />
+					<col width="*" />
+				</colgroup>
+				<thead>
+					<tr>
+						<th colspan="6">렌트정보</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">렌트 개월수<em>*</em></th>
+						<td>
+							<div class="select-inner">
+								<select class="styled02 wid200">
+									<option selected="selected">선택</option>
+									<option>노란색</option>
+								</select>
+							</div>
+						</td>
+						<th scope="row" class="linelY pdlM">렌트금액(만원)<em>*</em></th>
+						<td><input type="text" class="inp-field wid200" /></td>
+						<th scope="row" class="linelY pdlM">보증금(만원)<em>*</em></th>
+						<td><input type="text" class="inp-field wid200" /></td>
+					</tr>
+					<tr>
+						<th scope="row">기준가격(만원)<em>*</em></th>
+						<td colspan="5"><input type="text" class="inp-field wid200" /></td>
+					</tr>
+				</tbody>
+			</table>
+			<table class="option-form">
+				<colgroup>
+					<col width="80px" />
+					<col width="*" />
+					<col width="80px" />
+					<col width="*" />
+					<col width="80px" />
+					<col width="*" />
+					<col width="80px" />
+					<col width="*" />
+				</colgroup>
+				<thead>
+					<tr>
+						<th colspan="8" class="tbl-title">옵션정보</th>
+					</tr>
+					<tr>
+						<th scope="row" colspan="2">외관</th>
+						<th scope="row" colspan="2">내장</th>
+						<th scope="row" colspan="2">안전</th>
+						<th scope="row" colspan="2">편의</th>
+					</tr>
+					<tr>
+						<th scope="row">있음/비순정</th>
+						<th scope="row">옵션명칭</th>
+						<th scope="row">있음/비순정</th>
+						<th scope="row">옵션명칭</th>
+						<th scope="row">있음/비순정</th>
+						<th scope="row">옵션명칭</th>
+						<th scope="row">있음/비순정</th>
+						<th scope="row">옵션명칭</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td>4</td>
+						<td>5</td>
+						<td>6</td>
+						<td>7</td>
+						<td>8</td>
+					</tr>
+				</tbody>
+			</table>
 			<div class="btn-module mgtS">
 				<div class="rightGroup">
 					<a href="#none" class="btnStyle01">저장</a>
