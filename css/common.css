@@ -405,7 +405,7 @@ html.on {
 
 .footer .inner .address-area {
 	position:relative;
-	padding-left:170px;
+	padding-left:160px;
 	background:url(../img/layout/foot_logo.png) 0 0 no-repeat;
 }
 
@@ -435,7 +435,7 @@ html.on {
 
 .footer .inner .address-area .sns {
 	position:absolute;
-	right:30px;
+	right:0;
 	top:0;
 }
 .footer .inner .address-area .sns a:first-child {margin-right:5px;}
@@ -1262,6 +1262,10 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 }
 .option-list .checkbox.disabled {
 	background-color:#fff;
+	border-color:#e5e5e5;
+}
+.checkbox.checked.disabled {
+	background: url(../img/icon/icon_checked2.png) no-repeat 50% 50%;
 }
 /* =========================================================================================================
 	회원가입 & 로그인
@@ -1614,6 +1618,10 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	font-size:15px;
 	color:#666;
 	line-height:25px;
+}
+.accordion-list .item .answer .answer-text2 {
+	font-size: 14px;
+	color:#999;
 }
 
 /* =========================================================================================================
