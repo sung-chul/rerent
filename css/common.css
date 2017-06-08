@@ -2316,12 +2316,15 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	font-weight: normal;
 }
 .thumb-board table thead th .btn-sorting {
+	display: inline-block;
 	position: relative;
+	padding-right: 22px;
+	cursor: pointer;
 }
 .thumb-board table thead th .btn-sorting:before {
 	content: '';
 	position: absolute;
-	top:8px; right:-22px;
+	top:8px; right:0;
 	width:12px; height:6px;
 	background:url(../img/btn/btn_sorting.png) 0 0 no-repeat;
 }
