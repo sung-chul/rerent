@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>채널H - 관리자</title>
+<link rel="stylesheet" type="text/css" href="./css/common.css"  />
+<script type="text/javascript" src="./js/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="./js/select.js"></script>
+<script type="text/javascript" src="./js/jquery-ui.js"></script>
+</head>
+<body>
+<div id="wrap">
+<div id="skip-nav">
+<ul>
+	<li><a href="#content">본문으로 바로가기</a></li>
+	<li><a href="#snb">메인메뉴로 바로가기</a></li>
+	<li><a href="#pdNavi">로케이션 영역으로 바로가기</a></li>
+	<li><a href="#footer">푸터영역 메뉴 바로가기</a></li>
+</ul>
+</div>
+<hr />
+
+<!-- START:HEADER -->
+<header id="header">
+<div id="header-inner">
+	<h1><a href="#none"><img src="./images/logo.png" alt="로고 이미지" /></a></h1>
+	<div class="userInfo">
+		<a href="#">
+		<span class="thmb" ><img width="36px" height="36px" alt="" src="https://phinf.pstatic.net/contactthumb/profile/blog/14/42/miok725.jpg?type=s160" /></span>	
+		<span  class="username">관리자</span>
+		</a>
+		<a class="logout" href="#">LOGOUT</a>
+		<a href="#" class="home"><span>사용자 홈으로</span></a>
+		<a href="#" class="Alarm">알림<span>99+</span></a>	
+	</div>
+<!--  ALARM LAYER POPUP START 2016-05-12 추가작업 -->	
+<div id="alarm-popup-layour">
+	<div class="alarm-list">
+		<p class="alarm-title">최근알림</p>
+			<ul>
+				<li>
+					<a href="#none" class="person-info">
+						<img src="./images/thum-cat.jpg" alt="직원 이미지" />
+						<span>
+						<em>김한화 대리</em>
+						한화그룹 / 경영기획팀한화그룹 
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="#none" class="person-info">
+						<img src="./images/thum-cat.jpg" alt="직원 이미지" />
+						<span>
+						<em>김한화 대리</em>
+						한화그룹 / 경영기획팀한경영기획팀 한화그룹 / 경영기획팀한경영기획팀
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="#none" class="person-info">
+						<img src="./images/thum-cat.jpg" alt="직원 이미지" />
+						<span>
+						<em>김한화 대리</em>
+						한화그룹 / 한화그룹 /한화그룹 /한화그룹 /한화그룹 /한화그룹 /
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="#none" class="person-info">
+						<img src="./images/thum-cat.jpg" alt="직원 이미지" />
+						<span>
+						<em>김한화 대리</em>
+						한화그룹 / 경영기획팀한경영기획팀 한화그룹 / 경영기획팀한경영기획팀
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="#none" class="person-info">
+						<img src="./images/thum-cat.jpg" alt="직원 이미지" />
+						<span>
+						<em>김한화 대리</em>
+						한화그룹 / 한화그룹 /한화그룹 /한화그룹 /한화그룹 /한화그룹 /
+						</span>
+					</a>
+				</li>
+			</ul>
+		<p class="alarm-more"><a href="#none">알림 더보기</a></p>	
+	</div>
+</div>	
+<!--  //ALARM LAYER POPUP END -->	
+</div>
+</header>
+<!-- END:HEADER -->
+<hr />
+
+<div id="container">
+<!-- START:SNB  -->
+<nav id="snb">
+	<ul id="snbMenu">
+		<li class="stay"><a href="#">메인 관리</a></li>
+		<li class="stay"><a href="#">태그 관리</a></li>
+		<li><a href="#">콘텐츠</a>
+			<ul class="smenu">
+				<li><a href="#">현장 소식 등록</a></li>
+				<li><a href="#">현장 소식 관리</a></li>
+				<li><a href="#">H news</a></li>
+				<li><a href="#">H special</a></li>
+				<li><a href="#">H culture</a></li>
+			</ul>
+		</li>
+		<li><a href="#">라운지</a>
+			<ul class="smenu">
+				<li><a href="#">계열사 상품 정보</a></li>
+				<li><a href="#">오픈 마켓</a></li>
+				<li><a href="#">행복 노트</a></li>
+			</ul>
+		</li>
+		<li><a href="#">이벤트</a>
+			<ul class="smenu">
+				<li><a href="#">이벤트 관리</a></li>
+				<li><a href="#">설문 조사</a></li>
+				<li><a href="#">당첨자 발표</a></li>
+			</ul>
+		</li>
+		<li class="stay"><a href="#">문의하기 관리</a></li>	
+		<li class="stay"><a href="#">공지사항 관리</a></li>	
+		<li><a href="#">뉴스레터</a>
+			<ul class="smenu">
+				<li><a href="#">뉴스레터 관리</a></li>
+				<li><a href="#">발송 관리</a></li>
+			</ul>
+		</li>	
+		<li class="stay"><a href="#">회원관리</a></li>	
+		<li><a href="#">통계</a>
+			<ul class="smenu">
+				<li><a href="#">콘텐츠</a></li>
+				<li><a href="#">검색어</a></li>
+			</ul>
+		</li>	
+		<li class="stay"><a href="#">관리자계정 관리 </a></li>	
+		<li class="stay"><a href="#" class="active">코드 관리</a></li>	
+	</ul> 
+</nav>
+<!-- END:SNB  -->
+
+<!-- START:CONTENT -->
+<div id="contents">
+<section>
+	<div class="title"><h3>코드 관리</h3></div>
+	<div class="btn-module mgbS widSM">
+		<div class="rightGroup">
+			<input class="inp-field wid150" type="text" placeholder="코드명 또는 코드" />
+			<span class="btn-module idSearch">
+			<a href="#none" class="search">검색</a>
+		</span>
+		</div>
+	</div>
+	<article>
+	<div class="code-area floatL">
+	<table class="bd-list" summary="코드 관리 리스트 영역 입니다.">
+		<caption>상위코드명, 상위코드, 사용여부, 하위코드 보기 정보 리스트 영역</caption>
+		<colgroup>
+			<col width="6%" />
+			<col width="" />
+			<col width="15%" />
+			<col width="15%" />
+			<col width="20%" />
+		</colgroup>
+		<thead>
+		<tr>
+			<th scope="col"><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></th>
+			<th scope="col">상위코드명</th>
+			<th scope="col">상위코드</th>
+			<th scope="col">사용여부</th>
+			<th scope="col">하위코드 보기</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+			<td class="txtEll"><a href="#">한화그룹한화그룹한화그룹한화그룹한화그룹</a></td>
+			<td>AA2414</td>
+			<td>사용</td>
+			<td><a href="#none">하위코드 보기</a></td>
+		</tr>
+		<tr>
+			<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+			<td class="txtEll"><a href="#">한화그룹한화그룹한화그룹한화그룹한화그룹</a></td>
+			<td>AA2414</td>
+			<td>사용</td>
+			<td><a href="#none">하위코드 보기</a></td>
+		</tr>
+		<tr>
+			<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+			<td class="txtEll"><a href="#">한화그룹한화그룹한화그룹한화그룹한화그룹</a></td>
+			<td>AA2414</td>
+			<td>미사용</td>
+			<td><a href="#none">하위코드 보기</a></td>
+		</tr>
+		<tr>
+			<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+			<td class="txtEll"><a href="#">한화그룹한화그룹한화그룹한화그룹한화그룹</a></td>
+			<td>AA2414</td>
+			<td>사용</td>
+			<td><a href="#none">하위코드 보기</a></td>
+		</tr>
+		<tr>
+			<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+			<td class="txtEll"><a href="#">한화그룹한화그룹한화그룹한화그룹한화그룹</a></td>
+			<td>AA2414</td>
+			<td>사용</td>
+			<td><a href="#none">하위코드 보기</a></td>
+		</tr>
+		<tr>
+			<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+			<td class="txtEll"><a href="#">한화그룹한화그룹한화그룹한화그룹한화그룹</a></td>
+			<td>AA2414</td>
+			<td>미사용</td>
+			<td><a href="#none">하위코드 보기</a></td>
+		</tr>
+		<tr>
+			<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+			<td class="txtEll"><a href="#">한화그룹한화그룹한화그룹한화그룹한화그룹</a></td>
+			<td>AA2414</td>
+			<td>사용</td>
+			<td><a href="#none">하위코드 보기</a></td>
+		</tr>
+		<tr>
+			<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+			<td class="txtEll"><a href="#">한화그룹한화그룹한화그룹한화그룹한화그룹</a></td>
+			<td>AA2414</td>
+			<td>사용</td>
+			<td><a href="#none">하위코드 보기</a></td>
+		</tr>
+		<tr>
+			<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+			<td class="txtEll"><a href="#">한화그룹한화그룹한화그룹한화그룹한화그룹</a></td>
+			<td>AA2414</td>
+			<td>미사용</td>
+			<td><a href="#none">하위코드 보기</a></td>
+		</tr>
+		<tr>
+			<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+			<td class="txtEll"><a href="#">한화그룹한화그룹한화그룹한화그룹한화그룹</a></td>
+			<td>AA2414</td>
+			<td>사용</td>
+			<td><a href="#none">하위코드 보기</a></td>
+		</tr>
+		</tbody>
+	</table>
+	<div class="bd-footer">
+	<div class="btn-module mgtSM colorNone">
+		<span class="btntextS">선택(<span class="colorR">5</span>) 일괄 적용</span>
+		<a href="#none" class="btnStyle08 off mglS">사용</a>
+		<a href="#none" class="btnStyle08 off">미사용</a>
+		<div class="rightGroup"><a href="#none" class="btnStyle01">등록</a></div>
+	</div>
+	
+	<!-- paging start 2016.04.27 18:50 버튼 추가 및 위치이동-->
+	<div class="page-module">
+		<div class="paging">
+			<a href="#none" class="prev10">&lt;&lt;</a>
+			<a href="#none" class="prev">&lt;</a>
+			<a href="#none" class="current">1</a> 
+			<a href="#none">2</a> 
+			<a href="#none">3</a> 
+			<a href="#none">4</a> 
+			<a href="#none">5</a> 
+			<a href="#none">6</a> 
+			<a href="#none">7</a> 
+			<a href="#none">8</a> 
+			<a href="#none">9</a> 
+			<a href="#none">10</a>
+			<a href="#none" class="next">&gt;</a>
+			<a href="#none" class="next10">&gt;&gt;</a>
+		</div>
+	</div>
+<!-- paging end-->
+	</div>
+	</div>
+	</article>	
+	<article>	
+	<div class="code-area floatR">
+	<table class="bd-list" summary="코드 관리 리스트 영역 입니다.">
+		<caption>상위코드명, 상위코드, 사용여부, 하위코드 보기 정보 리스트 영역</caption>
+		<colgroup>
+			<col width="6%" />
+			<col width="" />
+			<col width="20%" />
+			<col width="20%" />
+		</colgroup>
+		<thead>
+		<tr>
+			<th scope="col"><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></th>
+			<th scope="col">하위코드명</th>
+			<th scope="col">하위코드</th>
+			<th scope="col">사용여부</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+			<td class="txtEll"><a href="#">한화그룹한화그룹한화그룹한화그룹한화그룹</a></td>
+			<td>AA2414</td>
+			<td>사용</td>
+		</tr>
+		<tr>
+			<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+			<td class="txtEll"><a href="#">한화그룹한화그룹한화그룹한화그룹한화그룹</a></td>
+			<td>AA2414</td>
+			<td>사용</td>
+		</tr>
+		<tr>
+			<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+			<td class="txtEll"><a href="#">한화그룹한화그룹한화그룹한화그룹한화그룹</a></td>
+			<td>AA2414</td>
+			<td>사용</td>
+		</tr>
+		<tr>
+			<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+			<td class="txtEll"><a href="#">한화그룹한화그룹한화그룹한화그룹한화그룹</a></td>
+			<td>AA2414</td>
+			<td>사용</td>
+		</tr>
+		<tr>
+			<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+			<td class="txtEll"><a href="#">한화그룹한화그룹한화그룹한화그룹한화그룹</a></td>
+			<td>AA2414</td>
+			<td>사용</td>
+		</tr>
+		<tr>
+			<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+			<td class="txtEll"><a href="#">한화그룹한화그룹한화그룹한화그룹한화그룹</a></td>
+			<td>AA2414</td>
+			<td>사용</td>
+		</tr>
+		<tr>
+			<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+			<td class="txtEll"><a href="#">한화그룹한화그룹한화그룹한화그룹한화그룹</a></td>
+			<td>AA2414</td>
+			<td>사용</td>
+		</tr>
+		<tr>
+			<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+			<td class="txtEll"><a href="#">한화그룹한화그룹한화그룹한화그룹한화그룹</a></td>
+			<td>AA2414</td>
+			<td>사용</td>
+		</tr>
+		<tr>
+			<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+			<td class="txtEll"><a href="#">한화그룹한화그룹한화그룹한화그룹한화그룹</a></td>
+			<td>AA2414</td>
+			<td>사용</td>
+		</tr>
+		<tr>
+			<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+			<td class="txtEll"><a href="#">한화그룹한화그룹한화그룹한화그룹한화그룹</a></td>
+			<td>AA2414</td>
+			<td>사용</td>
+		</tr>
+		</tbody>
+	</table>
+	<div class="bd-footer">
+	<div class="btn-module mgtSM colorNone">
+		<span class="btntextS">선택(<span class="colorR">5</span>) 일괄 적용</span>
+		<a href="#none" class="btnStyle08 off mglS">사용</a>
+		<a href="#none" class="btnStyle08 off">미사용</a>
+		<div class="rightGroup"><a href="#none" class="btnStyle01">등록</a></div>
+	</div>
+	
+	<!-- paging start 2016.04.27 18:50 버튼 추가 및 위치이동-->
+	<div class="page-module">
+		<div class="paging">
+			<a href="#none" class="prev10">&lt;&lt;</a>
+			<a href="#none" class="prev">&lt;</a>
+			<a href="#none" class="current">1</a> 
+			<a href="#none">2</a> 
+			<a href="#none">3</a> 
+			<a href="#none">4</a> 
+			<a href="#none">5</a> 
+			<a href="#none">6</a> 
+			<a href="#none">7</a> 
+			<a href="#none">8</a> 
+			<a href="#none">9</a> 
+			<a href="#none">10</a>
+			<a href="#none" class="next">&gt;</a>
+			<a href="#none" class="next10">&gt;&gt;</a>
+		</div>
+	</div>
+<!-- paging end-->
+	</div>
+	</div>
+	</article>
+	
+</section>
+	
+</div>
+<!-- END:CONTENT -->
+</div>
+<hr />
+
+<!-- START:FOOTER -->
+<footer id="footer">
+<div id="footer-inner">
+	<address></address>
+</div>
+</footer>
+<!-- END:FOOTER -->
+</div>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Re:Rent - 관리자</title>
+<link rel="stylesheet" type="text/css" href="./css/common.css"  />
+<script type="text/javascript" src="./js/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="./js/select.js"></script>
+<script type="text/javascript" src="./js/jquery-ui.js"></script>
+<script>
+	$(function() {
+		$("#datepicker").datepicker();
+	});
+</script>
+</head>
+<body>
+<div id="wrap">
+<div id="skip-nav">
+<ul>
+	<li><a href="#content">본문으로 바로가기</a></li>
+	<li><a href="#snb">메인메뉴로 바로가기</a></li>
+	<li><a href="#pdNavi">로케이션 영역으로 바로가기</a></li>
+	<li><a href="#footer">푸터영역 메뉴 바로가기</a></li>
+</ul>
+</div>
+<hr />
+
+<!-- START:HEADER -->
+<header id="header">
+<div id="header-inner"></div>
+</header>
+<!-- END:HEADER -->
+<hr />
+
+<div id="container">
+	<!-- START:SNB  -->
+	<nav id="snb">
+		<ul id="snbMenu">
+			<li class="stay"><a href="#" class="active">차량관리</a></li>
+			<li class="stay"><a href="#">메인 관리</a></li>
+			<li class="stay"><a href="#">태그 관리</a></li>
+			<li><a href="#">콘텐츠</a>
+				<ul class="smenu">
+					<li><a href="#">현장 소식 등록</a></li>
+					<li><a href="#">현장 소식 관리</a></li>
+					<li><a href="#">H news</a></li>
+					<li><a href="#">H special</a></li>
+					<li><a href="#">H culture</a></li>
+				</ul>
+			</li>
+			<li><a href="#">라운지</a>
+				<ul class="smenu">
+					<li><a href="#">계열사 상품 정보</a></li>
+					<li><a href="#">오픈 마켓</a></li>
+					<li><a href="#">행복 노트</a></li>
+				</ul>
+			</li>
+			<li><a href="#">이벤트</a>
+				<ul class="smenu">
+					<li><a href="#">이벤트 관리</a></li>
+					<li><a href="#">설문 조사</a></li>
+					<li><a href="#">당첨자 발표</a></li>
+				</ul>
+			</li>
+			<li class="stay"><a href="#">문의하기 관리</a></li>
+			<li class="stay"><a href="#">공지사항 관리</a></li>
+			<li><a href="#">뉴스레터</a>
+				<ul class="smenu">
+					<li><a href="#">뉴스레터 관리</a></li>
+					<li><a href="#">발송 관리</a></li>
+				</ul>
+			</li>
+			<li class="stay"><a href="#">회원관리</a></li>
+			<li><a href="#">통계</a>
+				<ul class="smenu">
+					<li><a href="#">콘텐츠</a></li>
+					<li><a href="#">검색어</a></li>
+				</ul>
+			</li>
+			<li class="stay"><a href="#">관리자계정 관리 </a></li>
+			<li class="stay"><a href="#">코드 관리</a></li>
+		</ul>
+	</nav>
+	<!-- END:SNB  -->
+
+<!-- START:CONTENT -->
+<div id="contents">
+<section>
+	<div class="title"><h3>차량관리</h3></div>
+	<article>
+		<div class="Cont_place">
+			<table class="bd-form" summary="수정하는 영역 입니다.">
+				<caption>제목, 콘텐츠 연동, 상태구분, 예약설정, 알림영역</caption>
+				<colgroup>
+					<col width="15%" />
+					<col width="18%" />
+					<col width="15%" />
+					<col width="18%" />
+					<col width="15%" />
+					<col width="19%" />
+				</colgroup>
+				<thead>
+					<tr>
+						<th colspan="6">차량정보</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">차량정보<em>*</em></th>
+						<td></td>
+						<th scope="row">미션<em>*</em></th>
+						<td></td>
+						<th scope="row">연료<em>*</em></th>
+						<td></td>
+					</tr>
+					<tr>
+						<th scope="row">차량소재지<em>*</em></th>
+						<td></td>
+						<th scope="row">차량정보<em>*</em></th>
+						<td colspan="3"></td>
+					</tr>
+					<tr>
+						<th scope="row">색상<em>*</em></th>
+						<td></td>
+						<th scope="row">연월식<em>*</em></th>
+						<td></td>
+						<th scope="row">배기량(cc)<em>*</em></th>
+						<td></td>
+					</tr>
+					<tr>
+						<th scope="row">주행거리<em>*</em></th>
+						<td></td>
+						<th scope="row">상태/대기자<em>*</em></th>
+						<td></td>
+						<th scope="row">상담문의 번호<em>*</em></th>
+						<td></td>
+					</tr>
+					<tr>
+						<th scope="row">차량설명<em>*</em></th>
+						<td colspan="5">
+							<textarea id="title" type="text" class="inp-field h170 widL"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">성능점검기록부<em>*</em></th>
+						<td colspan="2"></td>
+						<th scope="row">성능점검기록부<em>*</em></th>
+						<td colspan="2"></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="btn-module mgtS">
+				<div class="rightGroup">
+					<a href="#none" class="btnStyle01">저장</a>
+					<a href="#none" class="btnStyle05">취소</a>
+				</div>
+			</div>
+		</div>
+	</article>
+</section>
+</div>
+
+<!-- END:CONTENT -->
+</div>
+<hr />
+
+<!-- START:FOOTER -->
+<footer id="footer">
+<div id="footer-inner">
+	<address></address>
+</div>
+</footer>
+<!-- END:FOOTER -->
+</div>
+<script type="text/javascript">
+	$('#calendarImg1, #calendarImg2').datepicker({
+		showOn : 'button',
+		buttonImage : './images/cal.png', //이미지 url
+		buttonImageOnly : true,
+		buttonText : "달력"
+	});
+</script>
+</body>
+</html>

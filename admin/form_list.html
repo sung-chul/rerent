@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Re:Rent - 관리자</title>
+<link rel="stylesheet" type="text/css" href="./css/common.css"  />
+<script type="text/javascript" src="./js/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="./js/select.js"></script>
+<script type="text/javascript" src="./js/jquery-ui.js"></script>
+<script>
+	$(function() {
+		$("#sortable").sortable();
+		$("#sortable").disableSelection();
+
+		var fileTarget = $('.filebox .upload-hidden');
+		fileTarget.on('change', function(){
+			if(window.FileReader){
+				var filename = $(this)[0].files[0].name;
+				} else {
+					var filename = $(this).val().split('/').pop().split('\\').pop();  }
+			$(this).siblings('.upload-name').val(filename);
+			});
+
+	});
+</script>
+<style>
+h3{font-size:20px}
+hr{display:block;padding:10px 0; border:0; border-bottom:2px #333 solid;clear:both}
+body{font-family:"Dotum"; font-size:12px}
+h3, h4, label, input, textarea, select, button, .customSelectInner{font-family:"notokr-medium"}
+a{font-family:"notokr-medium"}
+</style>
+</head>
+<body>
+<div style="width:660px; padding:20px; margin:0 auto">
+<h3>기본 버튼</h3>
+<div class="btn-module">
+<a href="#none" class="btnStyle01">저장</a> - btnStyle01
+<a href="#none" class="btnStyle05">취소</a> - btnStyle05
+</div>
+<hr />
+<h3>미리보기 버튼</h3>
+<div class="btn-module">
+<a href="#none" class="btnStyle02">PC 미리보기</a> - btnStyle02
+<a href="#none" class="btnStyle03">Mobile 미리보기</a> -btnStyle03
+</div>
+<hr />
+<h3>승인/반려 버튼</h3>
+<div class="btn-module">
+<a href="#none" class="btnStyle06">승인</a> - btnStyle06
+<a href="#none" class="btnStyle07">반려</a> - btnStyle07
+<a href="#none" class="btnStyle01">수정</a> - btnStyle01
+</div>
+<hr />
+<h3>검색 버튼</h3>
+<div class="btn-module">
+<a href="#none" class="search">검색</a> - search
+<a href="#none" class="excel">엑셀 다운로드</a> - excel
+<a href="#none" class="btnStyle04">컨텐츠 검색</a> -btnStyle04
+
+<h4>- 비활성화 버튼</h4>
+<a href="#none" class="btnStyle04 off">컨텐츠 검색</a> - btnStyle04 off
+<a href="#none" class="refresh">새로고침</a> - refresh
+</div>
+<hr />
+
+<h3>파일찾기 버튼</h3>
+<div class="btn-module filebox">
+	<input class="upload-name widM" disabled="disabled">
+	<label for="ex_filename">파일 첨부</label>
+	<input type="file" id="ex_filename5" class="upload-hidden">
+</div>
+<h4>- 비활성화 버튼</h4>
+<div class="btn-module filebox">
+	<input class="upload-name widM" disabled="disabled">
+	<label for="ex_filename" class="off">파일 첨부</label>
+	<input type="file" id="ex_filename5" class="upload-hidden">
+</div>
+<hr />
+
+<h3>수정/삭제/목록 버튼</h3>
+<div class="btn-module">
+<a href="#none" class="btnStyle10">수정</a> - btnStyle10
+<a href="#none" class="btnStyle11">삭제</a>
+<a href="#none" class="btnStyle11">목록</a> -btnStyle11
+
+</div>
+<hr />
+<h3>공개/비공개/삭제 버튼</h3>
+<div class="btn-module">
+<a href="#none" class="btnStyle08">공개</a>
+<a href="#none" class="btnStyle08">비공개</a>
+<a href="#none" class="btnStyle08">삭제</a> -btnStyle08
+
+<h4>- 비활성화 버튼</h4>
+<a href="#none" class="btnStyle08 off">공개</a>
+<a href="#none" class="btnStyle08 off">비공개</a>
+<a href="#none" class="btnStyle08 off">삭제</a> -btnStyle08 off
+</div>
+
+<hr />
+<h3>추가/삭제 버튼 - 카드형</h3>
+<div class="btn-module">
+<a href="#none" class="btnStyle12">추가</a> -btnStyle12
+<a href="#none" class="btnStyle13">삭제</a> -btnStyle13
+</div>
+
+<hr />
+<h3>문항추가/주관식 문항 추가 버튼</h3>
+<div class="btn-module">
+<a href="#none" class="btnStyle09">문항 추가</a> - btnStyle09
+<a href="#none" class="btnStyle15">주관식 문항 추가</a> - btnStyle15
+
+<h4>- 비활성화 버튼</h4>
+<a href="#none" class="btnStyle09 off">질문 추가</a>
+<a href="#none" class="btnStyle09 off">문항 추가</a> -btnStyle09 off
+<hr />
+<h3>질문추가/삭제 버튼</h3>
+<a href="#none" class="btnStyle14">설문삭제</a> - btnStyle14
+<a href="#none" class="btnStyle16">질문추가</a> - btnStyle16
+</div>
+<hr />
+<h3>날짜 버튼</h3>
+<div class="inputUI_simple">
+<span class="contGp btnCalendar">
+	<input type="radio" class="inputJo" name="day_type" id="cNat_01"><label for="cNat_01" class="label-radio ">전체</label>
+	<input type="radio" class="inputJo" name="day_type" id="cNat_02"><label for="cNat_02" class="label-radio ">오늘</label>
+	<input type="radio" class="inputJo" name="day_type" id="cNat_03"><label for="cNat_03" class="label-radio">1주일</label>
+	<input type="radio" class="inputJo" name="day_type" id="cNat_04" checked="checked"><label for="cNat_04" class="label-radio on">1개월</label>
+	<input type="radio" class="inputJo" name="day_type" id="cNat_05"><label for="cNat_05" class="label-radio ">3개월</label>
+	<input type="radio" class="inputJo" name="day_type" id="cNat_06"><label for="cNat_06" class="label-radio ">6개월</label>
+</span>
+</div>
+<hr />
+<h3>좌측, 우측 정렬</h3>
+<div class="btn-module">
+<div class="leftGroup"><a href="#none" class="btnStyle01">메인 적용</a></div>
+<div class="rightGroup"><a href="#none" class="btnStyle01">메인 적용</a></div>
+</div>
+<hr />
+<h3>로그인 버튼</h3>
+<div id="login-box" style="height:140px">
+<p class="button"><a href="#none">로그인</a></p>
+</div>
+<hr />
+<h3>관리자계정 관리 로그인</h3>
+<div class="btn-module">
+<a class="relogin" href="#none">로그인</a>
+</div>
+<hr />
+<h3>개인정보 동의 변경</h3>
+<div class="btn-module">
+<a class="pw-change" href="#none">로그인</a>
+</div>
+<hr />
+<h3>Paging 버튼</h3>
+<div class="page-module">
+	<div class="paging">
+		<a href="#none" class="prev10">&lt;&lt;</a>
+		<a href="#none" class="prev">&lt;</a>
+		<a href="#none" class="current">1</a>
+		<a href="#none">2</a>
+		<a href="#none">3</a>
+		<a href="#none">4</a>
+		<a href="#none">5</a>
+		<a href="#none">6</a>
+		<a href="#none">7</a>
+		<a href="#none">8</a>
+		<a href="#none">9</a>
+		<a href="#none">10</a>
+		<a href="#none" class="next">&gt;</a>
+		<a href="#none" class="next10">&gt;&gt;</a>
+	</div>
+</div>
+<hr />
+
+
+
+<h3>Form 모음</h3>
+<!-- class="inputUI_simple"를 붙혀야만 보여집니다. -->
+<div class="inputUI_simple">
+<input type="radio" class="inputJo" name="confType" id="conf01" checked="checked"><label for="conf01" class="label-radio  on">1단 구성</label>
+<input type="radio" class="inputJo" name="confType" id="conf02" ><label for="conf02" class="label-radio ">2단 구성</label>
+</div>
+<hr />
+
+<!-- class="inputUI_simple"를 붙혀야만 보여집니다. -->
+<div class="inputUI_simple">
+<input id="li01" class="inputJo" type="checkbox"  checked="checked"/><label for="li01" class="checkTxt">ART</label>
+<input id="li02" class="inputJo" type="checkbox"/><label for="li02" class="checkTxt off">ART</label>
+<input id="li03" class="inputJo" type="checkbox"/><label for="li03" class="checkTxt on off">ART</label>
+</div>
+
+<hr />
+<span class="checkbox_wrapper"><input type="checkbox" checked="checked"/><label></label></span>
+<span class="checkbox_wrapper"><input type="checkbox" /><label></label></span>
+<span class="checkbox_wrapper"><input type="checkbox" disabled/><label class="on off"></label></span>
+
+
+<hr />
+<h3>select</h3>
+<div class="select-inner">
+
+			<select class="styled">
+					<option selected="selected">가로사이즈 고정</option>
+					<option>1차메뉴 #11차메뉴1차메뉴1차메뉴1차메뉴1차메뉴</option>
+					<option>1차메뉴 #2</option>
+					<option>1차메뉴 #3</option>
+				</select>
+				<select class="styled02 wid120">
+				<option selected="selected">가로사이즈 유동</option>
+				<option>이름 순 #1 이름 순 #1</option>
+				<option>수정한 날짜</option>
+				</select>
+</div>
+<hr />
+</div>
+
+
+
+</body>
+</html>

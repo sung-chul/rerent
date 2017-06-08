@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Re:Rent - 관리자</title>
+<link rel="stylesheet" type="text/css" href="./css/common.css"  />
+<script type="text/javascript" src="./js/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="./js/select.js"></script>
+<script type="text/javascript" src="./js/jquery-ui.js"></script>
+<script>
+	$(function() {
+		$("#sortable").sortable();
+		$("#sortable").disableSelection();
+	});
+</script>
+</head>
+<body>
+<div id="wrap">
+<div id="skip-nav">
+	<ul>
+		<li><a href="#content">본문으로 바로가기</a></li>
+		<li><a href="#snb">메인메뉴로 바로가기</a></li>
+		<li><a href="#pdNavi">로케이션 영역으로 바로가기</a></li>
+		<li><a href="#footer">푸터영역 메뉴 바로가기</a></li>
+	</ul>
+</div>
+<hr />
+
+<!-- START:HEADER -->
+<header id="header">
+<div id="header-inner">
+	<h1><a href="#none"><img src="./images/logo.png" alt="로고 이미지" /></a></h1>
+	<div class="userInfo">
+		<a href="#">
+			<span class="username">관리자</span>
+		</a>
+		<a class="logout" href="#">LOGOUT</a>
+		<a href="#" class="Alarm">알림<span>99+</span></a>
+	</div>
+
+<!--  ALARM LAYER POPUP START 2016-05-12 추가작업 -->
+<div id="alarm-popup-layour">
+	<div class="alarm-list">
+		<p class="alarm-title">최근알림</p>
+			<ul>
+				<li>
+					<a href="#none" class="person-info">
+						<img src="./images/thum-cat.jpg" alt="직원 이미지" />
+						<span><em>sk 대리</em>sk / 경영기획팀</span>
+					</a>
+				</li>
+				<li>
+					<a href="#none" class="person-info">
+						<img src="./images/thum-cat.jpg" alt="직원 이미지" />
+						<span><em>sk 대리</em>sk / 경영기획팀</span>
+					</a>
+				</li>
+				<li>
+					<a href="#none" class="person-info">
+						<img src="./images/thum-cat.jpg" alt="직원 이미지" />
+						<span><em>sk 대리</em>sk / 경영기획팀</span>
+					</a>
+				</li>
+				<li>
+					<a href="#none" class="person-info">
+						<img src="./images/thum-cat.jpg" alt="직원 이미지" />
+						<span><em>sk 대리</em>sk / 경영기획팀</span>
+					</a>
+				</li>
+				<li>
+					<a href="#none" class="person-info">
+						<img src="./images/thum-cat.jpg" alt="직원 이미지" />
+						<span><em>sk 대리</em>sk / 경영기획팀</span>
+					</a>
+				</li>
+			</ul>
+		<p class="alarm-more"><a href="#none">알림 더보기</a></p>
+	</div>
+</div>
+<!--  //ALARM LAYER POPUP END -->
+
+</div>
+</header>
+<!-- END:HEADER -->
+<hr />
+
+<div id="container">
+<!-- START:CONTENT -->
+<div id="contents"></div>
+<!-- END:CONTENT -->
+</div>
+<hr />
+<!-- START:FOOTER -->
+<footer id="footer">
+	<div id="footer-inner"><address></address></div>
+</footer>
+<!-- END:FOOTER -->
+
+</div>
+</body>
+</html>
