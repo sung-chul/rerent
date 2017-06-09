@@ -1106,7 +1106,7 @@ table + table{margin-top:40px !important}
 .photo-cont .photo-list {overflow:hidden; width:1040px; margin:0 auto;}
 .photo-cont .photo-list .item-photo {float:left; margin:0 0 30px 35px;}
 .photo-cont .photo-list .item-photo:nth-child(5n+1) {margin-left:0;}
-.photo-cont .photo-list .item-photo .img-area {width:180px; height:120px; border:1px solid #ddd; box-sizing:border-box; background:url(../images/img_photo.jpg) no-repeat 0 0;}
+.photo-cont .photo-list .item-photo .img-area {overflow:hidden; width:180px; height:120px; border:1px solid #ddd; box-sizing:border-box; background:url(../images/img_photo.jpg) no-repeat 0 0;}
 .photo-cont .photo-list .item-photo .img-area img {vertical-align:top;}
 .photo-cont .photo-list .item-photo .text-area {overflow:hidden; margin-top:10px;}
 .photo-cont .photo-list .item-photo .text-area .photo-tit {display:inline-block; font-size:14px; color:#444; line-height:30px; font-family:"notokr-medium";}
