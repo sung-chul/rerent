@@ -100,12 +100,6 @@ $(window).load(function(){
 			$(this).parents('.select-box').find('.item:first-child').addClass('on');
 		});
 
-		$(this).change(function(){
-			var transVal = $(this).val();
-			//var order = $(this).index();
-			$('.select-title').html(transVal);
-		});
-
 		if($(this).attr('disabled')){
 			$(this).parents('.select-box').addClass('disabled');
 		}
@@ -126,7 +120,7 @@ $(window).load(function(){
 		var oVal = $(this).parents('.select-box').find('option').eq(idx).val();
 		var txt = $(this).html();
 		$(this).addClass('on');
-		$(this).parents('.select-box').find('select').val(oVal);
+		$(this).parents('.select-box').find('select').val(oVal).change();
 		$(this).parents('.select-box').find('.select-title').html(txt);
 		if(idx != 0){
 			$(this).parents('.select-box').addClass('on');
