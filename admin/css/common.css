@@ -206,7 +206,7 @@ h6{margin-top:30px;padding-bottom:12px}
 .page-module .leftGroup {position:absolute;left:0;top:0;}
 .page-module .rightGroup {position:absolute;right:0;top:0;}
 .paging {padding-top:6px;}
-.paging a {overflow:hidden; display:inline-block;margin:0 1px;font-size:14px;color:#666;height:34px; width:40px; line-height:34px;}
+.paging a {overflow:hidden; display:inline-block;margin:0 1px;font-size:14px;color:#666;height:34px; width:30px; line-height:34px;}
 .paging .prev{background:url("../images/icon_pagingArr.gif")no-repeat 0 0px; width:30px; height:34px;text-indent: -9999px;display: inline-block;margin:0;margin-right:5px!important;}
 .paging .prev10{background:url("../images/icon_pagingArr.gif")no-repeat -72px 0px; width:30px; height:34px;text-indent: -9999px;display: inline-block;margin:0;}
 .paging .next{background:url("../images/icon_pagingArr.gif")no-repeat -36px 0px; width:30px; height:34px;text-indent: -9999px;display: inline-block;margin:0;margin-left:5px!important;}
@@ -307,7 +307,7 @@ h6{margin-top:30px;padding-bottom:12px}
 #snbMenu li a:hover {background:#ed6710;  color: #fff; }
 #snbMenu li.stay a{background:#fff;  color: #333; border-bottom:1px #efefef solid}
 #snbMenu li.stay a:hover, #snbMenu li.stay a.active{background:#ed6710;  color: #fff;}
-#snbMenu li ul.smenu{padding:10px 0;border-bottom:1px #efefef solid }
+#snbMenu li ul.smenu{display:none; padding:10px 0;border-bottom:1px #efefef solid }
 #snbMenu li ul.smenu li a {color: #929292; font-size:13px;font-family:"notokr-medium"; border:0; padding: 4px 0 4px 30px !important;}
 #snbMenu li ul.smenu li a:hover, #snbMenu li ul li a:active, #snbMenu li ul.smenu a.current{color:#000;background:#fff; }
 #snbMenu li .active {background:#ed6710; color: #fff;border:0 5 }
@@ -389,6 +389,11 @@ input.btn{border:none;padding:0;margin:0;overflow:visible;line-height:100%}
 
 .btn-module a.btnStyle16{width:78px; height:28px; background-color:#f37120; color:#fff; line-height: 28px; border:1px solid #f37120;}  /* 설문추가 */
 .btn-module a:hover.btnStyle16,.btn-module a:active.btnStyle16{background-color:#f15c2a; border:1px solid #f15c2a;}
+
+.btn-module a.btnStyle17{width:128px; height:34px;color:#333; line-height: 34px; border:1px solid #bbb;} /* 공개/비공개/삭제/목록/복원/미사용/사용 */
+.btn-module a:hover.btnStyle17,.btn-module a:active.btnStyle17{border:1px solid #f37210; color:#f37210;}
+.btn-module a.btnStyle17.off,.btn-module a:hover.btnStyle17.off{cursor:default; width:130px; height:34px;color:#989898; line-height: 34px; border:1px solid #bbb;}
+
 
 .btn-module a.pw-change {width:312px; height:30px; color:#fff; background-color:#24252b; line-height:30px;}
 .btn-module a:hover.pw-change, .btn-module a:active.pw-change {background-color:#111218;}
@@ -939,6 +944,8 @@ label.labelJo.off{z-index:-1}
 #re_login-box .login-box input{width:310px}
 
 /*코드관리*/
+.code-wrap {position:relative;}
+.code-wrap:after {content: ''; display: block; clear: both;}
 .code-area.floatR table{background:#f7f5f5}
 .code-area{width:48%;position: relative; height:604px}
 .bd-footer{bottom: 0; position: absolute;width: 100%;}
@@ -1058,6 +1065,7 @@ table + table{margin-top:40px !important}
 .widL{width:98% !important;}
 .widL2{width:100% !important;}
 .wid100{width:100px !important;}
+.wid130{width:130px !important;}
 .wid138{width:138px !important;}
 .wid150{width:150px !important;}
 .wid50{width:50px !important;}
