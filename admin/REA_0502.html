@@ -89,15 +89,15 @@
 	<div class="title"><h3>차량관리</h3></div>
 	<article>
 		<div class="Cont_place">
-			<table class="bd-form" summary="수정하는 영역 입니다.">
-				<caption>제목, 콘텐츠 연동, 상태구분, 예약설정, 알림영역</caption>
+			<table class="bd-form">
+				<caption>차량정보</caption>
 				<colgroup>
-					<col width="15%" />
-					<col width="18%" />
-					<col width="15%" />
-					<col width="18%" />
-					<col width="15%" />
-					<col width="19%" />
+					<col width="115px" />
+					<col width="*" />
+					<col width="115px" />
+					<col width="*" />
+					<col width="115px" />
+					<col width="*" />
 				</colgroup>
 				<thead>
 					<tr>
@@ -107,33 +107,128 @@
 				<tbody>
 					<tr>
 						<th scope="row">차량정보<em>*</em></th>
-						<td></td>
-						<th scope="row">미션<em>*</em></th>
-						<td></td>
-						<th scope="row">연료<em>*</em></th>
-						<td></td>
+						<td><input type="text" class="inp-field wid200" /></td>
+						<th scope="row" class="linelY pdlM">미션<em>*</em></th>
+						<td>
+							<div class="select-inner">
+								<select class="styled02 wid200">
+									<option selected="selected">선택</option>
+									<option>노란색</option>
+								</select>
+							</div>
+						</td>
+						<th scope="row" class="linelY pdlM">연료<em>*</em></th>
+						<td>
+							<div class="select-inner">
+								<select class="styled02 wid200">
+									<option selected="selected">선택</option>
+									<option>노란색</option>
+								</select>
+							</div>
+						</td>
 					</tr>
 					<tr>
 						<th scope="row">차량소재지<em>*</em></th>
-						<td></td>
-						<th scope="row">차량정보<em>*</em></th>
-						<td colspan="3"></td>
+						<td>
+							<div class="select-inner">
+								<select class="styled02 wid200">
+									<option selected="selected">선택</option>
+									<option>노란색</option>
+								</select>
+							</div>
+						</td>
+						<th scope="row" class="linelY pdlM">차량정보<em>*</em></th>
+						<td colspan="3">
+							<div class="select-inner">
+								<select class="styled02 floatL wid138">
+									<option selected="selected">제조사</option>
+									<option>제조사</option>
+								</select>
+							</div>
+							<div class="select-inner">
+								<select class="styled02 floatL wid138">
+									<option selected="selected">모델</option>
+									<option>모델</option>
+								</select>
+							</div>
+							<div class="select-inner">
+								<select class="styled02 floatL wid138">
+									<option selected="selected">등급</option>
+									<option>등급</option>
+								</select>
+							</div>
+							<div class="select-inner">
+								<select class="styled02 floatL wid138">
+									<option selected="selected">세부등급</option>
+									<option>세부등급</option>
+								</select>
+							</div>
+						</td>
 					</tr>
 					<tr>
 						<th scope="row">색상<em>*</em></th>
-						<td></td>
-						<th scope="row">연월식<em>*</em></th>
-						<td></td>
-						<th scope="row">배기량(cc)<em>*</em></th>
-						<td></td>
+						<td>
+							<div class="select-inner">
+								<select class="styled02 floatL wid200">
+									<option selected="selected">선택</option>
+									<option>노란색</option>
+								</select>
+							</div>
+						</td>
+						<th scope="row" class="linelY pdlM">연월식<em>*</em></th>
+						<td>
+							<div class="select-inner">
+								<select class="styled02 floatL wid138">
+									<option selected="selected">년도선택</option>
+									<option>2017년</option>
+									<option>2016년</option>
+									<option>2015년</option>
+									<option>2014년</option>
+									<option>2013년</option>
+								</select>
+							</div>
+							<div class="select-inner">
+								<select class="styled02 floatL wid138">
+									<option selected="selected">월 선택</option>
+									<option>12월</option>
+									<option>11월</option>
+									<option>10월</option>
+									<option>09월</option>
+									<option>08월</option>
+								</select>
+							</div>
+						</td>
+						<th scope="row" class="linelY pdlM">배기량(cc)<em>*</em></th>
+						<td><input type="text" class="inp-field wid200" /></td>
 					</tr>
 					<tr>
 						<th scope="row">주행거리<em>*</em></th>
-						<td></td>
-						<th scope="row">상태/대기자<em>*</em></th>
-						<td></td>
-						<th scope="row">상담문의 번호<em>*</em></th>
-						<td></td>
+						<td><input type="text" class="inp-field wid200" /></td>
+						<th scope="row" class="linelY pdlM">상태/대기자<em>*</em></th>
+						<td>
+							<div class="select-inner">
+								<select class="styled02 floatL wid138">
+									<option selected="selected">년도선택</option>
+									<option>2017년</option>
+									<option>2016년</option>
+									<option>2015년</option>
+									<option>2014년</option>
+									<option>2013년</option>
+								</select>
+							</div>
+							<div class="select-inner">
+								<select class="styled02 floatL wid138">
+									<option selected="selected">월 선택</option>
+									<option>12월</option>
+									<option>11월</option>
+									<option>10월</option>
+									<option>09월</option>
+									<option>08월</option>
+								</select>
+							</div>
+						</td>
+						<th scope="row" class="linelY pdlM">상담문의 번호<em>*</em></th>
+						<td><input type="text" class="inp-field wid200" /></td>
 					</tr>
 					<tr>
 						<th scope="row">차량설명<em>*</em></th>
@@ -143,17 +238,538 @@
 					</tr>
 					<tr>
 						<th scope="row">성능점검기록부<em>*</em></th>
-						<td colspan="2"></td>
-						<th scope="row">성능점검기록부<em>*</em></th>
-						<td colspan="2"></td>
+						<td colspan="2">
+							<div class="btn-module filebox">
+								<input class="upload-name widM" disabled="disabled">
+								<label for="ex_filename">파일 첨부</label>
+								<input type="file" id="ex_filename5" class="upload-hidden">
+							</div>
+						</td>
+						<th scope="row"class="linelY pdlM">진단기록부<em>*</em></th>
+						<td colspan="2">
+							<div class="btn-module filebox">
+								<input class="upload-name widM" disabled="disabled">
+								<label for="ex_filename">파일 첨부</label>
+								<input type="file" id="ex_filename5" class="upload-hidden">
+							</div>
+						</td>
 					</tr>
 				</tbody>
 			</table>
-
-			<div class="btn-module mgtS">
+			<table class="bd-form">
+				<caption>렌트정보</caption>
+				<colgroup>
+					<col width="125px" />
+					<col width="*" />
+					<col width="125px" />
+					<col width="*" />
+					<col width="125px" />
+					<col width="*" />
+				</colgroup>
+				<thead>
+					<tr>
+						<th colspan="6">렌트정보</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">렌트 개월수<em>*</em></th>
+						<td>
+							<div class="select-inner">
+								<select class="styled02 wid200">
+									<option selected="selected">선택</option>
+									<option>노란색</option>
+								</select>
+							</div>
+						</td>
+						<th scope="row" class="linelY pdlM">렌트금액(만원)<em>*</em></th>
+						<td><input type="text" class="inp-field wid200" /></td>
+						<th scope="row" class="linelY pdlM">보증금(만원)<em>*</em></th>
+						<td><input type="text" class="inp-field wid200" /></td>
+					</tr>
+					<tr>
+						<th scope="row">기준가격(만원)<em>*</em></th>
+						<td colspan="5"><input type="text" class="inp-field wid200" /></td>
+					</tr>
+				</tbody>
+			</table>
+			<table class="option-form">
+				<colgroup>
+					<col width="80px" />
+					<col width="*" />
+					<col width="80px" />
+					<col width="*" />
+					<col width="80px" />
+					<col width="*" />
+					<col width="80px" />
+					<col width="*" />
+				</colgroup>
+				<thead>
+					<tr>
+						<th colspan="8" class="tbl-title">옵션정보</th>
+					</tr>
+					<tr>
+						<th scope="row" colspan="2">외관</th>
+						<th scope="row" colspan="2">내장</th>
+						<th scope="row" colspan="2">안전</th>
+						<th scope="row" colspan="2">편의</th>
+					</tr>
+					<tr>
+						<th scope="row">있음/비순정</th>
+						<th scope="row">옵션명칭</th>
+						<th scope="row">있음/비순정</th>
+						<th scope="row">옵션명칭</th>
+						<th scope="row">있음/비순정</th>
+						<th scope="row">옵션명칭</th>
+						<th scope="row">있음/비순정</th>
+						<th scope="row">옵션명칭</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span> <span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+						<td class="textL pdlM">HID : 제논헤드램프</td>
+						<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span> <span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+						<td class="textL pdlM">스티어링리모컨</td>
+						<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span> <span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+						<td class="textL pdlM">에어백 : 운전석</td>
+						<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span> <span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+						<td class="textL pdlM">오토에어컨</td>
+					</tr>
+					<tr>
+						<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span> <span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+						<td class="textL pdlM">전동접이사이드미러</td>
+						<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span> <span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+						<td class="textL pdlM">파워스티어링</td>
+						<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span> <span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+						<td class="textL pdlM">에어백 : 조수석</td>
+						<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span> <span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+						<td class="textL pdlM">수동에어컨</td>
+					</tr>
+					<tr>
+						<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span> <span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+						<td class="textL pdlM">선루프</td>
+						<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span> <span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+						<td class="textL pdlM">ECM</td>
+						<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span> <span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+						<td class="textL pdlM">에어백 : 사이드</td>
+						<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span> <span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+						<td class="textL pdlM">무선도어잠금장치</td>
+					</tr>
+					<tr>
+						<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span> <span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+						<td class="textL pdlM">루프랙</td>
+						<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span> <span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+						<td class="textL pdlM">하이패스내장룸미러</td>
+						<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span> <span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+						<td class="textL pdlM">에어백 : 커튼</td>
+						<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span> <span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+						<td class="textL pdlM">히터</td>
+					</tr>
+					<tr>
+						<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span> <span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+						<td class="textL pdlM">알루미늄휠</td>
+						<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span> <span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+						<td class="textL pdlM">가죽시트</td>
+						<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span> <span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+						<td class="textL pdlM">에어백 : 무릎</td>
+						<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span> <span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+						<td class="textL pdlM">스마트키</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td class="textL pdlM">&nbsp;</td>
+						<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span> <span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+						<td class="textL pdlM">전동시트 : 운전석</td>
+						<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span> <span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+						<td class="textL pdlM">감지센서 : 전방</td>
+						<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span> <span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+						<td class="textL pdlM">파워트렁크</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td class="textL pdlM">&nbsp;</td>
+						<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span> <span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+						<td class="textL pdlM">전동시트 : 조수석</td>
+						<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span> <span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+						<td class="textL pdlM">감지센서 : 후방</td>
+						<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span> <span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+						<td class="textL pdlM">파워윈도우</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td class="textL pdlM">&nbsp;</td>
+						<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span> <span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+						<td class="textL pdlM">전동시트 : 뒷좌석</td>
+						<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span> <span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+						<td class="textL pdlM">카메라 : 전방</td>
+						<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span> <span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+						<td class="textL pdlM">크루즈컨트롤</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td class="textL pdlM">&nbsp;</td>
+						<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span> <span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+						<td class="textL pdlM">열선시트 : 운전석</td>
+						<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span> <span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+						<td class="textL pdlM">카메라 : 후방</td>
+						<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span> <span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+						<td class="textL pdlM">CD플레이어</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td class="textL pdlM">&nbsp;</td>
+						<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span> <span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+						<td class="textL pdlM">열선시트 : 조수석</td>
+						<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span> <span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+						<td class="textL pdlM">카메라 : 어라운드</td>
+						<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span> <span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+						<td class="textL pdlM">CD체인저</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td class="textL pdlM">&nbsp;</td>
+						<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span> <span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+						<td class="textL pdlM">열선시트 : 뒷좌석</td>
+						<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span> <span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+						<td class="textL pdlM">ABS</td>
+						<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span> <span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+						<td class="textL pdlM">네비게이션</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td class="textL pdlM">&nbsp;</td>
+						<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span> <span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+						<td class="textL pdlM">메모리시트</td>
+						<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span> <span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+						<td class="textL pdlM">TCS : 미끄럼방지</td>
+						<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span> <span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+						<td class="textL pdlM">AV시스템</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td class="textL pdlM">&nbsp;</td>
+						<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span> <span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+						<td class="textL pdlM">통풍시트</td>
+						<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span> <span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+						<td class="textL pdlM">VDC : 차체자세제어</td>
+						<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span> <span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+						<td class="textL pdlM">뒷좌석TV</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td class="textL pdlM">&nbsp;</td>
+						<td></td>
+						<td class="textL pdlM">&nbsp;</td>
+						<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span> <span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+						<td class="textL pdlM">ECS : 전자제어 서스펜션</td>
+						<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span> <span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+						<td class="textL pdlM">AUX단자</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td class="textL pdlM">&nbsp;</td>
+						<td></td>
+						<td class="textL pdlM">&nbsp;</td>
+						<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span> <span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+						<td class="textL pdlM">TPMS : 타이어공기압감지</td>
+						<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span> <span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+						<td class="textL pdlM">USB단자</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td class="textL pdlM">&nbsp;</td>
+						<td></td>
+						<td class="textL pdlM">&nbsp;</td>
+						<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span> <span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+						<td class="textL pdlM">EPB : 전자식파킹브레이크</td>
+						<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span> <span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+						<td class="textL pdlM">iPOD단자</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td class="textL pdlM">&nbsp;</td>
+						<td></td>
+						<td class="textL pdlM">&nbsp;</td>
+						<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span> <span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+						<td class="textL pdlM">파워도어록</td>
+						<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span> <span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+						<td class="textL pdlM">Bluetooth</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td class="textL pdlM">&nbsp;</td>
+						<td></td>
+						<td class="textL pdlM">&nbsp;</td>
+						<td>&nbsp;</td>
+						<td class="textL pdlM">&nbsp;</td>
+						<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span> <span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+						<td class="textL pdlM">핸즈프리</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td class="textL pdlM">&nbsp;</td>
+						<td></td>
+						<td class="textL pdlM">&nbsp;</td>
+						<td>&nbsp;</td>
+						<td class="textL pdlM">&nbsp;</td>
+						<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span> <span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+						<td class="textL pdlM">핸들열선</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td class="textL pdlM">&nbsp;</td>
+						<td></td>
+						<td class="textL pdlM">&nbsp;</td>
+						<td>&nbsp;</td>
+						<td class="textL pdlM">&nbsp;</td>
+						<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span> <span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+						<td class="textL pdlM">안마시트</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td class="textL pdlM">&nbsp;</td>
+						<td></td>
+						<td class="textL pdlM">&nbsp;</td>
+						<td>&nbsp;</td>
+						<td class="textL pdlM">&nbsp;</td>
+						<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span> <span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+						<td class="textL pdlM">오토라이트</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td class="textL pdlM">&nbsp;</td>
+						<td></td>
+						<td class="textL pdlM">&nbsp;</td>
+						<td>&nbsp;</td>
+						<td class="textL pdlM">&nbsp;</td>
+						<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span> <span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+						<td class="textL pdlM">레인센서</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td class="textL pdlM">&nbsp;</td>
+						<td></td>
+						<td class="textL pdlM">&nbsp;</td>
+						<td>&nbsp;</td>
+						<td class="textL pdlM">&nbsp;</td>
+						<td><span class="checkbox_wrapper"><input type="checkbox" /><label></label></span> <span class="checkbox_wrapper"><input type="checkbox" /><label></label></span></td>
+						<td class="textL pdlM">차량메뉴얼</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="photo-area">
+				<div class="title-area"><h2 class="cTitle1">사진등록(000px * 000px)</h2></div>
+				<div class="photo-cont">
+					<ul class="photo-list">
+						<li class="item-photo">
+							<div class="img-area"><img src="./images/img_car.jpg" alt=""></div>
+							<div class="text-area">
+								<span class="photo-tit">앞측면</span>
+								<div class="btn-module filebox floatR">
+									<label for="ex_filename" class="off mglNone">파일 첨부</label>
+									<input type="file" id="ex_filename" class="upload-hidden">
+								</div>
+							</div>
+						</li>
+						<li class="item-photo">
+							<div class="img-area"></div>
+							<div class="text-area">
+								<span class="photo-tit">뒷측면</span>
+								<div class="btn-module filebox floatR">
+									<label for="ex_filename" class="off mglNone">파일 첨부</label>
+									<input type="file" id="ex_filename" class="upload-hidden">
+								</div>
+							</div>
+						</li>
+						<li class="item-photo">
+							<div class="img-area"></div>
+							<div class="text-area">
+								<span class="photo-tit">전면</span>
+								<div class="btn-module filebox floatR">
+									<label for="ex_filename" class="off mglNone">파일 첨부</label>
+									<input type="file" id="ex_filename" class="upload-hidden">
+								</div>
+							</div>
+						</li>
+						<li class="item-photo">
+							<div class="img-area"></div>
+							<div class="text-area">
+								<span class="photo-tit">후면</span>
+								<div class="btn-module filebox floatR">
+									<label for="ex_filename" class="off mglNone">파일 첨부</label>
+									<input type="file" id="ex_filename" class="upload-hidden">
+								</div>
+							</div>
+						</li>
+						<li class="item-photo">
+							<div class="img-area"></div>
+							<div class="text-area">
+								<span class="photo-tit">휠타이어</span>
+								<div class="btn-module filebox floatR">
+									<label for="ex_filename" class="off mglNone">파일 첨부</label>
+									<input type="file" id="ex_filename" class="upload-hidden">
+								</div>
+							</div>
+						</li>
+						<li class="item-photo">
+							<div class="img-area"></div>
+							<div class="text-area">
+								<span class="photo-tit">엔진</span>
+								<div class="btn-module filebox floatR">
+									<label for="ex_filename" class="off mglNone">파일 첨부</label>
+									<input type="file" id="ex_filename" class="upload-hidden">
+								</div>
+							</div>
+						</li>
+						<li class="item-photo">
+							<div class="img-area"></div>
+							<div class="text-area">
+								<span class="photo-tit">실내</span>
+								<div class="btn-module filebox floatR">
+									<label for="ex_filename" class="off mglNone">파일 첨부</label>
+									<input type="file" id="ex_filename" class="upload-hidden">
+								</div>
+							</div>
+						</li>
+						<li class="item-photo">
+							<div class="img-area"></div>
+							<div class="text-area">
+								<span class="photo-tit">계기판</span>
+								<div class="btn-module filebox floatR">
+									<label for="ex_filename" class="off mglNone">파일 첨부</label>
+									<input type="file" id="ex_filename" class="upload-hidden">
+								</div>
+							</div>
+						</li>
+						<li class="item-photo">
+							<div class="img-area"></div>
+							<div class="text-area">
+								<span class="photo-tit">변속기</span>
+								<div class="btn-module filebox floatR">
+									<label for="ex_filename" class="off mglNone">파일 첨부</label>
+									<input type="file" id="ex_filename" class="upload-hidden">
+								</div>
+							</div>
+						</li>
+						<li class="item-photo">
+							<div class="img-area"></div>
+							<div class="text-area">
+								<span class="photo-tit">차량시트</span>
+								<div class="btn-module filebox floatR">
+									<label for="ex_filename" class="off mglNone">파일 첨부</label>
+									<input type="file" id="ex_filename" class="upload-hidden">
+								</div>
+							</div>
+						</li>
+						<li class="item-photo">
+							<div class="img-area"></div>
+							<div class="text-area">
+								<span class="photo-tit">옵션1</span>
+								<div class="btn-module filebox floatR">
+									<label for="ex_filename" class="off mglNone">파일 첨부</label>
+									<input type="file" id="ex_filename" class="upload-hidden">
+								</div>
+							</div>
+						</li>
+						<li class="item-photo">
+							<div class="img-area"></div>
+							<div class="text-area">
+								<span class="photo-tit">옵션2</span>
+								<div class="btn-module filebox floatR">
+									<label for="ex_filename" class="off mglNone">파일 첨부</label>
+									<input type="file" id="ex_filename" class="upload-hidden">
+								</div>
+							</div>
+						</li>
+						<li class="item-photo">
+							<div class="img-area"></div>
+							<div class="text-area">
+								<span class="photo-tit">옵션3</span>
+								<div class="btn-module filebox floatR">
+									<label for="ex_filename" class="off mglNone">파일 첨부</label>
+									<input type="file" id="ex_filename" class="upload-hidden">
+								</div>
+							</div>
+						</li>
+						<li class="item-photo">
+							<div class="img-area"></div>
+							<div class="text-area">
+								<span class="photo-tit">옵션4</span>
+								<div class="btn-module filebox floatR">
+									<label for="ex_filename" class="off mglNone">파일 첨부</label>
+									<input type="file" id="ex_filename" class="upload-hidden">
+								</div>
+							</div>
+						</li>
+						<li class="item-photo">
+							<div class="img-area"></div>
+							<div class="text-area">
+								<span class="photo-tit">옵션5</span>
+								<div class="btn-module filebox floatR">
+									<label for="ex_filename" class="off mglNone">파일 첨부</label>
+									<input type="file" id="ex_filename" class="upload-hidden">
+								</div>
+							</div>
+						</li>
+						<li class="item-photo">
+							<div class="img-area"></div>
+							<div class="text-area">
+								<span class="photo-tit">옵션6</span>
+								<div class="btn-module filebox floatR">
+									<label for="ex_filename" class="off mglNone">파일 첨부</label>
+									<input type="file" id="ex_filename" class="upload-hidden">
+								</div>
+							</div>
+						</li>
+						<li class="item-photo">
+							<div class="img-area"></div>
+							<div class="text-area">
+								<span class="photo-tit">옵션7</span>
+								<div class="btn-module filebox floatR">
+									<label for="ex_filename" class="off mglNone">파일 첨부</label>
+									<input type="file" id="ex_filename" class="upload-hidden">
+								</div>
+							</div>
+						</li>
+						<li class="item-photo">
+							<div class="img-area"></div>
+							<div class="text-area">
+								<span class="photo-tit">옵션8</span>
+								<div class="btn-module filebox floatR">
+									<label for="ex_filename" class="off mglNone">파일 첨부</label>
+									<input type="file" id="ex_filename" class="upload-hidden">
+								</div>
+							</div>
+						</li>
+						<li class="item-photo">
+							<div class="img-area"></div>
+							<div class="text-area">
+								<span class="photo-tit">옵션9</span>
+								<div class="btn-module filebox floatR">
+									<label for="ex_filename" class="off mglNone">파일 첨부</label>
+									<input type="file" id="ex_filename" class="upload-hidden">
+								</div>
+							</div>
+						</li>
+						<li class="item-photo">
+							<div class="img-area"></div>
+							<div class="text-area">
+								<span class="photo-tit">옵션10</span>
+								<div class="btn-module filebox floatR">
+									<label for="ex_filename" class="off mglNone">파일 첨부</label>
+									<input type="file" id="ex_filename" class="upload-hidden">
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="btn-module mgtL">
 				<div class="rightGroup">
-					<a href="#none" class="btnStyle01">저장</a>
-					<a href="#none" class="btnStyle05">취소</a>
+					<a href="#none" class="btnStyle05">삭제</a>
+					<a href="#none" class="btnStyle05">목록</a>
+					<a href="#none" class="btnStyle01">수정</a>
 				</div>
 			</div>
 		</div>
