@@ -81,139 +81,65 @@ $(window).load(function(){
 		셀렉트 디자인
 		++ 셀렉트 선택값(value)은 변수 oVal로 처리 ++
 	*/
-	$.fn.ps_designSelBox = function(options){
-		return this.each(function(){
-			var $obj = $(this),
-				dom = '';
-				dom += '<div class="ps_designSelBoxIn">',
-				dom += '<button type="button" class="ps_currSel"></button>',
-				dom += '<ul class="ps_list"></ul>',
-				dom += '</div>'
+	function select(){
+		$('select').each(function(){
+			var title = $(this).find('option:first-child').html();
+			var wid = $(this).outerWidth();
+			if($(this).hasClass('styled1')){
+				$(this).wrap('<div class="select-box">');
+			}else{
+				$(this).wrap('<div class="select-box type2">');
+			}
+			$(this).parents('.select-box').css({'width':wid}).append('<div class="select-title">');
+			$(this).parents('.select-box').find('.select-title').html(title);
 
-				$obj.append(dom);
-
-			var $sel = $obj.find('select'),
-				$deSel = $obj.find('.ps_designSelBoxIn'),
-				$btn = $deSel.find('.ps_currSel'),
-				$lst = $deSel.find('.ps_list'),
-				$lstBtn = $lst.find('button'),
-
-				selEd = $sel.find('option:selected').text(),
-				idx = 0,
-				txt = '',
-				code = 0,
-				max = $sel.find('option').length;
-
-			// 초기 설정 값
-			var defaults = {
-				rows: max
-			};
-
-			// 기본, 임의 값 합침
-			var init = {};
-			init = $.extend(true, defaults, options);
-
-			// 상태초기화
-			function selReset(){
-				$('.ps_designSelBox').each(function () {
-					$(this).find('.ps_list').removeAttr('style');
-					$(this).removeClass('on');
-					$(this).removeClass('bot');
-				});
-			};
-
-			// 디자인 셀렉트 박스 버튼 초기값
-			$btn.text(selEd);
-
-			// 디자인 셀렉트 박스 리스트 뿌리기
-			$sel.find('option').each(function(){
-				$lst.append('<li><button type="button">' + $(this).text() + '</button></li>');
-			});
-			$lst.find('li:first-child').addClass('on');
-
-			// 디자인 셀렉트 박스의 기본 넓이 적용
-			$deSel.width($sel.outerWidth());
-
-			// 버튼 눌렀을때 디자인 셀렉트 나오기
-			$btn.on('click', function(e){
-				$(this).parents('.ps_designSelBox').append('<div class="select-close">');
-				if(!$(this).parents('.ps_designSelBox').hasClass('on')){
-					$('.ps_designSelBox').removeClass('on');
-					$(this).parents('.ps_designSelBox').addClass('on');
-
-					// 노출될 리스트 개수
-					if(!$(this).parents('.ps_designSelBox').hasClass('on') || max > init.rows){
-						$lst.css({width:$(this).outerWidth(), height:$lst.find('li').eq(1).height() * init.rows})
-					};
-
-					// 셀렉트 박스의 위치가 아래있어서 리스트가 아래로 나올경우 가려져 안나오는 것을 방지하고 bot클래스 추가
-					if($(window).height() < $deSel.offset().top + $lst.height() - $(window).scrollTop() + $deSel.height()){
-						$(this).parents('.ps_designSelBox').addClass('bot');
-						$(this).next().css({bottom:$(this).outerHeight()});
-					};
-				}else{
-					selReset();
-					$('.select-close').remove();
-				}
-
-				/* 펼쳐진 상태에서 다른 곳을 눌렀을 경우 닫히기
-				$(document).on('click', function(){
-					selReset();
-					$(document).unbind('click');
-				});
-				*/
-
-				// 이벤트 방지
-				e.stopPropagation();
+			$(this).parents('.select-box').append('<ul class="select-list">');
+			var option = $(this).find('option');
+			$(option).each(function(){
+				var txt = $(this).html();
+				$(this).parents('.select-box').find('.select-list').append('<li class="item">' + txt);
+				$(this).parents('.select-box').find('.item:first-child').addClass('on');
 			});
 
-			$(document).on('click', '.select-close', function(){
-				selReset();
-				$(this).remove();
-			});
-
-			// 키보드 접근
-			$btn.on('keydown', function(e){
-				code = (e.keyCode ? e.keyCode : e.which);
-				$sel.find('option:eq(' + idx + ')').prop('selected', false);
-
-				if(code == 38 && !(idx==0)) {idx--;} // 방향키 위
-				else if(code == 40 && !(idx == max -1)) {idx++;} // 방향키 아래
-
-				$(this).text($lst.find('li').eq(idx).find('button').text());
-				$sel.find('option:eq(' + idx + ')').prop('selected', true).change();
-
-				// 다음 객체에 포커스 이동이 되야 하므로 탭 키가 아닐 경우만 이벤트 방지
-				if(code != 9) {e.preventDefault();}
-			});
-
-			// 리스트 눌렀을 때 현재 선택한 값 표시 및 셀렉트 박스에 선택
-			$lst.on('click', 'button', function(){
-				idx = $(this).parent().index();
-				txt = $(this).text();
-
-				// 현재 선택한 값 노출
-				$btn.text(txt);
-
-				// 셀렉트 박스의 옵션 선택
-				$sel.find('option').prop('selected', false);
-				$sel.find('option:eq(' + idx + ')').prop('selected', true).change();
-
-				// 리스트 닫기
-				selReset();
-				$('.select-close').remove();
-				$btn.focus();
-
-				$('.ps_list li').removeClass('on');
-				$(this).parent('li').addClass('on');
-			});
+			if($(this).attr('disabled')){
+				$(this).parents('.select-box').addClass('disabled');
+			}
 		});
-	};
 
-	// Design Select Box 기본
-	$(".ps_designSelBox").ps_designSelBox({
-		rows: 20
-	});
+		$('.select-title').click(function(){
+			if($(this).parents('.select-box').hasClass('disabled') == false){
+				$(this).parents('.select-box').addClass('focus').find('.select-list').slideDown(200);
+				$(this).parents('.select-box').append('<div class="select-close" style="position:fixed;left:0;right:0;top:0;bottom:0;">');
+			}
+		});
+		$('.select-box .item').mouseenter(function(){
+			$(this).parents('.select-box').find('.item').removeClass('on');
+			$(this).addClass('on');
+		});
+		$('.select-box .item').click(function(){
+			var idx = $(this).index();
+			var oVal = $(this).parents('.select-box').find('option').eq(idx).val();
+			var txt = $(this).html();
+			$(this).addClass('on');
+			$(this).parents('.select-box').find('select').val(oVal).change();
+			$(this).parents('.select-box').find('.select-title').html(txt);
+			if(idx != 0){
+				$(this).parents('.select-box').addClass('on');
+			}else {
+				$(this).parents('.select-box').removeClass('on');
+			}
+			$(this).parents('.select-box').removeClass('focus').attr('value', oVal);
+			$(this).parents('.select-list').hide();
+			$('.select-close').hide();
+		});
+		$(document).on('click', '.select-close', function(){
+			$('.select-close').hide();
+			$('.select-list').hide();
+			$('.select-box').removeClass('focus');
+		});
+	}
+
+	select(); // 셀렉트 박스 변수 선언
 
 
 	/* 체크박스 */
