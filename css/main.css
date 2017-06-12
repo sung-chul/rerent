@@ -153,6 +153,11 @@
 	position: absolute;
 	bottom:5px;
 	width:18px; height:18px;
+}
+.car-obj .car.animate .wheel {
+	position: absolute;
+	bottom:5px;
+	width:18px; height:18px;
 	-webkit-animation: spin 1s infinite linear;
 	-ms-animation: spin 1s infinite linear;
 	-moz-animation: spin 1s infinite linear;
@@ -189,97 +194,97 @@
 	position: absolute;
 	opacity:0;
 }
-.car-obj .car .smoke.front {
+.car-obj .car.animate .smoke.front {
 	left:-18px;
 	bottom:10px;
 	width:16px;
 	height:13px;
-	-webkit-animation: opacity1 4s infinite linear;
-	-ms-animation: opacity1 4s infinite linear;
-	-moz-animation: opacity1 4s infinite linear;
-	-o-animation: opacity1 4s infinite linear;
-	animation: opacity1 4s infinite linear;
+	-webkit-animation: opacity1 2s infinite linear;
+	-ms-animation: opacity1 2s infinite linear;
+	-moz-animation: opacity1 2s infinite linear;
+	-o-animation: opacity1 2s infinite linear;
+	animation: opacity1 2s infinite linear;
 }
 @-webkit-keyframes opacity1 {
-	0% {opacity:1;}
-	25% {opacity: 0;}
+	0% {opacity:0;}
+	25% {opacity:0;}
 	50% {opacity:1;}
-	75% {opacity:0;}
-	100% {opacity: 1;}
+	75% {opacity:1;}
+	100% {opacity:1;}
 }
 @-ms-keyframes opacity1 {
-	0% {opacity:1;}
-	25% {opacity: 0;}
+	0% {opacity:0;}
+	25% {opacity:0;}
 	50% {opacity:1;}
-	75% {opacity:0;}
-	100% {opacity: 1;}
+	75% {opacity:1;}
+	100% {opacity:1;}
 }
 @-moz-keyframes opacity1 {
-	0% {opacity:1;}
-	25% {opacity: 0;}
+	0% {opacity:0;}
+	25% {opacity:0;}
 	50% {opacity:1;}
-	75% {opacity:0;}
-	100% {opacity: 1;}
+	75% {opacity:1;}
+	100% {opacity:1;}
 }
 @-o-keyframes opacity1 {
-	0% {opacity:1;}
-	25% {opacity: 0;}
+	0% {opacity:0;}
+	25% {opacity:0;}
 	50% {opacity:1;}
-	75% {opacity:0;}
-	100% {opacity: 1;}
+	75% {opacity:1;}
+	100% {opacity:1;}
 }
 @keyframes opacity1 {
-	0% {opacity:1;}
-	25% {opacity: 0;}
+	0% {opacity:0;}
+	25% {opacity:0;}
 	50% {opacity:1;}
-	75% {opacity:0;}
-	100% {opacity: 1;}
+	75% {opacity:1;}
+	100% {opacity:1;}
 }
-.car-obj .car .smoke.back {
+.car-obj .car.animate .smoke.back {
 	left:-44px;
 	bottom:7px;
 	width:23px;
 	height:19px;
-	-webkit-animation: opacity2 4s infinite linear;
-	-ms-animation: opacity2 4s infinite linear;
-	-moz-animation: opacity2 4s infinite linear;
-	-o-animation: opacity2 4s infinite linear;
-	animation: opacity2 4s infinite linear;
+	-webkit-animation: opacity2 2s infinite linear;
+	-ms-animation: opacity2 2s infinite linear;
+	-moz-animation: opacity2 2s infinite linear;
+	-o-animation: opacity2 2s infinite linear;
+	animation: opacity2 2s infinite linear;
 }
 @-webkit-keyframes opacity2 {
 	0% {opacity:0;}
-	25% {opacity: 1;}
+	25% {opacity:0;}
 	50% {opacity:0;}
 	75% {opacity:1;}
-	100% {opacity: 0;}
+	100% {opacity:1;}
 }
 @-ms-keyframes opacity2 {
 	0% {opacity:0;}
-	25% {opacity: 1;}
+	25% {opacity:0;}
 	50% {opacity:0;}
 	75% {opacity:1;}
-	100% {opacity: 0;}
+	100% {opacity:1;}
 }
 @-moz-keyframes opacity2 {
 	0% {opacity:0;}
-	25% {opacity: 1;}
+	25% {opacity:0;}
 	50% {opacity:0;}
 	75% {opacity:1;}
-	100% {opacity: 0;}
+	100% {opacity:1;}
 }
 @-o-keyframes opacity2 {
 	0% {opacity:0;}
-	25% {opacity: 1;}
+	25% {opacity:0;}
 	50% {opacity:0;}
 	75% {opacity:1;}
-	100% {opacity: 0;}
+	100% {opacity:1;}
 }
 @keyframes opacity2 {
 	0% {opacity:0;}
-	25% {opacity: 1;}
+	25% {opacity:0;}
 	50% {opacity:0;}
 	75% {opacity:1;}
-	100% {opacity: 0;}
+	100% {opacity:1;}
 }
 
 /* main contents */
@@ -370,15 +375,9 @@
 	background-color:#fff;
 	color:#000;
 }
-.rent-tab .item:first-child.on .text {
-	border-left:1px solid #d9d9d9;
-}
-.rent-tab .item:first-child .text {
-	border-left:1px solid #d9d9d9;
-}
-.rent-tab .item:last-child .text {
-	border-right:1px solid #d9d9d9;
-}
+.rent-tab .item:first-child.on .text {border-left:1px solid #d9d9d9;}
+.rent-tab .item:first-child .text {border-left:1px solid #d9d9d9;}
+.rent-tab .item:last-child .text {border-right:1px solid #d9d9d9;}
 
 
 .rent-tab-list {}
@@ -389,9 +388,7 @@
 	width:900px;
 	margin:40px auto 20px;
 }
-.rent-list {
-	overflow: hidden;
-}
+.rent-list {overflow: hidden;}
 .rent-list li {
 	float:left;
 	width:205px;
@@ -414,8 +411,8 @@
 	-ms-transform:scale(1.2,1.2);
 	transform:scale(1.2,1.2);
 }
-.rent-list li:hover .img-wrap:before  {
-	content: '';
+.rent-list li:hover .img-wrap:before {
+	content:'';
 	position:absolute;
 	top:0; left:0; right:0; bottom:0;
 	border:3px solid #ea002c;
@@ -463,9 +460,7 @@
 	line-height: 0;
 	text-indent: -99999px;
 }
-.rent-cont .bx-controls .bx-pager-item .bx-pager-link.active {
-	background-color:#ff7a00;
-}
+.rent-cont .bx-controls .bx-pager-item .bx-pager-link.active {background-color:#ff7a00;}
 .rent-cont .bx-controls .bx-controls-direction a {
 	position:absolute;
 	top:50%;
@@ -495,16 +490,12 @@
 	border:1px solid #d9d9d9;
 	box-sizing: border-box;
 }
-.rent-search .search-area {
-	margin:0 59px;
-}
+.rent-search .search-area {margin:0 59px;}
 .rent-search .row {
 	position: relative;
 	margin-top:10px;
 }
-.rent-search .row:first-child {
-	margin-top:0;
-}
+.rent-search .row:first-child {margin-top:0;}
 .rent-search .row:after {
 	content: '';
 	display: block;
@@ -519,9 +510,7 @@
 	line-height: 45px;
 	text-align: left;
 }
-.rent-search .row select {
-	width:365px;
-}
+.rent-search .row select {width:365px;}
 .rent-search .row .connect-txt {
 	display: inline-block;
 	margin:0 5px;
@@ -529,9 +518,7 @@
 	vertical-align: top;
 	color:#666;
 }
-.rent-search .btn-wrap {
-	margin-top:40px;
-}
+.rent-search .btn-wrap {margin-top:40px;}
 .rent-search .btn-wrap .btn-rent {background-color:#ea002c;}
 .rent-search .btn-wrap .btn-rent:hover {background-color:#f58025;}
 
@@ -567,9 +554,7 @@
 	text-indent: -99999px;
 	vertical-align: top;
 }
-.event-banner .bx-controls-direction a.bx-prev {
-	background-position: 0 -496px;
-}
+.event-banner .bx-controls-direction a.bx-prev {background-position: 0 -496px;}
 .event-banner .bx-controls-direction a.bx-next {
 	margin-left:2px;
 	background-position: 0 -528px;
@@ -591,15 +576,9 @@
 	font-weight:600;
 	text-align: left;
 }
-.notice-area .notice-list {
-	margin-top:16px;
-}
-.notice-area .notice-list li {
-	border-top:1px solid #ddd;
-}
-.notice-area .notice-list li:first-child {
-	border-top:0;
-}
+.notice-area .notice-list {margin-top:16px;}
+.notice-area .notice-list li {border-top:1px solid #ddd;}
+.notice-area .notice-list li:first-child {border-top:0;}
 .notice-area .notice-list li a {
 	overflow: hidden;
 	display: block;

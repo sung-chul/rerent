@@ -13,7 +13,9 @@ $(window).load(function(){
 	var itemWid = $('.title-item').outerWidth();
 	var carItem = $('.title-item').length;
 	var carWid = $('.car-obj .car').outerWidth();
-	$('.car-obj .car').stop().animate({left:itemWid - (carWid/2)}, sSpeed);
+	$('.car-obj .car').stop().animate({left:itemWid - (carWid/2)}, sSpeed, function(){
+		$('.car-obj .car').removeClass('animate');
+	});
 
 	// 마우스 클릭시 탭 변환 (자동 슬라이드 전용 클릭)
 	$('.title-item').click(function(){
@@ -35,9 +37,13 @@ $(window).load(function(){
 		}
 
 		if(idx + 1 >= itemLen){
-			$('.car-obj .car').stop().animate({left:itemWid * (idx+1)- carWid}, sSpeed);
+			$('.car-obj .car').stop().animate({left:itemWid * (idx+1)- carWid}, sSpeed, function(){
+				$('.car-obj .car').removeClass('animate');
+			});
 		}else{
-			$('.car-obj .car').stop().animate({left:itemWid * (idx+1) - move}, sSpeed);
+			$('.car-obj .car').stop().animate({left:itemWid * (idx+1) - move}, sSpeed, function(){
+				$('.car-obj .car').removeClass('animate');
+			});
 		}
 	});
 
@@ -83,7 +89,6 @@ $(window).load(function(){
 	// 마우스 오버시 자동 슬라이드 먼춤
 	$('.visual-banner').mouseenter(function(){
 		clearInterval(visualTimer);
-		var idx = $('.title-item.on').index();
 	});
 	// 마우스 아웃시 자동 슬라이드 시작
 	$('.visual-banner').mouseleave(function(){
@@ -95,6 +100,7 @@ $(window).load(function(){
 				$('.btn-next').click();
 			}, sSpeed);
 		}
+		$('.car-obj .car').addClass('animate');
 	});
 
 	var slider = $('.rent-cont .rent-bxslider').bxSlider({
