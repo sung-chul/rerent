@@ -56,6 +56,7 @@ $(window).load(function(){
 		}else{
 			$(this).parents('.visual-banner').find('.title-item.on').next('.title-item').click();
 		}
+		$('.car-obj .car').addClass('animate');
 	});
 	// 이전 버튼
 	$('.btn-prev').click(function(){
@@ -66,6 +67,7 @@ $(window).load(function(){
 		}else{
 			$(this).parents('.visual-banner').find('.title-item.on').prev('.title-item').click();
 		}
+		$('.car-obj .car').addClass('animate');
 	});
 
 	// 자동 슬라이드
