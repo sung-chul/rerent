@@ -81,61 +81,66 @@ $(window).load(function(){
 		셀렉트 디자인
 		++ 셀렉트 선택값(value)은 변수 oVal로 처리 ++
 	*/
-	$('select').each(function(){
-		var title = $(this).find('option:first-child').html();
-		var wid = $(this).outerWidth();
-		if($(this).hasClass('styled1')){
-			$(this).wrap('<div class="select-box">');
-		}else{
-			$(this).wrap('<div class="select-box type2">');
-		}
-		$(this).parents('.select-box').css({'width':wid}).append('<div class="select-title">');
-		$(this).parents('.select-box').find('.select-title').html(title);
+	function select(){
+		$('select').each(function(){
+			var title = $(this).find('option:first-child').html();
+			var wid = $(this).outerWidth();
+			if($(this).hasClass('styled1')){
+				$(this).wrap('<div class="select-box">');
+			}else{
+				$(this).wrap('<div class="select-box type2">');
+			}
+			$(this).parents('.select-box').css({'width':wid}).append('<div class="select-title">');
+			$(this).parents('.select-box').find('.select-title').html(title);
 
-		$(this).parents('.select-box').append('<ul class="select-list">');
-		var option = $(this).find('option');
-		$(option).each(function(){
-			var txt = $(this).html();
-			$(this).parents('.select-box').find('.select-list').append('<li class="item">' + txt);
-			$(this).parents('.select-box').find('.item:first-child').addClass('on');
+			$(this).parents('.select-box').append('<ul class="select-list">');
+			var option = $(this).find('option');
+			$(option).each(function(){
+				var txt = $(this).html();
+				$(this).parents('.select-box').find('.select-list').append('<li class="item">' + txt);
+				$(this).parents('.select-box').find('.item:first-child').addClass('on');
+			});
+
+			if($(this).attr('disabled')){
+				$(this).parents('.select-box').addClass('disabled');
+			}
 		});
 
-		if($(this).attr('disabled')){
-			$(this).parents('.select-box').addClass('disabled');
-		}
-	});
+		$('.select-title').click(function(){
+			if($(this).parents('.select-box').hasClass('disabled') == false){
+				$(this).parents('.select-box').addClass('focus').find('.select-list').slideDown(200);
+				$(this).parents('.select-box').append('<div class="select-close" style="position:fixed;left:0;right:0;top:0;bottom:0;">');
+			}
+		});
+		$('.select-box .item').mouseenter(function(){
+			$(this).parents('.select-box').find('.item').removeClass('on');
+			$(this).addClass('on');
+		});
+		$('.select-box .item').click(function(){
+			var idx = $(this).index();
+			var oVal = $(this).parents('.select-box').find('option').eq(idx).val();
+			var txt = $(this).html();
+			$(this).addClass('on');
+			$(this).parents('.select-box').find('select').val(oVal).change();
+			$(this).parents('.select-box').find('.select-title').html(txt);
+			if(idx != 0){
+				$(this).parents('.select-box').addClass('on');
+			}else {
+				$(this).parents('.select-box').removeClass('on');
+			}
+			$(this).parents('.select-box').removeClass('focus').attr('value', oVal);
+			$(this).parents('.select-list').hide();
+			$('.select-close').hide();
+		});
+		$(document).on('click', '.select-close', function(){
+			$('.select-close').hide();
+			$('.select-list').hide();
+			$('.select-box').removeClass('focus');
+		});
+	}
 
-	$('.select-title').click(function(){
-		if($(this).parents('.select-box').hasClass('disabled') == false){
-			$(this).parents('.select-box').addClass('focus').find('.select-list').slideDown(200);
-			$(this).parents('.select-box').append('<div class="select-close" style="position:fixed;left:0;right:0;top:0;bottom:0;">');
-		}
-	});
-	$('.select-box .item').mouseenter(function(){
-		$(this).parents('.select-box').find('.item').removeClass('on');
-		$(this).addClass('on');
-	});
-	$('.select-box .item').click(function(){
-		var idx = $(this).index();
-		var oVal = $(this).parents('.select-box').find('option').eq(idx).val();
-		var txt = $(this).html();
-		$(this).addClass('on');
-		$(this).parents('.select-box').find('select').val(oVal).change();
-		$(this).parents('.select-box').find('.select-title').html(txt);
-		if(idx != 0){
-			$(this).parents('.select-box').addClass('on');
-		}else {
-			$(this).parents('.select-box').removeClass('on');
-		}
-		$(this).parents('.select-box').removeClass('focus').attr('value', oVal);
-		$(this).parents('.select-list').hide();
-		$('.select-close').hide();
-	});
-	$(document).on('click', '.select-close', function(){
-		$('.select-close').hide();
-		$('.select-list').hide();
-		$('.select-box').removeClass('focus');
-	});
+	select(); // 셀렉트 박스 변수 선언
+
 
 	/* 체크박스 */
 	$('input[type=checkbox].styled1').each(function(){
