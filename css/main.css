@@ -398,12 +398,21 @@
 	margin:0 10px 23px;
 }
 .rent-list li .img-wrap {
+	overflow:hidden;
 	position: relative;
 	width:205px;
 	height:137px;
 }
 .rent-list li .img-wrap img {
 	vertical-align: top;
+	-webkit-transition:all 4s;
+	-ms-transition:all 4s;
+	transition:all 4s;
+}
+.rent-list li:hover .img-wrap img {
+	-webkit-transform:scale(1.2,1.2);
+	-ms-transform:scale(1.2,1.2);
+	transform:scale(1.2,1.2);
 }
 .rent-list li:hover .img-wrap:before  {
 	content: '';

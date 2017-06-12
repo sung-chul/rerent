@@ -1696,19 +1696,25 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 }
 .thumb-list .thumb-item:nth-child(3n) {margin-right:0;}
 .thumb-list .thumb-item .img-wrap {
+	overflow:hidden;
 	position:relative;
 	width:320px;
-	height:171px;
+	height:161px;
 }
-.thumb-list .thumb-item .img-wrap img {
-	vertical-align:top;
-}
-.thumb-list .thumb-item:hover .img-wrap:before  {
+.thumb-list .thumb-item .img-wrap img {vertical-align:top;}
+.thumb-list .thumb-item .img-wrap:before {
 	content: '';
 	position:absolute;
 	top:0; left:0; right:0; bottom:0;
 	border:3px solid #ea002c;
 	box-sizing:border-box;
+	opacity:0;
+}
+.thumb-list .thumb-item:hover .img-wrap:before {
+	opacity:1;
+	-webkit-transition:all .5s;
+	-ms-transition:all .5s;
+	transition:all .5s;
 }
 .thumb-list .thumb-item .ev-text {
 	display:inline-block;
