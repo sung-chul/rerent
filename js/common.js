@@ -247,6 +247,8 @@ $(window).load(function(){
 	$('input[type=radio].styled1').each(function(){
 		$(this).parents('label').addClass('check-radio');
 		$(this).wrap('<span class="radiobox">');
+	});
+	$('input[type=radio].styled1').change(function(){
 		if(this.checked){
 			$(this).parents('.radiobox').addClass('checked');
 		}
