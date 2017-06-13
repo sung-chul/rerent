@@ -167,6 +167,7 @@ $(window).load(function(){
 				e.stopPropagation();
 			});
 
+			// 셀렉트박스 닫기
 			$(document).on('click', '.select-close', function(){
 				selReset();
 				$(this).remove();
@@ -206,13 +207,20 @@ $(window).load(function(){
 
 				$('.ps_list li').removeClass('on');
 				$(this).parent('li').addClass('on');
+
+				// 선택후 붉은색 활성화
+				if($(this).parent('li').index() <= 0){
+					$(this).parents('.ps_designSelBox').removeClass('red');
+				}else{
+					$(this).parents('.ps_designSelBox').addClass('red');
+				}
 			});
 		});
 	};
 
 	// Design Select Box 기본
-	$(".ps_designSelBox").ps_designSelBox({
-		rows: 20
+	$('.ps_designSelBox').ps_designSelBox({
+		rows: 10 // 노출하고 싶은 option 갯수 설정
 	});
 
 
