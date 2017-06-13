@@ -943,13 +943,41 @@ html.on {
 .ps_designSelBox.on .ps_designSelBoxIn .ps_currSel {background-image:url(../img/icon/icon_select_arrow_on.png);}
 .ps_designSelBoxIn .ps_list {
 	display:none;
-	position: absolute;
-	left: 0;right: 0;top: 44px;
-	z-index: 1;
-	padding: 10px 0;
-	border: 1px solid #ccc;
-	background-color: #fff;
+	position:absolute;
+	left:0;right:0;
+	z-index:1;
+	padding:10px 0;
+	border:1px solid #ccc;
+	background-color:#fff;
+	margin:-1px 0 0;
 }
+
+.ps_designSelBox.red .ps_designSelBoxIn .ps_currSel {
+	border-color:#e9002d;
+	color:#e9002d;
+	background-image:url(../img/icon/icon_select_arrow_on2.png);
+}
+.ps_designSelBox.red .ps_designSelBoxIn .ps_list {border-color:#e9002d;}
+
+.ps_designSelBox.on.red .ps_designSelBoxIn .ps_currSel {
+	border-color:#ccc;
+	color:#666;
+	background-image:url(../img/icon/icon_select_arrow_on.png);
+}
+.ps_designSelBox.on.red .ps_designSelBoxIn .ps_list {border-color:#ccc;}
+
+.ps_designSelBox.redFix .ps_designSelBoxIn .ps_currSel {
+	border-color:#e9002d;
+	color:#e9002d;
+	background-image:url(../img/icon/icon_select_arrow_on2.png);
+}
+.ps_designSelBox.redFix.on .ps_designSelBoxIn .ps_currSel {
+	border-color:#ccc;
+	color:#666;
+	background-image:url(../img/icon/icon_select_arrow_on.png);
+}
+
+.ps_designSelBox.bot .ps_designSelBoxIn .ps_list {margin:0 0 -1px;}
 .ps_designSelBox.on .ps_designSelBoxIn .ps_list {
 	display:block;
 	overflow:auto;
