@@ -212,6 +212,7 @@ $(window).load(function(){
 				if($(this).parent('li').index() <= 0){
 					$(this).parents('.ps_designSelBox').removeClass('red');
 				}else{
+					$('.ps_designSelBox').removeClass('red');
 					$(this).parents('.ps_designSelBox').addClass('red');
 				}
 			});

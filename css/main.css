@@ -396,27 +396,33 @@
 }
 .rent-list li .img-wrap {
 	overflow:hidden;
-	position: relative;
+	position:relative;
 	width:205px;
 	height:137px;
 }
-.rent-list li .img-wrap img {
-	vertical-align: top;
-	-webkit-transition:all 4s;
-	-ms-transition:all 4s;
-	transition:all 4s;
-}
-.rent-list li:hover .img-wrap img {
-	-webkit-transform:scale(1.2,1.2);
-	-ms-transform:scale(1.2,1.2);
-	transform:scale(1.2,1.2);
-}
-.rent-list li:hover .img-wrap:before {
+.rent-list li .img-wrap:before {
 	content:'';
 	position:absolute;
-	top:0; left:0; right:0; bottom:0;
+	top:0;left:0;right:0;bottom:0;
+	z-index:5;
+	box-sizing:border-box;
 	border:3px solid #ea002c;
-	box-sizing: border-box;
+	opacity:0;
+	-webkit-transition:all .5s;
+	-ms-transition:all .5s;
+	transition:all .5s;
+}
+.rent-list li:hover .img-wrap:before {opacity:1;}
+.rent-list li .img-wrap img {
+	vertical-align: top;
+	-webkit-transition:all 1.5s;
+	-ms-transition:all 1.5s;
+	transition:all 1.5s;
+}
+.rent-list li:hover .img-wrap img {
+	-webkit-transform:scale(1.1,1.1);
+	-ms-transform:scale(1.1,1.1);
+	transform:scale(1.1,1.1);
 }
 .rent-list li .car {
 	height: 38px;
