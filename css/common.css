@@ -209,8 +209,8 @@ html.on {
 }
 .inner_head .logo {
 	position: absolute;
-	top:38px; left:0;
-	width:127px; height:42px;
+	top:32px; left:0;
+	width:115px; height:52px;
 	background:url(../img/layout/h1_logo.png) 0 0 no-repeat;
 }
 .inner_head .logo a {
