@@ -405,8 +405,8 @@ html.on {
 
 .footer .inner .address-area {
 	position:relative;
-	padding-left:160px;
-	background:url(../img/layout/foot_logo.png) 0 0 no-repeat;
+	padding-left:127px;
+	background:url(../img/layout/foot_logo.png) 4px 0 no-repeat;
 }
 
 .footer .inner .address-area p {
