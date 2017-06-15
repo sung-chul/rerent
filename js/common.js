@@ -74,6 +74,14 @@ $(window).load(function(){
 	});
 	$(window).scroll();
 
+	/* 푸터 패밀리사이트 버튼 */
+	$('.footer .inner .util .link .btn').click(function(){
+		$(this).parents('.link').find('.layer').show();
+	});
+	$('.footer .inner .util .link .layer .close').click(function(){
+		$(this).parents('.layer').hide();
+	});
+
 	/* -----------------------------------------------------------------------------------------------------------
 		폼요소
 	----------------------------------------------------------------------------------------------------------- */
