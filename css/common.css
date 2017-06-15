@@ -1283,6 +1283,9 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 .option-list .coulmn dd ul li {
 	margin-bottom:12px;
 }
+.option-list .coulmn dd ul li label.check-radio {
+	color:#999;
+}
 .option-wrap .btn-aco {
 	display: block;
 	width:370px; height:44px;
@@ -1301,11 +1304,11 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	background:url(../img/icon/icon_close.png) 0 23px no-repeat;
 }
 .option-list .checkbox.disabled {
-	background-color:#fff;
-	border-color:#e5e5e5;
+	background-color:#d9d9d9;
+	border-color:#ccc;
 }
 .checkbox.checked.disabled {
-	background: url(../img/icon/icon_checked2.png) no-repeat 50% 50%;
+	background:#d9d9d9 url(../img/icon/icon_checked2.png) no-repeat 50% 50%;
 }
 /* =========================================================================================================
 	회원가입 & 로그인
@@ -2180,6 +2183,11 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	top:0; left:0;
 	width:16px; height:16px;
 	background-position: 0 -125px;
+}
+
+.board-write1 td .radio-check {
+	vertical-align:top;
+	margin-top:10px;
 }
 
 /*board-write2*/
