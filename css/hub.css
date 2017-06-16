@@ -156,11 +156,10 @@ button {outline:0;vertical-align:top;}
 	margin-left:-500px;
 }
 .header .logo {
-	position: absolute;
-	bottom:5px;
-	left:0;
-	width:144px;
-	height:48px;
+	position:absolute;
+	bottom:5px;left:0;
+	width:115px;
+	height:52px;
 	background:url(../img/layout/logo.png) 0 0 no-repeat;
 	font-size: 0;
 	line-height: 0;
@@ -316,8 +315,8 @@ button {outline:0;vertical-align:top;}
 
 .footer .inner .address-area {
 	position:relative;
-	padding-left:170px;
-	background:url(../img/layout/foot_logo.png) 0 0 no-repeat;
+	padding-left:127px;
+	background:url(../img/layout/foot_logo.png) 0 4px no-repeat;
 }
 
 .footer .inner .address-area p {
