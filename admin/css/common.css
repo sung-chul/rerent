@@ -66,11 +66,11 @@ a span:hover,a span:focus,a span:active{color:#333;text-decoration:none} /*color
          url('../webfont/notokr-regular.svg#notokr-regular') format('svg');
     font-weight: normal;
     font-style: normal;
+
 }
 
 article,aside,dialog,figure,footer,header,hgroup,nav,section{display:block;}
 legend, hr {display:none;}
-.hide {position:absolute;left:-9999px;top:-9999px;width:0;height:0;text-indent:-9999px;font-size:0;line-height:0;opacity:0;}
 #skip-nav {position:absolute;left:-9999px;overflow:hidden;width:1px;height:1px;}
 .rdochk {vertical-align:middle;margin-top:-2px;}
 /* select box */
@@ -191,6 +191,15 @@ h6{margin-top:30px;padding-bottom:12px}
 .file-input-hidden {width: 95px; text-indent: -9999px; height: 28px;position:absolute;right:0;top:0;cursor:pointer;}
 .file-input-button{position:absolute;top:0;border:none;display:inline-block;background:url("../images/btn_totalList.png") no-repeat 0 -241px; width:95px; height:28px;color:#ed6712; font-size:13px;line-height:28px;cursor: pointer; }
 .file-input-hidden:hover,.file-input-hidden:active{border:none;background:url("../images/btn_totalList.png") no-repeat -196px -241px;color:#fff;text-indent: -9999px;}
+
+/* option form */
+.option-form {border-top:2px solid #000;border-bottom:1px solid #979797;}
+.option-form thead th {height:50px; border-bottom:1px solid #ddd; border-left:1px solid #ddd; font-size:14px; color:#222; font-family:"notokr-medium"; text-align:center;}
+.option-form thead th:first-child {border-left:0;}
+.option-form thead th.tbl-title {font-size:18px;}
+.option-form tbody td {padding:10px 0; font-size:14px; color:#444; font-family:"notokr-medium"; border-left:1px solid #ddd; text-align:center;}
+.option-form tbody tr:first-child td{padding-top:20px;}
+.option-form tbody tr td:first-child {border-left:0;}
 
 /* search module */
 .page-module {position:relative;height:34px;margin:15px 0;text-align:center;clear: both;}
@@ -938,7 +947,7 @@ label.labelJo.off{z-index:-1}
 .code-wrap {position:relative;}
 .code-wrap:after {content: ''; display: block; clear: both;}
 .code-area.floatR table{background:#f7f5f5}
-.code-area{width:48%;position: relative; height:604px}
+.code-area{width:48%; min-width:500px; position: relative;}
 .bd-footer{bottom: 0; position: absolute;width: 100%;}
 
 
@@ -1120,24 +1129,3 @@ table + table{margin-top:40px !important}
 .photo-cont .photo-list .item-photo .img-area img {width:100%; height:100%; vertical-align:top;}
 .photo-cont .photo-list .item-photo .text-area {overflow:hidden; margin-top:10px;}
 .photo-cont .photo-list .item-photo .text-area .photo-tit {display:inline-block; font-size:14px; color:#444; line-height:30px; font-family:"notokr-medium";}
-
-/* option form */
-.option-wrap {overflow:hidden; margin-top:50px; border-bottom:1px solid #ddd;}
-.option-title {height:50px; border-top:2px solid #000; border-bottom:1px solid #979797; line-height:50px;}
-.option-title .option-tit {margin-top:0; font-size:14px; color:#222; font-family:"notokr-medium"; text-align:center;}
-.option-wrap .option-form {float:left; width:25%;}
-.option-form .form-title {margin-top:0; padding-bottom:0; border-left:1px solid #ddd; border-bottom:1px solid #ddd; font-size:14px; color:#222; line-height:50px; font-family:"notokr-medium"; text-align:center;}
-.option-form .form-title.first {border-left:0;}
-.option-form .column-box {overflow:hidden; height:50px; position:relative; padding-left:80px;}
-.option-form .column-box span {display:block; height:50px; border-left:1px solid #ddd; border-bottom:1px solid #ddd; box-sizing:border-box; font-size:14px; color:#444; line-height:50px; font-family:"notokr-medium"; text-align:center;}
-.option-form .column-box span.first {border-left:0;}
-.option-form .column-box .colbox1 {position:absolute;left:0;top:0;width:80px;}
-.option-form .column-box .colbox2 {}
-.option-form .option-list {position:relative; height:861px; padding-top:10px;}
-.option-form .option-list.first:before {display:none;}
-.option-form .option-list .item {overflow:hidden; position:relative; height:35px; padding-left:80px;}
-.option-form .option-list .item:last-child {padding-bottom:10px;}
-.option-form .option-list .item .check-area {position:absolute; left:0; top:4px; width:80px; text-align:center;}
-.option-form .option-list .item .design-area {padding-left:20px; font-size:14px; color:#444; line-height:35px; box-sizing:border-box;}
-.option-form .option-list:before {content:''; display:block; position:absolute; left:0; top:0; bottom:0; border-left:1px solid #ddd;}
-.option-form .option-list:after {content:''; display:block; position:absolute; left:80px; top:0; bottom:0; border-left:1px solid #ddd;}

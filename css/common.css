@@ -3324,28 +3324,28 @@ label.check-radio .radiobox {margin-right:8px; cursor: pointer;}
 	background:url(../img/icon/icon_option08.gif) no-repeat center 0;
 }
 
-.option-list02.on .item-option.option01 {
+.option-list02.on .item-option.option01.active {
 	background:url(../img/icon/icon_option01_on.gif) no-repeat center 0;
 }
-.option-list02.on .item-option.option02 {
+.option-list02.on .item-option.option02.active {
 	background:url(../img/icon/icon_option02_on.gif) no-repeat center 0;
 }
-.option-list02.on .item-option.option03 {
+.option-list02.on .item-option.option03.active {
 	background:url(../img/icon/icon_option03_on.gif) no-repeat center 0;
 }
-.option-list02.on .item-option.option04 {
+.option-list02.on .item-option.option04.active {
 	background:url(../img/icon/icon_option04_on.gif) no-repeat center 0;
 }
-.option-list02.on .item-option.option05 {
+.option-list02.on .item-option.option05.active {
 	background:url(../img/icon/icon_option05_on.gif) no-repeat center 0;
 }
-.option-list02.on .item-option.option06 {
+.option-list02.on .item-option.option06.active {
 	background:url(../img/icon/icon_option06_on.gif) no-repeat center 0;
 }
-.option-list02.on .item-option.option07 {
+.option-list02.on .item-option.option07.active {
 	background:url(../img/icon/icon_option07_on.gif) no-repeat center 0;
 }
-.option-list02.on .item-option.option08 {
+.option-list02.on .item-option.option08.active {
 	background:url(../img/icon/icon_option08_on.gif) no-repeat center 0;
 }
 

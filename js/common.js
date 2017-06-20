@@ -126,7 +126,7 @@ $(window).load(function(){
 				$('.ps_designSelBox').each(function () {
 					$(this).find('.ps_list').removeAttr('style');
 					$(this).removeClass('on');
-					$(this).removeClass('bot');
+					// $(this).removeClass('bot');
 				});
 			};
 
@@ -155,10 +155,12 @@ $(window).load(function(){
 					};
 
 					// 셀렉트 박스의 위치가 아래있어서 리스트가 아래로 나올경우 가려져 안나오는 것을 방지하고 bot클래스 추가
+					/*
 					if($(window).height() < $deSel.offset().top + $lst.height() - $(window).scrollTop() + $deSel.height()){
 						$(this).parents('.ps_designSelBox').addClass('bot');
 						$(this).next().css({bottom:$(this).outerHeight()});
 					};
+					*/
 				}else{
 					selReset();
 					$('.select-close').remove();
