@@ -279,13 +279,11 @@ button {outline:0;vertical-align:top;}
 }
 .hub-area li.long .inner .link {padding-right:25px;}
 
-
-
-
 /*footer*/
 .footer {
-	height:180px;
+	height:204px;
 	background-color:#fff;
+	border-top:1px solid #ddd;
 }
 .footer .inner {
 	width:1000px;
@@ -296,27 +294,76 @@ button {outline:0;vertical-align:top;}
 	padding:30px 0;
 	text-align: center;
 }
-.footer .inner .util a {
+.footer .inner .util .link {
+	display:inline-block;
 	position:relative;
 	padding:0 50px;
 	color:#666;
 	font-size:15px;
 }
-.footer .inner .util a:before {
-	position:absolute;
-	left :0;
-	top:2px;
+.footer .inner .util .link:before {
 	content:'';
+	position:absolute;
+	left:0;top:2px;
 	width:1px;
 	height:16px;
 	background-color:#999;
 }
-.footer .inner .util a:first-child:before {content:none;}
+.footer .inner .util .link:first-child:before {content:none;}
+.footer .inner .util .link .btn {
+	color:#666;
+}
+.footer .inner .util .link .layer {
+	display:none;
+	position:absolute;
+	top:-68px;left:0;
+	width:200px;
+	padding:18px 20px 18px 10px;
+	box-sizing:border-box;
+	border:1px solid #ea002c;
+	background-color:#fff;
+	text-align:left;
+}
+.footer .inner .util .link .layer:before {
+	content:'';
+	position:absolute;
+	left:50%;bottom:-9px;
+	width:15px;
+	height:9px;
+	margin-left:-8px;
+	background:url(../img/bg/bg_family.png) no-repeat 0 0;
+}
+.footer .inner .util .link .layer .link-site {
+	display:block;
+	position:relative;
+	padding-left:8px;
+	color:#666;
+	font-size:15px;
+	line-height:21px;
+}
+.footer .inner .util .link .layer .link-site:before {
+	content:'';
+	position:absolute;
+	left:0;top:9px;
+	width:3px;
+	height:3px;
+	background-color:#666;
+}
+.footer .inner .util .link .layer .close {
+	position:absolute;
+	right:0;top:0;bottom:0;
+	width:20px;
+	background-color:#ea002c;
+	background:#ea002c url(../img/btn/btn_close.png) no-repeat 50% 50%;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+}
 
 .footer .inner .address-area {
 	position:relative;
 	padding-left:127px;
-	background:url(../img/layout/foot_logo.png) 0 4px no-repeat;
+	background:url(../img/layout/foot_logo.png) 4px 0 no-repeat;
 }
 
 .footer .inner .address-area p {
@@ -345,7 +392,7 @@ button {outline:0;vertical-align:top;}
 
 .footer .inner .address-area .sns {
 	position:absolute;
-	right:30px;
+	right:0;
 	top:0;
 }
 .footer .inner .address-area .sns a:first-child {margin-right:5px;}
