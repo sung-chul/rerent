@@ -15,7 +15,7 @@ $(window).load(function(){
 	----------------------------------------------------------------------------------------------------------- */
 	/* 슬라이드 */
 	$('.quick-slide .bxslider').each(function(){
-		$(this).bxSlider({
+		quickSlider = $(this).bxSlider({
 			mode: 'vertical',
 			infiniteLoop: false,
 			pager: false,
@@ -25,17 +25,27 @@ $(window).load(function(){
 		});
 	});
 
+	// test (2017-06-22)
+	$('.quick-title').click(function(){
+		quickSlider.destroySlider();
+		quickSlider.reloadSlider();
+	});
+
 	$('.quick-menu').css({'opacity':'1'});
 
-	$('.quick-slide').append('<div class="over-list">');
-	$('.quick-slide .slide-item').each(function(){
-		var img = $(this).find('.img-area').html();
-		$(this).find('.over-layer .img').html(img);
-		var data = $(this).find('.over-layer').html();
-		$(this).parents('.quick-slide').find('.over-list').append('<div class="over-item">' + data);
-	});
+	function overLayer(){
+		$('.quick-slide').append('<div class="over-list">');
+		$('.quick-slide .slide-item').each(function(){
+			var img = $(this).find('.img-area').html();
+			$(this).find('.over-layer .img').html(img);
+			var data = $(this).find('.over-layer').html();
+			$(this).parents('.quick-slide').find('.over-list').append('<div class="over-item">' + data);
+		});
+	}
+	overLayer(); // 차량 오버시 출력되는 레이어 생성
+
 	/* 최근본 차량 오버 */
-	$('.quick-slide .slide-item').mouseenter(function(){
+	$(document).on('mouseenter', '.quick-slide .slide-item', function(){
 		var quickTop = $(this).parents('.bx-wrapper').offset().top;
 		var top = $(this).offset().top;
 		var idx = $(this).index();
@@ -43,7 +53,7 @@ $(window).load(function(){
 		$('.over-item').eq(idx).show().animate({right:0}, 100);
 	});
 	/* 최근본 차량 아웃 */
-	$('.quick-slide .over-item').mouseleave(function(){
+	$(document).on('mouseleave', '.quick-slide .over-item', function(){
 		$('.over-item').hide().css({'right':'-170px'});
 	});
 	/* 스크롤 탑 버튼 */
