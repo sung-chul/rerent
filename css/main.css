@@ -536,7 +536,14 @@
 	width:490px;
 	height:246px;
 }
-.event-banner .item img {vertical-align: top;}
+.event-banner .event-bxslider .item {
+	height: 246px;
+}
+.event-banner .item img {
+	width: 490px;
+	height:246px;
+	vertical-align: top;
+}
 .event-banner .bx-controls-direction {
 	position: absolute;
 	bottom:30px; left:30px;
