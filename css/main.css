@@ -414,6 +414,7 @@
 }
 .rent-list li:hover .img-wrap:before {opacity:1;}
 .rent-list li .img-wrap img {
+	width:100%;
 	vertical-align: top;
 	-webkit-transition:all 1.5s;
 	-ms-transition:all 1.5s;
