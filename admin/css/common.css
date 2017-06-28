@@ -167,6 +167,17 @@ h6{margin-top:30px;padding-bottom:12px}
 .bd-list td.nolist {padding:30px 0;}
 .bd-list td:last-child, .bd-list th:last-child{border-right:none}
 .bd-list .alignLeft {padding-left:15px;text-align:left;}
+.bd-list th .btn-sorting {
+	width:20px;
+	height:25px;
+	background:url(../images/btn_sorting_up.png) center center no-repeat;
+	vertical-align:middle;
+	cursor:pointer;
+}
+.bd-list th .btn-sorting.on {
+	background:url(../images/btn_sorting_down.png) center center no-repeat;
+}
+
 
 /* board form */
 .bd-form {border-top:2px solid #000;border-bottom:1px solid #979797;}

@@ -7,6 +7,18 @@
 <script type="text/javascript" src="./js/jquery-1.10.2.js"></script>
 <script type="text/javascript" src="./js/select.js"></script>
 <script type="text/javascript" src="./js/jquery-ui.js"></script>
+<script>
+$(window).load(function(){
+	$('.btn-sorting').click(function(){
+		if ($(this).hasClass('on'))
+		{
+			$(this).removeClass('on');
+		}else{
+			$(this).addClass('on');
+		}
+	});
+});
+</script>
 </head>
 <body>
 <div id="wrap">
@@ -202,7 +214,7 @@
 							</colgroup>
 							<thead>
 								<tr>
-									<th scope="col">매물번호</th>
+									<th scope="col">매물번호<button type="button" class="btn-sorting"><span class="hide">정렬</span></button></th>
 									<th scope="col">차량번호</th>
 									<th scope="col">모델</th>
 									<th scope="col">등급</th>
