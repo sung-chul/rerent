@@ -950,7 +950,7 @@ label.labelJo.off{z-index:-1}
 .code-wrap {position:relative;}
 .code-wrap:after {content: ''; display: block; clear: both;}
 .code-area.floatR table{background:#f7f5f5}
-.code-area{width:48%;position: relative; height:604px}
+.code-area{width:48%;position: relative; min-height:604px}
 .bd-footer{bottom: 0; position: absolute;width: 100%;}
 
 
