@@ -87,6 +87,8 @@
 	-webkit-transform: translateX(-50%);
 	-ms-transform: translateX(-50%);
 	transform: translateX(-50%);
+	width:1024px;
+	height:434px;
 }
 
 .visual-banner .btn-area {
