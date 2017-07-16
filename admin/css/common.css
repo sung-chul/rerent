@@ -116,7 +116,7 @@ h6{margin-top:30px;padding-bottom:12px}
 
 /* header */
 #header {position: relative; background:#2a2d36; height:88px}
-#header h1 {position: absolute; top:23px; left:40px;}
+#header h1 {position: absolute; top:16px; left:40px;}
 #header h1 img {vertical-align:top;}
 #header-inner{position:relative; font-size:14px}
 #header-inner:after {content:"";height:0;display:block;visibility:hidden;clear:both;}
@@ -313,7 +313,8 @@ h6{margin-top:30px;padding-bottom:12px}
 #snbMenu li ul.smenu{display:none; padding:10px 0;border-bottom:1px #efefef solid }
 #snbMenu li ul.smenu li a {color: #929292; font-size:13px;font-family:"notokr-medium"; border:0; padding: 4px 0 4px 30px !important;}
 #snbMenu li ul.smenu li a:hover, #snbMenu li ul li a:active, #snbMenu li ul.smenu a.current{color:#000;background:#fff; }
-#snbMenu li .active {background:#ed6710; color: #fff;border:0 5 }
+#snbMenu > li > .active {background:#ed6710; color: #fff;border:0 5 }
+.smenu li .active {color:#ed6710 !important;}
 
 /*line Map*/
 .quickNavi{position: absolute;top:20px;width:100%; height:30px; left:0; -webkit-transition:all .3s ease; -moz-transition:all .3s ease}
@@ -986,6 +987,7 @@ label.labelJo.off{z-index:-1}
 
 /* 정렬 */
 .textL{text-align:left !important;padding-left:10px !important}
+.textL2{text-align:left !important;}
 .textR{text-align:right !important;padding-right:5px !important}
 .textR2{text-align:right !important;}
 .textC{text-align:center !important; }

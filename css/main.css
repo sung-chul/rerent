@@ -68,6 +68,7 @@
 .visual-banner .img-list {}
 .visual-banner .img-item {
 	opacity:0;
+	display:none;
 	position:absolute;
 	left:0;right:0;top:0;bottom:0;
 	-webkit-transition:all 1s;
@@ -76,7 +77,7 @@
 	min-width: 1000px;
 	text-align: center;
 }
-.visual-banner .img-item.on {opacity:1;}
+.visual-banner .img-item.on {opacity:1; display:block;}
 .visual-banner .img-item .link {
 	display:block;
 	height:510px;

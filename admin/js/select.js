@@ -164,6 +164,15 @@ $.fn.placeholder = function( _options ){
 				$(this).addClass('active').next('.smenu').slideDown(200);
 			}
 		});
+
+		$('.smenu li a').click(function(){
+			if($(this).hasClass('active')){
+				$('.smenu > li > a').removeClass('active');
+			}else{
+				$('.smenu > li > a').removeClass('active');
+				$(this).addClass('active');
+			}
+		})
 	});
 	/* // 2017-06-09 전체수정 */
 
