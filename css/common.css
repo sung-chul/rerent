@@ -809,13 +809,25 @@ html.on {
 }
 
 .text-box {
+	padding:15px;
 	color:#333;
-	font-size:15px;
-	text-align:center;
-	letter-spacing:-1px;
+	font-size:13px;	
 	line-height:20px;
+	background:#f0f0f0;
+	border:1px solid #ddd;
 }
-
+.text-box .bull-text {
+	position:relative;
+	padding-left:10px;
+	word-break:keep-all;
+}
+.text-box .bull-text:before {
+	content:'';
+	position:absolute;
+	top:8px; left:0;
+	width:3px; height:3px;
+	background-color:#333;
+}
 /* =========================================================================================================
 	타이틀
 ========================================================================================================= */

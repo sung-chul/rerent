@@ -317,5 +317,6 @@ $(window).load(function(){
 		$('.bg-layer').fadeOut(200);
 		$('.popup-close').remove();
 		$('body').css({'overflow-y':'inherit'});
+		$('html').removeClass('on'); //20170717 추가
 	});
 });
