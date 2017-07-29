@@ -582,10 +582,10 @@
 	position: relative;
 	width:490px;
 	height:246px;
-	padding:23px 30px 30px;
 	background-color:#fff;
 	box-sizing: border-box;
 }
+.notice-area .inner {padding:23px 30px 30px;}
 .notice-area .title {
 	color:#000;
 	font-size:24px;
@@ -615,4 +615,22 @@
 .notice-area .btn-more {
 	position: absolute;
 	top:26px; right:30px;
+}
+
+.no-cont {
+	width:490px;
+	height:246px;
+	background:url(../img/bg/bg_no_cont.jpg) 0 0 no-repeat;
+}
+.no-cont p {
+	padding:145px 0 71px;
+	font-size:20px;
+	color:#666;
+	font-family:'noto';
+	font-weight:400;
+	text-align:center;
+}
+.no-cont p span {
+	color:#333;
+	font-weight:bold;
 }
